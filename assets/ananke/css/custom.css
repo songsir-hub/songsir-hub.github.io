@@ -1,0 +1,26 @@
+/* 自定义样式：修复首页背景图黑边问题 + 调淡遮罩 */
+
+/* 让首页 header 填满整个视口高度 */
+header.cover,
+header.bg-top {
+  min-height: 100vh !important;
+}
+
+/* 确保背景图完全覆盖 header 区域，不重复、不留白 */
+header[style*="background-image"] {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* 确保 overlay 层也填满整个 header */
+header.cover > div,
+header[style*="background-image"] > div {
+  min-height: 100vh !important;
+}
+
+/* 调淡背景图上的黑色遮罩，让图片更清晰明亮 */
+header.cover > div.bg-black-60,
+header[style*="background-image"] > div.bg-black-60 {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+}

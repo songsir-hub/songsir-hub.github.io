@@ -2,7 +2,7 @@
 # Hugo + Ananke 主题博客配置
 # ============================================================
 
-baseURL = 'https://songsir-hub.github.io/'
+baseURL = 'http://localhost:1313/'
 locale = 'zh-cn'
 title = 'SongSir 的博客'
 theme = 'ananke'
@@ -25,6 +25,7 @@ paginate = 10
   background_image = '/images/background.jpg'
 
 [params.ananke]
+  custom_css = ["custom.css"]
   show_recent_posts = true
   show_categories = true
   copy_code = true
