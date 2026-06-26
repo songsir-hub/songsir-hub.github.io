@@ -5,7 +5,6 @@ title = '用 Hugo 搭建个人博客：从零到上线的完整记录'
 description = '详细记录如何在 Windows 上安装 Hugo，配置 Ananke 主题，并部署到 GitHub Pages'
 categories = ['技术笔记']
 tags = ['Hugo', 'GitHub Pages', '建站', '教程']
-featured_image = '/images/background.jpg'
 +++
 
 ## 前言

@@ -5,7 +5,6 @@ title = 'WorkBuddy 使用体验：AI 智能体的实战观察'
 description = '深度使用 WorkBuddy 一段时间后的真实感受与对比思考'
 categories = ['AI工具']
 tags = ['WorkBuddy', 'AI智能体', '工具评测']
-featured_image = '/images/background.jpg'
 +++
 
 ## 前言

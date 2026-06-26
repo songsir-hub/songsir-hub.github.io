@@ -23,8 +23,6 @@ paginate = 10
   recent_posts_number = 3
   # 首页背景图（博雅之璧）
   background_image = '/images/background.jpg'
-  # 文章默认封面图
-  featured_image = '/images/background.jpg'
 
 [params.ananke]
   show_recent_posts = true
