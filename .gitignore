@@ -14,6 +14,6 @@ Thumbs.db
 # Node modules (if using npm for theme customization)
 node_modules/
 
-# Miscellaneous files in project root
-*.md
-!README.md
+# Miscellaneous files in project root (only ignore .md files in root, not content/)
+/*.md
+!/README.md
