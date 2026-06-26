@@ -2,7 +2,7 @@
 # Hugo + Ananke 主题博客配置
 # ============================================================
 
-baseURL = 'http://localhost:1313/'
+baseURL = 'https://songsir-hub.github.io/'
 locale = 'zh-cn'
 title = 'SongSir 的博客'
 theme = 'ananke'
