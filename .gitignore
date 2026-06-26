@@ -1,0 +1,19 @@
+# Hugo build output
+/public/
+
+# Hugo generated files
+/resources/_gen/
+
+# Hugo workspace
+.hugo_build.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node modules (if using npm for theme customization)
+node_modules/
+
+# Miscellaneous files in project root
+*.md
+!README.md

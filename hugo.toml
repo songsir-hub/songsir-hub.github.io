@@ -1,0 +1,83 @@
+# ============================================================
+# Hugo + Ananke 主题博客配置
+# ============================================================
+
+baseURL = 'https://songsir-hub.github.io/'
+locale = 'zh-cn'
+title = 'SongSir 的博客'
+theme = 'ananke'
+
+enableRobotsTXT = true
+paginate = 10
+
+# ============================================================
+# Ananke 主题参数
+# ============================================================
+[params]
+  author = 'SongSir'
+  favicon = ''
+  site_logo = ''
+  description = '技术 · 历史 · 生活，记录所思所想'
+  background_color_class = 'bg-dark-gray'
+  body_classes = 'avenir bg-near-white'
+  recent_posts_number = 3
+
+[params.ananke]
+  show_recent_posts = true
+  show_categories = true
+  copy_code = true
+
+[params.ananke.home]
+  content_alignment = 'center'
+
+# ============================================================
+# 社交链接
+# ============================================================
+[params.ananke.social]
+  icon_path = 'ananke/socials/%s.svg'
+
+[params.ananke.social.follow]
+  new_window_icon = true
+  networks = [
+    'github',
+    'rss'
+  ]
+
+[params.ananke.social.share]
+  icons = true
+  sharetext = true
+  networks = [
+    'email',
+    'x-twitter',
+    'linkedin'
+  ]
+
+[params.ananke.social.networks.github]
+  slug = 'github'
+  label = 'GitHub'
+  profile = 'https://github.com/songsir-hub/'
+  icon = 'github'
+
+[params.ananke.social.networks.rss]
+  slug = 'rss'
+  label = 'RSS'
+  profile = ''
+  icon = 'rss'
+
+# ============================================================
+# 菜单导航
+# ============================================================
+[[menus.main]]
+  name = '首页'
+  pageRef = '/'
+  weight = 10
+
+[[menus.main]]
+  name = '文章'
+  pageRef = '/posts'
+  weight = 20
+
+[[menus.main]]
+  name = '关于'
+  pageRef = '/about'
+  weight = 30
