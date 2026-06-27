@@ -1,5 +1,5 @@
 +++
-title = 'SongSir 的博客'
+title = "SongSir'BLOG"
 description = '技术 · 历史 · 生活，记录所思所想'
 featured_image = '/images/background.jpg'
 +++

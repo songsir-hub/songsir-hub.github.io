@@ -4,7 +4,7 @@
 
 baseURL = 'https://songsir-hub.github.io/'
 locale = 'zh-cn'
-title = 'SongSir 的博客'
+title = "SongSir'BLOG"
 theme = 'ananke'
 
 enableRobotsTXT = true
