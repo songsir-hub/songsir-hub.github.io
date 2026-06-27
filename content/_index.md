@@ -1,6 +1,6 @@
 +++
-title = "SongSir'BLOG"
-description = '技术 · 历史 · 生活，记录所思所想'
+title = '博雅小筑'
+description = '博观万象，雅集一筑'
 featured_image = '/images/background.jpg'
 +++
 
