@@ -19,9 +19,15 @@ header[style*="background-image"] > div {
   min-height: 100vh !important;
 }
 
-/* 标题和副标题加粗 */
-header h1,
+/* 主标题：微软雅黑 + 加粗 */
+header h1 {
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* 副标题：楷体 + 加粗 */
 header h2 {
+  font-family: "KaiTi", "楷体", STKaiti, serif !important;
   font-weight: 700 !important;
 }
 
