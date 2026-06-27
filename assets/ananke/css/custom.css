@@ -31,6 +31,11 @@ header h2 {
   font-weight: 700 !important;
 }
 
+/* 首页欢迎词：楷体 */
+.is-home main article p {
+  font-family: "KaiTi", "楷体", STKaiti, serif !important;
+}
+
 /* 调淡背景图上的黑色遮罩，让图片更清晰明亮 */
 header.cover > div.bg-black-60,
 header[style*="background-image"] > div.bg-black-60 {
