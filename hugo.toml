@@ -81,6 +81,16 @@ paginate = 10
   weight = 20
 
 [[menus.main]]
+  name = '分类'
+  pageRef = '/categories'
+  weight = 30
+
+[[menus.main]]
+  name = '标签'
+  pageRef = '/tags'
+  weight = 40
+
+[[menus.main]]
   name = '关于'
   pageRef = '/about'
-  weight = 30
+  weight = 50
