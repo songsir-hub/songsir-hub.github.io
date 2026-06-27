@@ -1,6 +1,6 @@
 +++
 title = '博雅小筑'
-description = '博观万象，雅集一筑'
+description = '博观万象·雅集一筑'
 featured_image = '/images/background.jpg'
 +++
 

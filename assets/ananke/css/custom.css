@@ -19,8 +19,9 @@ header[style*="background-image"] > div {
   min-height: 100vh !important;
 }
 
-/* 标题文字加粗 */
-header h1 {
+/* 标题和副标题加粗 */
+header h1,
+header h2 {
   font-weight: 700 !important;
 }
 
