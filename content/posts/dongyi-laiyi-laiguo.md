@@ -5,6 +5,7 @@ title = '东夷、莱夷与莱国：三个概念的前世今生'
 description = '从旧石器时代到春秋战国，梳理东夷、莱夷与莱国三个层层嵌套的概念，还原胶东半岛最古老族群的历史脉络'
 categories = ['历史研究']
 tags = ['莱国', '东夷', '先秦史', '胶东', '历史考证']
+featured_image = '/images/headers/dongyi-laiyi-laiguo.png'
 +++
 
 ## 引子：一场两千年前的"跨国表演"

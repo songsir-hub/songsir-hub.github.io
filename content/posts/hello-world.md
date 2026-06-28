@@ -5,6 +5,7 @@ title = '博客开张：记录的意义'
 description = '为什么我选择重新开始写博客'
 categories = ['随笔']
 tags = ['博客', '写作', '开始']
+featured_image = '/images/headers/hello-world.png'
 +++
 
 ## 为什么要写博客？

@@ -5,6 +5,7 @@ title = '莱国双源假说：东莱与西莱的文化分野'
 description = '先秦胶东莱国文化源流探讨——草本植物与炎帝麦作文化的双重起源假说'
 categories = ['历史研究']
 tags = ['莱国', '先秦史', '胶东', '历史考证']
+featured_image = '/images/headers/lai-kingdom-hypothesis.png'
 +++
 
 ## 引言
