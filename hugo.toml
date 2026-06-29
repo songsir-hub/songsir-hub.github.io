@@ -99,3 +99,15 @@ paginate = 10
   name = '关于'
   pageRef = '/about'
   weight = 50
+
+# ============================================================
+# Giscus 评论系统
+# ============================================================
+[params.comments]
+  [params.comments.giscus]
+    enable = true
+    repo = 'songsir-hub/songsir-hub.github.io'
+    repoId = 'R_kgDOTGaL9Q'
+    category = 'General'
+    categoryId = 'DIC_kwDOTGaL9c4DAAfw'
+    lang = 'zh-CN'
