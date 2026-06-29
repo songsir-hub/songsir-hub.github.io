@@ -105,7 +105,7 @@ paginate = 10
 # ============================================================
 [params.comments]
   [params.comments.giscus]
-    enable = true
+    enable = false
     repo = 'songsir-hub/songsir-hub.github.io'
     repoId = 'R_kgDOTGaL9Q'
     category = 'General'
