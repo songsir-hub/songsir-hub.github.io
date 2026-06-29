@@ -116,17 +116,15 @@ featured_image = '/images/yueyang-lou-ji/yueyanglou.jpg'
 <!-- ══════════ 分隔线 ══════════ -->
 <div class="chapter-divider"><span class="chapter-divider-text">❧ 文 徵 明 書 卷 ❧</span></div>
 
-<!-- ══════════ 文徵明书卷 ══════════ -->
-<div class="scroll-img-wrap">
-  <img
-    src="/images/yueyang-lou-ji/wenzhengming-scroll.png"
-    alt="文徵明手书《岳阳楼记》书卷"
-    loading="lazy"
-    onerror="this.style.display='none';"
-  />
+<!-- ══════════ 文徵明书卷（原图待补充） ══════════ -->
+<div class="scroll-img-wrap" style="min-height:120px;display:flex;align-items:center;justify-content:center;">
+  <p style="color:#a0845a;font-size:0.95rem;letter-spacing:0.12em;text-align:center;line-height:2;">
+    △ 文徵明手书《岳阳楼记》书卷<br>
+    <span style="font-size:0.8rem;color:#bfae8a;">（原图整理中，稍后补充）</span>
+  </p>
 </div>
 <p class="classical-img-caption" style="text-align:center;margin-top:-6px;margin-bottom:30px;">
-明代大家 文徵明 手书《岳阳楼记》书卷
+  明代大家 文徵明 手书《岳阳楼记》书卷
 </p>
 
 <!-- ── 来源标注 ── -->
