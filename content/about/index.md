@@ -24,5 +24,6 @@ title = '关于'
 ### 联系我
 
 - GitHub：[songsir-hub](https://github.com/songsir-hub)
+- 📧 邮箱：[songview@foxmail.com](mailto:songview@foxmail.com)
 
 感谢你的到来，希望这里的内容对你有所启发。
