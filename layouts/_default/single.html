@@ -1,0 +1,29 @@
+{{/* ─── 单篇文章页：继承 Ananke 主题，底部加 Giscus 评论 ─── */}}
+{{ define "main" }}
+
+  <article class="post">
+    <!-- 文章标题 -->
+    <header class="post-header mb4">
+      <h1 class="f2 f1-ns b lh-title mt0 mb2">{{ .Title }}</h1>
+      <div class="f6 mid-gray">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+        {{ with .Params.categories }}
+          <span class="ml3">
+            {{ range . }}
+              <a href="/categories/{{ . | urlize }}/" class="link mid-gray hover-dark-gray mr2">#{{ . }}</a>
+            {{ end }}
+          </span>
+        {{ end }}
+      </div>
+    </header>
+
+    <!-- 文章正文 -->
+    <div class="post-content lh-copy measure-wide">
+      {{ .Content }}
+    </div>
+  </article>
+
+  <!-- Giscus 评论 -->
+  {{ partial "giscus.html" . }}
+
+{{ end }}
