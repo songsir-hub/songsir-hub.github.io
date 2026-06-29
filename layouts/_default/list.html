@@ -1,0 +1,44 @@
+{{/* --- Post list template: title + date + summary only --- */}}
+<main class="measure-wide center pv4">
+  <header class="mb5">
+    <h1 class="f2 b lh-solid">{{ .Title }}</h1>
+    {{ with .Description }}<p class="f4 mid-gray mt2">{{ . }}</p>{{ end }}
+  </header>
+
+  <ul class="list-unstyled ml0 pl0">
+    {{ range .Paginator.Pages }}
+    <li class="mb5 pb4 bb b--black-10">
+      <h2 class="f3 f2-ns b lh-title mv0">
+        <a href="{{ .RelPermalink }}" class="link dark-gray hover-blue">
+          {{ .Title }}
+        </a>
+      </h2>
+
+      <div class="f6 mid-gray mv2">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+        {{ with .Params.categories }}
+        <span class="ml3">
+          {{ range . }}
+          <a href="/categories/{{ . | urlize }}/" class="link mid-gray hover-dark-gray mr2">#{{ . }}</a>
+          {{ end }}
+        </span>
+        {{ end }}
+      </div>
+
+      <p class="f5 lh-copy mid-gray mv2">
+        {{ if .Description }}
+          {{ .Description }}
+        {{ else }}
+          {{ .Summary }}
+        {{ end }}
+      </p>
+
+      <a href="{{ .RelPermalink }}" class="f6 blue link hover-dark-blue mt1 dib">
+        阅读全文 &rarr;
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+
+  {{ template "_internal/pagination.html" . }}
+</main>
