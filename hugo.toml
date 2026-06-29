@@ -9,6 +9,7 @@ theme = 'ananke'
 
 enableRobotsTXT = true
 paginate = 10
+ summaryLength = 100  # 摘要长度（词数）
 
 # 允许 Markdown 中的原始 HTML（用于古典文章样式）
 [markup.goldmark.renderer]
