@@ -1,0 +1,270 @@
+/* ============================================================
+   SongSir'BLOG - 古典水墨风格自定义样式
+   用于古文、岳阳楼记等古典内容页面
+   ============================================================ */
+
+/* ── 古典文章整体容器 ── */
+.classical-article {
+  background: #f5efe3;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 39px,
+      rgba(100,70,30,0.06) 39px,
+      rgba(100,70,30,0.06) 40px
+    );
+  border: 1px solid #b8956a;
+  border-radius: 4px;
+  padding: 40px 50px;
+  margin: 30px -20px;
+  box-shadow:
+    0 2px 6px rgba(90,60,20,0.12),
+    0 8px 30px rgba(60,35,10,0.18);
+  position: relative;
+}
+
+/* ── 侧边装饰线 ── */
+.classical-article::before,
+.classical-article::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  width: 3px;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    #b8956a 10%,
+    #b8956a 90%,
+    transparent 100%
+  );
+}
+.classical-article::before { left: 12px; }
+.classical-article::after  { right: 12px; }
+
+/* ── 文章标题（古典风格） ── */
+.classical-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1208;
+  letter-spacing: 0.12em;
+  margin-bottom: 6px;
+  font-family: 'Noto Serif SC', 'Source Han Serif CN', '宋体', serif;
+}
+
+.classical-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: #5a4633;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.classical-meta {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #8b6914;
+  letter-spacing: 0.05em;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #b8956a;
+}
+
+/* ── 导言框 ── */
+.classical-intro {
+  background: rgba(180,150,90,0.10);
+  border-left: 4px solid #c8a84b;
+  border-radius: 2px;
+  padding: 14px 18px;
+  margin-bottom: 36px;
+  font-size: 0.95rem;
+  color: #3b2d1a;
+  line-height: 1.9;
+  font-style: italic;
+}
+
+/* ── 古文段落（简体） ── */
+.classical-para {
+  font-size: 1.05rem;
+  line-height: 2.0;
+  color: #1a1208;
+  text-indent: 2em;
+  margin-bottom: 16px;
+  text-align: justify;
+  font-family: 'Noto Serif SC', 'Source Han Serif CN', '宋体', serif;
+}
+
+/* ── 古文段落（繁体） ── */
+.classical-para-trad {
+  font-size: 1.05rem;
+  line-height: 2.0;
+  color: #3b2d1a;
+  text-indent: 2em;
+  margin-bottom: 16px;
+  text-align: justify;
+  font-family: 'Noto Serif SC', 'Source Han Serif CN', '宋体', serif;
+}
+
+/* ── 繁体版区块背景 ── */
+.trad-section {
+  background: rgba(200,168,75,0.04);
+  border-radius: 6px;
+  padding: 24px;
+  margin: 10px 0 30px;
+  border: 1px dashed rgba(139,105,20,0.15);
+}
+
+/* ── 名句高亮 ── */
+.classical-quote {
+  border-left: 4px solid #8b6914;
+  background: rgba(200,168,75,0.08);
+  padding: 14px 20px;
+  margin: 24px 0;
+  border-radius: 0 4px 4px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1208;
+  line-height: 2.0;
+  letter-spacing: 0.04em;
+}
+
+/* ── 分章分隔线 ── */
+.chapter-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 36px 0;
+}
+.chapter-divider::before,
+.chapter-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #b8956a, transparent);
+}
+.chapter-divider-text {
+  color: #8b6914;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+
+/* ── 图片居中 ── */
+.classical-img-block {
+  text-align: center;
+  margin: 36px 0;
+}
+.classical-img-block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #b8956a;
+  box-shadow: 0 4px 18px rgba(90,60,20,0.15);
+}
+.classical-img-caption {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #5a4633;
+  font-style: italic;
+  letter-spacing: 0.05em;
+}
+
+/* ── 文徵明书卷装饰框 ── */
+.scroll-img-wrap {
+  position: relative;
+  margin: 36px 0;
+  padding: 18px;
+  background: rgba(180,150,90,0.06);
+  border: 1px solid rgba(139,105,20,0.18);
+  border-radius: 4px;
+}
+.scroll-img-wrap::before {
+  content: '文徵明书卷';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f5efe3;
+  padding: 2px 14px;
+  font-size: 0.82rem;
+  color: #8b6914;
+  border: 1px solid #b8956a;
+  border-radius: 20px;
+  letter-spacing: 0.1em;
+  font-family: 'Noto Serif SC', serif;
+}
+.scroll-img-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 3px;
+}
+
+/* ── 音频播放器区块 ── */
+.audio-section {
+  background: linear-gradient(135deg, rgba(139,105,20,0.07), rgba(200,168,75,0.05));
+  border: 1px solid #b8956a;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 36px;
+}
+.audio-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1208;
+  margin-bottom: 4px;
+  letter-spacing: 0.06em;
+}
+.audio-desc {
+  font-size: 0.82rem;
+  color: #5a4633;
+  margin-bottom: 10px;
+}
+.audio-note {
+  font-size: 0.8rem;
+  color: #5a4633;
+  font-style: italic;
+  margin-top: 8px;
+}
+.audio-note a {
+  color: #8b6914;
+  text-decoration: none;
+}
+.audio-note a:hover {
+  text-decoration: underline;
+}
+
+/* ── 来源标注 ── */
+.source-note {
+  font-size: 0.85rem;
+  color: #8b6d3a;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #b8956a;
+  letter-spacing: 0.04em;
+}
+.source-note a {
+  color: #8b6914;
+  text-decoration: none;
+}
+.source-note a:hover {
+  text-decoration: underline;
+}
+
+/* ── 移动端适配 ── */
+@media (max-width: 640px) {
+  .classical-article {
+    padding: 24px 18px;
+    margin: 20px -10px;
+  }
+  .classical-title {
+    font-size: 1.5rem;
+  }
+  .classical-para,
+  .classical-para-trad {
+    font-size: 1rem;
+    line-height: 1.9;
+  }
+}
