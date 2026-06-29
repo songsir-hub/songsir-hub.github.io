@@ -5,14 +5,14 @@ title = '岳阳楼记（简繁体考证版含方明朗诵）'
 description = '岳阳楼记简繁体考证版，附著名播音员方明深情朗诵音频及明代文徵明书卷欣赏'
 categories = ['古文鉴赏']
 tags = ['岳阳楼记', '范仲淹', '方明朗诵', '文徵明', '简繁体']
-featured_image = '/images/yueyang-lou-ji/yueyanglou.jpg'
+featured_image = '/images/yueyang-lou-ji/yueyanglou-header.png'
 +++
 
 <div class="classical-article">
 
 <!-- ── 标题区 ── -->
 <p class="classical-meta">
-  范仲淹 · 北宋 &nbsp;|&nbsp; 博主整理 &nbsp;|&nbsp; 首发于公众号·品馨 &nbsp;|&nbsp; 2022年3月24日
+  范仲淹 · 北宋 &nbsp;|&nbsp; 博主整理 &nbsp;|&nbsp; <a href="https://mp.weixin.qq.com/s/7rCMuQ0jE87bMMmsbdPncg" target="_blank" rel="noopener">原文于 2022 年 3 月 24 日首发于公众号「品馨」</a>
 </p>
 
 <!-- ── 导言 ── -->
@@ -116,20 +116,17 @@ featured_image = '/images/yueyang-lou-ji/yueyanglou.jpg'
 <!-- ══════════ 分隔线 ══════════ -->
 <div class="chapter-divider"><span class="chapter-divider-text">❧ 文 徵 明 書 卷 ❧</span></div>
 
-<!-- ══════════ 文徵明书卷（原图待补充） ══════════ -->
-<div class="scroll-img-wrap" style="min-height:120px;display:flex;align-items:center;justify-content:center;">
-  <p style="color:#a0845a;font-size:0.95rem;letter-spacing:0.12em;text-align:center;line-height:2;">
-    △ 文徵明手书《岳阳楼记》书卷<br>
-    <span style="font-size:0.8rem;color:#bfae8a;">（原图整理中，稍后补充）</span>
+<!-- ══════════ 文徵明书卷 ══════════ -->
+<div class="classical-img-block" style="margin-top:20px;">
+  <img src="/images/yueyang-lou-ji/wenzhengming-scroll.png" alt="文徵明书岳阳楼记" loading="lazy" style="width:100%;max-width:800px;border-radius:4px;box-shadow:0 2px 12px rgba(0,0,0,0.1);" />
+  <p class="classical-img-caption" style="text-align:center;margin-top:10px;">
+    明代大家 文徵明 手书《岳阳楼记》书卷（AI 艺术生成）
   </p>
 </div>
-<p class="classical-img-caption" style="text-align:center;margin-top:-6px;margin-bottom:30px;">
-  明代大家 文徵明 手书《岳阳楼记》书卷
-</p>
 
 <!-- ── 来源标注 ── -->
 <div class="source-note">
-  首发于微信公众号「品馨」&nbsp;·&nbsp;
+  原文于 2022 年 3 月 24 日首发于微信公众号「品馨」&nbsp;·&nbsp;
   <a href="https://mp.weixin.qq.com/s/7rCMuQ0jE87bMMmsbdPncg" target="_blank" rel="noopener">原文链接</a>
   <br>
   <span style="font-size:0.78rem;color:rgba(90,70,40,0.5);">© SongSir'BLOG · 转载请注明出处</span>
