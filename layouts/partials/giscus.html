@@ -1,0 +1,24 @@
+{{- if .Site.Params.comments.giscus.enable -}}
+<section class="comments mt5 pv4 bt b--black-10">
+  <div class="measure-wide center">
+    <h3 class="f4 b mb3">💬 留言 / Comments</h3>
+    <div id="giscus-container"></div>
+  </div>
+</section>
+
+<script src="https://giscus.app/client.js"
+        data-repo="songsir-hub/songsir-hub.github.io"
+        data-repo-id="R_kgDOTGaL9Q"
+        data-category="Announcements,General,Ideas,Polls,Q&A,Show and tell"
+        data-category-id="DIC_kwDOTGaL9c4DAAfw"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+{{- end -}}
