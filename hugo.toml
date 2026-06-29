@@ -10,6 +10,10 @@ theme = 'ananke'
 enableRobotsTXT = true
 paginate = 10
 
+# 允许 Markdown 中的原始 HTML（用于古典文章样式）
+[markup.goldmark.renderer]
+  unsafe = true
+
 # ============================================================
 # Ananke 主题参数
 # ============================================================
