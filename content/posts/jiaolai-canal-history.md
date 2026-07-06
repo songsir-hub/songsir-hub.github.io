@@ -1,6 +1,6 @@
 +++
-title = "七百年运河的兴衰·地理分界线·文化遗产"
-description = "胶莱河历史文化志 — 世界上最早的跨海运河"
+title = "胶莱河"
+description = "世界上最早的跨海运河"
 date = 2026-07-06T22:00:00+08:00
 draft = false
 categories = ["莱夷文化研究"]
