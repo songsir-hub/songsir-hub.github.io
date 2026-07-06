@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 440" width="680" height="440">
+        <rect width="680" height="440" fill="#eef5ee"/>
+        <!-- 标题 -->
+        <text x="340" y="25" text-anchor="middle" font-size="15" fill="#1a3c5e" font-weight="bold">胶莱河干流及主要支流示意图</text>
+        <!-- 方位指南针（N向上） -->
+        <circle cx="635" cy="50" r="18" fill="none" stroke="#888" stroke-width="1"/>
+        <polygon points="635,35 639,50 635,46 631,50" fill="#c0392b"/>
+        <polygon points="635,65 639,50 635,54 631,50" fill="#888"/>
+        <text x="635" y="30" text-anchor="middle" font-size="9" fill="#c0392b" font-weight="bold">N</text>
+
+        <!-- ====== 莱州湾（北方/上方）====== -->
+        <path d="M95,50 Q140,45 190,50 L185,80 Q135,77 90,82 Z" fill="#a8d4f0" opacity="0.6"/>
+        <text x="140" y="68" text-anchor="middle" font-size="11" fill="#2a6b8e" font-weight="bold">莱州湾</text>
+        <text x="140" y="81" text-anchor="middle" font-size="9" fill="#2a6b8e">（渤海）</text>
+
+        <!-- ====== 北胶莱河（从分水岭向左上=西北流）====== -->
+        <text x="205" y="48" font-size="13" fill="#1a3c5e" font-weight="bold">北胶莱河</text>
+        <text x="205" y="62" font-size="10" fill="#2a6b8e">（向西北流）</text>
+        <!-- 北胶莱河干流 -->
+        <path d="M315,205 L285,175 L250,140 L210,105 L170,82" stroke="#2a6b8e" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- 北胶莱河支流（从干流向左侧/西侧分出） -->
+        <path d="M285,175 L240,188 L195,198" stroke="#5ba4cf" stroke-width="2" fill="none" stroke-dasharray="4,2"/>
+        <text x="145" y="200" font-size="9" fill="#555">泽河</text>
+        <path d="M250,140 L205,153 L160,163" stroke="#5ba4cf" stroke-width="2" fill="none" stroke-dasharray="4,2"/>
+        <text x="110" y="165" font-size="9" fill="#555">淄阳河</text>
+        <path d="M210,105 L165,118 L120,128" stroke="#5ba4cf" stroke-width="2" fill="none" stroke-dasharray="4,2"/>
+        <text x="70" y="130" font-size="9" fill="#555">双山河</text>
+        <path d="M170,82 L130,95 L95,105" stroke="#5ba4cf" stroke-width="2" fill="none" stroke-dasharray="4,2"/>
+        <text x="48" y="107" font-size="9" fill="#555">龙王河</text>
+        <path d="M250,140 L300,125 L340,115" stroke="#5ba4cf" stroke-width="2" fill="none" stroke-dasharray="4,2"/>
+        <text x="345" y="113" font-size="9" fill="#555">五龙河（潍坊）</text>
+
+        <!-- 流向标注：北胶莱河 ↖ 西北流 -->
+        <text x="245" y="122" font-size="10" fill="#2a6b8e" font-weight="bold">↖ 西北流</text>
+
+        <!-- ====== 分水岭（中心交汇点）====== -->
+        <ellipse cx="340" cy="220" rx="42" ry="22" fill="#c0392b" opacity="0.15" stroke="#c0392b" stroke-width="1.5"/>
+        <text x="340" y="217" text-anchor="middle" font-size="11" fill="#c0392b" font-weight="bold">分水岭</text>
+        <text x="340" y="231" text-anchor="middle" font-size="9" fill="#c0392b">（平度姚家）</text>
+
+        <!-- ====== 南胶莱河（从分水岭向右下=东南流）====== -->
+        <!-- 南胶莱河干流 -->
+        <path d="M365,235 L395,265 L430,300 L465,335 L500,365 L530,388" stroke="#2a6b8e" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- 南胶莱河支流（从干流向右侧/东侧分出） -->
+        <path d="M395,265 L430,255 L465,248" stroke="#5ba4cf" stroke-width="2" fill="none" stroke-dasharray="4,2"/>
+        <text x="470" y="246" font-size="9" fill="#555">胶河</text>
+        <path d="M430,300 L465,292 L500,285" stroke="#5ba4cf" stroke-width="2" fill="none" stroke-dasharray="4,2"/>
+        <text x="505" y="283" font-size="9" fill="#555">墨水河</text>
+        <path d="M465,335 L500,328 L535,322" stroke="#5ba4cf" stroke-width="2" fill="none" stroke-dasharray="4,2"/>
+        <text x="540" y="320" font-size="9" fill="#555">助水河</text>
+        <path d="M500,365 L530,355 L555,345" stroke="#5ba4cf" stroke-width="2" fill="none" stroke-dasharray="4,2"/>
+        <text x="560" y="343" font-size="9" fill="#555">清水河</text>
+
+        <!-- 流向标注：南胶莱河 ↘ 东南流 -->
+        <text x="445" y="315" font-size="10" fill="#2a6b8e" font-weight="bold">↘ 东南流</text>
+
+        <!-- 南胶莱河标签 -->
+        <text x="445" y="395" font-size="13" fill="#1a3c5e" font-weight="bold">南胶莱河</text>
+        <text x="445" y="409" font-size="10" fill="#2a6b8e">（向东南流）</text>
+
+        <!-- ====== 胶州湾（南方/下方）====== -->
+        <path d="M510,388 Q550,383 590,388 L585,415 Q545,412 505,415 Z" fill="#a8d4f0" opacity="0.6"/>
+        <text x="550" y="403" text-anchor="middle" font-size="11" fill="#2a6b8e" font-weight="bold">胶州湾</text>
+        <text x="550" y="416" text-anchor="middle" font-size="9" fill="#2a6b8e">（黄海）</text>
+
+        <!-- 大沽河（南胶莱河现代汇入处） -->
+        <path d="M530,388 L565,393 L600,398" stroke="#3a8f6e" stroke-width="3.5" fill="none"/>
+        <text x="605" y="393" font-size="10" fill="#3a8f6e" font-weight="bold">大沽河</text>
+        <text x="605" y="406" font-size="8" fill="#3a8f6e">（现代汇流处）</text>
+
+        <!-- 沿线行政区标注（北→南排列） -->
+        <rect x="55" y="428" width="90" height="16" rx="3" fill="#2a6b8e" opacity="0.12"/>
+        <text x="100" y="440" text-anchor="middle" font-size="9" fill="#1a3c5e">莱州市</text>
+        <rect x="150" y="428" width="90" height="16" rx="3" fill="#2a6b8e" opacity="0.12"/>
+        <text x="195" y="440" text-anchor="middle" font-size="9" fill="#1a3c5e">昌邑市</text>
+        <rect x="245" y="428" width="90" height="16" rx="3" fill="#2a6b8e" opacity="0.12"/>
+        <text x="290" y="440" text-anchor="middle" font-size="9" fill="#1a3c5e">平度市</text>
+        <rect x="340" y="428" width="90" height="16" rx="3" fill="#2a6b8e" opacity="0.12"/>
+        <text x="385" y="440" text-anchor="middle" font-size="9" fill="#1a3c5e">高密市</text>
+        <rect x="435" y="428" width="90" height="16" rx="3" fill="#2a6b8e" opacity="0.12"/>
+        <text x="480" y="440" text-anchor="middle" font-size="9" fill="#1a3c5e">胶州市</text>
+        <rect x="530" y="428" width="90" height="16" rx="3" fill="#3a8f6e" opacity="0.12"/>
+        <text x="575" y="440" text-anchor="middle" font-size="9" fill="#3a8f6e">青岛/黄岛</text>
+      </svg>
