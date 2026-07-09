@@ -268,3 +268,23 @@
     line-height: 1.9;
   }
 }
+
+/* ============================================================
+   文章页主体布局调整
+   - 主体整体居中，正文最大宽度 760px（满足“≥720px”要求）
+   - 两侧自然留白，留白区未来可放侧边栏 / 广告
+   - 移动端自动占满宽度并保留内边距，避免贴边
+   ============================================================ */
+.post {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+/* 覆盖 Tachyons 的 measure-wide（约 544px），让正文填满 .post 容器 */
+.post-content {
+  max-width: 100%;
+}
