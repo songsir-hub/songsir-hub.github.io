@@ -61,3 +61,18 @@ header[style*="background-image"] > div.bg-black-60 {
 .post-content {
   max-width: 100%;
 }
+
+/* 文章标题与日期副标题居中，与正文居中风格协调 */
+.post-header {
+  text-align: center;
+}
+
+/* 正文内的各级标题也居中 */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  text-align: center;
+}
