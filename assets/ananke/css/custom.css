@@ -67,12 +67,12 @@ header[style*="background-image"] > div.bg-black-60 {
   text-align: center;
 }
 
-/* 正文内的各级标题也居中 */
+/* 正文内的各级小标题（一、二、三…）保持居左，更利于阅读 */
 .post-content h1,
 .post-content h2,
 .post-content h3,
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-  text-align: center;
+  text-align: left;
 }
