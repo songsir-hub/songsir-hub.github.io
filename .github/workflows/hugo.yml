@@ -12,7 +12,9 @@ permissions:
 
 concurrency:
   group: 'pages'
-  cancel-in-progress: false
+  # 改为 true：多文件提交会触发多个 run，旧的在跑时自动取消，
+  # 避免两个 run 同时部署 github-pages 环境导致后者 deploy 被取消（之前标题居中因此迟迟不上线）
+  cancel-in-progress: true
 
 jobs:
   build:
