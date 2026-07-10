@@ -5,11 +5,12 @@ draft = false
 categories = ["技术笔记"]
 tags = ["Windows", "FastGithub", "GitHub", "网络加速", "排障"]
 +++
-![dns](/images/dns-interception.svg)
 
 ## 背景
 
 受够了 GitHub 相关站点的访问稳定性长期不稳定，也试过修改 host 文件等办法，麻烦又效果差，最终下决心试试 FastGithub。由于 GitHub 站点基本上不去，原版 `dotnetcore/FastGithub` 仓库已不可用、Gitee 镜像只提供源码而无现成二进制，在 AI 建议下，最终采用仍在维护的 `creazyboyone/FastGithub` v2.1.5——其工作机制与原版一致。本文记录在本机及第二台电脑上部署、排障、并沉淀可复用资产的全过程。
+
+![dns](/images/dns-interception.svg)
 
 ## 一、获取与解包
 
