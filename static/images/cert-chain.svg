@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="-apple-system, Segoe UI, Roboto, sans-serif">
+  <rect width="680" height="400" fill="#ffffff"/>
+  <text x="24" y="32" font-size="18" font-weight="700" fill="#111827">证书信任链与坑点</text>
+
+  <rect x="24" y="58" width="300" height="60" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="40" y="82" font-size="13" font-weight="600" fill="#1e3a8a">fastgithub.cer（自签根 CA）</text>
+  <text x="40" y="102" font-size="11" fill="#475569">位于 app\cacert\fastgithub.cer</text>
+
+  <line x1="174" y1="118" x2="174" y2="146" stroke="#2563eb" stroke-width="2"/>
+  <polygon points="168,146 180,146 174,156" fill="#2563eb"/>
+  <text x="200" y="138" font-size="11" fill="#2563eb" font-family="monospace">certutil -addstore -f -user Root</text>
+
+  <rect x="24" y="156" width="320" height="56" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="40" y="180" font-size="13" font-weight="600" fill="#14532d">Windows 受信任根证书颁发机构</text>
+  <text x="40" y="200" font-size="11" fill="#475569">当前用户（及可选本机）存储</text>
+
+  <line x1="184" y1="212" x2="184" y2="238" stroke="#16a34a" stroke-width="2"/>
+  <polygon points="178,238 190,238 184,248" fill="#16a34a"/>
+
+  <rect x="24" y="248" width="300" height="78" rx="6" fill="#ffffff" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="40" y="272" font-size="12" font-weight="600" fill="#14532d">读取该存储的程序 ✓</text>
+  <text x="40" y="294" font-size="11" fill="#475569">• Edge / Chrome（系统证书库）</text>
+  <text x="40" y="314" font-size="11" fill="#475569">• 系统 curl（System32\curl.exe，配 --cacert）</text>
+
+  <rect x="356" y="248" width="300" height="78" rx="6" fill="#fff1f2" stroke="#e11d48" stroke-width="1.5"/>
+  <text x="372" y="272" font-size="12" font-weight="600" fill="#881337">不读取该存储 ✗</text>
+  <text x="372" y="294" font-size="11" fill="#475569">• Firefox（自有证书库，需单独导入）</text>
+  <text x="372" y="314" font-size="11" fill="#475569">• Git 自带 curl（OpenSSL，需 -k 或指定 CA）</text>
+
+  <text x="24" y="360" font-size="11" fill="#6b7280">浏览器报证书错误时，应确认根 CA 已导入系统存储，而非单纯忽略。</text>
+</svg>
