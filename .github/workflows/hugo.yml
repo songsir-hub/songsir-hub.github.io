@@ -12,8 +12,6 @@ permissions:
 
 concurrency:
   group: 'pages'
-  # 改为 true：多文件提交会触发多个 run，旧的在跑时自动取消，
-  # 避免两个 run 同时部署 github-pages 环境导致后者 deploy 被取消（之前标题居中因此迟迟不上线）
   cancel-in-progress: true
 
 jobs:
@@ -49,3 +47,41 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  deploy-gitee:
+    if: ${{ secrets.GITEE_TOKEN != '' }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build for Gitee
+        run: hugo --minify --baseURL https://songsir.gitee.io/songsir-hub.github.io/
+
+      - name: Push to Gitee
+        env:
+          GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+        run: |
+          cd public
+          git init
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -m "mirror: ${{ github.sha }}"
+          git push -f "https://Songsir:${GITEE_TOKEN}@gitee.com/Songsir/songsir-hub.github.io.git" HEAD:master
+
+      - name: Trigger Gitee Pages rebuild
+        env:
+          GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+        run: |
+          curl -X POST "https://gitee.com/api/v5/repos/Songsir/songsir-hub.github.io/pages/builds" \
+            -H "Authorization: token ${GITEE_TOKEN}"
