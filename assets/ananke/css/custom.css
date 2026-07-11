@@ -76,3 +76,36 @@ header[style*="background-image"] > div.bg-black-60 {
 .post-content h6 {
   text-align: left;
 }
+
+/* ============================================================
+   首页布局调整（2026-07-11）
+   1) 首页欢迎说明文字：由居中改为居左
+   2) 首页封面下文章区 / 文章栏目列表(/posts)：最大宽度统一 800px
+   3) 首页“最近文章”：隐藏左侧封面图，正文占满整行
+   ============================================================ */
+
+/* 1) 首页欢迎说明文字居左（覆盖主题 tc-l 的居中） */
+.is-home article.cf {
+  text-align: left !important;
+}
+
+/* 2) 首页封面下文章区（w-70-ns 容器 + mw8 最近文章区）与
+      /posts 文章栏目列表（main.measure-wide.center）：最大宽度 800px 并居中 */
+.is-home .w-70-ns.center,
+.is-home section.mw8 {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main.measure-wide.center {
+  max-width: 800px;
+}
+
+/* 3) 首页最近文章：隐藏左侧封面图列，正文列占满整行 */
+.is-home section.mw8 .w-40-ns {
+  display: none !important;
+}
+.is-home section.mw8 .w-60-ns {
+  width: 100% !important;
+  padding-left: 0 !important;
+}
