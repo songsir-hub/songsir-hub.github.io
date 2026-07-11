@@ -163,7 +163,7 @@ main.measure-wide.center {
 /* 欢迎词中的关键词：亮绿 + 保持雅黑（字体不变） */
 /* 欢迎词关键词：绿金（加深绿，压低黄调） */
 .accent-green {
-  color: #1E3A8A !important; /* 深靛蓝 */
+  color: #1E6FE0 !important; /* 亮宝石蓝 */
 }
 /* 中文关键词锁雅黑（字体不变）；英文关键词继承 Georgia 仅变色 */
 .bilingual-zh .accent-green {
