@@ -54,7 +54,7 @@ categories = ["传统文化"]
 > 🔍 趣闻 试想一下，你家屋檐下的燕子飞回来了——你祖先就知道该翻地了。燕子南飞——该收庄稼了。这套"生物历"不需要数学公式，却实实在在地指导了几千年的农事。
 
 
-{{< figure src="/images/dongyi-lifa/chart_1.png" caption="图1　少昊"鸟官"历法体系示意（文献线）" >}}
+{{< figure src="/images/dongyi-lifa/chart_1.png" caption="图1　少昊“鸟官”历法体系示意（文献线）" >}}
 
 
 {{< figure src="/images/dongyi-lifa/bird-officials.png" caption="图2　少昊鸟官历法——凤鸟为历正，四鸟分司八节（想象复原图）" >}}
@@ -112,7 +112,7 @@ categories = ["传统文化"]
 唐兰把同出的其他符号释为"钺""斤"等，认为这些都是比甲骨文早约1500年的汉字雏形。而那个石岗本身——很可能就是东夷人的"观象台"。一块石头，几句话，把一个民族的历法起点推到了五千年前【4】【5】【6】。
 
 
-{{< figure src="/images/dongyi-lifa/chart_2.png" caption="图3　陶文"旦"与寺崮山春分日出观测互证（实证线）" >}}
+{{< figure src="/images/dongyi-lifa/chart_2.png" caption="图3　陶文“旦”与寺崮山春分日出观测互证（实证线）" >}}
 
 
 {{< figure src="/images/dongyi-lifa/dawenkou-sunrise.png" caption="图4　陵阳河先民春分观测日出、大口尊礼器想象复原图" >}}
