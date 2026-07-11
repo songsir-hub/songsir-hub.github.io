@@ -154,6 +154,7 @@ main.measure-wide.center {
 }
 .bilingual-zh p:not(.bilingual-label) {
   font-family: "KaiTi", "楷体", STKaiti, serif !important;
+  font-size: 1.125rem !important; /* 中文字体加大一号，与更长的英文段落平衡 */
   margin: 0;
 }
 .bilingual-en p:not(.bilingual-label) {
