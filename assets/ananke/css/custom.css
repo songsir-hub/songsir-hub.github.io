@@ -109,3 +109,94 @@ main.measure-wide.center {
   width: 100% !important;
   padding-left: 0 !important;
 }
+
+/* ============================================================
+   首页调整（2026-07-12）
+   1) 首页“说明”块宽度统一 800px
+   2) 首页说明中英文对照两栏
+   3) 首页文章标题加粗
+   4) 首页摘要 + 加大“显示全文”按钮
+   ============================================================ */
+
+/* 1) 首页说明块（article.cf）宽度 800px 并居中，与文章区一致 */
+.is-home article.cf {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 2) 中英文对照两栏 */
+.bilingual {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: stretch;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  background: rgba(255, 255, 255, 0.6);
+}
+.bilingual-col {
+  flex: 1 1 280px;
+  min-width: 0;
+}
+.bilingual-col + .bilingual-col {
+  border-left: 1px solid #e0e0e0;
+  padding-left: 1.5rem;
+}
+.bilingual-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #999;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+.bilingual-zh p:not(.bilingual-label) {
+  font-family: "KaiTi", "楷体", STKaiti, serif !important;
+  margin: 0;
+}
+.bilingual-en p:not(.bilingual-label) {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #555;
+  margin: 0;
+}
+/* 窄屏堆叠：去掉左侧分隔线，改为上分隔线 */
+@media (max-width: 640px) {
+  .bilingual {
+    flex-direction: column;
+  }
+  .bilingual-col + .bilingual-col {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1rem;
+  }
+}
+
+/* 3) 首页“最近文章”标题加粗（原 fw1 偏细） */
+.is-home article.bb h1 a {
+  font-weight: 700 !important;
+}
+/* 首页“更多”列表里的文章标题也加粗 */
+.is-home section.w-100 h2 a {
+  font-weight: 700 !important;
+}
+
+/* 4) 首页“显示全文”按钮加大、醒目 */
+.is-home article.bb a.readmore-btn {
+  display: inline-block !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  padding: 0.5rem 1.25rem !important;
+  margin-top: 0.75rem !important;
+  border-radius: 6px !important;
+  background-color: #2b6cb0 !important;
+  border-color: #2b6cb0 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+.is-home article.bb a.readmore-btn:hover {
+  background-color: #1f4f80 !important;
+  color: #fff !important;
+}
