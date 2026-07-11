@@ -1,0 +1,39 @@
+{{/*
+  文章 teasers（首页“最近文章”与 /posts 列表通用）：
+  - 显示正文开头约 10 行（按字符预算，不截断在小标题/段落中间）
+  - 保留小标题（h2~h4），不在摘要里省略
+  - 自动剔除插图（figure / img），让摘要保持轻量
+  - 若原文整体很短，则整段显示（不强行截断）
+*/}}
+{{ $pat := `(?is)<(p|h[1-4]|blockquote)[^>]*>.*?</(p|h[1-4]|blockquote)>` }}
+{{ $raw := findRE $pat .Content }}
+
+{{ $blocks := slice }}
+{{ range $raw }}
+  {{ $b := . }}
+  {{ $b = replaceRE `(?is)<figure.*?</figure>` "" $b }}
+  {{ $b = replaceRE `(?i)<img[^>]*>` "" $b }}
+  {{ $blocks = $blocks | append $b }}
+{{ end }}
+
+{{ $out := "" }}
+{{ $len := 0 }}
+{{ $limit := 1200 }} {{/* 字节预算，约 10 行中文（CJK 每字约 3 字节） */}}
+{{ $truncated := false }}
+
+{{ range $blocks }}
+  {{ $text := replaceRE `<[^>]+>` "" . }}
+  {{ $blen := len $text }}
+  {{ if lt $len $limit }}
+    {{ $out = printf "%s%s" $out . }}
+    {{ $len = add $len $blen }}
+  {{ else }}
+    {{ $truncated = true }}
+  {{ end }}
+{{ end }}
+
+{{ if eq $out "" }}
+  {{ .Summary }}
+{{ else }}
+  {{ $out | safeHTML }}{{ if $truncated }}<span class="teaser-more">&hellip;</span>{{ end }}
+{{ end }}

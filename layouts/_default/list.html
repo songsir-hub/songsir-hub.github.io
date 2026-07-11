@@ -29,14 +29,9 @@
         {{- end -}}
       </div>
 
-      <!-- Summary（仅显示第一段，与首页完全一致） -->
+      <!-- Summary（开头约 10 行，保留小标题，与首页一致） -->
       <div class="f5 lh-copy mid-gray mv2">
-        {{- $paras := findRE `<p[^>]*>[\s\S]*?</p>` .Content 1 -}}
-        {{- if $paras -}}
-          {{ index $paras 0 | safeHTML }}
-        {{- else -}}
-          {{ .Summary }}
-        {{- end -}}
+        {{ partial "teaser.html" . }}
       </div>
 
       <!-- Read more -->
