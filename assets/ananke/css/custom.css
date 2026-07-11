@@ -153,16 +153,17 @@ main.measure-wide.center {
   text-transform: uppercase;
 }
 .bilingual-zh p:not(.bilingual-label) {
-  font-family: "Microsoft YaHei", "微软雅黑", sans-serif !important; /* 雅黑 */
+  font-family: "KaiTi", "楷体", STKaiti, serif !important; /* 楷体 */
   font-size: 1.5rem !important; /* 比外层 article 的 f4(1.25rem) 加大一号 */
   font-weight: 700 !important; /* 加粗 */
   line-height: 1.6 !important;
-  color: #333333 !important; /* 深灰正文 */
+  color: #333333 !important; /* 深灰正文（颜色不变） */
   margin: 0;
 }
-/* 欢迎词中的关键词用墨绿强调 */
+/* 欢迎词中的关键词：亮绿 + 保持雅黑（字体不变） */
 .bilingual-zh .accent-green {
-  color: #2D5016 !important;
+  color: #2ECC40 !important; /* 亮绿 */
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif !important;
 }
 .bilingual-en p:not(.bilingual-label) {
   font-family: "Georgia", "Times New Roman", serif;
