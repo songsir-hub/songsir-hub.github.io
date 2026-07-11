@@ -161,13 +161,17 @@ main.measure-wide.center {
   margin: 0;
 }
 /* 欢迎词中的关键词：亮绿 + 保持雅黑（字体不变） */
+/* 欢迎词关键词：绿金（加深绿，压低黄调） */
+.accent-green {
+  color: #6B8E23 !important; /* 绿金偏深绿 */
+}
+/* 中文关键词锁雅黑（字体不变）；英文关键词继承 Georgia 仅变色 */
 .bilingual-zh .accent-green {
-  color: #9ACD32 !important; /* 绿金 */
   font-family: "Microsoft YaHei", "微软雅黑", sans-serif !important;
 }
 .bilingual-en p:not(.bilingual-label) {
   font-family: "Georgia", "Times New Roman", serif;
-  color: #9ACD32 !important; /* 绿金，与中文关键词呼应 */
+  color: #555; /* 恢复灰，仅 Erudite Haven 绿金 */
   margin: 0;
 }
 /* 窄屏堆叠：去掉左侧分隔线，改为上分隔线 */

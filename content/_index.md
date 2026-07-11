@@ -11,7 +11,7 @@ featured_image = '/images/background.jpg'
   </div>
 
   <div class="bilingual-col bilingual-en">
-    <p>Welcome to Erudite Haven — a quiet corner where I gather notes on technology, explore history and culture, and share what I learn along the way.</p>
+    <p>Welcome to <span class="accent-green">Erudite Haven</span> — a quiet corner where I gather notes on technology, explore history and culture, and share what I learn along the way.</p>
   </div>
 
 </div>
