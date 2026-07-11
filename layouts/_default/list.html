@@ -29,17 +29,13 @@
         {{- end -}}
       </div>
 
-      <!-- Summary（仅显示第一段，与首页一致） -->
+      <!-- Summary（仅显示第一段，与首页完全一致） -->
       <div class="f5 lh-copy mid-gray mv2">
-        {{- if .Description -}}
-          {{ .Description }}
+        {{- $paras := findRE `<p[^>]*>[\s\S]*?</p>` .Content 1 -}}
+        {{- if $paras -}}
+          {{ index $paras 0 | safeHTML }}
         {{- else -}}
-          {{- $paras := findRE `<p[^>]*>[\s\S]*?</p>` .Content 1 -}}
-          {{- if $paras -}}
-            {{ index $paras 0 | safeHTML }}
-          {{- else -}}
-            {{ .Summary }}
-          {{- end -}}
+          {{ .Summary }}
         {{- end -}}
       </div>
 
