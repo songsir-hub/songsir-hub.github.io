@@ -183,8 +183,8 @@ main.measure-wide.center {
   font-weight: 700 !important;
 }
 
-/* 4) 首页“显示全文”按钮加大、醒目 */
-.is-home article.bb a.readmore-btn {
+/* 4) “显示全文”按钮加大、醒目（首页与 /posts 列表页通用） */
+.readmore-btn {
   display: inline-block !important;
   font-size: 1rem !important;
   font-weight: 700 !important;
@@ -196,7 +196,7 @@ main.measure-wide.center {
   color: #fff !important;
   text-decoration: none !important;
 }
-.is-home article.bb a.readmore-btn:hover {
+.readmore-btn:hover {
   background-color: #1f4f80 !important;
   color: #fff !important;
 }

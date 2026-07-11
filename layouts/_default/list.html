@@ -29,18 +29,23 @@
         {{- end -}}
       </div>
 
-      <!-- Summary -->
-      <p class="f5 lh-copy mid-gray mv2">
+      <!-- Summary（仅显示第一段，与首页一致） -->
+      <div class="f5 lh-copy mid-gray mv2">
         {{- if .Description -}}
           {{ .Description }}
         {{- else -}}
-          {{ .Summary }}
+          {{- $paras := findRE `<p[^>]*>[\s\S]*?</p>` .Content 1 -}}
+          {{- if $paras -}}
+            {{ index $paras 0 | safeHTML }}
+          {{- else -}}
+            {{ .Summary }}
+          {{- end -}}
         {{- end -}}
-      </p>
+      </div>
 
       <!-- Read more -->
-      <a href="{{ .RelPermalink }}" class="f6 blue link hover-dark-blue mt1 dib">
-        阅读全文 &rarr;
+      <a href="{{ .RelPermalink }}" class="readmore-btn mt1 dib">
+        显示全文 &rarr;
       </a>
     </li>
     {{- end -}}
