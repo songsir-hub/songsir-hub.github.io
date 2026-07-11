@@ -13,7 +13,7 @@ featured_image = '/images/background.jpg'
 
   <div class="bilingual-col bilingual-en">
     <p class="bilingual-label">English</p>
-    <p>Welcome to Boya Cottage — a quiet corner where I gather notes on technology, explore history and culture, and share what I learn along the way.</p>
+    <p>Welcome to Erudite Haven — a quiet corner where I gather notes on technology, explore history and culture, and share what I learn along the way.</p>
   </div>
 
 </div>
