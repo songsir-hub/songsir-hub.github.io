@@ -15,6 +15,7 @@ concurrency:
 jobs:
   build-and-mirror:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,6 +31,13 @@ jobs:
       - name: Build with Gitee baseURL
         run: hugo --minify --baseURL "https://songsir_1_0.gitee.io/songsir-hub.github.io/"
 
+      - name: Diagnose Gitee connectivity
+        run: |
+          echo "== curl gitee.com =="
+          curl -m 30 -sS -o /dev/null -w "HTTP %{http_code} time %{time_total}s\n" https://gitee.com/ || echo "curl gitee.com failed"
+          echo "== git ls-remote (public) =="
+          git ls-remote --heads https://gitee.com/songsir_1_0/songsir-hub.github.io.git 2>&1 | head -5 || echo "ls-remote failed"
+
       - name: Push to Gitee
         env:
           GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
@@ -39,5 +47,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Mirror sync from GitHub: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          git push --force "https://oauth2:${GITEE_TOKEN}@gitee.com/songsir_1_0/songsir-hub.github.io.git" HEAD:master
+          git commit -q -m "Mirror sync from GitHub: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          REMOTE="https://oauth2:${GITEE_TOKEN}@gitee.com/songsir_1_0/songsir-hub.github.io.git"
+          git config http.postBuffer 524288000
+          for i in 1 2 3; do
+            echo "== push attempt $i =="
+            if git -c http.timeout=120 -c http.lowSpeedLimit=1000 -c http.lowSpeedTime=20 push --force "$REMOTE" HEAD:master; then
+              echo "PUSH OK"; exit 0
+            fi
+            echo "attempt $i failed, sleep 5"; sleep 5
+          done
+          echo "PUSH FAILED after retries"; exit 1
