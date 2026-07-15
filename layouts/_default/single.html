@@ -26,4 +26,7 @@
   <!-- Giscus 评论 -->
   {{- partials.Include "comments.html" . -}}
 
+  <!-- 语言自动切换（简/繁/英，按浏览者系统语言） -->
+  <script src="{{ "js/i18n.js" | relURL }}"></script>
+
 {{ end }}
