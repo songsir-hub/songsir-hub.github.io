@@ -1,8 +1,3 @@
-{{ define "header" }}
-   {{/* We can override any block in the baseof file be defining it in the template */}}
-  {{ partials.Include "page-header.html" . }}
-{{ end }}
-
 {{ define "main" }}
   {{- $related_content := .RegularPages.Related . -}}
   {{- $needs_aside := or .Params.toc $related_content -}}
@@ -19,9 +14,7 @@
     <header class="mt4 w-100">
       {{- partials.Include "hook.html" ( dict "hook" "article/section-link"  "context" . ) -}}
       {{- partials.IncludeCached "social/share.html" . . -}}
-      <h1 class="f1 athelas mt3 mb1">
-        {{- .Title -}}
-      </h1>
+      {{/* 文章标题已由 site-header hero 显示，此处仅保留作者与日期，避免重复大标题 */}}
       {{ with .Params.author | compare.Default .Site.Params.author }}
       <p class="tracked">
         {{- if compare.Eq $page.Language "de" "en" "es" "fr" "it" "no" "pt" -}}
