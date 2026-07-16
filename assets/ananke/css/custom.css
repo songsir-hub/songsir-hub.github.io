@@ -67,3 +67,13 @@ h3 .en {
   margin-top: 0.15em;
   letter-spacing: 0.02em;
 }
+
+/* ===== 单页（文章 / 关于）统一阅读宽度，两侧留白 ===== */
+/* 让关于页与文章页显示宽度一致，避免内容在大屏上被拉得过宽 */
+article.post {
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
