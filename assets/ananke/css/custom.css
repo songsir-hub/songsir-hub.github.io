@@ -1,4 +1,4 @@
-/* 自定义样式：修复首页背景图黑边问题 + 调淡遮罩 */
+/* 自定义样式：首页背景图 + 标题样式 + 中英文对照 */
 
 /* 让首页 header 填满整个视口高度 */
 header.cover,
@@ -6,7 +6,7 @@ header.bg-top {
   min-height: 100vh !important;
 }
 
-/* 确保背景图完全覆盖 header 区域，不重复、不留白 */
+/* 背景图完全覆盖 header 区域，不重复、不留白 */
 header[style*="background-image"] {
   background-size: cover !important;
   background-position: center center !important;
@@ -19,50 +19,51 @@ header[style*="background-image"] > div {
   min-height: 100vh !important;
 }
 
-/* 主标题：微软雅黑 + 加粗 */
-header h1 {
-  font-family: "Microsoft YaHei", "微软雅黑", sans-serif !important;
-  font-weight: 700 !important;
-}
-
-/* 副标题：楷体 + 加粗 */
-header h2 {
-  font-family: "KaiTi", "楷体", STKaiti, serif !important;
-  font-weight: 700 !important;
-}
-
-/* 首页欢迎词：楷体 */
-.is-home main article p {
-  font-family: "KaiTi", "楷体", STKaiti, serif !important;
-}
-
 /* 调淡背景图上的黑色遮罩，让图片更清晰明亮 */
 header.cover > div.bg-black-60,
 header[style*="background-image"] > div.bg-black-60 {
   background-color: rgba(0, 0, 0, 0.15) !important;
 }
 
-/* 语言切换器（简 / 繁 / EN） */
-.lang-switcher {
-  display: flex;
-  gap: 0.5rem;
-  margin: 0 0 1.5rem;
+/* ===== 首页主标题：加粗 + 加大，醒目突出 ===== */
+header h1 {
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 3rem !important;
+  letter-spacing: 0.02em !important;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.4) !important;
 }
-.lang-btn {
-  padding: 0.3rem 0.9rem;
-  border: 1px solid #ccc;
-  background: #fff;
-  color: #333;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  line-height: 1.4;
+@media (min-width: 60em) {
+  header h1 { font-size: 6rem !important; }
 }
-.lang-btn:hover {
-  border-color: #999;
+
+/* ===== 首页副标题（标语/前言）：不再加粗，弱化处理，让主标题更突出 ===== */
+header h2 {
+  font-family: "KaiTi", "楷体", STKaiti, serif !important;
+  font-weight: 400 !important;
+  font-size: 1.4rem !important;
+  letter-spacing: 0.12em !important;
+  opacity: 0.92 !important;
 }
-.lang-btn.active {
-  background: #333;
-  color: #fff;
-  border-color: #333;
+@media (min-width: 60em) {
+  header h2 { font-size: 1.9rem !important; }
+}
+
+/* ===== 中英文对照（关于页）===== */
+/* 英文译文：弱化为灰色、略小，中文在上、英文在下，形成对照 */
+.en {
+  display: block;
+  color: #6b6b6b;
+  font-weight: 400;
+  font-size: 0.92em;
+  margin-top: 0.25em;
+  line-height: 1.55;
+}
+/* 标题内的英文译文：更小、更浅，作为副标题 */
+h2 .en,
+h3 .en {
+  font-size: 0.6em;
+  color: #999;
+  margin-top: 0.15em;
+  letter-spacing: 0.02em;
 }
