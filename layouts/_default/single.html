@@ -2,9 +2,8 @@
 {{ define "main" }}
 
   <article class="post">
-    <!-- 文章标题 -->
+    <!-- 文章标题已由 page-header hero 显示，此处仅保留日期/分类 -->
     <header class="post-header mb4">
-      <h1 class="f2 f1-ns b lh-title mt0 mb2">{{ .Title }}</h1>
       <div class="f6 mid-gray">
         <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
         {{ with .Params.categories }}
