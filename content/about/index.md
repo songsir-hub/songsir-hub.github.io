@@ -23,7 +23,7 @@ title = '关于 / About'
 
 ## <span class="zh">联系我</span><span class="en">Contact Me</span>
 
-- <span class="zh">GitHub：<a href="https://github.com/songsir-hub">songsir-hub</a></span><span class="en">GitHub: <a href="https://github.com/songsir-hub">songsir-hub</a></span>
-- <span class="zh">Email：<a href="mailto:sonview@agent.qq.com">sonview@agent.qq.com</a></span><span class="en">Email: <a href="mailto:sonview@agent.qq.com">sonview@agent.qq.com</a></span>
+- GitHub：<a href="https://github.com/songsir-hub">songsir-hub</a>
+- Email：<a href="mailto:sonview@agent.qq.com">sonview@agent.qq.com</a>
 
 <span class="zh">感谢你的到来，希望这里的内容对你有所启发。</span><span class="en">Thanks for visiting — I hope the content here inspires you.</span>
