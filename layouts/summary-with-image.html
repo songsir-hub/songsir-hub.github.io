@@ -1,9 +1,63 @@
-{{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
+{{/*
+	summary-with-image (Override)
+	首页/列表页文章卡片。文章配图优先顺序：
+	  1. **文章正文渲染后的第一张 <img>**（支持 {{< figure src="..." >}} 与 Markdown 插图）
+	  2. front matter: featured_image
+	  3. front matter: images[] 数组第一项
+	  4. page bundle 内名为 feature/cover 的图片资源
+	  5. 兜底：全站默认背景图 /images/background.jpg
+	说明：page-header / site-header 仍走原 GetFeaturedImage.html，全站背景图不受影响。
+*/}}
+
+{{ $featured_image := "" }}
+
+{{/* 1: 从正文渲染结果中提取第一张图片 */}}
+{{ with .Content }}
+  {{ with findRE `(?i)<img[^>]+src=["']([^"']+)["']` . 1 }}
+    {{ $m := index . 0 }}
+    {{ $featured_image = $m | replaceRE `(?i)<img[^>]+src=["']([^"']+)["'].*` `$1` }}
+  {{ end }}
+{{ end }}
+
+{{/* 2 & 3 & 4: 正文无图时，回退到原 GetFeaturedImage 的 front matter / 资源逻辑 */}}
+{{ if not $featured_image }}
+  {{ $matches := "feature,cover" }}
+  {{ with .Params.featured_image }}
+    {{ $featured_image = strings.Trim . "/" | urls.AbsURL }}
+    {{ with $.Resources.GetMatch . }}
+      {{ $featured_image = .RelPermalink }}
+    {{ end }}
+  {{ else }}
+    {{ with .Params.images }}
+      {{ range first 1 . }}
+        {{ with . }}
+          {{ $featured_image = strings.Trim . "/" | urls.AbsURL }}
+          {{ with $.Resources.GetMatch . }}
+            {{ $featured_image = .RelPermalink }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ else }}
+      {{ with .Resources.ByType "image" }}
+        {{ with .GetMatch (fmt.Printf "**{%s}*" $matches) }}
+          {{ $featured_image = .RelPermalink }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* 5: 兜底全站背景图 */}}
+{{ if not $featured_image }}
+  {{ $featured_image = "/images/background.jpg" | urls.AbsURL }}
+{{ end }}
+
 {{ $show_date := partials.Include "func/ShowDate.html" . }}
 <article class="bb b--black-10">
   <div class="db pv4 ph3 ph0-l dark-gray no-underline">
     <div class="flex-column flex-row-ns flex">
       {{ if $featured_image }}
+          {{/* Trimming the slash and adding absURL make sure the image works no matter collections.Where our site lives */}}
         <div class="{{ compare.Conditional (compare.Eq $.Site.Language.Direction "rtl") "pl3-ns" "pr3-ns" }} mb4 mb0-ns w-100 w-40-ns">
           <a href="{{.RelPermalink}}" class="db grow">
             <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">
@@ -22,12 +76,12 @@
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          {{ partial "teaser.html" . }}
+          {{ .Summary }}
         </div>
         {{ with .Params.author | compare.Default .Site.Params.author }}
           <p class="f6 lh-copy mv0">By {{ . }}</p>
         {{- end -}}
-        <a href="{{.RelPermalink}}" class="readmore-btn ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">显示全文 &rarr;</a>
+        <a href="{{.RelPermalink}}" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">{{ $.Param "read_more_copy" | compare.Default (lang.Translate "readMore") }}</a>
       </div>
     </div>
   </div>
