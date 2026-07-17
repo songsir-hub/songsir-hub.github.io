@@ -19,7 +19,7 @@ paginate = 10
 # Ananke 主题参数
 # ============================================================
 [params]
-  author = 'SongSir'
+author = '松月朗'
   favicon = ''
   site_logo = ''
   description = '技术 · 历史 · 生活，记录所思所想'
