@@ -104,12 +104,15 @@ h3 .en {
   font-size: 1.4em;
 }
 
-/* 首页"more"列表：同行标题之间加蓝色分隔符（◆ 菱形，末项不加） */
-section.more-posts h2:not(:last-child)::after {
-  content: "\25C6";        /* ◆ 菱形分隔符（U+25C6），比圆点更醒目 */
+/* 首页"more"列表：标题之间加蓝色分隔符（◆ 菱形）。
+   用 ::before + :not(:first-child)：◆ 落在每个标题(首项除外)之前，
+   同行时即"标题之间"；折行时 ◆ 出现在下一行行首而非上一行行尾，
+   从而满足"仅在中间显示、行尾部不显示"的要求。 */
+section.more-posts h2:not(:first-child)::before {
+  content: "\25C6";        /* ◆ 菱形分隔符（U+25C6） */
   color: #1a4d8c;          /* 宝石蓝，与 .en 同色系 */
-  margin-left: .5rem;
-  margin-right: .1rem;
+  margin-right: .5rem;
+  margin-left: .1rem;
   font-size: 1.1em;
   font-weight: 400;
 }
