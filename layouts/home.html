@@ -35,14 +35,20 @@
       {{ if compare.Ge $section_count (math.Add $n_posts 1) }}
         <section class="w-100 more-posts">
           <h1 class="f3">{{ lang.Translate "more" }}</h1>
-          {{/* Now, range through the next four after the initial $n_posts items. Nest the requirements, "after" then "first" on the outside */}}
-          {{ range (collections.First 4 (collections.After $n_posts $section))  }}
-            <h2 class="f5 fw4 mb4 dib {{ compare.Conditional (compare.Eq $.Site.Language.Direction "rtl") "ml3" "mr0" }}">
-              <a href="{{ .RelPermalink }}" class="link black dim">
-                {{ .Title }}
-              </a>
-            </h2>
-          {{ end }}
+          {{/* 用 3 列网格（标题|◆|标题）把"一对标题+中间菱形"绑成一行，
+               ◆ 是真实 <span>，确定性地只在两个标题之间，永不出现在行首/行尾。 */}}
+          {{ $more := collections.First 4 (collections.After $n_posts $section) }}
+          {{ $last := sub (len $more) 1 }}
+          <div class="more-grid">
+            {{ range $i, $p := $more }}
+              <h2 class="f5 fw4 more-title">
+                <a href="{{ $p.RelPermalink }}" class="link black dim">
+                  {{ $p.Title }}
+                </a>
+              </h2>
+              {{ if and (eq (mod $i 2) 0) (lt $i $last) }}<span class="more-sep" aria-hidden="true">&#9670;</span>{{ end }}
+            {{ end }}
+          </div>
         </section>
       {{ end }}
 
