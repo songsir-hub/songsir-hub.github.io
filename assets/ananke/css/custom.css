@@ -133,6 +133,22 @@ article.post {
   margin-right: 4px;
 }
 
+/* ===== 首页文章卡片摘要：限制 8 行 ===== */
+.card-summary {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
+  line-clamp: 8;
+  overflow: hidden;
+}
+/* 窄屏（手机）下信息密度高，收紧为 6 行 */
+@media (max-width: 767px) {
+  .card-summary {
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+  }
+}
+
 /* ===== 首页 hero 下方访问统计 ===== */
 .visit-stats {
   text-align: center;
