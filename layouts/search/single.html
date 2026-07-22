@@ -1,0 +1,27 @@
+{{/* ─── 站内搜索页：Fuse.js 客户端检索 ─── */}}
+{{ define "main" }}
+
+  <article class="post">
+    <div class="post-content lh-copy">
+
+      <div class="search-box mb4">
+        <input
+          type="search"
+          id="search-input"
+          class="search-input w-100 pa3 f4"
+          placeholder="输入关键词搜索文章…（标题 / 正文 / 标签）"
+          autocomplete="off"
+          autofocus
+        />
+        <p id="search-meta" class="f6 mid-gray mt2 mb0"></p>
+      </div>
+
+      <ul id="search-results" class="list pl0"></ul>
+
+    </div>
+  </article>
+
+  <script src="{{ "js/fuse.min.js" | relURL }}"></script>
+  <script src="{{ "js/search.js" | relURL }}"></script>
+
+{{ end }}
