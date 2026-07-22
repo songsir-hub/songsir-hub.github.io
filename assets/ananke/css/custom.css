@@ -92,6 +92,24 @@ h3 .en {
 .is-home main article p {
   font-family: "KaiTi", "楷体", STKaiti, serif !important;
   font-size: 1.12em;   /* 首页欢迎词中文加大一号 */
+  text-indent: 2em;    /* 首行缩进 */
+  text-align: left;    /* 居左（覆盖主题默认居中） */
+}
+
+/* ===== 首页欢迎词容器：宽度与文章页(article.post)保持一致 ===== */
+/* 视口80%、两侧各10%留白；窄屏(<768px)满屏；左对齐 */
+.home-welcome {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .home-welcome {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 /* ===== 单页（文章 / 关于 / 搜索）统一阅读宽度 ===== */
