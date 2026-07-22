@@ -11,8 +11,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: 'hugo-deploy'
-  cancel-in-progress: true
+  group: 'pages'
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -32,6 +32,12 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      # IndexNow 要求把密钥以 {key}.txt 形式托管在站点根目录用于归属验证。
+      # 仅当仓库配置了 INDEXNOW_KEY secret 时才生成，缺失则跳过（不影响部署）。
+      - name: Write IndexNow key file
+        if: ${{ secrets.INDEXNOW_KEY != '' }}
+        run: echo "${{ secrets.INDEXNOW_KEY }}" > public/${{ secrets.INDEXNOW_KEY }}.txt
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -47,3 +53,39 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  # 部署后主动通知搜索引擎，加速收录（Bing/IndexNow 覆盖 Bing+Yandex+ChatGPT/Copilot；百度用主动推送 API）
+  # 两个推送步骤均 guard 在对应 secret 存在时执行，且 continue-on-error，绝不阻塞主部署流程。
+  notify-search-engines:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: Download built site
+        uses: actions/download-pages-artifact@v3
+        with:
+          path: ./site
+
+      - name: Collect URLs from sitemap
+        id: collect
+        run: |
+          grep -oP '<loc>\K[^<]+' ./site/sitemap.xml > urls.txt
+          echo "count=$(wc -l < urls.txt)" >> "$GITHUB_OUTPUT"
+
+      - name: Push to Baidu (主动推送 API)
+        if: ${{ secrets.BAIDU_PUSH_TOKEN != '' }}
+        continue-on-error: true
+        run: |
+          curl -s -H 'Content-Type: text/plain' \
+            --data-binary @urls.txt \
+            "http://data.zz.baidu.com/urls?site=songsir-hub.github.io&token=${{ secrets.BAIDU_PUSH_TOKEN }}"
+
+      - name: Push to Bing IndexNow
+        if: ${{ secrets.INDEXNOW_KEY != '' }}
+        continue-on-error: true
+        run: |
+          KEY="${{ secrets.INDEXNOW_KEY }}"
+          URLS_JSON=$(jq -R -s -c 'split("\n") | map(select(length>0))' urls.txt)
+          PAYLOAD=$(jq -n --arg host "songsir-hub.github.io" --arg key "$KEY" --argjson urlList "$URLS_JSON" '{host:$host,key:$key,urlList:$urlList}')
+          curl -s -X POST "https://www.bing.com/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            --data "$PAYLOAD"
