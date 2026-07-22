@@ -51,3 +51,9 @@
     </div>
   </header>
 {{ end }}
+
+{{/* 访问统计脚本：全局加载以保证全站 PV/UV 准确 */}}
+{{ partials.Include "busuanzi-script.html" . }}
+
+{{/* 统计显示：仅首页 hero 下方 */}}
+{{ if .IsHome }}{{ partials.Include "visit-stats.html" . }}{{ end }}
