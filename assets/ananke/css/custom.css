@@ -104,17 +104,16 @@ h3 .en {
   font-size: 1.4em;
 }
 
-/* 首页"more"列表：标题之间加简洁分隔符（细竖线 |，柔和蓝）。
-   用 ::before + :not(:first-child)：分隔符落在每个标题(首项除外)之前，
-   同行时即"标题之间"；折行时落到下一行行首而非上一行行尾，
-   从而满足"仅在中间显示、行尾部不显示"的简洁诉求。 */
+/* 首页"more"列表：标题之间加 ◆ 菱形分隔。
+   h2 自身 mr3（1rem 右间距）已替换为 mr0，标题间无自带间距，
+   全部间距由 ::before 的对称外边距控制，使 ◆ 完美居中于两个标题之间。
+   用 :not(:first-child)::before：首项前不显示，折行时 ◆ 落到下一行行首。 */
 section.more-posts h2:not(:first-child)::before {
-  content: "|";            /* 细竖线分隔符，克制耐看 */
-  color: #6b9bd1;          /* 柔和蓝，比实心 ◆ 更轻盈 */
-  margin-right: .5rem;
-  margin-left: .1rem;
-  font-size: .9em;         /* 略小于标题，弱化存在感 */
+  content: "\25C6";        /* ◆ 菱形（U+25C6） */
+  color: #1a4d8c;          /* 宝石蓝 */
+  font-size: .85em;        /* 略小于标题 */
   font-weight: 400;
+  margin: 0 .5rem;         /* ◆ 两侧等距，纯居中于标题之间 */
 }
 
 /* ===== 首页欢迎词容器：宽度与文章页(article.post)保持一致 ===== */
