@@ -96,6 +96,14 @@ h3 .en {
   text-align: left;    /* 居左（覆盖主题默认居中） */
 }
 
+/* 欢迎词汉语：在首页通用 1.12em 基础上进一步放大。
+   注意必须用更高特异性的选择器（article.home-welcome）覆盖上方通用规则，
+   否则 .is-home main article p（特异性 0,1,3）会盖过 .home-welcome p（0,1,1）。
+   英文 .en 以 1.2em 相对父，自动等比放大，与原视觉比例保持一致。 */
+.is-home main article.home-welcome p {
+  font-size: 1.4em;
+}
+
 /* ===== 首页欢迎词容器：宽度与文章页(article.post)保持一致 ===== */
 /* 视口80%、两侧各10%留白；窄屏(<768px)满屏；左对齐 */
 .home-welcome {
