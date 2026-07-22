@@ -132,3 +132,21 @@ article.post {
   border-radius: 10px;
   margin-right: 4px;
 }
+
+/* ===== 首页 hero 下方访问统计 ===== */
+.visit-stats {
+  text-align: center;
+  font-size: .82rem;
+  color: #5a6472;
+  margin: 1.25rem auto 0;
+  letter-spacing: .04em;
+}
+.visit-stats .visit-item b {
+  color: #357edd;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.visit-stats .visit-sep {
+  margin: 0 .7rem;
+  color: #cbd5e0;
+}
