@@ -81,14 +81,25 @@ h3 .en {
   letter-spacing: 0.02em;
 }
 
-/* ===== 单页（文章 / 关于）统一阅读宽度，两侧留白 ===== */
-/* 让关于页与文章页显示宽度一致，避免内容在大屏上被拉得过宽 */
+/* ===== 单页（文章 / 关于 / 搜索）统一阅读宽度 ===== */
+/* 正文宽度=视口80%，两侧各留白10%；窄屏(<768px)满屏显示 */
 article.post {
-  max-width: 48rem;
-  margin-left: auto;
-  margin-right: auto;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+/* 手机类窄屏：取消80%限制，满屏显示，仅保留内侧小边距防贴边 */
+@media (max-width: 767px) {
+  article.post {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 /* ===== 站内搜索页样式 ===== */
