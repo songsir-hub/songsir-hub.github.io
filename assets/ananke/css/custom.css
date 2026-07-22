@@ -90,3 +90,34 @@ article.post {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+/* ===== 站内搜索页样式 ===== */
+.search-input {
+  box-sizing: border-box;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+  background: #fff;
+}
+.search-input:focus {
+  border-color: #357edd;
+  box-shadow: 0 0 0 3px rgba(53, 126, 221, .15);
+}
+#search-results { margin-top: 1rem; }
+.search-result-item:last-child { border-bottom: none !important; }
+.search-result-snippet mark {
+  background: #fff3a3;
+  color: inherit;
+  padding: 0 1px;
+  border-radius: 2px;
+}
+.search-tag {
+  display: inline-block;
+  font-size: .75rem;
+  color: #5a6472;
+  background: #eef1f5;
+  padding: 1px 6px;
+  border-radius: 10px;
+  margin-right: 4px;
+}
