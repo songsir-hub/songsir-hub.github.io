@@ -1,5 +1,5 @@
 +++
-author = '松月朗'
+author = '松朗'
 title = "在 Windows 上部署 FastGithub 踩坑记录"
 date = '2026-07-09T19:30:00+08:00'
 draft = false

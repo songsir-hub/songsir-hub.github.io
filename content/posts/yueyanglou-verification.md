@@ -1,5 +1,5 @@
 +++
-author = '松月朗'
+author = '松朗'
 date = '2022-03-19T11:17:00+08:00'
 draft = false
 title = '《岳阳楼记》版本考证与赏析'

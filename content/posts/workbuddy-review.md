@@ -1,5 +1,5 @@
 +++
-author = '松月朗'
+author = '松朗'
 date = '2026-06-10T10:00:00+08:00'
 draft = false
 title = 'WorkBuddy 使用体验：AI 智能体的实战观察'

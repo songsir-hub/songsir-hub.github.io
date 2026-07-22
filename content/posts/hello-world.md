@@ -1,5 +1,5 @@
 +++
-author = '松月朗'
+author = '松朗'
 date = '2026-06-07T22:12:34+08:00'
 draft = false
 title = '博客开张：记录的意义'

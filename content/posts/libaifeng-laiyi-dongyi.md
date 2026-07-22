@@ -2,7 +2,7 @@
 title = '李白凤论“东夷、莱夷与莱国”述评'
 date = '2026-07-17T20:20:00+08:00'
 draft = false
-author = '松月朗'
+author = '松朗'
 featured_image = '/images/headers/libaifeng-laiyi-dongyi.png'
 description = '系统辑录李白凤《东夷杂考》关于东夷、莱夷与莱国的论述，并专设“论断争议述评”，就其与两莱论相关之处加以辨析与支撑。'
 categories = ['历史研究']
