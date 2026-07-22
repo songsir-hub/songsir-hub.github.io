@@ -66,10 +66,10 @@ header h2 {
 /* 英文译文：深色宝石蓝、Cormorant 古典衬线，中文在上、英文在下 */
 .en {
   display: block;
-  color: #1a4d8c;
+  color: #0e3b73;   /* 加深宝石蓝 */
   font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   font-weight: 400;
-  font-size: 1.08em;   /* Cormorant 视觉偏小，适度放大以平衡 */
+  font-size: 1.2em;   /* 加大一号 + Cormorant 视觉偏小补偿 */
   margin-top: 0.25em;
   line-height: 1.5;
 }
@@ -78,15 +78,20 @@ h2 .en,
 h3 .en {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 600;
-  font-size: 0.72em;
-  color: #2f5fa6;
+  font-size: 0.84em;   /* 加大一号 */
+  color: #1e4f97;   /* 加深 */
   margin-top: 0.15em;
   letter-spacing: 0.02em;
+}
+/* 关于页中文译文：加大一号（与英文对照协调） */
+.zh {
+  font-size: 1.1em;
 }
 
 /* ===== 首页欢迎词正文：楷体（曾于标题协调重构时被误删，现恢复）===== */
 .is-home main article p {
   font-family: "KaiTi", "楷体", STKaiti, serif !important;
+  font-size: 1.12em;   /* 首页欢迎词中文加大一号 */
 }
 
 /* ===== 单页（文章 / 关于 / 搜索）统一阅读宽度 ===== */
