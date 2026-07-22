@@ -104,16 +104,30 @@ h3 .en {
   font-size: 1.4em;
 }
 
-/* 首页"more"列表：标题之间加 ◆ 菱形分隔。
-   h2 自身 mr3（1rem 右间距）已替换为 mr0，标题间无自带间距，
-   全部间距由 ::before 的对称外边距控制，使 ◆ 完美居中于两个标题之间。
-   用 :not(:first-child)::before：首项前不显示，折行时 ◆ 落到下一行行首。 */
-section.more-posts h2:not(:first-child)::before {
-  content: "\25C6";        /* ◆ 菱形（U+25C6） */
-  color: #1a4d8c;          /* 宝石蓝 */
-  font-size: .85em;        /* 略小于标题 */
+/* 首页"more"列表：3 列网格（标题 | ◆ | 标题），每对标题之间一个菱形。
+   ◆ 是真实 <span class="more-sep">，由模板插入在偶数索引标题之后，
+   确定性地只出现在两个标题"中间"，永不落到行首或行尾。 */
+.more-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;  /* 标题 | 菱形 | 标题 */
+  align-items: center;                  /* ◆ 垂直居中于较高的标题 */
+  row-gap: 1rem;                        /* 两行之间的垂直间距 */
+}
+.more-title {
+  margin: 0;                            /* 间距由网格控制，去掉 h2 默认外边距 */
+}
+.more-sep {
+  color: #1a4d8c;                       /* 宝石蓝 */
+  font-size: .9em;
   font-weight: 400;
-  margin: 0 .5rem;         /* ◆ 两侧等距，纯居中于标题之间 */
+  padding: 0 .6rem;                     /* ◆ 两侧等距，居中于标题之间 */
+  text-align: center;
+  user-select: none;
+}
+/* 窄屏（<768px）：改为单列堆叠，◆ 垂直居中于上下两个标题之间 */
+@media (max-width: 767px) {
+  .more-grid { grid-template-columns: 1fr; }
+  .more-sep { padding: .4rem 0; }
 }
 
 /* ===== 首页欢迎词容器：宽度与文章页(article.post)保持一致 ===== */
