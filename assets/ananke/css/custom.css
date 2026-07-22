@@ -104,11 +104,13 @@ h3 .en {
   font-size: 1.4em;
 }
 
-/* 首页"more"列表：同行标题之间加蓝色分隔圆点（末项不加） */
+/* 首页"more"列表：同行标题之间加蓝色分隔符（◆ 菱形，末项不加） */
 section.more-posts h2:not(:last-child)::after {
-  content: "\2022";        /* • 圆点 */
+  content: "\25C6";        /* ◆ 菱形分隔符（U+25C6），比圆点更醒目 */
   color: #1a4d8c;          /* 宝石蓝，与 .en 同色系 */
-  margin-left: .4rem;
+  margin-left: .5rem;
+  margin-right: .1rem;
+  font-size: 1.1em;
   font-weight: 400;
 }
 
