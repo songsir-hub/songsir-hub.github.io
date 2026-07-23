@@ -1,0 +1,51 @@
+name: Notify search engines
+
+on:
+  workflow_run:
+    workflows: ["Deploy Hugo site to Pages"]
+    types: [completed]
+  workflow_dispatch:
+
+jobs:
+  notify:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build site (regenerate sitemap)
+        run: hugo --minify
+
+      - name: Collect URLs
+        id: collect
+        run: grep -oP '<loc>\K[^<]+' public/sitemap.xml > urls.txt
+
+      - name: Push to Baidu (主动推送 API)
+        if: ${{ secrets.BAIDU_PUSH_TOKEN != '' }}
+        continue-on-error: true
+        run: |
+          curl -s -H 'Content-Type: text/plain' --data-binary @urls.txt "http://data.zz.baidu.com/urls?site=songsir-hub.github.io&token=${{ secrets.BAIDU_PUSH_TOKEN }}"
+
+      - name: Push to Bing IndexNow
+        if: ${{ secrets.INDEXNOW_KEY != '' }}
+        continue-on-error: true
+        run: |
+          export KEY="${{ secrets.INDEXNOW_KEY }}"
+          python3 - <<'PY'
+          import json, os
+          lines = [l.strip() for l in open('urls.txt') if l.strip()]
+          body = {"host": "songsir-hub.github.io", "key": os.environ['KEY'], "urlList": lines}
+          open('body.json', 'w').write(json.dumps(body))
+          PY
+          curl -s -X POST "https://www.bing.com/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            --data @body.json
