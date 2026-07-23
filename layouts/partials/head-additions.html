@@ -2,6 +2,9 @@
 {{/* 自托管 Cormorant Garamond 字体（古典衬线，用于 .en 英文对照），不经资产管线 */}}
 <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}">
 
+{{/* 站点自定义样式：ananke 的 params.ananke.custom_css 机制在新版主题下无法正确加载 static/ 下的文件（resources.Get 只查 assets/ananke/css/，fallback 的 urls.RelURL 也写反），故在此显式引入，确保 custom.css 真正生效 */}}
+<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+
 {{/* 搜索引擎站点验证（.github.io 子域无法 DNS 验证，用 meta 标签）：把下方 content 替换为各平台真实 code 即可生效（hugo --minify 会删 HTML 注释，故验证标签必须保持为生效元素，不可用注释包裹）。 */}}
 <meta name="google-site-verification" content="GOOGLE_VERIFICATION_CODE">
 <meta name="msvalidate.01" content="BING_VERIFICATION_CODE">
