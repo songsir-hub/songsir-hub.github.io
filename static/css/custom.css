@@ -347,3 +347,15 @@
     font-size: 0.86rem;
   }
 }
+
+/* ============================================================
+   导航栏左上角站名品牌（SongSir'BLOG）
+   - 用户要求：微软雅黑 + 加粗 + 字号加大一号
+   - 高特异性选择器精准命中 nav 品牌链接，不影响菜单项
+   ============================================================ */
+nav > div.flex-l.center.items-center.justify-between > a {
+  font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", "Hiragino Sans GB", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 2rem !important;          /* 原 f3=1.5rem，加大一号 ≈ 2rem(32px) */
+  letter-spacing: 0.01em;
+}
