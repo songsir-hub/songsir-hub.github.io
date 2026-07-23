@@ -359,3 +359,92 @@ nav > div.flex-l.center.items-center.justify-between > a {
   font-size: 2rem !important;          /* 原 f3=1.5rem，加大一号 ≈ 2rem(32px) */
   letter-spacing: 0.01em;
 }
+
+/* ============================================================
+   导航栏三栏下拉菜单（科技博览 / 历史文化 / 健身养生）
+   - 桌面：hover 或键盘 focus 展开；移动端：点按触发（:focus-within）
+   - 仅作用于 .site-menu，不影响品牌链接与社交图标
+   ============================================================ */
+.site-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.site-menu > li.nav-item {
+  position: relative;
+}
+.site-menu > li.nav-item > .nav-link {
+  display: inline-block;
+  padding: 0.35rem 0.7rem;
+  color: rgba(255,255,255,0.90);
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.4;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.site-menu > li.nav-item.has-children > .nav-link::after {
+  content: "\25BE";          /* ▾ 下拉箭头 */
+  font-size: 0.7em;
+  margin-left: 0.3em;
+  opacity: 0.85;
+}
+.site-menu > li.nav-item > .nav-link:hover {
+  color: #fff;
+}
+
+/* 下拉面板 */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 12rem;
+  margin: 0;
+  padding: 0.4rem 0;
+  list-style: none;
+  background: #262626;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.40);
+  display: none;
+  z-index: 60;
+}
+.site-menu > li.nav-item:hover > .dropdown,
+.site-menu > li.nav-item:focus-within > .dropdown {
+  display: block;
+}
+.dropdown li a.dropdown-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: rgba(255,255,255,0.88);
+  text-decoration: none;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+.dropdown li a.dropdown-link:hover {
+  background: rgba(255,255,255,0.10);
+  color: #fff;
+}
+
+/* 移动端：下拉改为静态展开块，避免绝对定位溢出 */
+@media (max-width: 768px) {
+  .dropdown {
+    position: static;
+    display: none;
+    min-width: 0;
+    box-shadow: none;
+    background: transparent;
+    padding-left: 1rem;
+  }
+  .site-menu > li.nav-item:hover > .dropdown,
+  .site-menu > li.nav-item:focus-within > .dropdown {
+    display: block;
+  }
+  .dropdown li a.dropdown-link {
+    color: rgba(255,255,255,0.90);
+    padding: 0.4rem 0.7rem;
+  }
+}
+

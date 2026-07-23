@@ -76,34 +76,88 @@ paginate = 10
   icon = 'rss'
 
 # ============================================================
-# 菜单导航
+# 菜单导航（三栏下拉：科技博览 / 历史文化 / 健身养生）
+# - 原“首页/文章/分类”由品牌链接 + 三栏下拉替代
+# - 子菜单 parent 指向对应分类页 /categories/<分类名>/
+# - 健身养生目前无文章，暂放占位子菜单，待用户补充
 # ============================================================
 [[menus.main]]
-  name = '首页'
-  pageRef = '/'
+  name = '科技博览'
   weight = 10
 
 [[menus.main]]
-  name = '文章'
-  pageRef = '/posts'
+  name = '技术笔记'
+  parent = '科技博览'
+  url = '/categories/技术笔记/'
+  weight = 11
+
+[[menus.main]]
+  name = 'AI工具'
+  parent = '科技博览'
+  url = '/categories/AI工具/'
+  weight = 12
+
+[[menus.main]]
+  name = '前沿科技'
+  parent = '科技博览'
+  url = '/categories/前沿科技/'
+  weight = 13
+
+[[menus.main]]
+  name = '历史文化'
   weight = 20
 
 [[menus.main]]
-  name = '分类'
-  pageRef = '/categories'
+  name = '先秦莱夷文化研究'
+  parent = '历史文化'
+  url = '/categories/先秦莱夷文化研究/'
+  weight = 21
+
+[[menus.main]]
+  name = '莱夷文化研究'
+  parent = '历史文化'
+  url = '/categories/莱夷文化研究/'
+  weight = 22
+
+[[menus.main]]
+  name = '历史研究'
+  parent = '历史文化'
+  url = '/categories/历史研究/'
+  weight = 23
+
+[[menus.main]]
+  name = '传统文化'
+  parent = '历史文化'
+  url = '/categories/传统文化/'
+  weight = 24
+
+[[menus.main]]
+  name = '古文鉴赏'
+  parent = '历史文化'
+  url = '/categories/古文鉴赏/'
+  weight = 25
+
+[[menus.main]]
+  name = '健身养生'
   weight = 30
 
 [[menus.main]]
+  name = '（敬请期待）'
+  parent = '健身养生'
+  url = '/categories/健身养生/'
+  weight = 31
+
+[[menus.main]]
   name = '标签'
-  pageRef = '/tags'
+  url = '/tags/'
   weight = 40
 
 [[menus.main]]
   name = '搜索'
-  pageRef = '/search'
+  url = '/search/'
   weight = 45
 
 [[menus.main]]
   name = '关于'
-  pageRef = '/about'
+  url = '/about/'
   weight = 50
