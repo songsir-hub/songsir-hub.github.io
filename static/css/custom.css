@@ -303,3 +303,47 @@
 .post-content h6 {
   text-align: center;
 }
+
+/* ============================================================
+   正文表格样式（带边框、表头底色，古典水墨棕调）
+   - 解决 Ananke 默认表格无边框线、不直观的问题
+   ============================================================ */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 32px 0;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: #1a1208;
+  background: #fffdf7;
+  border: 1px solid #b8956a;
+  box-shadow: 0 2px 10px rgba(90,60,20,0.08);
+}
+.post-content thead th {
+  background: #efe3cb;
+  color: #1a1208;
+  font-weight: 700;
+  text-align: left;
+  border: 1px solid #b8956a;
+  padding: 11px 13px;
+  letter-spacing: 0.02em;
+}
+.post-content tbody td {
+  border: 1px solid #b8956a;
+  padding: 11px 13px;
+  vertical-align: top;
+}
+.post-content tbody tr:nth-child(even) {
+  background: #faf4e6;
+}
+.post-content tbody tr:hover {
+  background: #f3e7cc;
+}
+/* 移动端：表格可横向滚动，避免被挤压换行到难以阅读 */
+@media (max-width: 760px) {
+  .post-content table {
+    display: block;
+    overflow-x: auto;
+    font-size: 0.86rem;
+  }
+}
