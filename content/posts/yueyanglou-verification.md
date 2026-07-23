@@ -4,7 +4,7 @@ date = '2022-03-19T11:17:00+08:00'
 draft = false
 title = '《岳阳楼记》版本考证与赏析'
 description = '《岳阳楼记》原稿尽失，后世版本颇多异文。本文从"岳/嶽"、"历/曆"、"跃/耀"、"偕/皆"、"乎/欤"五个字词考证入手，辨析历代书法家书写差异，还原范仲淹原意。'
-categories = ['历史研究']
+categories = ["古文品鉴"]
 tags = ['岳阳楼记', '范仲淹', '版本考证', '书法', '文言文']
 featured_image = '/images/headers/yueyanglou-verification.png'
 +++

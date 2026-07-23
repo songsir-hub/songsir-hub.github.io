@@ -4,7 +4,7 @@ title = "未来全球AI应用展望"
 date = '2026-07-23T12:30:00+08:00'
 draft = false
 description = "基于2026年北京智源大会、WAIC 2026 两场大会，及 NVIDIA 黄仁勋（GTC 2026）、马斯克（xAI/Tesla）等全球顶级 AI 领袖的公开演讲，梳理 AI 安全与可信、World Model、具身智能与 Agent 生态、混合式 AI、算力基础设施五大方向，及医疗、金融、制造、出行、内容创作等行业落地前景。已逐条标注原始出处。"
-categories = ["前沿科技"]
+categories = ["AI应用"]
 tags = ["人工智能", "AI", "黄仁勋", "马斯克", "World Model", "具身智能", "产业观察", "前沿科技"]
 +++
 

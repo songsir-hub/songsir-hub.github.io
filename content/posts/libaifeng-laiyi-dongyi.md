@@ -5,7 +5,7 @@ draft = false
 author = '松朗'
 featured_image = '/images/headers/libaifeng-laiyi-dongyi.png'
 description = '系统辑录李白凤《东夷杂考》关于东夷、莱夷与莱国的论述，并专设“论断争议述评”，就其与两莱论相关之处加以辨析与支撑。'
-categories = ['历史研究']
+categories = ["东夷莱夷"]
 tags = ['莱国', '莱夷', '东夷', '李白凤', '先秦史', '学术述评']
 +++
 

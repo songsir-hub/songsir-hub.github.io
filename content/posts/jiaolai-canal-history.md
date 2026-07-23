@@ -3,7 +3,7 @@ title = "纵贯黄渤海，胶莱一线牵——七百年的运河记忆"
 description = "世界上最早的跨海运河"
 date = 2026-07-06T22:00:00+08:00
 draft = false
-categories = ["莱夷文化研究"]
+categories = ["东夷莱夷"]
 tags = ["胶莱河", "运河", "胶东", "水利史", "莱夷文化"]
 author = '松朗'
 +++

@@ -4,7 +4,7 @@ date = '2022-03-24T15:44:00+08:00'
 draft = false
 title = '岳阳楼记（简繁体考证版含方明朗诵）'
 description = '岳阳楼记简繁体考证版，附著名播音员方明深情朗诵音频及明代文徵明书卷欣赏'
-categories = ['古文鉴赏']
+categories = ["古文品鉴"]
 tags = ['岳阳楼记', '范仲淹', '方明朗诵', '文徵明', '简繁体']
 featured_image = '/images/yueyang-lou-ji/yueyanglou-header.png'
 +++

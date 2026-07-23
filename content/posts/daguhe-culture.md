@@ -4,7 +4,7 @@ date = '2026-03-09T06:00:00+08:00'
 draft = false
 title = '大沽河流域文化概述'
 description = '大沽河古称"姑水"，是胶东半岛最大的独立水系，也是青岛人心中的"母亲河"。本文从地理、历史、民俗、物产等多维度，梳理大沽河流域数千年东夷文明与齐鲁文化的深厚底蕴。'
-categories = ['历史研究']
+categories = ["沽河文化"]
 tags = ['大沽河', '胶东', '东夷', '莱夷', '莱西', '齐文化', '历史地理']
 featured_image = '/images/headers/daguhe-culture.png'
 +++

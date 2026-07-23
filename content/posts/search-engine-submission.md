@@ -4,7 +4,7 @@ draft = false
 title = '让博客被搜索引擎收录：Bing / Google / 百度 实操指南'
 description = '手把手教你把 Hugo + GitHub Pages 搭建的博客提交到三大搜索引擎，含 github.io 子域名的特殊限制与避坑要点。'
 author = '松朗'
-categories = ['技术笔记']
+categories = ["软件技巧"]
 tags = ['SEO', 'Hugo', 'GitHub Pages', '博客建设', '教程']
 +++
 

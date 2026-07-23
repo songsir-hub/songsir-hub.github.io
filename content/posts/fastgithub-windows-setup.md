@@ -3,7 +3,7 @@ author = '松朗'
 title = "在 Windows 上部署 FastGithub 踩坑记录"
 date = '2026-07-09T19:30:00+08:00'
 draft = false
-categories = ["技术笔记"]
+categories = ["软件技巧"]
 tags = ["Windows", "FastGithub", "GitHub", "网络加速", "排障"]
 +++
 
