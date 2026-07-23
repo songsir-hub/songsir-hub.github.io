@@ -87,6 +87,13 @@ h3 .en {
 .zh {
   font-size: 1.1em;
 }
+/* 强调绿（#137a52）：用于首页欢迎词与关于页笔名。
+   必须用 class 而非内联 style —— 部署链路的 HTML 压缩/净化会在 H2 标题语境下
+   剥离 style 属性，但会保留 class 属性（参考 .zh/.en 在线上存活）。
+   加 !important 以稳覆盖 .en / h2 .en 的宝石蓝。 */
+.accent-green {
+  color: #137a52 !important;
+}
 
 /* ===== 首页欢迎词正文：楷体（曾于标题协调重构时被误删，现恢复）===== */
 .is-home main article p {

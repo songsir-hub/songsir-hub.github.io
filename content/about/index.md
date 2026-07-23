@@ -4,7 +4,7 @@ draft = false
 title = '关于 / About'
 +++
 
-## <span class="zh">你好，我是松朗（松风月朗）👋</span><span class="en">Hello, I'm SongSir 👋</span>
+## <span class="zh">你好，我是</span><span class="accent-green">松朗（松风月朗）</span><span class="zh">👋</span><br>Hello, I'm <span class="accent-green">SongSir</span> 👋
 
 <span class="zh">欢迎来到我的个人博客。这里是我记录思考、沉淀知识的地方。</span><span class="en">Welcome to my personal blog. This is where I record my thoughts and consolidate knowledge.</span>
 
@@ -27,3 +27,4 @@ title = '关于 / About'
 - Email：<a href="mailto:sonview@agent.qq.com">sonview@agent.qq.com</a>
 
 <span class="zh">感谢你的到来，希望这里的内容对你有所启发。</span><span class="en">Thanks for visiting — I hope the content here inspires you.</span>
+<!-- 笔名改色 #137a52（顶层 accent-green span，避免标题内嵌套 span 被部署链路剥离） -->
