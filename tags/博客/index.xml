@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>博客 on SongSir'BLOG</title><link>https://songsir_1_0.gitee.io/songsir-hub.github.io/tags/%E5%8D%9A%E5%AE%A2/</link><description>Recent content in 博客 on SongSir'BLOG</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 07 Jun 2026 22:12:34 +0800</lastBuildDate><atom:link href="https://songsir_1_0.gitee.io/songsir-hub.github.io/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml"/><item><title>博客开张：记录的意义</title><link>https://songsir_1_0.gitee.io/songsir-hub.github.io/posts/hello-world/</link><pubDate>Sun, 07 Jun 2026 22:12:34 +0800</pubDate><guid>https://songsir_1_0.gitee.io/songsir-hub.github.io/posts/hello-world/</guid><description>&lt;h2 id="为什么要写博客"&gt;为什么要写博客？&lt;/h2&gt;
+&lt;p&gt;每隔几年，我都会重新思考这个问题。&lt;/p&gt;
+&lt;p&gt;不是因为想成为&amp;quot;博主&amp;quot;，也不是为了流量。而是越来越觉得，&lt;strong&gt;写作是最诚实的思考方式&lt;/strong&gt;。脑子里的想法总是模糊的，只有落成文字，才知道自己到底想没想清楚。&lt;/p&gt;
+&lt;h2 id="这个博客会写什么"&gt;这个博客会写什么&lt;/h2&gt;
+&lt;p&gt;大致三个方向：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一、AI 与工具&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这两年 AI 工具爆炸式涌现，我算是深度用户。从 API 配置到工作流搭建，踩了不少坑，也摸出了一些门道。这些经验值得记下来——一来备忘，二来或许对别人有用。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;二、历史研究&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我对先秦史有长期兴趣，特别是胶东地区的莱国文化。这是一个冷门的领域，资料零散，但正因如此，独立思考的空间反而更大。我会把研究笔记和假说陆续整理在这里。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;三、生活杂记&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;读书感想、旅行见闻、日常观察。没有什么高深的主题，就是随手记录。&lt;/p&gt;
+&lt;h2 id="技术说明"&gt;技术说明&lt;/h2&gt;
+&lt;p&gt;这个博客用 &lt;a href="https://gohugo.io/"&gt;Hugo&lt;/a&gt; 搭建，主题是 &lt;a href="https://github.com/gohugo-ananke/ananke"&gt;Ananke&lt;/a&gt;，部署在 GitHub Pages 上。从零开始折腾下来，整个过程大约花了半天——感谢现代工具链让建站变得如此简单。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;那就从这里开始吧。&lt;/p&gt;</description></item></channel></rss>

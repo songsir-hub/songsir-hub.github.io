@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 460" font-family="-apple-system, Segoe UI, Roboto, sans-serif">
+  <rect width="680" height="460" fill="#ffffff"/>
+  <text x="24" y="30" font-size="18" font-weight="700" fill="#111827">验证脚本四步判定（verify.bat）</text>
+
+  <rect x="24" y="50" width="632" height="70" rx="6" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+  <text x="40" y="74" font-size="13" font-weight="700" fill="#0f172a">[1] 系统代理</text>
+  <text x="40" y="96" font-size="11" fill="#475569">读取 HKCU\...\Internet Settings\ProxyServer</text>
+  <text x="300" y="76" font-size="11" fill="#16a34a">无 = 正常（透明模式不需要）</text>
+  <text x="300" y="98" font-size="11" fill="#e11d48">已设置 = 警告，运行 clear_proxy.bat</text>
+
+  <rect x="24" y="132" width="632" height="70" rx="6" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+  <text x="40" y="156" font-size="13" font-weight="700" fill="#0f172a">[2] 核心进程</text>
+  <text x="40" y="178" font-size="11" fill="#475569">tasklist | findstr fastgithub</text>
+  <text x="300" y="158" font-size="11" fill="#16a34a">FOUND = 引擎运行</text>
+  <text x="300" y="180" font-size="11" fill="#e11d48">NO = 右键运行 run-core.bat（管理员）</text>
+
+  <rect x="24" y="214" width="632" height="84" rx="6" fill="#fffbeb" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="40" y="238" font-size="13" font-weight="700" fill="#713f12">[3] 隧道生效判定（关键）</text>
+  <text x="40" y="260" font-size="11" fill="#475569">curl -sI https://github.com，检查响应头</text>
+  <text x="40" y="282" font-size="11" fill="#475569">findstr "Server: FastGithub"</text>
+  <text x="300" y="260" font-size="11" fill="#16a34a">命中 = 隧道确认（透明拦截真生效）</text>
+  <text x="300" y="282" font-size="11" fill="#e11d48">未命中 = 可能直连，未加速</text>
+
+  <rect x="24" y="310" width="632" height="70" rx="6" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+  <text x="40" y="334" font-size="13" font-weight="700" fill="#0f172a">[4] 证书信任</text>
+  <text x="40" y="356" font-size="11" fill="#475569">certutil -store -user Root | findstr FastGithub</text>
+  <text x="300" y="336" font-size="11" fill="#16a34a">TRUSTED = 浏览器不报红</text>
+  <text x="300" y="358" font-size="11" fill="#e11d48">未信任 = 运行 install_cert.bat（管理员）</text>
+
+  <text x="24" y="412" font-size="11" fill="#6b7280">判定顺序自上而下；[3] 的 Server 头是区分"真加速"与"直连假绿"的唯一可靠依据。</text>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 500" width="680" height="500">
+        <defs>
+          <linearGradient id="seaG1" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#c4dde8"/>
+            <stop offset="100%" stop-color="#8cbed4"/>
+          </linearGradient>
+          <linearGradient id="landG1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#d8e8c8"/>
+            <stop offset="100%" stop-color="#b0cc98"/>
+          </linearGradient>
+          <marker id="arrowG1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+            <path d="M0,0 L8,4 L0,8 Z" fill="#27ae60"/>
+          </marker>
+        </defs>
+        <rect width="680" height="500" fill="url(#seaG1)"/>
+        <!-- Shandong Peninsula landmass -->
+        <path d="M 0,140 L 100,138 Q 130,140 150,155 Q 175,170 195,188 L 215,198 Q 260,182 320,165 Q 400,150 480,145 Q 540,145 575,155 Q 605,168 615,188 Q 622,208 612,225 Q 590,240 555,246 Q 490,256 420,270 Q 340,290 280,315 Q 245,335 215,360 Q 195,375 175,385 Q 150,395 125,390 L 0,370 Z" fill="url(#landG1)" stroke="#7a9e5e" stroke-width="2"/>
+        <!-- Sea labels -->
+        <text x="330" y="70" font-size="20" fill="#2a6b8e" font-weight="bold" opacity="0.4" letter-spacing="8">渤 海</text>
+        <text x="380" y="480" font-size="20" fill="#2a6b8e" font-weight="bold" opacity="0.4" letter-spacing="8">黄 海</text>
+        <!-- Laizhou Bay -->
+        <text x="60" y="110" font-size="15" fill="#2a6b8e" font-weight="bold">莱州湾</text>
+        <text x="60" y="126" font-size="11" fill="#3a8fb0">（渤海）</text>
+        <!-- Jiaozhou Bay -->
+        <text x="55" y="430" font-size="15" fill="#2a6b8e" font-weight="bold">胶州湾</text>
+        <text x="55" y="446" font-size="11" fill="#3a8fb0">（黄海）</text>
+        <!-- The Canal -->
+        <line x1="215" y1="195" x2="215" y2="365" stroke="#c0392b" stroke-width="5"/>
+        <rect x="208" y="240" width="14" height="80" fill="#c0392b" opacity="0.12" rx="2"/>
+        <text x="195" y="285" font-size="13" fill="#c0392b" font-weight="bold" transform="rotate(-90, 195, 285)">胶莱运河 130km</text>
+        <!-- Dividing ridge -->
+        <circle cx="215" cy="280" r="7" fill="#e74c3c" stroke="#fff" stroke-width="2"/>
+        <text x="232" y="278" font-size="12" fill="#c0392b" font-weight="bold">分水岭</text>
+        <text x="232" y="292" font-size="9" fill="#c0392b">平度姚家</text>
+        <!-- Old shipping route (around peninsula) -->
+        <path d="M 215,365 Q 280,375 340,370 Q 400,360 460,340 Q 510,318 545,285 Q 575,250 590,215 Q 598,185 585,165 Q 560,148 520,145 Q 470,148 410,158 Q 350,170 300,185 Q 255,195 225,195" stroke="#e67e22" stroke-width="2.5" fill="none" stroke-dasharray="12,6"/>
+        <text x="490" y="400" font-size="12" fill="#e67e22" font-weight="bold">旧海运航线</text>
+        <text x="490" y="415" font-size="10" fill="#e67e22">绕行成山头 多走700余里</text>
+        <!-- Canal shortcut -->
+        <path d="M 145,280 L 200,280" stroke="#27ae60" stroke-width="2.5" fill="none" marker-end="url(#arrowG1)"/>
+        <text x="88" y="275" font-size="11" fill="#27ae60" font-weight="bold">运河捷径</text>
+        <text x="88" y="288" font-size="9" fill="#27ae60">直穿半岛</text>
+        <!-- Chengshanwei -->
+        <circle cx="615" cy="188" r="6" fill="#e74c3c" stroke="#fff" stroke-width="2"/>
+        <text x="625" y="183" font-size="12" fill="#c0392b" font-weight="bold">成山头</text>
+        <text x="625" y="196" font-size="9" fill="#c0392b">天尽头</text>
+        <text x="625" y="208" font-size="8" fill="#c0392b">暗礁 大雾</text>
+        <!-- Cities -->
+        <circle cx="215" cy="195" r="4" fill="#1a3c5e"/><text x="225" y="190" font-size="11" fill="#1a3c5e" font-weight="bold">莱州</text>
+        <circle cx="185" cy="240" r="3" fill="#555"/><text x="152" y="244" font-size="10" fill="#555">昌邑</text>
+        <circle cx="245" cy="330" r="3" fill="#555"/><text x="215" y="334" font-size="10" fill="#555">高密</text>
+        <circle cx="215" cy="365" r="4" fill="#1a3c5e"/><text x="225" y="372" font-size="11" fill="#1a3c5e" font-weight="bold">胶州</text>
+        <!-- Compass -->
+        <g transform="translate(620, 440)">
+          <circle r="22" fill="#fff" opacity="0.85" stroke="#aaa" stroke-width="1"/>
+          <path d="M 0,-16 L 5,0 L 0,16 L -5,0 Z" fill="#c0392b"/>
+          <path d="M 0,-16 L 5,0 L 0,0 Z" fill="#333"/>
+          <text x="0" y="-25" text-anchor="middle" font-size="11" fill="#555" font-weight="bold">N</text>
+        </g>
+        <!-- Legend -->
+        <rect x="370" y="408" width="230" height="82" rx="6" fill="#fff" opacity="0.88" stroke="#ccc" stroke-width="1"/>
+        <line x1="385" y1="428" x2="420" y2="428" stroke="#c0392b" stroke-width="4"/>
+        <text x="430" y="432" font-size="10" fill="#333">胶莱运河（捷径）</text>
+        <line x1="385" y1="448" x2="420" y2="448" stroke="#e67e22" stroke-width="2.5" stroke-dasharray="12,6"/>
+        <text x="430" y="452" font-size="10" fill="#333">旧海运航线（绕行）</text>
+        <circle cx="402" cy="472" r="5" fill="#e74c3c" stroke="#fff" stroke-width="2"/>
+        <text x="430" y="476" font-size="10" fill="#333">成山头（航运险段）</text>
+        <!-- Title -->
+        <text x="340" y="28" text-anchor="middle" font-size="16" fill="#1a3c5e" font-weight="bold">山东半岛与胶莱运河地理位置图</text>
+        <text x="340" y="46" text-anchor="middle" font-size="11" fill="#888">运河横穿半岛最窄处 南连胶州湾（黄海） 北接莱州湾（渤海） 全长130公里</text>
+      </svg>
