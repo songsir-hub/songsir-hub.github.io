@@ -387,12 +387,6 @@ nav > div.flex-l.center.items-center.justify-between > a {
   white-space: nowrap;
   cursor: pointer;
 }
-.site-menu > li.nav-item.has-children > .nav-link::after {
-  content: "\25BE";          /* ▾ 下拉箭头 */
-  font-size: 0.7em;
-  margin-left: 0.3em;
-  opacity: 0.85;
-}
 .site-menu > li.nav-item > .nav-link:hover {
   color: #fff;
 }
