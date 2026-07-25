@@ -76,7 +76,7 @@ paginate = 10
   icon = 'rss'
 
 # ============================================================
-# 菜单导航（三栏下拉：科技博览 / 历史文化 / 健身养生）
+# 菜单导航（三栏下拉：科技博览 / 历史文化 / 生活百科）
 # - 原“首页/文章/分类”由品牌链接 + 三栏下拉替代
 # - 子菜单 parent 指向对应分类页 /categories/<分类名>/
 # - 各子栏目分类页为占位（content/categories/<名>/_index.md），
@@ -139,30 +139,30 @@ paginate = 10
   weight = 24
 
 [[menus.main]]
-  name = '健身养生'
+  name = '生活百科'
   weight = 30
 
 [[menus.main]]
   name = '经络穴位'
-  parent = '健身养生'
+  parent = '生活百科'
   url = '/categories/经络穴位/'
   weight = 31
 
 [[menus.main]]
   name = '对症下药'
-  parent = '健身养生'
+  parent = '生活百科'
   url = '/categories/对症下药/'
   weight = 32
 
 [[menus.main]]
   name = '食疗养生'
-  parent = '健身养生'
+  parent = '生活百科'
   url = '/categories/食疗养生/'
   weight = 33
 
 [[menus.main]]
   name = '理疗锻炼'
-  parent = '健身养生'
+  parent = '生活百科'
   url = '/categories/理疗锻炼/'
   weight = 34
 
