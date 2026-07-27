@@ -87,9 +87,9 @@ paginate = 10
   weight = 10
 
 [[menus.main]]
-  name = 'AI应用'
+  name = '科技前沿'
   parent = '科技博览'
-  url = '/categories/ai应用/'
+  url = '/categories/科技前沿/'
   weight = 11
 
 [[menus.main]]
