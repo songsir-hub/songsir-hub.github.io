@@ -95,7 +95,7 @@ paginate = 10
 [[menus.main]]
   name = 'IT应用'
   parent = '科技博览'
-  url = '/categories/IT应用/'
+  url = '/categories/it应用/'
   weight = 12
 
 [[menus.main]]
