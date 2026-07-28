@@ -144,25 +144,25 @@ paginate = 10
 
 [[menus.main]]
   name = '经络穴位'
-  parent = '生活百科'
+  parent = '品味生活'
   url = '/categories/经络穴位/'
   weight = 31
 
 [[menus.main]]
   name = '对症下药'
-  parent = '生活百科'
+  parent = '品味生活'
   url = '/categories/对症下药/'
   weight = 32
 
 [[menus.main]]
   name = '食疗养生'
-  parent = '生活百科'
+  parent = '品味生活'
   url = '/categories/食疗养生/'
   weight = 33
 
 [[menus.main]]
   name = '生活百科'
-  parent = '生活百科'
+  parent = '品味生活'
   url = '/categories/生活百科/'
   weight = 34
 
