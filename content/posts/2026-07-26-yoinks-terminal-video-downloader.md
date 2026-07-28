@@ -4,7 +4,7 @@ date = '2026-07-26T17:30:00+08:00'
 draft = false
 title = '用 yoinks 在终端里下载视频：简介、用法与安装踩坑记'
 description = 'yoinks 是一款终端交互式视频下载工具，支持 1800+ 站点。本文介绍它的特点、基本用法，以及我在托管 Node 环境下安装时遇到的 safe-delete 报错与解决办法。'
-categories = ["软件技巧"]
+categories = ["IT应用"]
 tags = ['yoinks', '视频下载', '终端工具', 'npm', '教程']
 +++
 

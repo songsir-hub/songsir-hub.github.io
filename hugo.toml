@@ -93,21 +93,21 @@ paginate = 10
   weight = 11
 
 [[menus.main]]
-  name = '软件技巧'
+  name = 'IT应用'
   parent = '科技博览'
-  url = '/categories/软件技巧/'
+  url = '/categories/IT应用/'
   weight = 12
 
 [[menus.main]]
-  name = '电子信息'
+  name = '科技述评'
   parent = '科技博览'
-  url = '/categories/电子信息/'
+  url = '/categories/科技述评/'
   weight = 13
 
 [[menus.main]]
-  name = '硬件外设'
+  name = '科创万象'
   parent = '科技博览'
-  url = '/categories/硬件外设/'
+  url = '/categories/科创万象/'
   weight = 14
 
 [[menus.main]]
