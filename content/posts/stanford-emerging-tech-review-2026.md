@@ -7,7 +7,7 @@ tags = ["斯坦福", "新兴技术", "人工智能", "量子技术", "半导体"
 categories = ["科技前沿"]
 +++
 
-斯坦福大学工程学院、胡佛研究所与以人为本 AI 研究院（HAI）联合发布了《斯坦福新兴技术评论 2026》（Stanford Emerging Technology Review 2026），这是斯坦福史上首次三大机构协作的年度报告（第三版，228 页），三位主席为 Condoleezza Rice、Jennifer Widom 与 Amy Zegart，主编 Herbert S. Lin。报告旨在为公私部门决策者提供关于十大新兴技术的“决策入门课”，并强调：这十个技术领域并非孤立，而是在**融合（convergence）**中相互交织、彼此加速——这正是 2026 年技术图景最出人意料也最关键的特征。
+斯坦福大学工程学院、胡佛研究所与以人为本 AI 研究院（HAI）联合发布了《斯坦福新兴技术评论 2026》（Stanford Emerging Technology Review 2026），这是斯坦福史上首次三大机构协作的年度报告（第三版，228 页），三位主席为 Condoleezza Rice、Jennifer Widom 与 Amy Zegart，主编 Herbert S. Lin。报告旨在为公私部门决策者提供关于十大新兴技术的“决策入门课”，并强调：这十个技术领域并非孤立，而是在<strong>融合（convergence）</strong>中相互交织、彼此加速——这正是 2026 年技术图景最出人意料也最关键的特征。
 
 下文按官方原文，逐专题给出**英文要点（引用）**与**中文对照翻译**，并附每专题的**政策与安全含义**解读。所有英文要点均引自 setr.stanford.edu 官方章节，每节末附原始出处链接；配图由 AI 根据各技术概念生成，仅供示意。
 
