@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" width="680" height="360">
+        <rect width="680" height="360" fill="#faf8f2"/>
+        <text x="340" y="28" text-anchor="middle" font-size="15" fill="#1a3c5e" font-weight="bold">胶莱河七百年兴衰时间轴</text>
+        <!-- Period background bands -->
+        <rect x="60" y="80" width="120" height="180" fill="#c0392b" opacity="0.08"/>
+        <text x="120" y="75" text-anchor="middle" font-size="10" fill="#c0392b" font-weight="bold">元代（辉煌）</text>
+        <rect x="180" y="80" width="160" height="180" fill="#e67e22" opacity="0.08"/>
+        <text x="260" y="75" text-anchor="middle" font-size="10" fill="#e67e22" font-weight="bold">明代（短暂复兴）</text>
+        <rect x="340" y="80" width="210" height="180" fill="#888" opacity="0.08"/>
+        <text x="445" y="75" text-anchor="middle" font-size="10" fill="#888" font-weight="bold">清代至民国（废弃）</text>
+        <rect x="550" y="80" width="80" height="180" fill="#27ae60" opacity="0.08"/>
+        <text x="590" y="75" text-anchor="middle" font-size="10" fill="#27ae60" font-weight="bold">现代（新生）</text>
+        <!-- Timeline axis -->
+        <line x1="60" y1="200" x2="630" y2="200" stroke="#555" stroke-width="2"/>
+        <!-- Prosperity curve -->
+        <path d="M 60,200 Q 80,180 100,150 Q 120,120 140,110 Q 160,105 180,115 Q 200,130 220,140 Q 240,150 260,145 Q 280,140 300,155 Q 320,175 340,195 Q 360,210 380,215 Q 400,218 420,220 Q 440,222 460,225 Q 480,228 500,230 Q 520,228 540,225 Q 560,220 580,210 Q 600,195 620,185" stroke="#1a3c5e" stroke-width="2.5" fill="none"/>
+        <path d="M 60,200 Q 80,180 100,150 Q 120,120 140,110 Q 160,105 180,115 Q 200,130 220,140 Q 240,150 260,145 Q 280,140 300,155 Q 320,175 340,195 Q 360,210 380,215 Q 400,218 420,220 Q 440,222 460,225 Q 480,228 500,230 Q 520,228 540,225 Q 560,220 580,210 Q 600,195 620,185 L 620,200 L 60,200 Z" fill="#1a3c5e" opacity="0.08"/>
+        <!-- Key events -->
+        <g>
+          <circle cx="80" cy="200" r="4" fill="#c0392b" stroke="#fff" stroke-width="1.5"/>
+          <line x1="80" y1="196" x2="80" y2="170" stroke="#c0392b" stroke-width="1"/>
+          <text x="80" y="160" text-anchor="middle" font-size="8" fill="#c0392b" font-weight="bold">1280</text>
+          <text x="80" y="150" text-anchor="middle" font-size="7" fill="#c0392b">开工</text>
+        </g>
+        <g>
+          <circle cx="120" cy="200" r="4" fill="#c0392b" stroke="#fff" stroke-width="1.5"/>
+          <line x1="120" y1="196" x2="120" y2="120" stroke="#c0392b" stroke-width="1"/>
+          <text x="120" y="110" text-anchor="middle" font-size="8" fill="#c0392b" font-weight="bold">1282</text>
+          <text x="120" y="100" text-anchor="middle" font-size="7" fill="#c0392b">通航</text>
+        </g>
+        <g>
+          <circle cx="150" cy="200" r="4" fill="#c0392b" stroke="#fff" stroke-width="1.5"/>
+          <line x1="150" y1="196" x2="150" y2="100" stroke="#c0392b" stroke-width="1"/>
+          <text x="150" y="90" text-anchor="middle" font-size="8" fill="#c0392b" font-weight="bold">1285</text>
+          <text x="150" y="80" text-anchor="middle" font-size="7" fill="#c0392b">鼎盛 60万石</text>
+        </g>
+        <g>
+          <circle cx="180" cy="200" r="4" fill="#888" stroke="#fff" stroke-width="1.5"/>
+          <line x1="180" y1="204" x2="180" y2="240" stroke="#888" stroke-width="1"/>
+          <text x="180" y="252" text-anchor="middle" font-size="8" fill="#555" font-weight="bold">1289</text>
+          <text x="180" y="262" text-anchor="middle" font-size="7" fill="#555">首次废弃</text>
+        </g>
+        <g>
+          <circle cx="240" cy="200" r="4" fill="#e67e22" stroke="#fff" stroke-width="1.5"/>
+          <line x1="240" y1="204" x2="240" y2="240" stroke="#e67e22" stroke-width="1"/>
+          <text x="240" y="252" text-anchor="middle" font-size="8" fill="#e67e22" font-weight="bold">1540</text>
+          <text x="240" y="262" text-anchor="middle" font-size="7" fill="#e67e22">王献 焚石沃水</text>
+        </g>
+        <g>
+          <circle cx="290" cy="200" r="4" fill="#e67e22" stroke="#fff" stroke-width="1.5"/>
+          <line x1="290" y1="204" x2="290" y2="250" stroke="#e67e22" stroke-width="1"/>
+          <text x="290" y="262" text-anchor="middle" font-size="8" fill="#e67e22" font-weight="bold">1555</text>
+          <text x="290" y="272" text-anchor="middle" font-size="7" fill="#e67e22">短暂复航</text>
+        </g>
+        <g>
+          <circle cx="340" cy="200" r="4" fill="#888" stroke="#fff" stroke-width="1.5"/>
+          <line x1="340" y1="204" x2="340" y2="260" stroke="#888" stroke-width="1"/>
+          <text x="340" y="272" text-anchor="middle" font-size="8" fill="#555" font-weight="bold">1644</text>
+          <text x="340" y="282" text-anchor="middle" font-size="7" fill="#555">明末再废</text>
+        </g>
+        <g>
+          <circle cx="420" cy="200" r="4" fill="#888" stroke="#fff" stroke-width="1.5"/>
+          <line x1="420" y1="204" x2="420" y2="260" stroke="#888" stroke-width="1"/>
+          <text x="420" y="272" text-anchor="middle" font-size="8" fill="#555" font-weight="bold">1726</text>
+          <text x="420" y="282" text-anchor="middle" font-size="7" fill="#555">永不疏浚</text>
+        </g>
+        <g>
+          <circle cx="500" cy="200" r="4" fill="#27ae60" stroke="#fff" stroke-width="1.5"/>
+          <line x1="500" y1="204" x2="500" y2="260" stroke="#27ae60" stroke-width="1"/>
+          <text x="500" y="272" text-anchor="middle" font-size="8" fill="#27ae60" font-weight="bold">1949</text>
+          <text x="500" y="282" text-anchor="middle" font-size="7" fill="#27ae60">功能重塑</text>
+        </g>
+        <g>
+          <circle cx="560" cy="200" r="4" fill="#27ae60" stroke="#fff" stroke-width="1.5"/>
+          <line x1="560" y1="196" x2="560" y2="170" stroke="#27ae60" stroke-width="1"/>
+          <text x="560" y="160" text-anchor="middle" font-size="8" fill="#27ae60" font-weight="bold">2006</text>
+          <text x="560" y="150" text-anchor="middle" font-size="7" fill="#27ae60">人工海河构想</text>
+        </g>
+        <g>
+          <circle cx="620" cy="200" r="4" fill="#27ae60" stroke="#fff" stroke-width="1.5"/>
+          <line x1="620" y1="196" x2="620" y2="170" stroke="#27ae60" stroke-width="1"/>
+          <text x="620" y="160" text-anchor="middle" font-size="8" fill="#27ae60" font-weight="bold">2026</text>
+          <text x="620" y="150" text-anchor="middle" font-size="7" fill="#27ae60">生态 幸福河湖</text>
+        </g>
+        <!-- Legend -->
+        <text x="60" y="320" font-size="10" fill="#888">曲线表示胶莱河兴衰程度（越高越繁盛）</text>
+        <rect x="380" y="310" width="250" height="30" rx="4" fill="#fff" opacity="0.7" stroke="#ddd"/>
+        <circle cx="395" cy="325" r="4" fill="#c0392b"/><text x="405" y="329" font-size="9" fill="#333">兴盛</text>
+        <circle cx="445" cy="325" r="4" fill="#e67e22"/><text x="455" y="329" font-size="9" fill="#333">复兴</text>
+        <circle cx="495" cy="325" r="4" fill="#888"/><text x="505" y="329" font-size="9" fill="#333">废弃</text>
+        <circle cx="545" cy="325" r="4" fill="#27ae60"/><text x="555" y="329" font-size="9" fill="#333">新生</text>
+      </svg>

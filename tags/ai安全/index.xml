@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI安全 on SongSir'BLOG</title><link>https://songsir_1_0.gitee.io/songsir-hub.github.io/tags/ai%E5%AE%89%E5%85%A8/</link><description>Recent content in AI安全 on SongSir'BLOG</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 27 Jul 2026 22:20:00 +0800</lastBuildDate><atom:link href="https://songsir_1_0.gitee.io/songsir-hub.github.io/tags/ai%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>Gartner 2026 十大战略技术趋势：中英对照深度解读与分析</title><link>https://songsir_1_0.gitee.io/songsir-hub.github.io/posts/gartner-2026-top-strategic-tech-trends/</link><pubDate>Mon, 27 Jul 2026 22:20:00 +0800</pubDate><guid>https://songsir_1_0.gitee.io/songsir-hub.github.io/posts/gartner-2026-top-strategic-tech-trends/</guid><description>&lt;p&gt;高德纳（Gartner, Inc.）是全球领先的信息技术研究与顾问机构，每年年底发布的“十大战略技术趋势”被企业的 CIO、CTO 与董事会当作下一年 IT 投资与战略规划的“风向标”。2026 年的十大趋势由分布全球的资深分析师团队基于海量客户咨询与行业数据整理而成，强调在 AI 驱动、高度互联的世界中，这些趋势是企业建立弹性基础、编排智能系统、保护企业价值的必需手段，而非单纯的新兴技术清单。&lt;/p&gt;
+&lt;p&gt;报告将十大趋势归为三大战略主题：&lt;strong&gt;架构师（The Architect）&lt;/strong&gt;——构建安全、可扩展的 AI 与数字化基础；&lt;strong&gt;综合者（The Synthesist）&lt;/strong&gt;——编排专用模型、智能体与物理-数字系统；&lt;strong&gt;先锋者（The Vanguard）&lt;/strong&gt;——保护声誉、确保合规、维护信任。下文逐趋势给出英文原文定义与中文对照，并附“大白话”“深度解读”“关键预测”与“战略建议”，让非技术背景的读者也能读懂并判断其与自身/企业的关系。&lt;/p&gt;
+&lt;h2 id="01-ai-超级计算平台--ai-supercomputing-platforms"&gt;01. AI 超级计算平台 · AI Supercomputing Platforms&lt;/h2&gt;
+&lt;figure&gt;&lt;img src="https://songsir_1_0.gitee.io/songsir-hub.github.io/images/gartner2026-01.png"
+			alt="图01 AI 超级计算平台概念示意（AI 生成）"&gt;&lt;figcaption&gt;
+			&lt;p&gt;图01 AI 超级计算平台概念示意（AI 生成）&lt;/p&gt;
+		&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;English（官方定义）&lt;/th&gt;
+					&lt;th&gt;中文对照&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Integrate CPUs, GPUs, AI ASICs, neuromorphic and alternative computing paradigms to orchestrate complex workloads for machine learning, simulation, and analytics.&lt;/td&gt;
+					&lt;td&gt;整合 CPU、GPU、AI ASIC、神经形态和替代性计算范式，以编排复杂工作负载，支撑机器学习、仿真和分析等数据密集型任务。&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;大白话：&lt;/strong&gt; 训练 AI 就像同时用多种厨房设备做大餐——把 CPU、GPU、专用芯片统一调度，AI 才能算得又快又省。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;深度解读：&lt;/strong&gt; 不再是简单的 GPU 堆砌，而是跨架构的统一调度系统。如同交响乐团的不同乐器需要统一指挥，混合算力让&amp;quot;最佳资源匹配最佳任务&amp;quot;，理论性能可提升 3–5 倍。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;关键预测：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;到 2028 年，超过 40% 领先企业将采用混合计算架构，而目前这一比例仅为 8%。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;战略建议：&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

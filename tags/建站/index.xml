@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>建站 on SongSir'BLOG</title><link>https://songsir_1_0.gitee.io/songsir-hub.github.io/tags/%E5%BB%BA%E7%AB%99/</link><description>Recent content in 建站 on SongSir'BLOG</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 20 Jun 2026 09:00:00 +0800</lastBuildDate><atom:link href="https://songsir_1_0.gitee.io/songsir-hub.github.io/tags/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml"/><item><title>用 Hugo 搭建个人博客：从零到上线的完整记录</title><link>https://songsir_1_0.gitee.io/songsir-hub.github.io/posts/hugo-blog-setup/</link><pubDate>Sat, 20 Jun 2026 09:00:00 +0800</pubDate><guid>https://songsir_1_0.gitee.io/songsir-hub.github.io/posts/hugo-blog-setup/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
+&lt;p&gt;静态博客的方案有很多，我最终选择了 Hugo + GitHub Pages 的组合。理由很简单：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;完全免费&lt;/strong&gt;：GitHub Pages 提供免费托管，域名可选&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;极快构建&lt;/strong&gt;：Hugo 号称最快的静态站点生成器，毫秒级完成&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;版本控制&lt;/strong&gt;：博客内容用 Git 管理，永远不丢失&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Markdown 写作&lt;/strong&gt;：专注内容，无需操心排版&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这篇文章记录完整的搭建过程，包括我踩过的坑。&lt;/p&gt;
+&lt;h2 id="环境准备"&gt;环境准备&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;系统：&lt;/strong&gt; Windows 11&lt;br&gt;
+&lt;strong&gt;必需工具：&lt;/strong&gt; Git（从 &lt;a href="https://git-scm.com"&gt;git-scm.com&lt;/a&gt; 下载）&lt;/p&gt;
+&lt;h2 id="安装-hugo"&gt;安装 Hugo&lt;/h2&gt;
+&lt;p&gt;Hugo 提供 Extended 版本（支持 Sass/SCSS），建议安装这个版本。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;方式一：winget（网络条件好时推荐）&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="code-block"&gt;
+ &lt;button class="code-copy" type="button" hidden aria-label="Copy code to clipboard"&gt;
+ &lt;span class="code-copy-label" aria-hidden="true"&gt;Copy&lt;/span&gt;
+ &lt;/button&gt;
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;winget install Hugo.Hugo.Extended&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;&lt;p&gt;&lt;strong&gt;方式二：手动下载（国内网络推荐）&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;打开 &lt;a href="https://github.com/gohugoio/hugo/releases"&gt;Hugo Releases&lt;/a&gt;，下载最新的 &lt;code&gt;hugo_extended_*_windows-amd64.zip&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;解压到 &lt;code&gt;C:\Users\你的用户名\AppData\Local\Hugo\&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;将该目录加入系统 PATH 环境变量&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;验证安装：&lt;/p&gt;
+&lt;div class="code-block"&gt;
+ &lt;button class="code-copy" type="button" hidden aria-label="Copy code to clipboard"&gt;
+ &lt;span class="code-copy-label" aria-hidden="true"&gt;Copy&lt;/span&gt;
+ &lt;/button&gt;
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo version
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 输出类似：hugo v0.162.1+extended windows/amd64&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;&lt;h2 id="创建站点"&gt;创建站点&lt;/h2&gt;
+&lt;div class="code-block"&gt;
+ &lt;button class="code-copy" type="button" hidden aria-label="Copy code to clipboard"&gt;
+ &lt;span class="code-copy-label" aria-hidden="true"&gt;Copy&lt;/span&gt;
+ &lt;/button&gt;
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo new site my-blog --format&lt;span style="color:#f92672"&gt;=&lt;/span&gt;toml
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd my-blog
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git branch -m main&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;&lt;h2 id="添加-ananke-主题"&gt;添加 Ananke 主题&lt;/h2&gt;
+&lt;div class="code-block"&gt;
+ &lt;button class="code-copy" type="button" hidden aria-label="Copy code to clipboard"&gt;
+ &lt;span class="code-copy-label" aria-hidden="true"&gt;Copy&lt;/span&gt;
+ &lt;/button&gt;
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git submodule add --depth&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; https://github.com/gohugo-ananke/ananke.git themes/ananke&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：国内访问 GitHub 可能较慢，可开启代理后执行。&lt;/p&gt;</description></item></channel></rss>

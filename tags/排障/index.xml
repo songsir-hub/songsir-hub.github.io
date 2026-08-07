@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>排障 on SongSir'BLOG</title><link>https://songsir_1_0.gitee.io/songsir-hub.github.io/tags/%E6%8E%92%E9%9A%9C/</link><description>Recent content in 排障 on SongSir'BLOG</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 09 Jul 2026 19:30:00 +0800</lastBuildDate><atom:link href="https://songsir_1_0.gitee.io/songsir-hub.github.io/tags/%E6%8E%92%E9%9A%9C/index.xml" rel="self" type="application/rss+xml"/><item><title>在 Windows 上部署 FastGithub 踩坑记录</title><link>https://songsir_1_0.gitee.io/songsir-hub.github.io/posts/fastgithub-windows-setup/</link><pubDate>Thu, 09 Jul 2026 19:30:00 +0800</pubDate><guid>https://songsir_1_0.gitee.io/songsir-hub.github.io/posts/fastgithub-windows-setup/</guid><description>&lt;h2 id="背景"&gt;背景&lt;/h2&gt;
+&lt;p&gt;受够了 GitHub 相关站点的访问稳定性长期不稳定，也试过修改 host 文件等办法，麻烦又效果差，最终下决心试试 FastGithub。由于 GitHub 站点基本上不去，原版 &lt;code&gt;dotnetcore/FastGithub&lt;/code&gt; 仓库已不可用、Gitee 镜像只提供源码而无现成二进制，在 AI 建议下，最终采用仍在维护的 &lt;code&gt;creazyboyone/FastGithub&lt;/code&gt; v2.1.5——其工作机制与原版一致。本文记录在本机及第二台电脑上部署、排障、并沉淀可复用资产的全过程。&lt;/p&gt;
+&lt;h2 id="一获取与解包"&gt;一、获取与解包&lt;/h2&gt;
+&lt;p&gt;通过 &lt;code&gt;ghproxy.net&lt;/code&gt; 这类镜像拉取 &lt;code&gt;fastgithub-win-x64.zip&lt;/code&gt;，避免直接连接 GitHub。下载后校验 SHA256，解包得到自包含的 &lt;code&gt;app\&lt;/code&gt; 目录：其中的 &lt;code&gt;fastgithub.exe&lt;/code&gt; 自带 .NET 运行时，无需另装环境。部署目录最终统一为 &lt;code&gt;D:\tools\FastGithub&lt;/code&gt;，所有电脑共用同一份。&lt;/p&gt;
+&lt;h2 id="二运行机制的要点"&gt;二、运行机制的要点&lt;/h2&gt;
+&lt;p&gt;FastGithub v2.1.5 在 Windows 上&lt;strong&gt;不依赖系统代理&lt;/strong&gt;，而是用 WinDivert 驱动做 DNS 透明拦截：把 &lt;code&gt;github.com&lt;/code&gt; 等域名的解析结果改写为 &lt;code&gt;127.0.0.1&lt;/code&gt;，再由本地 MITM 代理接管 TLS 并回源。这一点决定了后续的排障方向——系统代理应当为空，证书必须被系统信任。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://songsir_1_0.gitee.io/songsir-hub.github.io/images/dns-interception.svg" alt="dns"&gt;&lt;/p&gt;
+&lt;h2 id="三踩坑与对应处理"&gt;三、踩坑与对应处理&lt;/h2&gt;
+&lt;h3 id="坑-1前台进程需管理员且窗口常开批处理文件须纯英文"&gt;坑 1：前台进程需管理员且窗口常开；批处理文件须纯英文&lt;/h3&gt;
+&lt;p&gt;双击启动脚本时窗口一闪而过。原因是核心以前台进程方式运行，必须&lt;strong&gt;右键以管理员身份运行&lt;/strong&gt;，且窗口需保持打开，加速才生效；关闭窗口即停止加速。&lt;/p&gt;
+&lt;p&gt;另一个隐性问题是编码：在中文 Windows 下，若 &lt;code&gt;.bat&lt;/code&gt; 文件中含中文字符，GBK 编码会把 UTF-8 中文读成乱码，导致命令解析失败。因此所有脚本一律使用纯英文文件名与内容，避免中文标点。&lt;/p&gt;
+&lt;h3 id="坑-2杀软拦截-windivert-驱动"&gt;坑 2：杀软拦截 WinDivert 驱动&lt;/h3&gt;
+&lt;p&gt;核心启动时报 &lt;code&gt;Win32Exception (5) 拒绝访问&lt;/code&gt;。异常来源并非权限不足，而是杀毒软件（如火绒）将 WinDivert 驱动判定为可疑并阻止加载。将 &lt;code&gt;D:\tools\FastGithub&lt;/code&gt; 整个目录加入杀软白名单后，驱动正常加载，日志出现 &lt;code&gt;启动完成 V2.1.5&lt;/code&gt;，DNS 拦截生效。&lt;/p&gt;</description></item></channel></rss>
