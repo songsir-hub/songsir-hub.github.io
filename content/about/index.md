@@ -24,7 +24,7 @@ title = '关于 / About'
 ## <span class="zh">联系我</span><span class="en">Contact Me</span>
 
 - GitHub：<a href="https://github.com/songsir-hub">songsir-hub</a>
-- Email：<a href="mailto:sonview@agent.qq.com">sonview@agent.qq.com</a>
+- Email：<a href="mailto:songview@agent.qq.com">songview@agent.qq.com</a>
 
 <span class="zh">感谢你的到来，希望这里的内容对你有所启发。</span><span class="en">Thanks for visiting — I hope the content here inspires you.</span>
 <!-- 笔名改色 #137a52（顶层 accent-green span，避免标题内嵌套 span 被部署链路剥离） -->
