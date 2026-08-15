@@ -5,7 +5,7 @@ date = "2026-08-15"
 draft = false
 description = "换电脑最怕丢的是只长在这一台机器上的 WorkBuddy 技能与记忆。本文讲如何借助 GitHub，在'便捷'与'安全'之间两全：一键备份、多机抓回，并用登录态替代明文密钥。"
 tags = ["WorkBuddy", "GitHub", "备份", "多机同步", "安全"]
-categories = ["效率工具"]
+categories = ["IT应用"]
 +++
 
 ## 前提：要有稳定的 GitHub 访问环境
