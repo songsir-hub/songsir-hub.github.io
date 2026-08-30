@@ -6,6 +6,7 @@ author = '松朗'
 featured_image = '/images/cover-final-v3.jpg'
 description = '2026年上半年GDP增长4.7%，但7月消费增速仅有0.6%。数据不是简单的好坏，而是一把解剖刀：外向部门与新兴动能向上，内需与传统投资向下。本文基于国家统计局、渣打银行与汇丰研报，提出下半年三条判断。'
 tags = ['宏观经济', '中国经济', '投资思考', '2026']
+categories = ['经济发展']
 +++
 
 {{< figure src="/images/cover-final-v3.jpg" caption="封面：K型分化——新动能在上，传统部门在下（右下角为作者印『松风月朗』）" >}}
