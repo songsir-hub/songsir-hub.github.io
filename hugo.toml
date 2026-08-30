@@ -1,1 +1,188 @@
-IyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KIyBIdWdvICsgQW5hbmtlIOS4u+mimOWNmuWuoumFjee9rgojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKYmFzZVVSTCA9ICdodHRwczovL3NvbmdzaXItaHViLmdpdGh1Yi5pby8nCmxvY2FsZSA9ICd6aC1jbicKdGl0bGUgPSAiU29uZ1NpcidCTE9HIgp0aGVtZSA9ICdhbmFua2UnCgplbmFibGVSb2JvdHNUWFQgPSB0cnVlCnBhZ2luYXRlID0gMTAKCltvdXRwdXRzXQogIGhvbWUgPSBbJ0hUTUwnLCAnUlNTJywgJ0pTT04nXQoKW21hcmt1cC5nb2xkbWFyay5yZW5kZXJlcl0KICB1bnNhZmUgPSB0cnVlCgpbcGFyYW1zXQogIGF1dGhvciA9ICdTb25nU2lyJwogIGZhdmljb24gPSAnJwogIHNpdGVfbG9nbyA9ICcnCiAgZGVzY3JpcHRpb24gPSAn5oqA5pyvIMK3IOWOhuWPsiDCtyDnlJ/mtLvvvIzorrDlvZXmiYDmgJ3miYDmg7MnCiAgYmFja2dyb3VuZF9jb2xvcl9jbGFzcyA9ICdiZy1kYXJrLWdyYXknCiAgYm9keV9jbGFzc2VzID0gJ2F2ZW5pciBiZy1uZWFyLXdoaXRlJwogIHJlY2VudF9wb3N0c19udW1iZXIgPSAzCiAgYmFja2dyb3VuZF9pbWFnZSA9ICcvaW1hZ2VzL2JhY2tncm91bmQuanBnJwoKW3BhcmFtcy5hbmFua2VdCiAgY3VzdG9tX2NzcyA9IFsiY3VzdG9tLmNzcyJdCiAgc2hvd19yZWNlbnRfcG9zdHMgPSB0cnVlCiAgc2hvd19jYXRlZ29yaWVzID0gdHJ1ZQogIGNvcHlfY29kZSA9IHRydWUKCltwYXJhbXMuYW5hbmtlLmhvbWVdCiAgY29udGVudF9hbGlnbm1lbnQgPSAnY2VudGVyJwoKW3BhcmFtcy5hbmFua2Uuc29jaWFsXQogIGljb25fcGF0aCA9ICdhbmFua2Uvc29jaWFscy8lcy5zdmcnCgpbcGFyYW1zLmFuYW5rZS5zb2NpYWwuZm9sbG93XQogIG5ld193aW5kb3dfaWNvbiA9IHRydWUKICBuZXR3b3JrcyA9IFsKICAgICdnaXRodWInLAogICAgJ3JzcycKICBdCgpbcGFyYW1zLmFuYW5rZS5zb2NpYWwuc2hhcmVdCiAgaWNvbnMgPSB0cnVlCiAgc2hhcmV0ZXh0ID0gdHJ1ZQogIG5ldHdvcmtzID0gWwogICAgJ2VtYWlsJywKICAgICd4LXR3aXR0ZXInLAogICAgJ2xpbmtlZGluJwogIF0KCltwYXJhbXMuYW5hbmtlLnNvY2lhbC5uZXR3b3Jrcy5naXRodWJdCiAgc2x1ZyA9ICdnaXRodWInCiAgbGFiZWwgPSAnR2l0SHViJwogIHByb2ZpbGUgPSAnaHR0cHM6Ly9naXRodWIuY29tL3NvbmdzaXItaHViLycKICBpY29uID0gJ2dpdGh1YicKCltwYXJhbXMuYW5hbmtlLnNvY2lhbC5uZXR3b3Jrcy5yc3NdCiAgc2x1ZyA9ICdyc3MnCiAgbGFiZWwgPSAnUlNTJwogIHByb2ZpbGUgPSAnJwogIGljb24gPSAncnNzJwoKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KIyDoj5zljZXlr7zoiKrvvIjkuInmoI/kuIvmi4kgKyDpobbnuqfpk77mjqXvvIkKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KW1ttZW51cy5tYWluXV0KICBuYW1lID0gJ+enkeWIm+WPkeWxlScKICB3ZWlnaHQgPSAxMAoKW1ttZW51cy5tYWluXV0KICBuYW1lID0gJ+enkeaKgOWJjeayvycKICBwYXJlbnQgPSAn56eR5Yib5Y+R5bGVJwogIHVybCA9ICcvY2F0ZWdvcmllcy/np5HmioDliY3msr8vJwogIHdlaWdodCA9IDExCgpbW21lbnVzLm1haW5dXQogIG5hbWUgPSAnSVTlupTnlKgnCiAgcGFyZW50ID0gJ+enkeWIm+WPkeWxlScKICB1cmwgPSAnL2NhdGVnb3JpZXMvSVTlupTnlKgvJwogIHdlaWdodCA9IDEyCgpbW21lbnVzLm1haW5dXQogIG5hbWUgPSAn56eR5oqA6L+w6K+EJwogIHBhcmVudCA9ICfnp5HliJvlj5HlsZUnCiAgdXJsID0gJy9jYXRlZ29yaWVzL+enkeaKgOi/sOivhC8nCiAgd2VpZ2h0ID0gMTMKCltbbWVudXMubWFpbl1dCiAgbmFtZSA9ICfnp5HliJvkuIfosaEnCiAgcGFyZW50ID0gJ+enkeWIm+WPkeWxlScKICB1cmwgPSAnL2NhdGVnb3JpZXMv56eR5Yib5LiH6LGhLycKICB3ZWlnaHQgPSAxNAoKW1ttZW51cy5tYWluXV0KICBuYW1lID0gJ+e7j+a1juWPkeWxlScKICBwYXJlbnQgPSAn56eR5Yib5Y+R5bGVJwogIHVybCA9ICcvY2F0ZWdvcmllcy/nu4/mtY7lj5HlsZUvJwogIHdlaWdodCA9IDE1CgpbW21lbnVzLm1haW5dXQogIG5hbWUgPSAn5Y6G5Y+y5paH5YyWJwogIHdlaWdodCA9IDIwCgpbW21lbnVzLm1haW5dXQogIG5hbWUgPSAn5Lic5aS36I6x5aS3JwogIHBhcmVudCA9ICfljoblj7LmlofljJYnCiAgdXJsID0gJy9jYXRlZ29yaWVzL+S4nOWkt+iOseWkty8nCiAgd2VpZ2h0ID0gMjEKCltbbWVudXMubWFpbl1dCiAgbmFtZSA9ICflj6Tmloflk4HpibQnCiAgcGFyZW50ID0gJ+WOhuWPsuaWh+WMlicKICB1cmwgPSAnL2NhdGVnb3JpZXMv5Y+k5paH5ZOB6Ym0LycKICB3ZWlnaHQgPSAyMgoKW1ttZW51cy5tYWluXV0KICBuYW1lID0gJ+ayveays+aWh+WMlicKICBwYXJlbnQgPSAn5Y6G5Y+y5paH5YyWJwogIHVybCA9ICcvY2F0ZWdvcmllcy/msr3msrPmlofljJYvJwogIHdlaWdodCA9IDIzCgpbW21lbnVzLm1haW5dXQogIG5hbWUgPSAn5ZCN56+H5ZOB6Ym0JwogIHBhcmVudCA9ICfljoblj7LmlofljJYnCiAgdXJsID0gJy9jYXRlZ29yaWVzL+WQjeevh+WTgemJtC8nCiAgd2VpZ2h0ID0gMjQKCltbbWVudXMubWFpbl1dCiAgbmFtZSA9ICfmlofljJbljZrop4gnCiAgcGFyZW50ID0gJ+WOhuWPsuaWh+WMlicKICB1cmwgPSAnL2NhdGVnb3JpZXMv5paH5YyW5Y2a6KeILycKICB3ZWlnaHQgPSAyNQoKW1ttZW51cy5tYWluXV0KICBuYW1lID0gJ+ivl+ivjeatjOi1iycKICBwYXJlbnQgPSAn5Y6G5Y+y5paH5YyWJwogIHVybCA9ICcvY2F0ZWdvcmllcy/or5for43mrYzotYsvJwogIHdlaWdodCA9IDI2CgpbW21lbnVzLm1haW5dXQogIG5hbWUgPSAn5ZOB5ZGz55Sf5rS7JwogIHdlaWdodCA9IDMwCgpbW21lbnVzLm1haW5dXQogIG5hbWUgPSAn5a+555eH5LiL6I2vJwogIHBhcmVudCA9ICflk4HlkbPnlJ/mtLsnCiAgdXJsID0gJy9jYXRlZ29yaWVzL+WvueeXh+S4i+iNry8nCiAgd2VpZ2h0ID0gMzEKCltbbWVudXMubWFpbl1dCiAgbmFtZSA9ICfnu4/nu5znqbTkvY0nCiAgcGFyZW50ID0gJ+WTgeWRs+eUn+a0uycKICB1cmwgPSAnL2NhdGVnb3JpZXMv57uP57uc56m05L2NLycKICB3ZWlnaHQgPSAzMgoKW1ttZW51cy5tYWluXV0KICBuYW1lID0gJ+mjn+eWl+WFu+eUnycKICBwYXJlbnQgPSAn5ZOB5ZGz55Sf5rS7JwogIHVybCA9ICcvY2F0ZWdvcmllcy/po5/nlpflhbvnlJ8vJwogIHdlaWdodCA9IDMzCgpbW21lbnVzLm1haW5dXQogIG5hbWUgPSAn55Sf5rS755m+56eRJwogIHBhcmVudCA9ICflk4HlkbPnlJ/mtLsnCiAgdXJsID0gJy9jYXRlZ29yaWVzL+eUn+a0u+eZvuenkS8nCiAgd2VpZ2h0ID0gMzQKCiMg6aG257qn6ZO+5o6lCltbbWVudXMubWFpbl1dCiAgbmFtZSA9ICfmoIfnrb4nCiAgdXJsID0gJy90YWdzLycKICB3ZWlnaHQgPSA0MAoKW1ttZW51cy5tYWluXV0KICBuYW1lID0gJ+aQnOe0oicKICB1cmwgPSAnL3NlYXJjaC8nCiAgd2VpZ2h0ID0gNDUKCltbbWVudXMubWFpbl1dCiAgbmFtZSA9ICflhbPkuo4nCiAgdXJsID0gJy9hYm91dC8nCiAgd2VpZ2h0ID0gNTAK
+# ============================================================
+# Hugo + Ananke 主题博客配置
+# ============================================================
+
+baseURL = 'https://songsir-hub.github.io/'
+locale = 'zh-cn'
+title = "SongSir'BLOG"
+theme = 'ananke'
+
+enableRobotsTXT = true
+paginate = 10
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  author = 'SongSir'
+  favicon = ''
+  site_logo = ''
+  description = '技术 · 历史 · 生活，记录所思所想'
+  background_color_class = 'bg-dark-gray'
+  body_classes = 'avenir bg-near-white'
+  recent_posts_number = 3
+  background_image = '/images/background.jpg'
+
+[params.ananke]
+  custom_css = ["custom.css"]
+  show_recent_posts = true
+  show_categories = true
+  copy_code = true
+
+[params.ananke.home]
+  content_alignment = 'center'
+
+[params.ananke.social]
+  icon_path = 'ananke/socials/%s.svg'
+
+[params.ananke.social.follow]
+  new_window_icon = true
+  networks = [
+    'github',
+    'rss'
+  ]
+
+[params.ananke.social.share]
+  icons = true
+  sharetext = true
+  networks = [
+    'email',
+    'x-twitter',
+    'linkedin'
+  ]
+
+[params.ananke.social.networks.github]
+  slug = 'github'
+  label = 'GitHub'
+  profile = 'https://github.com/songsir-hub/'
+  icon = 'github'
+
+[params.ananke.social.networks.rss]
+  slug = 'rss'
+  label = 'RSS'
+  profile = ''
+  icon = 'rss'
+
+# ============================================================
+# 菜单导航（三栏下拉 + 顶级链接）
+# ============================================================
+[[menus.main]]
+  name = '科创发展'
+  weight = 10
+
+[[menus.main]]
+  name = '科技前沿'
+  parent = '科创发展'
+  url = '/categories/科技前沿/'
+  weight = 11
+
+[[menus.main]]
+  name = 'IT应用'
+  parent = '科创发展'
+  url = '/categories/IT应用/'
+  weight = 12
+
+[[menus.main]]
+  name = '科技述评'
+  parent = '科创发展'
+  url = '/categories/科技述评/'
+  weight = 13
+
+[[menus.main]]
+  name = '科创万象'
+  parent = '科创发展'
+  url = '/categories/科创万象/'
+  weight = 14
+
+[[menus.main]]
+  name = '经济发展'
+  parent = '科创发展'
+  url = '/categories/经济发展/'
+  weight = 15
+
+[[menus.main]]
+  name = '历史文化'
+  weight = 20
+
+[[menus.main]]
+  name = '东夷莱夷'
+  parent = '历史文化'
+  url = '/categories/东夷莱夷/'
+  weight = 21
+
+[[menus.main]]
+  name = '古文品鉴'
+  parent = '历史文化'
+  url = '/categories/古文品鉴/'
+  weight = 22
+
+[[menus.main]]
+  name = '沽河文化'
+  parent = '历史文化'
+  url = '/categories/沽河文化/'
+  weight = 23
+
+[[menus.main]]
+  name = '名篇品鉴'
+  parent = '历史文化'
+  url = '/categories/名篇品鉴/'
+  weight = 24
+
+[[menus.main]]
+  name = '文化博览'
+  parent = '历史文化'
+  url = '/categories/文化博览/'
+  weight = 25
+
+[[menus.main]]
+  name = '诗词歌赋'
+  parent = '历史文化'
+  url = '/categories/诗词歌赋/'
+  weight = 26
+
+[[menus.main]]
+  name = '品味生活'
+  weight = 30
+
+[[menus.main]]
+  name = '对症下药'
+  parent = '品味生活'
+  url = '/categories/对症下药/'
+  weight = 31
+
+[[menus.main]]
+  name = '经络穴位'
+  parent = '品味生活'
+  url = '/categories/经络穴位/'
+  weight = 32
+
+[[menus.main]]
+  name = '食疗养生'
+  parent = '品味生活'
+  url = '/categories/食疗养生/'
+  weight = 33
+
+[[menus.main]]
+  name = '生活百科'
+  parent = '品味生活'
+  url = '/categories/生活百科/'
+  weight = 34
+
+# 顶级链接
+[[menus.main]]
+  name = '标签'
+  url = '/tags/'
+  weight = 40
+
+[[menus.main]]
+  name = '搜索'
+  url = '/search/'
+  weight = 45
+
+[[menus.main]]
+  name = '关于'
+  url = '/about/'
+  weight = 50
