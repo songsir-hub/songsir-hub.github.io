@@ -83,7 +83,7 @@ paginate = 10
 #   待对应文章归入该分类后即自动填充
 # ============================================================
 [[menus.main]]
-  name = '科技博览'
+  name = '科创发展'
   weight = 10
 
 [[menus.main]]
@@ -106,77 +106,9 @@ paginate = 10
 
 [[menus.main]]
   name = '科创万象'
-  parent = '科技博览'
-  url = '/categories/科创万象/'
-  weight = 14
 
 [[menus.main]]
-  name = '历史文化'
-  weight = 20
-
-[[menus.main]]
-  name = '东夷莱夷'
-  parent = '历史文化'
-  url = '/categories/东夷莱夷/'
-  weight = 21
-
-[[menus.main]]
-  name = '沽河文化'
-  parent = '历史文化'
-  url = '/categories/沽河文化/'
-  weight = 22
-
-[[menus.main]]
-  name = '古文品鉴'
-  parent = '历史文化'
-  url = '/categories/古文品鉴/'
-  weight = 23
-
-[[menus.main]]
-  name = '诗词歌赋'
-  parent = '历史文化'
-  url = '/categories/诗词歌赋/'
-  weight = 24
-
-[[menus.main]]
-  name = '品味生活'
-  weight = 30
-
-[[menus.main]]
-  name = '经络穴位'
-  parent = '品味生活'
-  url = '/categories/经络穴位/'
-  weight = 31
-
-[[menus.main]]
-  name = '对症下药'
-  parent = '品味生活'
-  url = '/categories/对症下药/'
-  weight = 32
-
-[[menus.main]]
-  name = '食疗养生'
-  parent = '品味生活'
-  url = '/categories/食疗养生/'
-  weight = 33
-
-[[menus.main]]
-  name = '生活百科'
-  parent = '品味生活'
-  url = '/categories/生活百科/'
-  weight = 34
-
-[[menus.main]]
-  name = '标签'
-  url = '/tags/'
-  weight = 40
-
-[[menus.main]]
-  name = '搜索'
-  url = '/search/'
-  weight = 45
-
-[[menus.main]]
-  name = '关于'
-  url = '/about/'
-  weight = 50
+  name = '经济发展'
+  parent = '科创发展'
+  url = '/categories/经济发展/'
+  weight = 15
