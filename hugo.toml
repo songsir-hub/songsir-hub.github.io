@@ -173,3 +173,19 @@ paginate = 10
   parent = '品味生活'
   url = '/categories/生活百科/'
   weight = 34
+
+# 顶级链接（无 parent，site-navigation.html 的 else 分支会渲染为 nav-link）
+[[menus.main]]
+  name = '标签'
+  url = '/tags/'
+  weight = 40
+
+[[menus.main]]
+  name = '搜索'
+  url = '/search/'
+  weight = 45
+
+[[menus.main]]
+  name = '关于'
+  url = '/about/'
+  weight = 50
