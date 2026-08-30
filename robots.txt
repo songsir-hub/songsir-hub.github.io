@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# 主动告知所有搜索引擎（含百度/Bing/Google）站点地图位置，爬虫会自动发现
+Sitemap: https://songsir-hub.github.io/sitemap.xml
