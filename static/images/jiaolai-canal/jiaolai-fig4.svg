@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" width="680" height="340">
+        <rect width="680" height="340" fill="#f5f8f5"/>
+        <text x="340" y="28" text-anchor="middle" font-size="15" fill="#1a3c5e" font-weight="bold">胶莱运河纵剖面与九闸分布示意图</text>
+        <!-- Axes -->
+        <line x1="80" y1="280" x2="640" y2="280" stroke="#555" stroke-width="1.5"/>
+        <line x1="80" y1="60" x2="80" y2="280" stroke="#555" stroke-width="1.5"/>
+        <!-- Y-axis labels (elevation) -->
+        <text x="72" y="284" text-anchor="end" font-size="9" fill="#888">0m</text>
+        <text x="72" y="234" text-anchor="end" font-size="9" fill="#888">10m</text>
+        <text x="72" y="184" text-anchor="end" font-size="9" fill="#888">20m</text>
+        <text x="72" y="134" text-anchor="end" font-size="9" fill="#888">30m</text>
+        <text x="72" y="84" text-anchor="end" font-size="9" fill="#888">40m</text>
+        <text x="50" y="170" font-size="10" fill="#555" transform="rotate(-90, 50, 170)">海拔高程（米）</text>
+        <!-- X-axis labels (distance) -->
+        <text x="80" y="298" text-anchor="middle" font-size="9" fill="#888">0km</text>
+        <text x="220" y="298" text-anchor="middle" font-size="9" fill="#888">30km</text>
+        <text x="360" y="298" text-anchor="middle" font-size="9" fill="#888">65km</text>
+        <text x="500" y="298" text-anchor="middle" font-size="9" fill="#888">100km</text>
+        <text x="640" y="298" text-anchor="middle" font-size="9" fill="#888">130km</text>
+        <text x="360" y="316" text-anchor="middle" font-size="10" fill="#555">距离（南至北）</text>
+        <!-- Terrain profile (elevation curve) -->
+        <path d="M 80,275 Q 120,270 160,255 Q 200,235 240,200 Q 280,155 320,120 Q 340,105 360,100 Q 380,105 400,120 Q 440,155 480,190 Q 520,225 560,250 Q 600,268 640,275" stroke="#7a9e5e" stroke-width="2.5" fill="none"/>
+        <!-- Fill under the curve -->
+        <path d="M 80,275 Q 120,270 160,255 Q 200,235 240,200 Q 280,155 320,120 Q 340,105 360,100 Q 380,105 400,120 Q 440,155 480,190 Q 520,225 560,250 Q 600,268 640,275 L 640,280 L 80,280 Z" fill="#d8e8c8" opacity="0.6"/>
+        <!-- Sea level lines -->
+        <rect x="80" y="275" width="40" height="5" fill="#3a7fb0" opacity="0.4"/>
+        <rect x="600" y="275" width="40" height="5" fill="#3a7fb0" opacity="0.4"/>
+        <text x="90" y="270" font-size="9" fill="#2a6b8e">胶州湾</text>
+        <text x="605" y="270" font-size="9" fill="#2a6b8e">莱州湾</text>
+        <!-- Dividing ridge highlight -->
+        <ellipse cx="360" cy="100" rx="50" ry="12" fill="#c0392b" opacity="0.15"/>
+        <line x1="360" y1="100" x2="360" y2="280" stroke="#c0392b" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+        <text x="360" y="90" text-anchor="middle" font-size="11" fill="#c0392b" font-weight="bold">分水岭</text>
+        <text x="360" y="78" text-anchor="middle" font-size="9" fill="#c0392b">海拔约30m</text>
+        <text x="360" y="66" text-anchor="middle" font-size="8" fill="#c0392b">平度姚家</text>
+        <!-- Dube / Yi'an Ze water body -->
+        <ellipse cx="340" cy="115" rx="35" ry="8" fill="#3a7fb0" opacity="0.5"/>
+        <text x="340" y="118" text-anchor="middle" font-size="9" fill="#2a6b8e" font-weight="bold">都泊（夷安泽）</text>
+        <!-- 9 Locks (vertical bars) -->
+        <g>
+          <rect x="100" y="265" width="6" height="15" fill="#e74c3c" rx="1"/><text x="103" y="260" text-anchor="middle" font-size="7" fill="#c0392b">陈村</text>
+          <rect x="150" y="250" width="6" height="20" fill="#e74c3c" rx="1"/><text x="153" y="245" text-anchor="middle" font-size="7" fill="#c0392b">吴家口</text>
+          <rect x="200" y="225" width="6" height="25" fill="#e74c3c" rx="1"/><text x="203" y="220" text-anchor="middle" font-size="7" fill="#c0392b">窝铺</text>
+          <rect x="250" y="195" width="6" height="25" fill="#e74c3c" rx="1"/><text x="253" y="190" text-anchor="middle" font-size="7" fill="#c0392b">亭口</text>
+          <rect x="310" y="145" width="6" height="25" fill="#e74c3c" rx="1"/><text x="313" y="140" text-anchor="middle" font-size="7" fill="#c0392b">周家</text>
+          <rect x="370" y="120" width="6" height="25" fill="#e74c3c" rx="1"/><text x="373" y="115" text-anchor="middle" font-size="7" fill="#c0392b">玉皇庙</text>
+          <rect x="430" y="155" width="6" height="25" fill="#e74c3c" rx="1"/><text x="433" y="150" text-anchor="middle" font-size="7" fill="#c0392b">杨家圈</text>
+          <rect x="500" y="210" width="6" height="25" fill="#e74c3c" rx="1"/><text x="503" y="205" text-anchor="middle" font-size="7" fill="#c0392b">新河</text>
+          <rect x="580" y="255" width="6" height="20" fill="#e74c3c" rx="1"/><text x="583" y="250" text-anchor="middle" font-size="7" fill="#c0392b">海仓</text>
+        </g>
+        <!-- Water source arrows -->
+        <path d="M 270,130 L 320,115" stroke="#3a7fb0" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#arrowW)"/>
+        <text x="250" y="125" font-size="9" fill="#3a7fb0">胶河</text>
+        <path d="M 420,130 L 375,115" stroke="#3a7fb0" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#arrowW)"/>
+        <text x="425" y="125" font-size="9" fill="#3a7fb0">白沙河</text>
+        <!-- Direction labels -->
+        <text x="100" y="50" font-size="11" fill="#1a3c5e" font-weight="bold">南（黄海方向）</text>
+        <text x="580" y="50" font-size="11" fill="#1a3c5e" font-weight="bold">北（渤海方向）</text>
+        <defs>
+          <marker id="arrowW" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 Z" fill="#3a7fb0"/>
+          </marker>
+        </defs>
+      </svg>

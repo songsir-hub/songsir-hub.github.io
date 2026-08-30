@@ -39,7 +39,6 @@ paginate = 10
   icon_path = 'ananke/socials/%s.svg'
 
 [params.ananke.social.follow]
-  new_window_icon = true
   networks = [
     'github',
     'rss'
@@ -67,7 +66,11 @@ paginate = 10
   icon = 'rss'
 
 # ============================================================
-# 菜单导航（三栏下拉 + 顶级链接）
+# 菜单导航（三栏下拉：科创发展 / 历史文化 / 品味生活）
+# - 原"首页/文章/分类"由品牌链接 + 三栏下拉替代
+# - 子菜单 parent 指向对应分类页 /categories/<分类名>/
+# - 各子栏目分类页为占位（content/categories/<名>/_index.md），
+#   待对应文章归入该分类后即自动填充
 # ============================================================
 [[menus.main]]
   name = '科创发展'
@@ -82,7 +85,7 @@ paginate = 10
 [[menus.main]]
   name = 'IT应用'
   parent = '科创发展'
-  url = '/categories/IT应用/'
+  url = '/categories/it应用/'
   weight = 12
 
 [[menus.main]]
@@ -170,19 +173,3 @@ paginate = 10
   parent = '品味生活'
   url = '/categories/生活百科/'
   weight = 34
-
-# 顶级链接
-[[menus.main]]
-  name = '标签'
-  url = '/tags/'
-  weight = 40
-
-[[menus.main]]
-  name = '搜索'
-  url = '/search/'
-  weight = 45
-
-[[menus.main]]
-  name = '关于'
-  url = '/about/'
-  weight = 50
