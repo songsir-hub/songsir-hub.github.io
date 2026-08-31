@@ -1,13 +1,13 @@
----
-title: "星际基地"
-date: 2026-08-30T20:00:00+08:00
-draft: false
-description: "星际基地"
-tags: ["航天", "深空探测", "科技前沿"]
-categories: ["科技"]
-featured_image: "/images/starbase-report.jpg"
-author: "松朗"
----
++++
+title = '星际基地'
+date = '2026-08-30T20:00:00+08:00'
+draft = false
+author = '松朗'
+featured_image = '/images/starbase/starbase-01.jpg'
+description = '星际基地'
+tags = ['航天', '深空探测', '科技前沿']
+categories = ['科技前沿']
++++
 
 <!-- ===== HERO ===== -->
 

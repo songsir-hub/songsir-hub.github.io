@@ -1,13 +1,13 @@
----
-title: "罗曼太空望远镜升空：人类的深空探索新篇章"
-date: 2026-08-30T21:00:00+08:00
-draft: false
-description: "罗曼太空望远镜升空：人类的深空探索新篇章"
-tags: ["航天", "深空探测", "科技前沿"]
-categories: ["科技"]
-featured_image: "/images/starbase-report.jpg"
-author: "松朗"
----
++++
+title = '罗曼太空望远镜升空：人类的深空探索新篇章'
+date = '2026-08-30T21:00:00+08:00'
+draft = false
+author = '松朗'
+featured_image = '/images/starbase/starbase-01.jpg'
+description = '罗曼太空望远镜升空：人类的深空探索新篇章'
+tags = ['航天', '深空探测', '科技前沿']
+categories = ['科技前沿']
++++
 
 <!-- HERO -->
 
