@@ -9,7 +9,7 @@ tags = ['宏观经济', '中国经济', '投资思考', '2026']
 categories = ['经济发展']
 +++
 
-{{< figure src="/images/cover-final-v3.jpg" caption='封面：K型分化——新动能在上，传统部门在下（右下角为作者真实印章『松风月朗』）' >}}
+{{< figure src="/images/cover-final-v4-photo.jpg" caption="封面：K型分化——新动能在上，传统部门在下（右下角为作者真实印章『松风月朗』）" >}}
 
 ## 一、一个反常识的对比：4.7% 与 0.6%
 
