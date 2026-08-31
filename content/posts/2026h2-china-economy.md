@@ -3,13 +3,13 @@ title = '两重天：2026年下半年中国经济的结构性真相'
 date = '2026-08-30T15:55:00+08:00'
 draft = false
 author = '松朗'
-featured_image = '/images/cover-final-v4-photo.jpg'
+featured_image = '/images/cover-seal-fengqingyuelang.jpg'
 description = '2026年上半年GDP增长4.7%，但7月消费增速仅有0.6%。数据不是简单的好坏，而是一把解剖刀：外向部门与新兴动能向上，内需与传统投资向下。本文基于国家统计局、渣打银行与汇丰研报，提出下半年三条判断。'
 tags = ['宏观经济', '中国经济', '投资思考', '2026']
 categories = ['经济发展']
 +++
 
-{{< figure src="/images/cover-final-v4-photo.jpg" caption="封面：K型分化——新动能在上，传统部门在下（右下角为作者真实印章『松风月朗』）" >}}
+{{< figure src="/images/cover-seal-fengqingyuelang.jpg" caption="封面：K型分化——新动能在上，传统部门在下（右下角为作者真实印章『风清月朗』小篆体）" >}}
 
 ## 一、一个反常识的对比：4.7% 与 0.6%
 
