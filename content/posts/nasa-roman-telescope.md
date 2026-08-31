@@ -99,7 +99,7 @@ English
 
         
 
-![插图1](/images/nasa/nasa-illustration-1.svg)
+![插图1](/images/nasa-illustration-1.svg)
 
         
 图：哈勃空间望远镜在地球轨道上运行，其2.4米主镜已捕捉超过160万张深空图像。
@@ -168,7 +168,7 @@ English
 
         
 
-![插图2](/images/nasa/nasa-illustration-2.svg)
+![插图2](/images/nasa-illustration-2.svg)
 
         
 图：韦伯望远镜的18面六边形金铍镜段组成6.5米主镜，五层遮阳板将其冷却至-233°C以下，使其能在红外波段俯瞰宇宙诞生之初。
@@ -237,7 +237,7 @@ English
 
         
 
-![插图3](/images/nasa/nasa-illustration-3.svg)
+![插图3](/images/nasa-illustration-3.svg)
 
         
 图：罗曼望远镜的广域巡天单次拍摄面积相当于200个哈勃视场，能在10年内绘制跨越100亿年历史的三维宇宙地图。
