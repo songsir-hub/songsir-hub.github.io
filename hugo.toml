@@ -189,3 +189,9 @@ paginate = 10
   name = '关于'
   url = '/about/'
   weight = 50
+
+# 版权声明
+[[menus.main]]
+  name = '版权声明'
+  url = '/copyright/'
+  weight = 55
