@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 470" font-family="-apple-system, Segoe UI, Roboto, sans-serif">
+  <rect width="680" height="470" fill="#ffffff"/>
+  <text x="24" y="32" font-size="18" font-weight="700" fill="#111827">FastGithub 透明拦截工作原理</text>
+  <text x="24" y="54" font-size="12" fill="#6b7280">v2.1.5 通过 WinDivert 拦截 DNS，而非设置系统代理</text>
+
+  <rect x="24" y="78" width="280" height="54" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="40" y="102" font-size="13" font-weight="600" fill="#1e3a8a">① 浏览器访问 https://github.com</text>
+  <text x="40" y="122" font-size="11" fill="#475569">地址栏输入，发起 DNS 解析与 TLS 连接</text>
+
+  <line x1="164" y1="132" x2="164" y2="158" stroke="#2563eb" stroke-width="2"/>
+  <polygon points="158,158 170,158 164,168" fill="#2563eb"/>
+
+  <rect x="24" y="168" width="320" height="64" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="40" y="192" font-size="13" font-weight="600" fill="#14532d">② WinDivert 驱动拦截 DNS 查询（UDP 53）</text>
+  <text x="40" y="212" font-size="11" fill="#475569">将 github.com 的解析结果改写为 127.0.0.1</text>
+  <text x="360" y="200" font-size="11" font-weight="600" fill="#16a34a">→ 127.0.0.1</text>
+
+  <line x1="184" y1="232" x2="184" y2="258" stroke="#2563eb" stroke-width="2"/>
+  <polygon points="178,258 190,258 184,268" fill="#2563eb"/>
+
+  <rect x="24" y="268" width="360" height="70" rx="6" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="40" y="292" font-size="13" font-weight="600" fill="#713f12">③ 本地 MITM 代理接管 127.0.0.1:443</text>
+  <text x="40" y="312" font-size="11" fill="#475569">用 fastgithub.cer（自签根 CA）签发站点证书</text>
+  <text x="40" y="330" font-size="11" fill="#475569">浏览器已信任该根 → 不报证书错误</text>
+
+  <line x1="204" y1="338" x2="204" y2="364" stroke="#2563eb" stroke-width="2"/>
+  <polygon points="198,364 210,364 204,374" fill="#2563eb"/>
+
+  <rect x="24" y="374" width="360" height="60" rx="6" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="40" y="398" font-size="13" font-weight="600" fill="#4c1d95">④ 回源到真实 github.com</text>
+  <text x="40" y="418" font-size="11" fill="#475569">FastGithub 经由 CDN/镜像获取内容，返回给浏览器</text>
+</svg>

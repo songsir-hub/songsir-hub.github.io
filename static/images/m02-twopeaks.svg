@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 600" font-family="'Source Han Serif SC','Noto Serif CJK SC','Songti SC',SimSun,'宋体',serif">
+<rect width="920" height="600" fill="#FBF8F1"/>
+<text x="460.0" y="42" font-size="22" font-weight="bold" fill="#3A3226" text-anchor="middle">同源两峰：一个文化母体，两个政治实体</text>
+<text x="460.0" y="66" font-size="13.5" fill="#6B6255" text-anchor="middle">共享「莱」这一东夷族称，却族姓不同、都城不同、自名系统不同、结局不同</text>
+<rect x="190.0" y="88" width="540" height="78" rx="10" fill="#EFE6CE" stroke="#8B7355" stroke-width="2"/>
+<text x="460.0" y="118" font-size="16.5" font-weight="bold" fill="#3A3226" text-anchor="middle">莱夷文化母体</text>
+<text x="460.0" y="144" font-size="12.5" fill="#4E463A" text-anchor="middle">后李—北辛—大汶口—龙山—岳石—珍珠门　·　六千年谱系无断层</text>
+<defs><marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#8B7355"/></marker></defs>
+<path d="M340.0,166 C240.0,216 180.0,221 160.0,244" fill="none" stroke="#8B7355" stroke-width="2.6" marker-end="url(#a2)"/>
+<path d="M580.0,166 C680.0,216 740.0,221 760.0,244" fill="none" stroke="#8B7355" stroke-width="2.6" marker-end="url(#a2)"/>
+<rect x="60" y="260" width="360" height="190" rx="10" fill="#E8A65C" fill-opacity="0.18" stroke="#C07830" stroke-width="2.4"/>
+<text x="240.0" y="294" font-size="18" font-weight="bold" fill="#3A3226" text-anchor="middle">潍淄之莱（＝纪）</text>
+<text x="82" y="326" font-size="13" font-weight="bold" fill="#C07830">族姓</text>
+<text x="126" y="326" font-size="13" fill="#3A3226">姜姓（纪侯作姜萦簋＋季姜归于京师）</text>
+<text x="82" y="356" font-size="13" font-weight="bold" fill="#C07830">都邑</text>
+<text x="126" y="356" font-size="13" fill="#3A3226">纪台（寿光）→ 前690后推定昌邑郲地</text>
+<text x="82" y="386" font-size="13" font-weight="bold" fill="#C07830">自名</text>
+<text x="126" y="386" font-size="13" fill="#3A3226">己 · 纪 · 㠱（潍淄零「莱」字铭文）</text>
+<text x="82" y="416" font-size="13" font-weight="bold" fill="#C07830">结局</text>
+<text x="126" y="416" font-size="13" fill="#3A3226">前567 齐灭莱（《左传》襄公六年）</text>
+<rect x="500" y="260" width="360" height="190" rx="10" fill="#5E9BB8" fill-opacity="0.16" stroke="#3E7CA6" stroke-width="2.4"/>
+<text x="680.0" y="294" font-size="18" font-weight="bold" fill="#3A3226" text-anchor="middle">东莱（胶东）</text>
+<text x="522" y="326" font-size="13" font-weight="bold" fill="#3E7CA6">族姓</text>
+<text x="566" y="326" font-size="13" fill="#3A3226">子姓（「莱子」之「子」隶定为族姓）</text>
+<text x="522" y="356" font-size="13" font-weight="bold" fill="#3E7CA6">都邑</text>
+<text x="566" y="356" font-size="13" fill="#3A3226">归城（龙口）——东莱共同体中心</text>
+<text x="522" y="386" font-size="13" font-weight="bold" fill="#3E7CA6">自名</text>
+<text x="566" y="386" font-size="13" fill="#3A3226">莱伯 · 莱子（或缀「来」族徽）</text>
+<text x="522" y="416" font-size="13" font-weight="bold" fill="#3E7CA6">结局</text>
+<text x="566" y="416" font-size="13" fill="#3A3226">前567后独立存续→春秋中晚期渐次入齐</text>
+<path d="M420,352 L500,352" stroke="#7A5FA0" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="342.0" y="330" width="236" height="46" rx="8" fill="#FFF" stroke="#7A5FA0" stroke-width="1.6"/>
+<text x="460.0" y="350" font-size="13" font-weight="bold" fill="#7A5FA0" text-anchor="middle">姻亲纽带，而非统一</text>
+<text x="460.0" y="368" font-size="11.5" fill="#4E463A" text-anchor="middle">南埠墓异姓通婚 · 前722 纪人伐夷</text>
+<line x1="70" y1="520" x2="850" y2="520" stroke="#3A3226" stroke-width="2.4"/>
+<circle cx="180" cy="520" r="6" fill="#FBF8F1" stroke="#3A3226" stroke-width="2.4"/>
+<text x="180" y="546" font-size="14" font-weight="bold" fill="#3A3226" text-anchor="middle">前 690</text>
+<text x="180" y="566" font-size="11.5" fill="#4E463A" text-anchor="middle">纪侯大去其国——「纪／莱」名号交替断点</text>
+<circle cx="460" cy="520" r="6" fill="#FBF8F1" stroke="#3A3226" stroke-width="2.4"/>
+<text x="460" y="546" font-size="14" font-weight="bold" fill="#3A3226" text-anchor="middle">前 567</text>
+<text x="460" y="566" font-size="11.5" fill="#4E463A" text-anchor="middle">齐灭莱——被灭的是潍淄之莱</text>
+<circle cx="740" cy="520" r="6" fill="#FBF8F1" stroke="#3A3226" stroke-width="2.4"/>
+<text x="740" y="546" font-size="14" font-weight="bold" fill="#3A3226" text-anchor="middle">前 522</text>
+<text x="740" y="566" font-size="11.5" fill="#4E463A" text-anchor="middle">晏婴「聊摄以东，姑尤以西」——胶东仍在齐境之外</text>
+<path d="M850,520 L838,515 L838,525 Z" fill="#3A3226"/>
+<text x="70" y="508" font-size="11.5" fill="#8B8375">东周</text>
+<text x="460.0" y="592" font-size="11.5" fill="#8B8375" text-anchor="middle">族姓、都邑、自名、结局四要素据本书第一、五、八、十三章。示意图。</text>
+<text x="908" y="592" font-size="12" fill="#6B6255" text-anchor="end" font-weight="bold" letter-spacing="2">作图：松朗</text>
+</svg>

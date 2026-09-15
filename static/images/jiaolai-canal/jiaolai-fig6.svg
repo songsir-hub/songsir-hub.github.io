@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300">
+        <!-- 背景 -->
+        <rect width="680" height="300" fill="#f5f0e8"/>
+        <!-- 标题 -->
+        <text x="340" y="30" text-anchor="middle" font-size="15" fill="#1a3c5e" font-weight="bold">明代胶莱河工程示意图</text>
+        <!-- 马家濠位置 -->
+        <rect x="80" y="70" width="180" height="160" rx="8" fill="#e8f0f8" stroke="#2a6b8e" stroke-width="1.5"/>
+        <text x="170" y="95" text-anchor="middle" font-size="13" fill="#1a3c5e" font-weight="bold">马家濠工程</text>
+        <text x="170" y="115" text-anchor="middle" font-size="10" fill="#555">嘉靖十六年（1537年）</text>
+        <text x="170" y="135" text-anchor="middle" font-size="10" fill="#555">王献主持</text>
+        <text x="170" y="155" text-anchor="middle" font-size="10" fill="#c0392b">采用"焚石沃水"法</text>
+        <text x="170" y="175" text-anchor="middle" font-size="10" fill="#555">开凿长约14里</text>
+        <text x="170" y="195" text-anchor="middle" font-size="10" fill="#555">广六丈有奇，深半之</text>
+        <!-- 焚石沃水图示 -->
+        <rect x="100" y="210" width="30" height="30" rx="4" fill="#e74c3c" opacity="0.7"/>
+        <text x="115" y="230" text-anchor="middle" font-size="9" fill="#fff">火</text>
+        <path d="M135,225 L150,225" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowred)"/>
+        <rect x="155" y="210" width="30" height="30" rx="4" fill="#3498db" opacity="0.7"/>
+        <text x="170" y="230" text-anchor="middle" font-size="9" fill="#fff">水</text>
+        <path d="M190,225 L205,225" stroke="#3498db" stroke-width="2"/>
+        <rect x="210" y="210" width="30" height="30" rx="4" fill="#95a5a6" opacity="0.7"/>
+        <text x="225" y="230" text-anchor="middle" font-size="9" fill="#fff">碎</text>
+        <!-- 分水岭工程 -->
+        <rect x="420" y="70" width="180" height="160" rx="8" fill="#e8f0f8" stroke="#2a6b8e" stroke-width="1.5"/>
+        <text x="510" y="95" text-anchor="middle" font-size="13" fill="#1a3c5e" font-weight="bold">分水岭工程</text>
+        <text x="510" y="115" text-anchor="middle" font-size="10" fill="#555">嘉靖十九年（1540年）</text>
+        <text x="510" y="135" text-anchor="middle" font-size="10" fill="#555">崔旦主持</text>
+        <text x="510" y="155" text-anchor="middle" font-size="10" fill="#c0392b">遇坚硬冈石</text>
+        <text x="510" y="175" text-anchor="middle" font-size="10" fill="#c0392b">继遇糜沙</text>
+        <text x="510" y="195" text-anchor="middle" font-size="10" fill="#c0392b">终发泉涌塌方</text>
+        <text x="510" y="215" text-anchor="middle" font-size="10" fill="#888">工程草草停止</text>
+        <!-- 连接箭头 -->
+        <line x1="265" y1="150" x2="415" y2="150" stroke="#1a3c5e" stroke-width="2" stroke-dasharray="5,3"/>
+        <text x="340" y="140" text-anchor="middle" font-size="10" fill="#1a3c5e">两处关键工程</text>
+        <!-- 九闸重修 -->
+        <rect x="240" y="250" width="200" height="35" rx="6" fill="#2a6b8e" opacity="0.15" stroke="#2a6b8e" stroke-width="1"/>
+        <text x="340" y="273" text-anchor="middle" font-size="12" fill="#1a3c5e" font-weight="bold">九闸重修 · 短暂通航十余年</text>
+      </svg>

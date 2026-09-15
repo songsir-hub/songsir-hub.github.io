@@ -1,0 +1,31 @@
+<svg viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="spaceGrad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0a0e1a"/><stop offset="100%" style="stop-color:#1a2744"/></linearGradient>
+            </defs>
+            <rect width="800" height="360" fill="url(#spaceGrad1)"/>
+            <circle cx="650" cy="320" r="120" fill="rgba(26,82,118,0.5)"/>
+            <circle cx="650" cy="320" r="80" fill="#1a5276" stroke="#2e86c1" stroke-width="1"/>
+            <ellipse cx="630" cy="295" rx="30" ry="15" fill="#27ae60" opacity="0.5"/>
+            <circle cx="60" cy="40" r="1" fill="white" opacity="0.8"/><circle cx="150" cy="80" r="1.5" fill="#f0c040" opacity="0.9"/>
+            <circle cx="250" cy="30" r="1" fill="white" opacity="0.6"/><circle cx="700" cy="50" r="1.2" fill="white" opacity="0.7"/>
+            <!-- Hubble -->
+            <g transform="translate(120, 80)">
+                <rect x="0" y="25" width="140" height="55" rx="6" fill="#b0b0b0" stroke="#909090" stroke-width="1"/>
+                <rect x="-55" y="15" width="45" height="70" rx="3" fill="#1a3a6e" stroke="#2e6db4" stroke-width="1"/>
+                <line x1="-32" y1="15" x2="-32" y2="85" stroke="#2e6db4" stroke-width="0.5" opacity="0.5"/>
+                <rect x="140" y="15" width="45" height="70" rx="3" fill="#1a3a6e" stroke="#2e6db4" stroke-width="1"/>
+                <line x1="163" y1="15" x2="163" y2="85" stroke="#2e6db4" stroke-width="0.5" opacity="0.5"/>
+                <ellipse cx="140" cy="52" rx="10" ry="25" fill="#2c3e50" stroke="#e8e8f0" stroke-width="1.5"/>
+                <line x1="8" y1="25" x2="-10" y2="15" stroke="#a0a0a0" stroke-width="2"/>
+                <line x1="8" y1="80" x2="-10" y2="90" stroke="#a0a0a0" stroke-width="2"/>
+                <text x="70" y="58" text-anchor="middle" fill="#1a2744" font-size="10" font-weight="bold">HUBBLE</text>
+            </g>
+            <!-- Light beam -->
+            <path d="M 120 107 Q 350 60 550 100" stroke="#40e0d0" stroke-width="1" fill="none" opacity="0.3" stroke-dasharray="5,5"/>
+            <circle cx="600" cy="85" r="3" fill="#f0c040" opacity="0.8"/>
+            <circle cx="680" cy="110" r="2" fill="#ff6b6b" opacity="0.7"/>
+            <text x="70" y="230" fill="#e8e8f0" font-size="16" font-family="Noto Serif SC, serif" font-weight="600">哈勃空间望远镜 · Hubble Space Telescope</text>
+            <text x="70" y="255" fill="#9a9ab0" font-size="12">1990年发射 · 2.4米主镜 · 运行35年+</text>
+            <text x="70" y="275" fill="#40e0d0" font-size="11">Launched 1990 · 2.4m mirror · 35+ years operational</text>
+            <text x="70" y="295" fill="#9a9ab0" font-size="11">轨道高度 547km · Orbit: ~547 km</text>
+        </svg>
