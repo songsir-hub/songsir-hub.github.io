@@ -25,31 +25,14 @@ From Hubble to Roman — Three generations of telescopes pass the torch, as huma
 
 
 
-288
 
-百万像素相机
-Megapixel Camera
+| **罗曼望远镜关键指标 / Roman Key Specs** |
+|---|
+| **288** 百万像素相机 · Megapixel Camera |
+| **×200** 视场超越哈勃 · Hubble's FOV |
+| **L₂** 目标轨道 ~1.5M km from Earth |
+| **10年** 设计寿命 · 5-yr primary + 5-yr ext. |
 
-
-
-×200
-
-视场超越哈勃
-Hubble's FOV
-
-
-
-L₂
-
-目标轨道 150万公里
-~1.5M km from Earth
-
-
-
-10年
-
-设计寿命目标
-5-yr primary + 5-yr ext.
 
 
 
@@ -374,22 +357,17 @@ Precisely mapped the Cosmic Microwave Background, locking dark energy at 68.3% o
 
 
 
-参数 / Parameter哈勃 HST韦伯 JWST罗曼 Roman
 
-
-发射年份199020212026（今天）
-主镜口径2.4 米6.5 米2.4 米
-观测波段紫外/可见光/近红外红外 0.6–28μm近红外 0.5–2.3μm
-轨道位置低地球轨道 547km日地L₂点 150万km日地L₂点 150万km
-视场基准约哈勃的1/50约哈勃的200倍
-核心任务通用天文观测宇宙黎明/系外行星大气暗能量/暗物质/系外行星统计
-数据产量约150 GB/天约50 GB/天11 TB/天（约哈勃70倍）
-
-
-
-
-✦ ✦ ✦
-
+| **三代望远镜参数对比 · Three-Generation Comparison** |
+|---|---|---|
+| **参数 / Parameter** | **哈勃 HST** | **韦伯 JWST** | **罗曼 Roman** |
+| 发射年份 / Launch | 1990 | 2021 | 2026（今天） |
+| 主镜口径 / Mirror | 2.4 m | 6.5 m | 2.4 m + 288MP广角相机 |
+| 观测波段 / Band | 紫外/可见/近红外 | 红外 0.6–28μm | 近红外 0.5–2.3μm |
+| 轨道 / Orbit | 低地球轨道 547 km | 日地 L₂ 150万 km | 日地 L₂ 150万 km |
+| 视场 / FOV | 基准 | ~1/50 HST | ~200 HST |
+| 核心任务 / Mission | 通用天文观测 | 宇宙黎明/系外行星大气 | 暗能量/暗物质/系外行星统计 |
+| 数据产量 / Data | ~150 GB/day | ~50 GB/day | 11 TB/day (~70× HST) |
 
 ## 五、为什么这些望远镜如此重要？ V. Why Do These Telescopes Matter?
 
