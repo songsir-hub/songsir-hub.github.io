@@ -104,7 +104,7 @@ Texas Starbase currently serves as the **R&amp;D and prototype testing center**,
 
 ![](/images/starbase/starbase-03.jpg)
 
-**发射前准备：**星舰静卧在发射台上，等待点火升空（Maxar/AP） / Starship on the launch pad before a test flight (Maxar/AP, Jan 2025)
+**发射前准备：**Maxar卫星俯瞰博卡奇卡发射台——星舰与捕获塔架静候点火（Maxar Technologies via AP, Jan 16, 2025） / Satellite view of the SpaceX Starship standing on the launch pad at Starbase, Boca Chica (Maxar Technologies via AP, Jan 16, 2025)
 
 
 
@@ -134,7 +134,7 @@ The master plan for Louisiana Starbase is extraordinarily ambitious: **over ten 
 
 ![](/images/starbase/starbase-04.jpg)
 
-**路易斯安那 announcement：**SpaceX总裁兼COO Gwynne Shotwell（左）与路易斯安那州州长Jeff Landry（中）在2026年8月25日的宣布活动上（AP Photo/Gerald Herbert） / SpaceX President Gwynne Shotwell and Louisiana Governor Jeff Landry at the Starbase Louisiana announcement, Aug 25, 2026 (AP Photo/Gerald Herbert)
+**路易斯安那宣布活动：**SpaceX 总裁兼 COO Gwynne Shotwell 在 2026 年 8 月 25 日 Abbeville 发布会（AP Photo/Gerald Herbert） / SpaceX President Gwynne Shotwell speaks at the Starbase Louisiana announcement in Abbeville, Aug 25, 2026 (AP Photo/Gerald Herbert)
 
 
 
