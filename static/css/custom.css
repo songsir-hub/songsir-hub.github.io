@@ -287,19 +287,18 @@
 /* 覆盖 Tachyons 的 measure-wide（约 544px），让正文填满 .post 容器 */
 .post-content {
   max-width: 100%;
+}
 
 /* ============================================================
    正文首行缩进（2026-09-18）
    - 中文习惯：缩进两字符（2em）
-   - 英文惯例：按字符缩进；2em 在英文下视觉 ≈ 4 个英文字符，观感统一
-   - 排除：表格内、代码块内、列表项内、标题、引用块内
+   - 英文下 2em 视觉 ≈ 4 个英文字符，观感统一
+   - 排除：表格内、列表项、引用块、已有 text-indent 的 .classical-para
    ============================================================ */
 .post-content p {
   text-indent: 2em;
 }
 /* 排除不适用缩进的元素 */
-.post-content p:has(> img):first-child,
-.post-content p:has(> code),
 .post-content figure p,
 .post-content table p,
 .post-content li p,
