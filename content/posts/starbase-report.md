@@ -55,30 +55,14 @@ The name "Starbase" itself is highly symbolic—it literally means a "star depar
 
 
 
-125,000
+| **路易斯安那基地指标 / LA-Site Key Specs** |
+| --- |
+| **125,000** 英亩 · 基地面积<br>*125,000 Acres (LA Site)* |
+| **$100B** 总投资额 · Total Investment |
+| **30次/天** 目标发射频率 · Target Launch Rate |
+| **2029** 最早发射年份 · Earliest Launch |
 
-英亩（路易斯安那基地面积）Acres (LA Site)
-
-
-
-$100B
-
-总投资额 Total Investment
-
-
-
-30次/天
-
-目标发射频率 Target Launch Rate
-
-
-
-2029
-
-最早发射年份 Earliest Launch
-
-
-
+![图1：SpaceX星际基地发展时间线（Source: SpaceX 2026-08-25 announcement & public reports）](/images/starbase/starbase-timeline.png "SpaceX 星际基地发展时间线")
 
 图1：SpaceX星际基地发展时间线 / Figure 1: SpaceX Starbase Development Timeline
 
