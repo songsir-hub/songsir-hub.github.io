@@ -13,7 +13,7 @@ categories = ['科技前沿']
 
 星际基地：人类深空探索的新起点 / Starbase: Humanity's New Gateway to Deep Space
 
-**
+
 
 
 
@@ -27,7 +27,7 @@ STARBASE — Humanity's New Gateway to Deep Space
 
 ![](/images/starbase/starbase-01.jpg)
 
-**图例：**SpaceX星舰从德州博卡奇卡星际基地起飞进行试验飞行（NASA/SpaceX官方图片） / SpaceX Starship test flight launch from Starbase, Boca Chica, Texas (NASA/SpaceX official)
+**图例**：SpaceX星舰从德州博卡奇卡星际基地起飞进行试验飞行（NASA/SpaceX官方图片） / SpaceX Starship test flight launch from Starbase, Boca Chica, Texas (NASA/SpaceX official)
 
 ## 一、什么是星际基地What Is Starbase?*
 
@@ -98,13 +98,13 @@ Texas Starbase currently serves as the **R&amp;D and prototype testing center**,
 
 ![](/images/starbase/starbase-02.jpg)
 
-**德州发射场：**2025年1月，星舰从博卡奇卡星际基地升空（AP Photo/Eric Gay） / Starship launches from Boca Chica, Texas (AP Photo/Eric Gay, Jan 2025)
+**德州发射场**：2025年1月，星舰从博卡奇卡星际基地升空（AP Photo/Eric Gay） / Starship launches from Boca Chica, Texas (AP Photo/Eric Gay, Jan 2025)
 
 
 
 ![](/images/starbase/starbase-03.jpg)
 
-**发射前准备：**Maxar卫星俯瞰博卡奇卡发射台——星舰与捕获塔架静候点火（Maxar Technologies via AP, Jan 16, 2025） / Satellite view of the SpaceX Starship standing on the launch pad at Starbase, Boca Chica (Maxar Technologies via AP, Jan 16, 2025)
+**发射前准备**：Maxar卫星俯瞰博卡奇卡发射台——星舰与捕获塔架静候点火（Maxar Technologies via AP, Jan 16, 2025） / Satellite view of the SpaceX Starship standing on the launch pad at Starbase, Boca Chica (Maxar Technologies via AP, Jan 16, 2025)
 
 
 
@@ -134,7 +134,7 @@ The master plan for Louisiana Starbase is extraordinarily ambitious: **over ten 
 
 ![](/images/starbase/starbase-04.jpg)
 
-**路易斯安那宣布活动：**SpaceX 总裁兼 COO Gwynne Shotwell 在 2026 年 8 月 25 日 Abbeville 发布会（AP Photo/Gerald Herbert） / SpaceX President Gwynne Shotwell speaks at the Starbase Louisiana announcement in Abbeville, Aug 25, 2026 (AP Photo/Gerald Herbert)
+**路易斯安那宣布活动**：SpaceX 总裁兼 COO Gwynne Shotwell 在 2026 年 8 月 25 日 Abbeville 发布会（AP Photo/Gerald Herbert） / SpaceX President Gwynne Shotwell speaks at the Starbase Louisiana announcement in Abbeville, Aug 25, 2026 (AP Photo/Gerald Herbert)
 
 
 
@@ -225,7 +225,7 @@ NASA所有，多用户共享
 
 
 
-**核心差异在于"自主性"：**传统航天港是多用户共享的基础设施，发射排期需要排队等待；而星际基地是SpaceX"自己的工厂+自己的发射场"，从研发、制造到发射全流程自主控制，这是其能够实现高频发射的根本前提。
+**核心差异在于"自主性"**：传统航天港是多用户共享的基础设施，发射排期需要排队等待；而星际基地是SpaceX"自己的工厂+自己的发射场"，从研发、制造到发射全流程自主控制，这是其能够实现高频发射的根本前提。
 
 
 **The core difference lies in "autonomy":** Traditional spaceports are multi-user shared infrastructure where launch slots must be scheduled and waited for. Starbase is SpaceX's "own factory + own launch site"—controlling the entire pipeline from R&amp;D to manufacturing to launch autonomously. This autonomy is the fundamental prerequisite for achieving high-frequency launches.
@@ -520,13 +520,13 @@ Musk has repeatedly stated publicly that the ultimate purpose of building Starba
 
 ![](/images/starbase/starbase-05.jpg)
 
-**Mechazilla经典瞬间：**两根巨型机械臂在首次尝试中成功夹住星舰Super Heavy助推器，马斯克称之为"没有虚构部分的科幻" / The iconic Mechazilla chopstick catch — two giant mechanical arms grasp the Super Heavy booster on the first try, what Musk called "science fiction without the fiction part"
+**Mechazilla经典瞬间**：两根巨型机械臂在首次尝试中成功夹住星舰Super Heavy助推器，马斯克称之为"没有虚构部分的科幻" / The iconic Mechazilla chopstick catch — two giant mechanical arms grasp the Super Heavy booster on the first try, what Musk called "science fiction without the fiction part"
 
 
 
 ![](/images/starbase/starbase-06.jpg)
 
-**发射升空：**星舰火箭从德州博卡奇卡星际基地腾空而起（AP Photo/Eric Gay） / Starship rocket lifts off from Starbase, Boca Chica, Texas (AP Photo/Eric Gay, Jan 2025)
+**发射升空**：星舰火箭从德州博卡奇卡星际基地腾空而起（AP Photo/Eric Gay） / Starship rocket lifts off from Starbase, Boca Chica, Texas (AP Photo/Eric Gay, Jan 2025)
 
 
 
@@ -560,13 +560,13 @@ Starbase is not the destination—it is the starting point. Its true significanc
 
 ![](/images/starbase/starbase-07.jpg)
 
-**落日下的星际基地：**夕阳映照在博卡奇卡的星舰上，这座未来太空港正在悄然崛起（AP Photo/Eric Gay） / Sunset silhouettes Starship at Starbase Boca Chica (AP Photo/Eric Gay)
+**落日下的星际基地**：夕阳映照在博卡奇卡的星舰上，这座未来太空港正在悄然崛起（AP Photo/Eric Gay） / Sunset silhouettes Starship at Starbase Boca Chica (AP Photo/Eric Gay)
 
 
 
 ![](/images/starbase/starbase-08.jpg)
 
-**划破天际：**星舰在博卡奇卡上空划出优美弧线（SpaceX/AP） / Starship arcs across the sky above Boca Chica (SpaceX/AP)
+**划破天际**：星舰在博卡奇卡上空划出优美弧线（SpaceX/AP） / Starship arcs across the sky above Boca Chica (SpaceX/AP)
 
 
 
