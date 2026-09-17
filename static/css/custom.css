@@ -488,3 +488,24 @@ nav > div.flex-l.center.items-center.justify-between > a {
 .tts-speed{max-width:90px}
 .tts-active{background:#fdf6e3;box-shadow:-8px 0 0 #fdf6e3,8px 0 0 #fdf6e3}
 @media (max-width:640px){.tts-now{display:none}.tts-prog{flex:0 0 60px}.tts-voice{max-width:160px}}
+
+/* ============================================================
+   英文副标题 / 配图居中 / 中英分隔符 ◆（2026-09-18）
+   ============================================================ */
+/* 英文副标题：加大字号、居中、颜色偏灰金 */
+.en-subtitle {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #5a4633;
+  letter-spacing: 0.06em;
+  margin: 4px 0 24px;
+  font-family: 'Noto Serif SC', 'Source Han Serif CN', '宋体', serif;
+}
+/* 正文内所有配图居中 */
+.post-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
