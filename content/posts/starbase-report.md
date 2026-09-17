@@ -235,18 +235,8 @@ NASA所有，多用户共享
 
 
 
-flowchart TD
-subgraph traditional["传统航天港模式 / Traditional Spaceport"]
-A[载荷集成商 Payload Integrator] --> B[发射服务商 Launch Service Provider]
-B --> C[政府/军方发射场 Gov/Mil Launch Site]
-C --> D["等待排期 Queue for Slot"]
-D --> E[发射 Launch]
-style A fill:#1e2a3a,stroke:#8892a4,color:#e8ecf4
-style B fill:#1e2a3a,stroke:#8892a4,color:#e8ecf4
-style C fill:#1e2a3a,stroke:#8892a4,color:#e8ecf4
-style D fill:#1e2a3a,stroke:#8892a4,color:#f59e0b
-style E fill:#1e2a3a,stroke:#8892a4,color:#e8ecf4
-end
+![图2.5：传统航天港与星际基地运营流程对比（SVG 流程图）](/images/starbase/fig2_5_flow.svg)
+
 
 subgraph starbase["星际基地模式 / Starbase Model"]
 F[设计 Design] --> G[制造 Manufacture]
