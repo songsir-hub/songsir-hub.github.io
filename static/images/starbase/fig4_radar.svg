@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" font-family="'Source Han Serif SC','Noto Serif CJK SC','Songti SC',SimSun,'宋体',serif">
+  <rect width="920" height="440" fill="#FBF8F1"/>
+  <text x="460" y="36" font-size="20" font-weight="bold" fill="#3A3226" text-anchor="middle">图4：星际基地 vs 传统航天港 综合能力雷达图</text>
+  <text x="460" y="56" font-size="12.5" fill="#6B6255" text-anchor="middle">Figure 4: Starbase vs Traditional Spaceports — Capability Radar（0–5 分）</text>
+
+  <!-- radar center (460, 245), max radius 150, 6 axes (60 deg apart, start top, clockwise) -->
+  <!-- axes: top, top-right, bottom-right, bottom, bottom-left, top-left -->
+  <!-- 6 ring polygons (r=30,60,90,120,150) -->
+  <!-- Compute hexagon points for radius R at center (cx,cy): angle 90,30,-30,-90,-150,150 -->
+  <!-- R=150: (460,95)(590,160)(590,330)(460,395)(330,330)(330,160) approx -->
+  <g fill="none" stroke="#d8d0c0" stroke-width="1">
+    <polygon points="460,95 590,160 590,330 460,395 330,330 330,160"/>
+    <polygon points="460,125 560,175 560,315 460,365 360,315 360,175"/>
+    <polygon points="460,155 530,190 530,300 460,335 390,300 390,190"/>
+    <polygon points="460,185 500,205 500,285 460,305 420,285 420,205"/>
+  </g>
+  <!-- spokes -->
+  <g stroke="#d8d0c0" stroke-width="1">
+    <line x1="460" y1="245" x2="460" y2="95"/>
+    <line x1="460" y1="245" x2="590" y2="330"/>
+    <line x1="460" y1="245" x2="460" y2="395"/>
+    <line x1="460" y1="245" x2="330" y2="330"/>
+    <line x1="460" y1="245" x2="330" y2="160"/>
+    <line x1="460" y1="245" x2="590" y2="160"/>
+  </g>
+
+  <!-- axis labels (at r~170) -->
+  <g font-size="13" fill="#3A3226" text-anchor="middle">
+    <text x="460" y="80">全链条自主</text>
+    <text x="650" y="335">深水港物流</text>
+    <text x="460" y="418">地理/燃料</text>
+    <text x="270" y="335">政策激励</text>
+    <text x="250" y="150">发射频率</text>
+    <text x="620" y="145">回收复用</text>
+  </g>
+
+  <!-- Traditional spaceport polygon (lower scores)
+       values: 全链条1.5, 深水港1.5, 地理2, 政策1.5, 频率1.5, 回收1.5
+       (r_max 150; r = 150*val/5) -->
+  <polygon points="460,205 519,267 460,345 376,267 387,223 533,245"
+           fill="#C07830" fill-opacity="0.28" stroke="#C07830" stroke-width="2"/>
+
+  <!-- Starbase polygon (higher scores)
+       values: 全链条5, 深水港4.5, 地理4, 政策5, 频率5, 回收5
+       r: 150,135,120,150,150,150 -->
+  <polygon points="460,95 580,278 460,365 330,245 330,160 590,160"
+           fill="#52795F" fill-opacity="0.30" stroke="#52795F" stroke-width="2"/>
+
+  <!-- legend -->
+  <g font-size="12.5">
+    <rect x="330" y="60" width="16" height="16" fill="#52795F" fill-opacity="0.30" stroke="#52795F"/>
+    <text x="354" y="72" fill="#3A3226">星际基地 Starbase</text>
+    <rect x="520" y="60" width="16" height="16" fill="#C07830" fill-opacity="0.28" stroke="#C07830"/>
+    <text x="544" y="72" fill="#3A3226">传统航天港</text>
+  </g>
+
+  <text x="460" y="432" font-size="10.5" fill="#8A8578" text-anchor="middle">评分为正文 ①–⑥ 节定性归纳（全链条自主/深水港/地理/政策/频率/回收）；0–5 分</text>
+<text x="98%" y="98%" text-anchor="end" font-size="11" fill="#6B6255" font-family="serif" opacity="0.75">松朗制造</text>
+</svg>
