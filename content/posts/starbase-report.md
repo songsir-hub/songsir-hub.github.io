@@ -140,6 +140,7 @@ The master plan for Louisiana Starbase is extraordinarily ambitious: **over ten 
 
 
 图2：两大星际基地关键参数对比 / Figure 2: Key Parameters of the Two Starbases
+![图2：两大星际基地关键参数对比（参数表）](/images/starbase/fig2_params.svg)
 
 
 
@@ -259,6 +260,7 @@ style starbase fill:none,stroke:none
 
 
 图3：全球主要航天港发射频率对比（年发射次数）/ Figure 3: Annual Launch Frequency Comparison of Major Global Spaceports
+![图3：全球主要航天港发射频率对比（柱状图）](/images/starbase/fig3_frequency.svg)
 
 
 
@@ -325,6 +327,7 @@ style starbase fill:none,stroke:none
 
 
 图4：星际基地 vs 传统航天港综合评分雷达图 / Figure 4: Starbase vs Traditional Spaceports — Comprehensive Capability Radar
+![图4：星际基地 vs 传统航天港综合评分雷达图](/images/starbase/fig4_radar.svg)
 
 
 
@@ -441,6 +444,7 @@ Support for large-scale cargo transport for crewed Mars missions, early signs of
 
 
 图5：星际基地发射频率增长预测（2026-2040）/ Figure 5: Projected Launch Frequency Growth at Starbase (2026-2040)
+![图5：星际基地发射频率增长预测 2026–2040（折线图）](/images/starbase/fig5_growth.svg)
 
 
 
