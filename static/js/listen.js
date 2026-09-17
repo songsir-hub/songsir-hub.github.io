@@ -107,12 +107,10 @@
     }, 9000);
   }
 
-  /* ---- per-button session ---- */
-  function makeSession(chunks, lang) {
-    var s = { chunks: chunks, lang: lang, idx: 0, playing: false, lastEl: null,
-             btn: null, stopEl: null, nowEl: null, progEl: null };
+  /* ---- per-button session: wire up state machine on an already-built s object ---- */
+  function wireSession(s, chunks) {
 
-    function label() { return LABEL[lang]; }
+    function label() { return LABEL[s.lang]; }
 
     function setBtn() {
       var l = label();
@@ -248,12 +246,16 @@
       '<button type="button" class="tts-stop" aria-label="' + l.stop + '">' + l.stop + '</button>' +
       '<span class="tts-now"></span>';
     bar.appendChild(host);
-    var sess = makeSession(chunks, lang);
-    sess.btn = host.querySelector('.tts-btn');
-    sess.stopEl = host.querySelector('.tts-stop');
-    sess.nowEl = host.querySelector('.tts-now');
-    sess.progEl = host.querySelector('.tts-prog i');
-    host.querySelector('.tts-rate').addEventListener('click', function () {
+    var rateEl = host.querySelector('.tts-rate');
+    var sess = {
+      chunks: chunks, lang: lang, idx: 0, playing: false, lastEl: null,
+      btn: host.querySelector('.tts-btn'),
+      stopEl: host.querySelector('.tts-stop'),
+      nowEl: host.querySelector('.tts-now'),
+      progEl: host.querySelector('.tts-prog i')
+    };
+    wireSession(sess, chunks);
+    rateEl.addEventListener('click', function () {
       rateIdx = (rateIdx + 1) % RATES.length;
       var all = bar.querySelectorAll('.tts-rate');
       for (var i = 0; i < all.length; i++) all[i].textContent = RATES[rateIdx].toFixed(2).replace(/0$/, '') + '\u00d7';
