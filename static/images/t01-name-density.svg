@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 470" font-family="'Source Han Serif SC','Noto Serif CJK SC','Songti SC',SimSun,'宋体',serif">
+<defs><marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 z" fill="#8B7355"/></marker></defs>
+<rect width="920" height="470" fill="#FBF8F1"/>
+<text x="460" y="44" font-size="21" font-weight="bold" fill="#3A3226" text-anchor="middle">「莱」字地名的密度差：胶东成片，潍淄成空</text>
+<text x="460" y="67" font-size="13" fill="#6B6255" text-anchor="middle">密度差不来自族群分布，而来自行政覆盖强度</text>
+<rect x="60" y="96" width="380" height="250" rx="9" fill="#8FB39A" fill-opacity="0.28" stroke="#52795F" stroke-width="2.0"/>
+<text x="250" y="126" font-size="15.5" font-weight="bold" fill="#3A3226" text-anchor="middle">胶东：名称沉淀区</text>
+<text x="250" y="148" font-size="12" fill="#6B6255" text-anchor="middle">秦汉以前长期处於中原政区边缘，旧名未被覆盖</text>
+<circle cx="84" cy="176" r="4.5" fill="#8FB39A" stroke="#52795F" stroke-width="1.6"/>
+<text x="98" y="180" font-size="12.8" fill="#4E463A" text-anchor="start">龙口莱山</text>
+<circle cx="84" cy="198" r="4.5" fill="#8FB39A" stroke="#52795F" stroke-width="1.6"/>
+<text x="98" y="202" font-size="12.8" fill="#4E463A" text-anchor="start">莱阳（莱山之阳）</text>
+<circle cx="84" cy="220" r="4.5" fill="#8FB39A" stroke="#52795F" stroke-width="1.6"/>
+<text x="98" y="224" font-size="12.8" fill="#4E463A" text-anchor="start">莱西</text>
+<circle cx="84" cy="242" r="4.5" fill="#8FB39A" stroke="#52795F" stroke-width="1.6"/>
+<text x="98" y="246" font-size="12.8" fill="#4E463A" text-anchor="start">莱州（古莱国地）</text>
+<circle cx="84" cy="264" r="4.5" fill="#8FB39A" stroke="#52795F" stroke-width="1.6"/>
+<text x="98" y="268" font-size="12.8" fill="#4E463A" text-anchor="start">烟台莱山区</text>
+<circle cx="84" cy="286" r="4.5" fill="#8FB39A" stroke="#52795F" stroke-width="1.6"/>
+<text x="98" y="290" font-size="12.8" fill="#4E463A" text-anchor="start">蓬莱（另源，神话得名）</text>
+<circle cx="84" cy="308" r="4.5" fill="#8FB39A" stroke="#52795F" stroke-width="1.6"/>
+<text x="98" y="312" font-size="12.8" fill="#4E463A" text-anchor="start">莱州湾</text>
+<circle cx="84" cy="330" r="4.5" fill="#8FB39A" stroke="#52795F" stroke-width="1.6"/>
+<text x="98" y="334" font-size="12.8" fill="#4E463A" text-anchor="start">东莱郡</text>
+<rect x="480" y="96" width="380" height="250" rx="9" fill="#E5A55F" fill-opacity="0.26" stroke="#B8743A" stroke-width="2.0"/>
+<text x="670" y="126" font-size="15.5" font-weight="bold" fill="#3A3226" text-anchor="middle">潍淄：名称拥挤区</text>
+<text x="670" y="148" font-size="12" fill="#6B6255" text-anchor="middle">齐都所在，两千年反复重新命名，旧名无空位</text>
+<circle cx="504" cy="176" r="4.5" fill="#E5A55F" stroke="#B8743A" stroke-width="1.6"/>
+<text x="518" y="180" font-size="12.8" fill="#4E463A" text-anchor="start">昌乐</text>
+<circle cx="504" cy="198" r="4.5" fill="#E5A55F" stroke="#B8743A" stroke-width="1.6"/>
+<text x="518" y="202" font-size="12.8" fill="#4E463A" text-anchor="start">临朐</text>
+<circle cx="504" cy="220" r="4.5" fill="#E5A55F" stroke="#B8743A" stroke-width="1.6"/>
+<text x="518" y="224" font-size="12.8" fill="#4E463A" text-anchor="start">寿光（纪台）</text>
+<circle cx="504" cy="242" r="4.5" fill="#E5A55F" stroke="#B8743A" stroke-width="1.6"/>
+<text x="518" y="246" font-size="12.8" fill="#4E463A" text-anchor="start">昌邑（郲地）</text>
+<circle cx="504" cy="264" r="4.5" fill="#E5A55F" stroke="#B8743A" stroke-width="1.6"/>
+<text x="518" y="268" font-size="12.8" fill="#4E463A" text-anchor="start">临淄（营丘）</text>
+<circle cx="504" cy="286" r="4.5" fill="#E5A55F" stroke="#B8743A" stroke-width="1.6"/>
+<text x="518" y="290" font-size="12.8" fill="#4E463A" text-anchor="start">青州 · 潍州 · 北海郡</text>
+<circle cx="504" cy="308" r="4.5" fill="#E5A55F" stroke="#B8743A" stroke-width="1.6"/>
+<text x="518" y="312" font-size="12.8" font-weight="bold" fill="#8C4A3C" text-anchor="start">「莱」字地名：0</text>
+<circle cx="504" cy="330" r="4.5" fill="#E5A55F" stroke="#B8743A" stroke-width="1.6"/>
+<text x="518" y="334" font-size="12.8" font-weight="bold" fill="#4E463A" text-anchor="start">替代留存：纪 · 郲</text>
+<rect x="60" y="368" width="800" height="56" rx="9" fill="#EFE6CE" fill-opacity="0.5" stroke="#8B7355" stroke-width="1.6"/>
+<text x="460" y="392" font-size="15" font-weight="bold" fill="#3A3226" text-anchor="middle">地名的密度差，是行政覆盖强度的密度差</text>
+<text x="460" y="412" font-size="12.5" fill="#6B6255" text-anchor="middle">与族群分布的密度恰好成反比——越是被反复命名的地方，旧名越难留下</text>
+<path d="M60,430 L860,430" stroke="#8B7355" stroke-width="1.2" stroke-dasharray="4 4" fill="none"/>
+<text x="60" y="450" font-size="11.5" fill="#6B6255" text-anchor="start">蓬莱之「莱」另出神话（汉武帝望蓬莱山筑城），与莱夷无涉，不计入密度。</text>
+<text x="860" y="450" font-size="11.5" fill="#6B6255" text-anchor="end">作图：松朗</text>
+</svg>

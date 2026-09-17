@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 500" font-family="'Source Han Serif SC','Noto Serif CJK SC','Songti SC',SimSun,'宋体',serif">
+<rect width="920" height="500" fill="#FBF8F1"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8B7355"/></marker></defs>
+<text x="460" y="46" font-size="22" font-weight="bold" fill="#3A3226" text-anchor="middle">龙山时期黄淮下游的作物结构：小麦在哪里</text>
+<text x="460" y="70" font-size="13.5" fill="#6B6255" text-anchor="middle">距今约 4600—4000 年，海岱先民碗里装的主要不是麦</text>
+<rect x="60" y="96" width="420" height="96" rx="10" fill="#9BBF7A" fill-opacity="0.22" stroke="#6E9450" stroke-width="2.0"/>
+<text x="80" y="124" font-size="14" font-weight="bold" fill="#3A3226" text-anchor="start">日照两城镇</text>
+<text x="80" y="148" font-size="12" fill="#4E463A" text-anchor="start">稻与粟绝对数量最多，粟类作物中九成以上是粟</text>
+<text x="80" y="169" font-size="12" fill="#4E463A" text-anchor="start">水稻数量不及粟类，却是称重最大的作物</text>
+<text x="80" y="190" font-size="12" fill="#4E463A" text-anchor="start">黍与小麦数量都很少</text>
+<rect x="60" y="208" width="420" height="96" rx="10" fill="#9BBF7A" fill-opacity="0.22" stroke="#6E9450" stroke-width="2.0"/>
+<text x="80" y="236" font-size="14" font-weight="bold" fill="#3A3226" text-anchor="start">临沭东盘</text>
+<text x="80" y="260" font-size="12" fill="#4E463A" text-anchor="start">数量百分比：稻 35%、粟 4%、黍 2%、小麦 2%、大麦 1%</text>
+<text x="80" y="281" font-size="12" fill="#4E463A" text-anchor="start">出土概率：  稻 39%、粟 11%、黍 9%、小麦 4%、大麦 2%</text>
+<rect x="60" y="320" width="420" height="96" rx="10" fill="#9BBF7A" fill-opacity="0.22" stroke="#6E9450" stroke-width="2.0"/>
+<text x="80" y="348" font-size="14" font-weight="bold" fill="#3A3226" text-anchor="start">淄博房家（鲁北平原）</text>
+<text x="80" y="372" font-size="12" fill="#4E463A" text-anchor="start">粟的出土概率与数量均最高，黍次之</text>
+<text x="80" y="393" font-size="12" fill="#4E463A" text-anchor="start">稻与大豆都很少</text>
+<rect x="510" y="96" width="350" height="208" rx="10" fill="#E8A65C" fill-opacity="0.24" stroke="#C07830" stroke-width="2.2"/>
+<text x="532" y="126" font-size="14" font-weight="bold" fill="#3A3226" text-anchor="start">胶州赵家庄：最早的一粒麦</text>
+<text x="532" y="156" font-size="12.5" fill="#4E463A" text-anchor="start">龙山灰坑 H339 出土小麦</text>
+<text x="532" y="180" font-size="12.5" fill="#4E463A" text-anchor="start">AMS 直接测年 3905±50 BP</text>
+<text x="532" y="204" font-size="12.5" fill="#4E463A" text-anchor="start">校正年代 4450—4220 cal BP</text>
+<text x="532" y="236" font-size="12" fill="#6B6255" text-anchor="start">目前仍属孤证，定论有待更多材料</text>
+<text x="532" y="268" font-size="12" font-weight="bold" fill="#C07830" text-anchor="start">※ 注意：它在胶东一侧，不在潍淄</text>
+<rect x="510" y="322" width="350" height="132" rx="10" fill="#EFE6CE" fill-opacity="0.5" stroke="#8B7355" stroke-width="1.8"/>
+<text x="532" y="350" font-size="13.5" font-weight="bold" fill="#3A3226" text-anchor="start">同一个遗址里，麦与稻的差距</text>
+<text x="532" y="378" font-size="12" fill="#4E463A" text-anchor="start">稻</text>
+<rect x="558" y="368" width="105" height="14" fill="#9BBF7A" stroke="#6E9450" stroke-width="1.2"/>
+<text x="671.0" y="380" font-size="11.5" fill="#4E463A" text-anchor="start">35%</text>
+<text x="532" y="404" font-size="12" fill="#4E463A" text-anchor="start">麦</text>
+<rect x="558" y="394" width="6" height="14" fill="#E8A65C" stroke="#C07830" stroke-width="1.2"/>
+<text x="572.0" y="406" font-size="11.5" fill="#4E463A" text-anchor="start">2%</text>
+<text x="532" y="432" font-size="11" fill="#6B6255" text-anchor="start">（临沭东盘炭化遗存数量百分比，余为其他植物）</text>
+<text x="460" y="478" font-size="14.5" font-weight="bold" fill="#3A3226" text-anchor="middle">小麦：比重很少，但多数遗址都有发现——稀罕，才配做族名</text>
+<text x="900" y="486" font-size="11" fill="#6B6255" text-anchor="end">作图：松朗</text>
+</svg>

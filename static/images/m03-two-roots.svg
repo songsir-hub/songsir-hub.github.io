@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 500" font-family="'Source Han Serif SC','Noto Serif CJK SC','Songti SC',SimSun,'宋体',serif">
+<rect width="920" height="500" fill="#FBF8F1"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8B7355"/></marker></defs>
+<text x="460" y="46" font-size="22" font-weight="bold" fill="#3A3226" text-anchor="middle">“来”与“莱”：一个声音的两条路</text>
+<text x="460" y="70" font-size="13.5" fill="#6B6255" text-anchor="middle">同一个 lái 音，一条通向麦子，一条通向野草</text>
+<rect x="60" y="130" width="150" height="92" rx="10" fill="#E8A65C" stroke="#C07830" stroke-width="2.6"/>
+<text x="135" y="168" font-size="40" font-weight="bold" fill="#3A3226" text-anchor="middle">來</text>
+<text x="135" y="196" font-size="13" font-weight="bold" fill="#3A3226" text-anchor="middle">本义：麦</text>
+<text x="135" y="213" font-size="11.5" fill="#6B6255" text-anchor="middle">《说文》瑞麥來麰</text>
+<path d="M212,158 L268,118" stroke="#6E9450" stroke-width="2.2" fill="none" marker-end="url(#ah)"/>
+<path d="M263.4,125.8 L268,118 L259.2,119.8" stroke="#6E9450" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+<path d="M212,196 L268,300" stroke="#3E7CA6" stroke-width="2.2" fill="none" marker-end="url(#ah)"/>
+<path d="M260.9,294.5 L268,300 L267.3,291.0" stroke="#3E7CA6" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+<text x="232" y="146" font-size="12.5" font-weight="bold" fill="#6E9450" text-anchor="start">＋艸</text>
+<text x="228" y="262" font-size="12.5" font-weight="bold" fill="#3E7CA6" text-anchor="start">借为来去</text>
+<rect x="276" y="78" width="150" height="82" rx="10" fill="#9BBF7A" stroke="#6E9450" stroke-width="2.6"/>
+<text x="351" y="112" font-size="34" font-weight="bold" fill="#3A3226" text-anchor="middle">萊</text>
+<text x="351" y="138" font-size="12.5" font-weight="bold" fill="#3A3226" text-anchor="middle">藜 · 灰菜 · 野菜</text>
+<path d="M428,119 L486,119" stroke="#6E9450" stroke-width="2.0" fill="none" marker-end="url(#ah)"/>
+<path d="M477.8,122.7 L486,119 L477.8,115.3" stroke="#6E9450" stroke-width="2.0" fill="none" stroke-linecap="round"/>
+<rect x="494" y="62" width="366" height="116" rx="10" fill="#9BBF7A" fill-opacity="0.22" stroke="#6E9450" stroke-width="2.0"/>
+<text x="512" y="90" font-size="13.5" font-weight="bold" fill="#3A3226" text-anchor="start">字义的三次延伸</text>
+<text x="512" y="114" font-size="12.5" fill="#4E463A" text-anchor="start">① 草名　“北山有莱”，兖州人蒸食曰“莱蒸”</text>
+<text x="512" y="137" font-size="12.5" fill="#4E463A" text-anchor="start">② 荒田　《周礼》郑注：“莱，休不耕者”</text>
+<text x="512" y="160" font-size="12.5" fill="#4E463A" text-anchor="start">③ 除草　“莱山田之野”——既是草，也是除草</text>
+<path d="M862,120 L900,120" stroke="#6E9450" stroke-width="1.8" fill="none" marker-end="url(#ah)"/>
+<path d="M891.8,123.7 L900,120 L891.8,116.3" stroke="#6E9450" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+<text x="894" y="152" font-size="12.5" font-weight="bold" fill="#6E9450" text-anchor="end">族名</text>
+<text x="894" y="170" font-size="12.5" font-weight="bold" fill="#6E9450" text-anchor="end">地名</text>
+<rect x="276" y="258" width="150" height="82" rx="10" fill="#5E9BB8" stroke="#3E7CA6" stroke-width="2.6"/>
+<text x="351" y="292" font-size="34" font-weight="bold" fill="#3A3226" text-anchor="middle">来</text>
+<text x="351" y="318" font-size="12.5" font-weight="bold" fill="#3A3226" text-anchor="middle">来去之来</text>
+<path d="M428,299 L486,299" stroke="#3E7CA6" stroke-width="2.0" fill="none" marker-end="url(#ah)"/>
+<path d="M477.8,302.7 L486,299 L477.8,295.3" stroke="#3E7CA6" stroke-width="2.0" fill="none" stroke-linecap="round"/>
+<rect x="494" y="248" width="366" height="116" rx="10" fill="#5E9BB8" fill-opacity="0.22" stroke="#3E7CA6" stroke-width="2.0"/>
+<text x="512" y="276" font-size="13.5" font-weight="bold" fill="#3A3226" text-anchor="start">借义夺本义</text>
+<text x="512" y="300" font-size="12.5" fill="#4E463A" text-anchor="start">徐灏：古来麦字只作来，后为借义所专，</text>
+<text x="512" y="323" font-size="12.5" fill="#4E463A" text-anchor="start">别作麳、䅘，而来之本义废矣</text>
+<text x="512" y="348" font-size="12.5" fill="#4E463A" text-anchor="start">段玉裁：引申之义行而本义废矣</text>
+<rect x="60" y="400" width="800" height="62" rx="10" fill="#EFE6CE" fill-opacity="0.5" stroke="#8B7355" stroke-width="1.8"/>
+<text x="460" y="426" font-size="15" font-weight="bold" fill="#3A3226" text-anchor="middle">一字两歧：字形里藏着麦，字义里长着草</text>
+<text x="460" y="449" font-size="12.5" fill="#6B6255" text-anchor="middle">两条路都通向同一个名字——山东的“莱”</text>
+<text x="900" y="486" font-size="11" fill="#6B6255" text-anchor="end">作图：松朗</text>
+</svg>

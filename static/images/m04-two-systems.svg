@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 610" font-family="'Source Han Serif SC','Noto Serif CJK SC','Songti SC',SimSun,'宋体',serif">
+<rect width="920" height="610" fill="#FBF8F1"/>
+<text x="460" y="40" font-size="22" font-weight="bold" fill="#3A3226" text-anchor="middle">入周则纪，不入周则莱</text>
+<text x="460" y="64" font-size="13.5" fill="#6B6255" text-anchor="middle">名字的切换不是语言现象，是政治身份的切换</text>
+<defs><marker id="b_m04" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#8B7355"/></marker></defs>
+<rect x="50" y="100" width="170" height="125" rx="9" fill="#EFE6CE" fill-opacity="0.6" stroke="#8B7355" stroke-width="1.8"/>
+<text x="135" y="146" font-size="15" font-weight="bold" fill="#3A3226" text-anchor="middle">体系外</text>
+<text x="135" y="172" font-size="11.5" fill="#6B6255" text-anchor="middle">商末无周，周未兴</text>
+<rect x="240" y="100" width="440" height="125" rx="10" fill="#E8A65C" fill-opacity="0.18" stroke="#C07830" stroke-width="2.4"/>
+<text x="460" y="148" font-size="19" font-weight="bold" fill="#C07830" text-anchor="middle">不入周 → 名"莱"</text>
+<rect x="700" y="100" width="170" height="125" rx="9" fill="#EFE6CE" fill-opacity="0.6" stroke="#8B7355" stroke-width="1.8"/>
+<text x="785" y="146" font-size="15" font-weight="bold" fill="#3A3226" text-anchor="middle">族群身份</text>
+<text x="785" y="172" font-size="11.5" fill="#6B6255" text-anchor="middle">东夷旧名，不取周爵秩</text>
+<rect x="50" y="250" width="170" height="125" rx="9" fill="#EFE6CE" fill-opacity="0.6" stroke="#8B7355" stroke-width="1.8"/>
+<text x="135" y="296" font-size="15" font-weight="bold" fill="#3A3226" text-anchor="middle">周封建体系内</text>
+<text x="135" y="322" font-size="11.5" fill="#6B6255" text-anchor="middle">受周天子册封为侯</text>
+<rect x="240" y="250" width="440" height="125" rx="10" fill="#5E9BB8" fill-opacity="0.18" stroke="#3E7CA6" stroke-width="2.4"/>
+<text x="460" y="298" font-size="19" font-weight="bold" fill="#3E7CA6" text-anchor="middle">入周 → 名"纪"</text>
+<text x="268" y="328" font-size="12.5" fill="#3A3226" text-anchor="start">· 在周廷有职</text>
+<text x="468" y="328" font-size="12.5" fill="#3A3226" text-anchor="start">· 与周王室联姻</text>
+<text x="268" y="352" font-size="12.5" fill="#3A3226" text-anchor="start">· 以诸侯身份会盟</text>
+<text x="468" y="352" font-size="12.5" fill="#3A3226" text-anchor="start">· 分封子弟于酅</text>
+<rect x="700" y="250" width="170" height="125" rx="9" fill="#EFE6CE" fill-opacity="0.6" stroke="#8B7355" stroke-width="1.8"/>
+<text x="785" y="296" font-size="15" font-weight="bold" fill="#3A3226" text-anchor="middle">政治身份</text>
+<text x="785" y="322" font-size="11.5" fill="#6B6255" text-anchor="middle">侯爵国号，附一整套权利</text>
+<rect x="50" y="400" width="170" height="125" rx="9" fill="#EFE6CE" fill-opacity="0.6" stroke="#8B7355" stroke-width="1.8"/>
+<text x="135" y="446" font-size="15" font-weight="bold" fill="#3A3226" text-anchor="middle">被逐出周体系</text>
+<text x="135" y="472" font-size="11.5" fill="#6B6255" text-anchor="middle">前 690 失国、去侯爵</text>
+<rect x="240" y="400" width="440" height="125" rx="10" fill="#E8A65C" fill-opacity="0.18" stroke="#C07830" stroke-width="2.4"/>
+<text x="460" y="448" font-size="19" font-weight="bold" fill="#C07830" text-anchor="middle">失国 → 回落为"莱"</text>
+<rect x="700" y="400" width="170" height="125" rx="9" fill="#EFE6CE" fill-opacity="0.6" stroke="#8B7355" stroke-width="1.8"/>
+<text x="785" y="446" font-size="15" font-weight="bold" fill="#3A3226" text-anchor="middle">族群身份</text>
+<text x="785" y="472" font-size="11.5" fill="#6B6255" text-anchor="middle">摘下周室面具，露出旧名</text>
+<path d="M460,228 L460,246" fill="none" stroke="#8B7355" stroke-width="2.6" marker-end="url(#b_m04)"/>
+<path d="M460,378 L460,396" fill="none" stroke="#8B7355" stroke-width="2.6" marker-end="url(#b_m04)"/>
+<rect x="50" y="542" width="820" height="48" rx="9" fill="#EFE6CE" fill-opacity="0.6" stroke="#8B7355" stroke-width="1.8"/>
+<text x="460" y="571" font-size="13" fill="#3A3226" text-anchor="middle">胶东那一支（子姓·东莱）：从未入周受封，不在周体系之内，铜器自铭始终作"莱伯"，从不称"纪"</text>
+<text x="50" y="602" font-size="11.5" fill="#6B6255" text-anchor="start">据《尚书·禹贡》《史记》《春秋》经传及潍淄、胶东出土有铭铜器；自制示意图。</text>
+<text x="870" y="602" font-size="11.5" fill="#6B6255" text-anchor="end">作图：松朗</text>
+</svg>

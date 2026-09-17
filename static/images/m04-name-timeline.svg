@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 620" font-family="'Source Han Serif SC','Noto Serif CJK SC','Songti SC',SimSun,'宋体',serif">
+<rect width="920" height="620" fill="#FBF8F1"/>
+<text x="460" y="40" font-size="22" font-weight="bold" fill="#3A3226" text-anchor="middle">名号三期交替：莱 → 纪 → 莱</text>
+<text x="460" y="64" font-size="13.5" fill="#6B6255" text-anchor="middle">同一个潍淄政权，在卜辞、金文与文献中先后使用两个名字</text>
+<defs><marker id="a_m04" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#8B7355"/></marker></defs>
+<rect x="50" y="95" width="250" height="295" rx="10" fill="#E8A65C" fill-opacity="0.18" stroke="#C07830" stroke-width="2.4"/>
+<text x="175" y="137" font-size="40" font-weight="bold" fill="#C07830" text-anchor="middle">莱</text>
+<text x="175" y="165" font-size="14.5" font-weight="bold" fill="#3A3226" text-anchor="middle">商末 — 周初</text>
+<text x="175" y="185" font-size="11.5" fill="#6B6255" text-anchor="middle">（约前 11 世纪以前）</text>
+<path d="M75,201 L275,201" stroke="#8B7355" stroke-width="1.6" fill="none"/>
+<text x="68" y="227" font-size="12.5" fill="#3A3226" text-anchor="start">· 卜辞"来（莱）侯"，武丁时期</text>
+<text x="68" y="252" font-size="12.5" fill="#3A3226" text-anchor="start">· 《史记》"莱侯来伐，与之争营丘"</text>
+<text x="68" y="277" font-size="12.5" fill="#3A3226" text-anchor="start">· 此时"纪"字全无踪影</text>
+<text x="175" y="363" font-size="12" font-weight="bold" fill="#4E463A" text-anchor="middle">自名：无潍淄自铭器</text>
+<rect x="335" y="95" width="250" height="295" rx="10" fill="#5E9BB8" fill-opacity="0.18" stroke="#3E7CA6" stroke-width="2.4"/>
+<text x="460" y="137" font-size="40" font-weight="bold" fill="#3E7CA6" text-anchor="middle">纪</text>
+<text x="460" y="165" font-size="14.5" font-weight="bold" fill="#3A3226" text-anchor="middle">西周 — 前 690</text>
+<text x="460" y="185" font-size="11.5" fill="#6B6255" text-anchor="middle">（约三百年）</text>
+<path d="M360,201 L560,201" stroke="#8B7355" stroke-width="1.6" fill="none"/>
+<text x="353" y="227" font-size="12.5" fill="#3A3226" text-anchor="start">· 纪侯簋"纪侯作姜萦簋"</text>
+<text x="353" y="252" font-size="12.5" fill="#3A3226" text-anchor="start">· 寿光纪侯台出土己侯钟</text>
+<text x="353" y="277" font-size="12.5" fill="#3A3226" text-anchor="start">· "纪人伐夷""纪季姜归于京师"</text>
+<text x="353" y="302" font-size="12.5" fill="#3A3226" text-anchor="start">· 前 690"纪侯大去其国"</text>
+<text x="460" y="363" font-size="12" font-weight="bold" fill="#4E463A" text-anchor="middle">自名：己 · 纪</text>
+<rect x="620" y="95" width="250" height="295" rx="10" fill="#E8A65C" fill-opacity="0.18" stroke="#C07830" stroke-width="2.4"/>
+<text x="745" y="137" font-size="40" font-weight="bold" fill="#C07830" text-anchor="middle">莱</text>
+<text x="745" y="165" font-size="14.5" font-weight="bold" fill="#3A3226" text-anchor="middle">前 690 — 前 567</text>
+<text x="745" y="185" font-size="11.5" fill="#6B6255" text-anchor="middle">（一百二十三年）</text>
+<path d="M645,201 L845,201" stroke="#8B7355" stroke-width="1.6" fill="none"/>
+<text x="638" y="227" font-size="12.5" fill="#3A3226" text-anchor="start">· 前 602"齐侯伐莱"</text>
+<text x="638" y="252" font-size="12.5" fill="#3A3226" text-anchor="start">· 前 600 齐侯再伐莱</text>
+<text x="638" y="277" font-size="12.5" fill="#3A3226" text-anchor="start">· 前 571 莱人赂夙沙卫</text>
+<text x="638" y="302" font-size="12.5" fill="#3A3226" text-anchor="start">· 前 567"齐侯灭莱"</text>
+<text x="745" y="363" font-size="12" font-weight="bold" fill="#4E463A" text-anchor="middle">自名：己 · 纪（铜器不改口）</text>
+<path d="M302,245 L331,245" fill="none" stroke="#8B7355" stroke-width="2.6" marker-end="url(#a_m04)"/>
+<path d="M587,245 L616,245" fill="none" stroke="#8B7355" stroke-width="2.6" marker-end="url(#a_m04)"/>
+<text x="50" y="428" font-size="14" font-weight="bold" fill="#3A3226" text-anchor="start">名字是谁叫的</text>
+<rect x="50" y="408" width="820" height="55" rx="8" fill="#EFE6CE" fill-opacity="0.55" stroke="#8B7355" stroke-width="1.6"/>
+<text x="64" y="443" font-size="13" font-weight="bold" fill="#8B7355" text-anchor="start">铜器自名</text>
+<text x="152" y="443" font-size="13" fill="#3A3226" text-anchor="start">潍淄：己 · 纪（零"莱"字）　｜　胶东：莱伯 · 莱子（始终不改）</text>
+<rect x="50" y="471" width="820" height="55" rx="8" fill="#EFE6CE" fill-opacity="0.55" stroke="#8B7355" stroke-width="1.6"/>
+<text x="64" y="506" font-size="13" font-weight="bold" fill="#8B7355" text-anchor="start">齐人称呼</text>
+<text x="152" y="506" font-size="13" fill="#3A3226" text-anchor="start">前 690 前称"纪"　→　前 690 后称"莱"（转换本身即一条证据）</text>
+<rect x="50" y="534" width="820" height="55" rx="8" fill="#EFE6CE" fill-opacity="0.55" stroke="#8B7355" stroke-width="1.6"/>
+<text x="64" y="569" font-size="13" font-weight="bold" fill="#8B7355" text-anchor="start">鲁史视角</text>
+<text x="152" y="569" font-size="13" fill="#3A3226" text-anchor="start">前 716 与纪通婚　→　前 602 随齐伐莱（中间正是前 690 那道分界）</text>
+<text x="50" y="608" font-size="11.5" fill="#6B6255" text-anchor="start">据《史记·齐太公世家》《春秋》《左传》及潍淄、胶东出土有铭铜器；自制示意图，非实测统计。</text>
+<text x="870" y="608" font-size="11.5" fill="#6B6255" text-anchor="end">作图：松朗</text>
+</svg>

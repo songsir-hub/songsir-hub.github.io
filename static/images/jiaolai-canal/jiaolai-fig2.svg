@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 280" width="680" height="280">
+        <defs>
+          <marker id="arrowR2" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+            <path d="M0,0 L10,5 L0,10 Z" fill="#555"/>
+          </marker>
+        </defs>
+        <rect width="680" height="280" fill="#f8f6f0"/>
+        <text x="340" y="28" text-anchor="middle" font-size="15" fill="#1a3c5e" font-weight="bold">元代胶莱运河河海联运路线图</text>
+        <!-- Route chain -->
+        <!-- Segment 1: Jiangnan -->
+        <rect x="20" y="80" width="90" height="50" rx="6" fill="#2c5f2c" opacity="0.85"/>
+        <text x="65" y="100" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">江南</text>
+        <text x="65" y="116" text-anchor="middle" font-size="9" fill="#d4e8c4">粮仓产地</text>
+        <line x1="112" y1="105" x2="138" y2="105" stroke="#555" stroke-width="2" marker-end="url(#arrowR2)"/>
+        <!-- Segment 2: Huai River -->
+        <rect x="142" y="80" width="70" height="50" rx="6" fill="#3a8f6e" opacity="0.75"/>
+        <text x="177" y="100" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">淮河</text>
+        <text x="177" y="116" text-anchor="middle" font-size="9" fill="#d4f0d4">内河航运</text>
+        <line x1="214" y1="105" x2="240" y2="105" stroke="#555" stroke-width="2" marker-end="url(#arrowR2)"/>
+        <!-- Segment 3: Yellow Sea -->
+        <rect x="244" y="80" width="80" height="50" rx="6" fill="#3a7fb0" opacity="0.75"/>
+        <text x="284" y="100" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">黄海</text>
+        <text x="284" y="116" text-anchor="middle" font-size="9" fill="#d4e8f4">海运段</text>
+        <line x1="326" y1="105" x2="352" y2="105" stroke="#555" stroke-width="2" marker-end="url(#arrowR2)"/>
+        <!-- Segment 4: Jiaozhou Bay -->
+        <rect x="356" y="75" width="75" height="60" rx="6" fill="#3a7fb0" opacity="0.9" stroke="#2a6b8e" stroke-width="1.5"/>
+        <text x="393" y="98" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">胶州湾</text>
+        <text x="393" y="114" text-anchor="middle" font-size="9" fill="#d4e8f4">南入口</text>
+        <line x1="433" y1="105" x2="445" y2="105" stroke="#c0392b" stroke-width="3" marker-end="url(#arrowR2)"/>
+        <!-- Segment 5: Canal (highlighted) -->
+        <rect x="449" y="65" width="80" height="80" rx="6" fill="#c0392b" opacity="0.85" stroke="#922b21" stroke-width="2"/>
+        <text x="489" y="92" text-anchor="middle" font-size="13" fill="#fff" font-weight="bold">胶莱运河</text>
+        <text x="489" y="108" text-anchor="middle" font-size="10" fill="#fadbd8">130km</text>
+        <text x="489" y="124" text-anchor="middle" font-size="9" fill="#fadbd8">横穿半岛</text>
+        <line x1="531" y1="105" x2="543" y2="105" stroke="#c0392b" stroke-width="3" marker-end="url(#arrowR2)"/>
+        <!-- Segment 6: Laizhou Bay -->
+        <rect x="547" y="75" width="75" height="60" rx="6" fill="#3a7fb0" opacity="0.9" stroke="#2a6b8e" stroke-width="1.5"/>
+        <text x="584" y="98" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">莱州湾</text>
+        <text x="584" y="114" text-anchor="middle" font-size="9" fill="#d4e8f4">北出口</text>
+        <!-- Row 2: Bohai to Dadu -->
+        <line x1="584" y1="137" x2="584" y2="160" stroke="#555" stroke-width="2" marker-end="url(#arrowR2)"/>
+        <rect x="530" y="164" width="110" height="50" rx="6" fill="#3a7fb0" opacity="0.75"/>
+        <text x="585" y="184" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">渤海</text>
+        <text x="585" y="200" text-anchor="middle" font-size="9" fill="#d4e8f4">海运段</text>
+        <line x1="528" y1="189" x2="502" y2="189" stroke="#555" stroke-width="2" marker-end="url(#arrowR2)"/>
+        <rect x="395" y="164" width="100" height="50" rx="6" fill="#3a8f6e" opacity="0.75"/>
+        <text x="445" y="184" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">直沽</text>
+        <text x="445" y="200" text-anchor="middle" font-size="9" fill="#d4f0d4">今天津</text>
+        <line x1="393" y1="189" x2="367" y2="189" stroke="#555" stroke-width="2" marker-end="url(#arrowR2)"/>
+        <rect x="250" y="164" width="110" height="50" rx="6" fill="#1a3c5e" opacity="0.85"/>
+        <text x="305" y="184" text-anchor="middle" font-size="13" fill="#fff" font-weight="bold">大都</text>
+        <text x="305" y="200" text-anchor="middle" font-size="9" fill="#c4d4e8">今北京 元都</text>
+        <!-- Distance annotations -->
+        <text x="284" y="60" text-anchor="middle" font-size="9" fill="#888">约1500里</text>
+        <text x="585" y="160" text-anchor="middle" font-size="9" fill="#888">约800里</text>
+        <!-- Legend -->
+        <rect x="20" y="230" width="640" height="38" rx="4" fill="#fff" opacity="0.7" stroke="#ddd"/>
+        <rect x="35" y="240" width="14" height="14" rx="2" fill="#3a8f6e" opacity="0.75"/>
+        <text x="55" y="252" font-size="10" fill="#333">内河航运</text>
+        <rect x="130" y="240" width="14" height="14" rx="2" fill="#3a7fb0" opacity="0.75"/>
+        <text x="150" y="252" font-size="10" fill="#333">海上航运</text>
+        <rect x="235" y="240" width="14" height="14" rx="2" fill="#c0392b" opacity="0.85"/>
+        <text x="255" y="252" font-size="10" fill="#333">胶莱运河（河海联运枢纽）</text>
+        <text x="460" y="252" font-size="10" fill="#888">鼎盛期岁运粮60万石 占江南漕运60%</text>
+      </svg>
