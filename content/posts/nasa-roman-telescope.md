@@ -35,21 +35,21 @@ Megapixel Camera
 ×200
 
 视场超越哈勃
-200× Hubble's FOV
+Hubble's FOV
 
 
 
 L₂
 
 目标轨道 150万公里
-Target: 1.5M km orbit
+~1.5M km from Earth
 
 
 
 10年
 
 设计寿命目标
-10-year design life
+5-yr primary + 5-yr ext.
 
 
 
