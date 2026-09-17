@@ -20,7 +20,7 @@ categories = ['科技前沿']
 # 星际基地
 
 
-STARBASE — Humanity's New Gateway to Deep Space
+<div class="en-subtitle">STARBASE — Humanity&rsquo;s New Gateway to Deep Space</div>
 
 
 从德克萨斯州的博卡奇卡到路易斯安那州的佩坎岛，SpaceX正在建造人类历史上最大、最雄心勃勃的航天港——一个通往火星乃至更遥远深空的起点。
@@ -29,7 +29,7 @@ STARBASE — Humanity's New Gateway to Deep Space
 
 **图例**：SpaceX星舰从德州博卡奇卡星际基地起飞进行试验飞行（NASA/SpaceX官方图片） / SpaceX Starship test flight launch from Starbase, Boca Chica, Texas (NASA/SpaceX official)
 
-## 一、什么是星际基地What Is Starbase?*
+## 一、什么是星际基地 ◆ What Is Starbase?
 
 
 
@@ -69,7 +69,7 @@ The name "Starbase" itself is highly symbolic—it literally means a "star depar
 
 
 
-## 二、两大星际基地Two Starbases
+## 二、两大星际基地 ◆ Two Starbases
 
 ### 德州Starbase：创始之地Texas Starbase: The Birthplace
 
@@ -145,7 +145,7 @@ SpaceX 总裁兼 COO Gwynne Shotwell 在 2026 年 8 月 25 日 Abbeville 发布�
 
 
 
-## 三、星际基地 vs 其他航天港Starbase vs Other Spaceports
+## 三、星际基地 vs 其他航天港 ◆ Starbase vs Other Spaceports
 
 
 
@@ -265,7 +265,7 @@ style starbase fill:none,stroke:none
 
 
 
-## 四、星际基地的核心优势Core Advantages of Starbase
+## 四、星际基地的核心优势 ◆ Core Advantages of Starbase
 
 
 
@@ -332,7 +332,7 @@ style starbase fill:none,stroke:none
 
 
 
-## 五、技术特点与创新Technical Features & Innovations
+## 五、技术特点与创新 ◆ Technical Features & Innovations
 
 ### 星舰回收：著名的"塔捕"Starship Recovery: The Famous "Mechazilla" Catch
 
@@ -370,7 +370,7 @@ Starship is the first large launch vehicle in aerospace history designed with th
 
 
 
-## 六、未来展望Future Outlook
+## 六、未来展望 ◆ Future Outlook
 
 
 
@@ -459,7 +459,7 @@ If SpaceX's timeline holds, by around 2035, Starbase could send hundreds of tons
 
 
 
-## 七、对人类未来的影响Impact on Humanity's Future
+## 七、对人类未来的影响 ◆ Impact on Humanity's Future
 
 ### 让火星殖民成为可能Making Mars Colonization Feasible
 
@@ -525,7 +525,7 @@ Musk has repeatedly stated publicly that the ultimate purpose of building Starba
 
 
 
-## 八、结语Conclusion
+## 八、结语 ◆ Conclusion
 
 
 
@@ -569,7 +569,7 @@ Starbase is not the destination—it is the starting point. Its true significanc
 
 
 
-## 参考资料 / References
+## 参考资料 ◆ References
 
 
 
