@@ -134,7 +134,7 @@ The master plan for Louisiana Starbase is extraordinarily ambitious: **over ten 
 
 ![](/images/starbase/starbase-04.jpg)
 
-**路易斯安那宣布活动**：SpaceX 总裁兼 COO Gwynne Shotwell 在 2026 年 8 月 25 日 Abbeville 发布会（AP Photo/Gerald Herbert） / SpaceX President Gwynne Shotwell speaks at the Starbase Louisiana announcement in Abbeville, Aug 25, 2026 (AP Photo/Gerald Herbert)
+SpaceX 总裁兼 COO Gwynne Shotwell 在 2026 年 8 月 25 日 Abbeville 发布会宣布 $100B Starbase Louisiana 计划（Crystal Stevenson / American Press） / Gwynne Shotwell announces the $100B Starbase Louisiana project in Abbeville, LA (Crystal Stevenson / American Press, Aug 25 2026)
 
 
 
