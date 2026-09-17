@@ -226,6 +226,7 @@
     });
 
     s.stopEl.addEventListener('click', stop);
+    s.speakAt = speakCurrent;   /* expose for shared rate-change handler */
     return s;
   }
 
@@ -241,12 +242,10 @@
     host.innerHTML =
       '<button type="button" class="tts-btn" aria-label="' + l.play + '">' + ICON_PLAY +
       '<span class="tts-btn-text">' + l.play + '</span></button>' +
-      '<button type="button" class="tts-rate" aria-label="' + (lang === 'en' ? 'Adjust speed' : '\u8c03\u6574\u8bed\u901f') + '">' + RATES[rateIdx].toFixed(2).replace(/0$/, '') + '\u00d7</button>' +
       '<span class="tts-prog"><i></i></span>' +
       '<button type="button" class="tts-stop" aria-label="' + l.stop + '">' + l.stop + '</button>' +
       '<span class="tts-now"></span>';
     bar.appendChild(host);
-    var rateEl = host.querySelector('.tts-rate');
     var sess = {
       chunks: chunks, lang: lang, idx: 0, playing: false, lastEl: null,
       btn: host.querySelector('.tts-btn'),
@@ -255,11 +254,6 @@
       progEl: host.querySelector('.tts-prog i')
     };
     wireSession(sess, chunks);
-    rateEl.addEventListener('click', function () {
-      rateIdx = (rateIdx + 1) % RATES.length;
-      var all = bar.querySelectorAll('.tts-rate');
-      for (var i = 0; i < all.length; i++) all[i].textContent = RATES[rateIdx].toFixed(2).replace(/0$/, '') + '\u00d7';
-    });
     sessions.push(sess);
     return sess;
   }
@@ -267,14 +261,32 @@
   if (hasZH) buildSession('zh', zhChunks);
   if (hasEN) buildSession('en', enChunks);
 
-  /* ---- voice picker (shared) ---- */
-  var voiceRow = document.createElement('div');
-  voiceRow.className = 'tts-voice-row';
-  voiceRow.innerHTML =
+  /* ---- shared control row: 语速 + 音色 两个下拉并排 ---- */
+  var speedOpts = RATES.map(function (r, i) {
+    return '<option value="' + i + '"' + (i === rateIdx ? ' selected' : '') + '>' + r.toFixed(2).replace(/0$/, '') + '\u00d7</option>';
+  }).join('');
+  var ctlRow = document.createElement('div');
+  ctlRow.className = 'tts-ctl-row';
+  ctlRow.innerHTML =
+    '<label class="tts-voice-label" for="ttsSpeedSel">\u901f\u7387 / Speed</label>' +
+    '<select id="ttsSpeedSel" class="tts-voice tts-speed">' + speedOpts + '</select>' +
     '<label class="tts-voice-label" for="ttsVoiceSel">\u97f3\u8272 / Voice</label>' +
     '<select id="ttsVoiceSel" class="tts-voice"><option value="">\u81ea\u52a8 / Auto</option></select>';
-  bar.insertBefore(voiceRow, bar.firstChild);
-  var voiceSel = voiceRow.querySelector('#ttsVoiceSel');
+  bar.insertBefore(ctlRow, bar.firstChild);
+  var speedSel = ctlRow.querySelector('#ttsSpeedSel');
+  var voiceSel = ctlRow.querySelector('#ttsVoiceSel');
+  speedSel.addEventListener('change', function () {
+    rateIdx = parseInt(speedSel.value, 10);
+    var wasSpeaking = window.speechSynthesis.speaking || sessions.some(function (s) { return s.playing; });
+    if (wasSpeaking) {
+      try { window.speechSynthesis.cancel(); } catch (e) {}
+      sessions.forEach(function (s) {
+        if (s.playing) { s.speakAt(); startKeepAlive(); }
+      });
+    }
+  });
+
+  /* ---- populate voice picker options (voiceSel is in ctlRow) ---- */
   function populateVoices() {
     var vs = window.speechSynthesis.getVoices() || [];
     var zh = vs.filter(function (v) { return /^zh/i.test(v.lang || ''); });
