@@ -71,7 +71,7 @@ The name "Starbase" itself is highly symbolic—it literally means a "star depar
 
 ## 二、两大星际基地 ◆ Two Starbases
 
-### 德州Starbase：创始之地Texas Starbase: The Birthplace
+### 德州 Starbase：创始之地 ◆ Texas Starbase: The Birthplace
 
 
 
@@ -109,7 +109,7 @@ Texas Starbase currently serves as the **R&amp;D and prototype testing center**,
 
 
 
-### 路易斯安那Starbase：未来巨港Louisiana Starbase: The Mega Port of the Future
+### 路易斯安那 Starbase：未来巨港 ◆ Louisiana Starbase: The Mega Port of the Future
 
 
 
@@ -334,7 +334,7 @@ style starbase fill:none,stroke:none
 
 ## 五、技术特点与创新 ◆ Technical Features & Innovations
 
-### 星舰回收：著名的"塔捕"Starship Recovery: The Famous "Mechazilla" Catch
+### 星舰回收：著名的「塔捕」 ◆ Starship Recovery: The Famous "Mechazilla" Catch
 
 
 
@@ -346,7 +346,7 @@ Unlike traditional rocket boosters that recover via parachute onto ocean platfor
 
 
 
-### 甲烷燃料路线Methane Fuel Architecture
+### 甲烷燃料路线 ◆ Methane Fuel Architecture
 
 
 
@@ -358,7 +358,7 @@ Starship's choice of liquid oxygen + liquid methane (LOX/LCH₄) as propellant i
 
 
 
-### 完全可复用设计Fully Reusable Design
+### 完全可复用设计 ◆ Fully Reusable Design
 
 
 
@@ -461,7 +461,7 @@ If SpaceX's timeline holds, by around 2035, Starbase could send hundreds of tons
 
 ## 七、对人类未来的影响 ◆ Impact on Humanity's Future
 
-### 让火星殖民成为可能Making Mars Colonization Feasible
+### 让火星殖民成为可能 ◆ Making Mars Colonization Feasible
 
 
 
@@ -473,7 +473,7 @@ Mars is one of humanity's ultimate goals in space exploration. But even at its c
 
 
 
-### 太空经济的引擎Engine of the Space Economy
+### 太空经济的引擎 ◆ Engine of the Space Economy
 
 
 
@@ -485,7 +485,7 @@ Starbase is not just a launch site—it's a **comprehensive space industry ecosy
 
 
 
-### 地球能源与气候的潜在贡献Potential Contributions to Earth's Energy & Climate
+### 地球能源与气候的潜在贡献 ◆ Potential Contributions to Earth's Energy & Climate
 
 
 
@@ -497,7 +497,7 @@ An often-overlooked dimension is the **Space-Based Solar Power (SBSP)** concept 
 
 
 
-### 多行星文明的起点The Starting Point of a Multi-Planetary Civilization
+### 多行星文明的起点 ◆ The Starting Point of a Multi-Planetary Civilization
 
 
 
