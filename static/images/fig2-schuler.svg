@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="'Microsoft YaHei','PingFang SC',sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#4a5568"/></marker>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#c53030"/></marker>
+  </defs>
+  <style>
+    .t{font-size:15px;fill:#1a202c;}
+    .ts{font-size:12.5px;fill:#4a5568;}
+  </style>
+  <rect width="900" height="520" fill="#ffffff"/>
+  <text x="450" y="34" text-anchor="middle" font-size="19" font-weight="bold" fill="#1a202c">舒勒调谐：84.4 分钟的数学巧合</text>
+
+  <!-- 左：几何示意 -->
+  <g transform="translate(60,70)">
+    <text class="t" x="180" y="10" text-anchor="middle" font-weight="bold">地面运载体上的"摆"</text>
+    <!-- 地球弧 -->
+    <path d="M0,300 Q180,240 360,300" fill="#ebf8ff" stroke="#2b6cb0" stroke-width="2"/>
+    <text class="ts" x="40" y="330">地球表面（曲率半径 R）</text>
+    <!-- 载体 -->
+    <rect x="150" y="228" width="70" height="34" rx="5" fill="#fffaf0" stroke="#c05621" stroke-width="1.8"/>
+    <text class="ts" x="185" y="250" text-anchor="middle">运载体</text>
+    <!-- 加速度箭头 -->
+    <line x1="225" y1="245" x2="290" y2="245" stroke="#c53030" stroke-width="2.4" marker-end="url(#arrR)"/>
+    <text class="t" x="262" y="232" fill="#c53030">a</text>
+    <!-- 真垂线 -->
+    <line x1="185" y1="228" x2="185" y2="120" stroke="#2b6cb0" stroke-width="1.6" stroke-dasharray="6,4"/>
+    <text class="ts" x="150" y="115" fill="#2b6cb0">当地垂线（随运动旋转）</text>
+    <!-- 摆 -->
+    <line x1="185" y1="150" x2="200" y2="228" stroke="#1a202c" stroke-width="2.4"/>
+    <circle cx="200" cy="232" r="8" fill="#1a202c"/>
+    <text class="ts" x="215" y="185">摆偏转角 β</text>
+    <path d="M185,165 A 60 60 0 0 1 196,162" fill="none" stroke="#4a5568" stroke-width="1.4"/>
+    <text class="ts" x="120" y="395" font-size="13.5">当摆的固有周期 T = 2π√(R/g) 时：</text>
+    <text class="ts" x="120" y="416" font-size="13.5">摆的偏转率 ≡ 垂线方向变化率，二者逐点抵消</text>
+    <text class="ts" x="120" y="437" font-size="13.5">→ 摆始终精确跟踪当地垂线，与加速度无关</text>
+  </g>
+
+  <!-- 右：振荡曲线 -->
+  <g transform="translate(470,70)">
+    <text class="t" x="190" y="10" text-anchor="middle" font-weight="bold">水平误差通道 = 84.4 min 无阻尼振荡</text>
+    <!-- 坐标轴 -->
+    <line x1="40" y1="180" x2="370" y2="180" stroke="#4a5568" stroke-width="1.6" marker-end="url(#arr)"/>
+    <line x1="40" y1="180" x2="40" y2="30" stroke="#4a5568" stroke-width="1.6" marker-end="url(#arr)"/>
+    <text class="ts" x="360" y="200">t / min</text>
+    <text class="ts" x="46" y="42">误差角</text>
+    <line x1="40" y1="105" x2="370" y2="105" stroke="#a0aec0" stroke-width="1" stroke-dasharray="4,4"/>
+    <text class="ts" x="372" y="108" font-size="11">0</text>
+    <!-- 正弦 84.4min: 周期对应约 170px，画 2.2 周期 -->
+    <path d="M40,105
+             C 65,45 90,45 110,105
+             S 155,165 180,105
+             S 225,45 250,105
+             S 295,165 320,105
+             S 355,60 365,88"
+          fill="none" stroke="#2b6cb0" stroke-width="2.4"/>
+    <text class="ts" x="150" y="45" fill="#2b6cb0">T = 84.4 min</text>
+    <!-- 标注 -->
+    <text class="ts" x="40" y="235" font-size="13.5">· 初始对准误差、器件零偏激发舒勒振荡</text>
+    <text class="ts" x="40" y="258" font-size="13.5">· 振荡不发散 —— 惯导能够工作的根基</text>
+    <text class="ts" x="40" y="281" font-size="13.5">· 常值误差源叠加 t² 漂移 —— 惯导漂移的根源</text>
+    <text class="ts" x="40" y="304" font-size="13.5">· 1923 年舒勒提出，1949 年后成为惯导设计准则</text>
+    <!-- 公式框 -->
+    <rect x="40" y="330" width="330" height="60" rx="8" fill="#f0f7ff" stroke="#2b6cb0" stroke-width="1.4"/>
+    <text x="205" y="356" text-anchor="middle" font-size="17" fill="#1a202c">T = 2π√(R/g) ≈ 84.4 min</text>
+    <text class="ts" x="205" y="378" text-anchor="middle">R = 6371 km，g = 9.8 m/s²</text>
+  </g>
+  <text x="884" y="512" text-anchor="end" font-size="11" fill="#a0aec0">制图：松朗</text>
+</svg>
