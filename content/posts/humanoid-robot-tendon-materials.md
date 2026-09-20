@@ -8,7 +8,6 @@ tags = ["人形机器人", "腱绳", "材料科学", "UHMWPE", "芳纶", "碳纤
 slug = "humanoid-robot-tendon-materials"
 +++
 
-     front matter 中的 cover.image 与正文的 ![](images/xxx.svg) 即可正常显示。 -->
 
 > 研究时点：2026 年 9 月 18 日
 > 署名：by Songsir（松朗）
