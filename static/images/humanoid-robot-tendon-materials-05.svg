@@ -1,0 +1,40 @@
+<svg viewBox="0 0 800 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="腱绳涂层厚度谱系">
+  <rect width="800" height="430" fill="#ffffff"/>
+  <g font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">
+    <text x="40" y="30" font-size="14" fill="#1e4f8f" font-weight="bold">膜厚谱系（由薄到厚）</text>
+    <text x="780" y="30" font-size="12.5" fill="#5b7086" text-anchor="end">是否适配灵巧手（R1.5–R3 mm）</text>
+
+    <!-- 行1 DLC/MoS2 -->
+    <text x="40" y="62" font-size="12.5" fill="#123f6d" font-weight="bold">DLC / MoS₂ 基 PVD 硬质膜</text>
+    <rect x="40" y="70" width="62" height="20" rx="4" fill="#185FA5"/>
+    <text x="112" y="85" font-size="12" fill="#185FA5">2–4 μm　摩擦系数 0.05–0.15（对钢）</text>
+    <text x="780" y="85" font-size="12.5" fill="#166534" text-anchor="end">✓ 灵巧手可用</text>
+    <text x="40" y="108" font-size="12" fill="#5f7387">超低摩擦、高硬度（2000–3500 HV）、抗粘着；局限是设备贵，细丝上的膜厚均匀性难保证。</text>
+
+    <!-- 行2 PTFE -->
+    <text x="40" y="140" font-size="12.5" fill="#123f6d" font-weight="bold">PTFE 涂层</text>
+    <rect x="40" y="148" width="104" height="20" rx="4" fill="#3b76c4"/>
+    <text x="154" y="163" font-size="12" fill="#2c5282">7–15 μm　降低绳-鞘之间的滑动阻力</text>
+    <text x="780" y="163" font-size="12.5" fill="#166534" text-anchor="end">✓ 灵巧手可用</text>
+    <text x="40" y="186" font-size="12" fill="#5f7387">ASAHI INTECC 已量产（两端可遮蔽、最大涂层长度 3300 mm）；需对两端做遮蔽处理。</text>
+
+    <!-- 行3 磷化 -->
+    <text x="40" y="218" font-size="12.5" fill="#123f6d" font-weight="bold">锰系磷化（化学转化膜）</text>
+    <rect x="40" y="226" width="126" height="20" rx="4" fill="#15a06a"/>
+    <text x="176" y="241" font-size="12" fill="#0f6b47">膜重 3–60 g/m²　硬度可达 HV 500+</text>
+    <text x="780" y="241" font-size="12.5" fill="#166534" text-anchor="end">✓ 通用</text>
+    <text x="40" y="264" font-size="12" fill="#5f7387">半球状结晶储油构成「膜轴承」，寿命为光面钢丝绳的 2–3 倍；防锈能力弱于镀锌。</text>
+
+    <!-- 行4 涂塑 -->
+    <text x="40" y="296" font-size="12.5" fill="#123f6d" font-weight="bold">有机涂塑 PVC / PE / 尼龙</text>
+    <rect x="40" y="304" width="430" height="20" rx="4" fill="#d97706"/>
+    <text x="480" y="319" font-size="12" fill="#b45309">0.3–1.2 mm（比微米级薄膜厚两个数量级）</text>
+    <text x="780" y="319" font-size="12.5" fill="#b91c1c" text-anchor="end">✗ 指尖出局</text>
+    <text x="40" y="342" font-size="12" fill="#5f7387">寿命为普通绳的 1.5–2 倍（尼龙涂层加尼龙芯可达约 2 倍），可保留原绳 85% 以上抗拉强度；</text>
+    <text x="40" y="360" font-size="12" fill="#5f7387">但厚涂层使柔性下降、弯曲半径被迫放大 —— 只能用于腕、肘、躯干等半径宽松的部位。</text>
+
+    <rect x="24" y="378" width="752" height="42" rx="8" fill="#fef6e7" stroke="#f0c078"/>
+    <text x="44" y="398" font-size="12.5" fill="#a16207">涂层厚度是工程上的两难：厚则防护强，薄才弯得动。</text>
+    <text x="44" y="414" font-size="12.5" fill="#a16207">灵巧手需要 R1.5–R3 mm 的弯曲半径，因此只有微米级薄膜路线成立 —— 这是选型的第一道分水岭。</text>
+  </g>
+</svg>

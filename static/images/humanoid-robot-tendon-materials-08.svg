@@ -1,0 +1,56 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="芳纶与UHMWPE纺丝工艺对照">
+  <rect width="800" height="400" fill="#ffffff"/>
+  <g font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">
+    <text x="24" y="34" font-size="15" fill="#0f6b47" font-weight="bold">芳纶：液晶纺丝 —— 热力学自取向，一步到位</text>
+    <rect x="24" y="50" width="118" height="52" rx="6" fill="#eaf6ef" stroke="#15a06a"/>
+    <text x="83" y="72" font-size="12" fill="#0f6b47" text-anchor="middle">PPTA 聚合物</text>
+    <text x="83" y="90" font-size="11" fill="#136b47" text-anchor="middle">低温溶液缩聚</text>
+    <path d="M142 76 L166 76" stroke="#94a3b8" stroke-width="2"/>
+    <rect x="166" y="50" width="130" height="52" rx="6" fill="#eaf6ef" stroke="#15a06a"/>
+    <text x="231" y="72" font-size="12" fill="#0f6b47" text-anchor="middle">浓硫酸中形成</text>
+    <text x="231" y="90" font-size="11" fill="#136b47" text-anchor="middle">向列型液晶</text>
+    <path d="M296 76 L320 76" stroke="#94a3b8" stroke-width="2"/>
+    <rect x="320" y="50" width="130" height="52" rx="6" fill="#eaf6ef" stroke="#15a06a"/>
+    <text x="385" y="72" font-size="12" fill="#0f6b47" text-anchor="middle">干喷湿纺</text>
+    <text x="385" y="90" font-size="11" fill="#136b47" text-anchor="middle">气隙 + 凝固浴</text>
+    <path d="M450 76 L474 76" stroke="#94a3b8" stroke-width="2"/>
+    <rect x="474" y="50" width="130" height="52" rx="6" fill="#eaf6ef" stroke="#15a06a"/>
+    <text x="539" y="72" font-size="12" fill="#0f6b47" text-anchor="middle">300–550 ℃</text>
+    <text x="539" y="90" font-size="11" fill="#136b47" text-anchor="middle">张力热处理</text>
+    <path d="M604 76 L628 76" stroke="#94a3b8" stroke-width="2"/>
+    <rect x="628" y="50" width="148" height="52" rx="6" fill="#15a06a"/>
+    <text x="702" y="72" font-size="12" fill="#ffffff" text-anchor="middle">无需后拉伸</text>
+    <text x="702" y="90" font-size="11" fill="#e6f5ee" text-anchor="middle">已是高取向高结晶</text>
+    <text x="24" y="126" font-size="12.5" fill="#0f6b47">液晶态本身即有序 → 处于热力学稳定态，外加横向氢键锁死 → 滑移需同时破坏大量氢键 → 抗蠕变远优于 UHMWPE</text>
+
+    <line x1="24" y1="146" x2="776" y2="146" stroke="#e2e8f0" stroke-width="2"/>
+
+    <text x="24" y="176" font-size="15" fill="#b45309" font-weight="bold">UHMWPE：凝胶纺丝 —— 机械能强迫取向</text>
+    <rect x="24" y="192" width="118" height="52" rx="6" fill="#fff5e8" stroke="#ea8a1f"/>
+    <text x="83" y="214" font-size="12" fill="#b45309" text-anchor="middle">UHMWPE</text>
+    <text x="83" y="232" font-size="11" fill="#7c4a12" text-anchor="middle">稀溶液降缠结</text>
+    <path d="M142 218 L166 218" stroke="#94a3b8" stroke-width="2"/>
+    <rect x="166" y="192" width="130" height="52" rx="6" fill="#fff5e8" stroke="#ea8a1f"/>
+    <text x="231" y="214" font-size="12" fill="#b45309" text-anchor="middle">凝胶纺丝</text>
+    <text x="231" y="232" font-size="11" fill="#7c4a12" text-anchor="middle">成冻胶纤维</text>
+    <path d="M296 218 L320 218" stroke="#94a3b8" stroke-width="2"/>
+    <rect x="320" y="192" width="130" height="52" rx="6" fill="#fdecec" stroke="#dc2626"/>
+    <text x="385" y="214" font-size="12" fill="#b91c1c" text-anchor="middle">超倍拉伸</text>
+    <text x="385" y="232" font-size="11" fill="#991b1b" text-anchor="middle">30–100 倍「拽直」</text>
+    <path d="M450 218 L474 218" stroke="#94a3b8" stroke-width="2"/>
+    <rect x="474" y="192" width="130" height="52" rx="6" fill="#fff5e8" stroke="#ea8a1f"/>
+    <text x="539" y="214" font-size="12" fill="#b45309" text-anchor="middle">萃取干燥定型</text>
+    <text x="539" y="232" font-size="11" fill="#7c4a12" text-anchor="middle">成品纤维</text>
+    <path d="M604 218 L628 218" stroke="#94a3b8" stroke-width="2"/>
+    <rect x="628" y="192" width="148" height="52" rx="6" fill="#dc2626"/>
+    <text x="702" y="214" font-size="12" fill="#ffffff" text-anchor="middle">存在回缩驱动力</text>
+    <text x="702" y="232" font-size="11" fill="#fde8e8" text-anchor="middle">熵弹性 → 蠕变</text>
+    <text x="24" y="268" font-size="12.5" fill="#b45309">聚乙烯链室温下自然蜷曲，必须靠几十倍机械拉伸强行拽直 → 撤去约束后仍有回缩空间 → 长期载荷下表现为蠕变</text>
+
+    <rect x="24" y="288" width="752" height="92" rx="8" fill="#f8fafc" stroke="#dbe4ee"/>
+    <text x="44" y="312" font-size="14" fill="#1e4f8f" font-weight="bold">由此得到三条推论</text>
+    <text x="44" y="336" font-size="12.5" fill="#47607d">① 强迫取向体系必然蠕变 —— 这是熵弹性回缩，只能缓解，无法根除。</text>
+    <text x="44" y="356" font-size="12.5" fill="#47607d">② 芳纶工艺需浓硫酸体系与溶剂回收，设备腐蚀与环保要求远高于凝胶纺丝线。</text>
+    <text x="44" y="374" font-size="12.5" fill="#b45309">③ 这是芳纶价格长期为 UHMWPE 的 2–3 倍的结构性原因，扩产也难以抹平。</text>
+  </g>
+</svg>

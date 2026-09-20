@@ -1,0 +1,53 @@
+<svg viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="按失效模式反推材料选型">
+  <rect width="800" height="380" fill="#ffffff"/>
+  <g font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">
+    <text x="400" y="30" font-size="14" fill="#1e4f8f" text-anchor="middle" font-weight="bold">头号风险 → 应当避免的材料 → 优先看哪一列</text>
+
+    <g font-size="13">
+      <rect x="24" y="48" width="320" height="34" rx="6" fill="#fdecec" stroke="#f0c0c0"/>
+      <text x="40" y="70" fill="#b91c1c">抓取精度随时间漂移（蠕变）</text>
+      <rect x="356" y="48" width="204" height="34" rx="6" fill="#f8fafc" stroke="#dbe4ee"/>
+      <text x="458" y="70" font-size="12" fill="#47607d" text-anchor="middle">避免 UHMWPE（可改性或混编）</text>
+      <rect x="572" y="48" width="204" height="34" rx="6" fill="#eef6ff" stroke="#c3d5e8"/>
+      <text x="674" y="70" font-size="12" fill="#185FA5" text-anchor="middle">优先看：抗蠕变列</text>
+
+      <rect x="24" y="94" width="320" height="34" rx="6" fill="#fdecec" stroke="#f0c0c0"/>
+      <text x="40" y="116" fill="#b91c1c">突然断裂、无预兆（脆断）</text>
+      <rect x="356" y="94" width="204" height="34" rx="6" fill="#f8fafc" stroke="#dbe4ee"/>
+      <text x="458" y="116" font-size="12" fill="#b91c1c" text-anchor="middle">碳纤维首当其冲 · PBO</text>
+      <rect x="572" y="94" width="204" height="34" rx="6" fill="#eef6ff" stroke="#c3d5e8"/>
+      <text x="674" y="116" font-size="12" fill="#185FA5" text-anchor="middle">优先看：弯曲疲劳 + 缺陷敏感性</text>
+
+      <rect x="24" y="140" width="320" height="34" rx="6" fill="#fdecec" stroke="#f0c0c0"/>
+      <text x="40" y="162" fill="#b91c1c">绳体内部磨损失效（微动磨损）</text>
+      <rect x="356" y="140" width="204" height="34" rx="6" fill="#f8fafc" stroke="#dbe4ee"/>
+      <text x="458" y="162" font-size="12" fill="#47607d" text-anchor="middle">裸金属绳必配磷化 / 涂塑</text>
+      <rect x="572" y="140" width="204" height="34" rx="6" fill="#eef6ff" stroke="#c3d5e8"/>
+      <text x="674" y="162" font-size="12" fill="#185FA5" text-anchor="middle">优先看：隔丝涂层的可获得性</text>
+
+      <rect x="24" y="186" width="320" height="34" rx="6" fill="#fdecec" stroke="#f0c0c0"/>
+      <text x="40" y="208" fill="#b91c1c">端子处断裂（应力集中 / 压接损伤）</text>
+      <rect x="356" y="186" width="204" height="34" rx="6" fill="#f8fafc" stroke="#dbe4ee"/>
+      <text x="458" y="208" font-size="12" fill="#b91c1c" text-anchor="middle">碳纤维 · 芳纶（径向抗压弱）</text>
+      <rect x="572" y="186" width="204" height="34" rx="6" fill="#eef6ff" stroke="#c3d5e8"/>
+      <text x="674" y="208" font-size="12" fill="#185FA5" text-anchor="middle">优先看：端部连接友好度</text>
+
+      <rect x="24" y="232" width="320" height="34" rx="6" fill="#fdecec" stroke="#f0c0c0"/>
+      <text x="40" y="254" fill="#b91c1c">高温软化（超温）</text>
+      <rect x="356" y="232" width="204" height="34" rx="6" fill="#f8fafc" stroke="#dbe4ee"/>
+      <text x="458" y="254" font-size="12" fill="#b91c1c" text-anchor="middle">UHMWPE（第一排除项）</text>
+      <rect x="572" y="232" width="204" height="34" rx="6" fill="#eef6ff" stroke="#c3d5e8"/>
+      <text x="674" y="254" font-size="12" fill="#185FA5" text-anchor="middle">优先看：耐高温列</text>
+
+      <rect x="24" y="278" width="320" height="34" rx="6" fill="#fdecec" stroke="#f0c0c0"/>
+      <text x="40" y="300" fill="#b91c1c">电气短路或信号干扰</text>
+      <rect x="356" y="278" width="204" height="34" rx="6" fill="#f8fafc" stroke="#dbe4ee"/>
+      <text x="458" y="300" font-size="12" fill="#b91c1c" text-anchor="middle">碳纤维（唯一完全出局）</text>
+      <rect x="572" y="278" width="204" height="34" rx="6" fill="#eef6ff" stroke="#c3d5e8"/>
+      <text x="674" y="300" font-size="12" fill="#185FA5" text-anchor="middle">优先看：电绝缘列</text>
+    </g>
+
+    <rect x="24" y="328" width="752" height="40" rx="8" fill="#fef6e7" stroke="#f0c078"/>
+    <text x="400" y="353" font-size="12.5" fill="#a16207" text-anchor="middle">实操经验：通常只需排除一两项，剩下的候选就只剩一到两种 —— 选型的本质是找「致命的一票否决项」</text>
+  </g>
+</svg>
