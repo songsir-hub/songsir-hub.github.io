@@ -3,6 +3,7 @@
 # ============================================================
 
 baseURL = 'https://songsir-hub.github.io/'
+timeZone = 'Asia/Shanghai'
 locale = 'zh-cn'
 title = "SongSir'BLOG"
 theme = 'ananke'
