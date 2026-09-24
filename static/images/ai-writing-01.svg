@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" width="1200" height="470" font-family="'Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif">
+<rect width="1200" height="470" fill="#FFFFFF"/>
+<text x="30" y="42" font-size="25" font-weight="700" fill="#1B3A6B">图1　“AI检测”误伤实录：被打成机器写的，全是纯人工作品</text>
+<text x="30" y="70" font-size="16" fill="#555555">以下均为作者本人手写的作品，且多数写于AI问世之前</text>
+<line x1="560.0" y1="114" x2="560.0" y2="418" stroke="#C9D3DE" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="560.0" y="106" font-size="14" fill="#555555" text-anchor="middle">0%</text>
+<line x1="705.0" y1="114" x2="705.0" y2="418" stroke="#C9D3DE" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="705.0" y="106" font-size="14" fill="#555555" text-anchor="middle">25%</text>
+<line x1="850.0" y1="114" x2="850.0" y2="418" stroke="#C9D3DE" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="850.0" y="106" font-size="14" fill="#555555" text-anchor="middle">50%</text>
+<line x1="995.0" y1="114" x2="995.0" y2="418" stroke="#C9D3DE" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="995.0" y="106" font-size="14" fill="#555555" text-anchor="middle">75%</text>
+<line x1="1140.0" y1="114" x2="1140.0" y2="418" stroke="#C9D3DE" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="1140.0" y="106" font-size="14" fill="#555555" text-anchor="middle">100%</text>
+<text x="540" y="156" font-size="17" fill="#1B3A6B" text-anchor="end">纳齐尔《林中之蛇》（2026年获奖小说，已澄清并平反）</text>
+<rect x="560" y="136" width="580" height="34" rx="5" fill="#F2F5F9"/>
+<rect x="560" y="136" width="580.0" height="34" rx="5" fill="#C0392B"/>
+<text x="1128.0" y="160" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="end">100.0%</text>
+<text x="540" y="178" font-size="13" fill="#555555" text-anchor="end">AI检测软件 Pangram 判定</text>
+<text x="540" y="228" font-size="17" fill="#1B3A6B" text-anchor="end">戴维·斯里达哈（爱丁堡大学教授，早年发表文章）</text>
+<rect x="560" y="208" width="580" height="34" rx="5" fill="#F2F5F9"/>
+<rect x="560" y="208" width="522.0" height="34" rx="5" fill="#C0392B"/>
+<text x="1092.0" y="232" font-size="18" font-weight="700" fill="#C0392B">90.0%</text>
+<text x="540" y="250" font-size="13" fill="#555555" text-anchor="end">自测“AI率”</text>
+<text x="540" y="300" font-size="17" fill="#1B3A6B" text-anchor="end">保罗·斯皮克（发表于45年前的论文，当时个人电脑尚未普及）</text>
+<rect x="560" y="280" width="580" height="34" rx="5" fill="#F2F5F9"/>
+<rect x="560" y="280" width="446.6" height="34" rx="5" fill="#C0392B"/>
+<text x="1016.6" y="304" font-size="18" font-weight="700" fill="#C0392B">77.0%</text>
+<text x="540" y="322" font-size="13" fill="#555555" text-anchor="end">自测“AI率”</text>
+<text x="540" y="372" font-size="17" fill="#1B3A6B" text-anchor="end">亚当·凯（英国畅销书作家，十年前的旧作）</text>
+<rect x="560" y="352" width="580" height="34" rx="5" fill="#F2F5F9"/>
+<rect x="560" y="352" width="172.26" height="34" rx="5" fill="#C0392B"/>
+<text x="742.26" y="376" font-size="18" font-weight="700" fill="#C0392B">29.7%</text>
+<text x="540" y="394" font-size="13" fill="#555555" text-anchor="end">自测“AI率”</text>
+<rect x="60" y="434" width="1080" height="52" rx="8" fill="#FDEDEB" stroke="#C0392B" stroke-width="1.5"/>
+<text x="600" y="466" font-size="18" font-weight="700" fill="#C0392B" text-anchor="middle">工具既认不出AI，也认不出人 —— 却有人拿它给人定罪</text>
+</svg>

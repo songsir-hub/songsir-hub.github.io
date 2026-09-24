@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" font-family="'Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif">
+<rect width="1200" height="400" fill="#FFFFFF"/>
+<text x="30" y="42" font-size="25" font-weight="700" fill="#1B3A6B">图3　书写工具换了六代，从没有人要求在文末注明工具</text>
+<text x="30" y="70" font-size="16" fill="#555555">每一代新工具诞生时都被斥为“让人变懒”，每一代最后都成了理所当然</text>
+<line x1="70" y1="250" x2="1130" y2="250" stroke="#C9D3DE" stroke-width="3"/>
+<circle cx="130" cy="250" r="11" fill="#2E6DB4"/>
+<text x="130" y="208" font-size="19" font-weight="700" fill="#1B3A6B" text-anchor="middle">口述 / 书记员</text>
+<path d="M130 218 L130 236" stroke="#2E6DB4" stroke-width="2" fill="none"/>
+<path d="M130 261 L130 280" stroke="#2E6DB4" stroke-width="2" fill="none"/>
+<text x="130" y="302" font-size="16" fill="#2E6DB4" text-anchor="middle">速记不署名</text>
+<circle cx="310" cy="250" r="11" fill="#2E6DB4"/>
+<text x="310" y="208" font-size="19" font-weight="700" fill="#1B3A6B" text-anchor="middle">毛笔 · 钢笔</text>
+<path d="M310 218 L310 236" stroke="#2E6DB4" stroke-width="2" fill="none"/>
+<path d="M310 261 L310 280" stroke="#2E6DB4" stroke-width="2" fill="none"/>
+<text x="310" y="302" font-size="16" fill="#2E6DB4" text-anchor="middle">笔杆不署名</text>
+<circle cx="490" cy="250" r="11" fill="#2E6DB4"/>
+<text x="490" y="208" font-size="19" font-weight="700" fill="#1B3A6B" text-anchor="middle">打字机</text>
+<path d="M490 218 L490 236" stroke="#2E6DB4" stroke-width="2" fill="none"/>
+<path d="M490 261 L490 280" stroke="#2E6DB4" stroke-width="2" fill="none"/>
+<text x="490" y="302" font-size="16" fill="#2E6DB4" text-anchor="middle">机器不署名</text>
+<circle cx="670" cy="250" r="11" fill="#2E6DB4"/>
+<text x="670" y="208" font-size="19" font-weight="700" fill="#1B3A6B" text-anchor="middle">Word / 输入法</text>
+<path d="M670 218 L670 236" stroke="#2E6DB4" stroke-width="2" fill="none"/>
+<path d="M670 261 L670 280" stroke="#2E6DB4" stroke-width="2" fill="none"/>
+<text x="670" y="302" font-size="16" fill="#2E6DB4" text-anchor="middle">软件不署名</text>
+<circle cx="850" cy="250" r="11" fill="#2E6DB4"/>
+<text x="850" y="208" font-size="19" font-weight="700" fill="#1B3A6B" text-anchor="middle">搜索引擎</text>
+<path d="M850 218 L850 236" stroke="#2E6DB4" stroke-width="2" fill="none"/>
+<path d="M850 261 L850 280" stroke="#2E6DB4" stroke-width="2" fill="none"/>
+<text x="850" y="302" font-size="16" fill="#2E6DB4" text-anchor="middle">检索不署名</text>
+<circle cx="1030" cy="250" r="11" fill="#C0392B"/>
+<text x="1030" y="208" font-size="19" font-weight="700" fill="#1B3A6B" text-anchor="middle">AI 助手</text>
+<path d="M1030 218 L1030 236" stroke="#C0392B" stroke-width="2" fill="none"/>
+<path d="M1030 261 L1030 280" stroke="#C0392B" stroke-width="2" fill="none"/>
+<text x="1030" y="302" font-size="16" fill="#C0392B" text-anchor="middle">模型不署名</text>
+<rect x="70" y="315" width="1060" height="56" rx="8" fill="#EAF1F9" stroke="#1B3A6B" stroke-width="1.5"/>
+<text x="600" y="349" font-size="19" font-weight="700" fill="#1B3A6B" text-anchor="middle">文章末尾，从来只署作者的名 —— 从未见过“本文使用某牌钢笔书写”</text>
+</svg>
