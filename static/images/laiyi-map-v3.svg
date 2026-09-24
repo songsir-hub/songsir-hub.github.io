@@ -270,8 +270,8 @@
 <text x="317.8" y="453.8" font-size="13" fill="#2C5F80" font-style="italic">弥水</text>
 <path d="M485.1,624.7L496.2,575.2L503.6,530.2L514.8,485.3L525.9,440.3" fill="none" stroke="#3E7CA6" stroke-width="2.2" stroke-opacity="0.75" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="510.6" y="530.2" font-size="13" fill="#2C5F80" font-style="italic">胶水</text>
-<path d="M626.0,386.3L614.9,431.3L603.8,480.8L585.2,534.7L574.1,579.7L566.7,615.7" fill="none" stroke="#3E7CA6" stroke-width="3.2" stroke-opacity="0.95" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="592.2" y="534.7" font-size="13" fill="#2C5F80" font-style="italic">大沽水</text>
+<path d="M614.9,345.9L611.2,399.8L603.8,458.3L585.2,525.7L574.1,575.2L566.7,615.7" fill="none" stroke="#3E7CA6" stroke-width="3.2" stroke-opacity="0.95" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="592.2" y="525.7" font-size="13" fill="#2C5F80" font-style="italic">大沽水</text>
 <path d="M540.7,417.8L548.1,453.8L559.3,489.8L577.8,521.2" fill="none" stroke="#3E7CA6" stroke-width="3.2" stroke-opacity="0.95" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="566.3" y="489.8" font-size="13" fill="#2C5F80" font-style="italic">小沽水</text>
 <text x="-15.6" y="494.3" font-size="12" fill="#B5A98C" text-anchor="middle">济南</text>
@@ -316,12 +316,12 @@
 <text x="439.3" y="659.4" font-size="13" font-weight="normal" fill="#3A3226" text-anchor="start">诸城</text>
 <circle cx="323.7" cy="741.6" r="4.6" fill="#FFF" stroke="#5A5245" stroke-width="1.9"/>
 <text x="313.7" y="749.6" font-size="13" font-weight="normal" fill="#3A3226" text-anchor="end">莒</text>
-<circle cx="336.7" cy="602.2" r="4.6" fill="#FFF" stroke="#5A5245" stroke-width="1.9"/>
-<text x="328.7" y="594.2" font-size="13" font-weight="normal" fill="#3A3226" text-anchor="end">郚</text>
-<circle cx="299.6" cy="579.7" r="4.6" fill="#FFF" stroke="#5A5245" stroke-width="1.9"/>
-<text x="291.6" y="587.7" font-size="13" font-weight="normal" fill="#3A3226" text-anchor="end">郱</text>
-<circle cx="401.6" cy="433.5" r="4.6" fill="#FFF" stroke="#5A5245" stroke-width="1.9"/>
-<text x="409.6" y="425.5" font-size="13" font-weight="normal" fill="#3A3226" text-anchor="start">鄑</text>
+<circle cx="347.9" cy="593.2" r="4.6" fill="#FFF" stroke="#5A5245" stroke-width="1.9"/>
+<text x="339.9" y="585.2" font-size="13" font-weight="normal" fill="#3A3226" text-anchor="end">郚</text>
+<circle cx="286.7" cy="552.7" r="4.6" fill="#FFF" stroke="#5A5245" stroke-width="1.9"/>
+<text x="278.7" y="560.7" font-size="13" font-weight="normal" fill="#3A3226" text-anchor="end">郱</text>
+<circle cx="407.2" cy="435.8" r="4.6" fill="#FFF" stroke="#5A5245" stroke-width="1.9"/>
+<text x="415.2" y="427.8" font-size="13" font-weight="normal" fill="#3A3226" text-anchor="start">鄑·纪邑</text>
 <g filter="url(#mtShadow)">
 <path d="M-6.1,596.9 L-0.1,588.9 L1.9,596.9 Z" fill="#6B5234" opacity="0.7"/>
 <path d="M-6.1,596.9 L2.9,580.9 L11.9,596.9 Z" fill="#9C7C50"/>
@@ -401,7 +401,7 @@
 <circle cx="1055.5" cy="878" r="9" fill="#A08CC0" fill-opacity="0.32" stroke="#A08CC0" stroke-width="2" stroke-dasharray="8 4"/>
 <text x="1074.5" y="883" font-size="13.5" fill="#3A3226">莒（琅琊湾为其海门·今黄岛）</text>
 <rect x="72" y="900" width="16" height="12" fill="#E8A65C" fill-opacity="0.14" stroke="#E8A65C" stroke-width="1.6" stroke-dasharray="5 4"/>
-<text x="98" y="909" font-size="13.5" fill="#3A3226">夷（妘姓，都壮武·今即墨蓝村）：《左传》隐公元年「纪人伐夷」，或为纪之附庸</text>
+<text x="98" y="909" font-size="13.5" fill="#3A3226">夷（妘姓，都壮武·今即墨蓝村）：《左传》隐公元年"纪人伐夷"，或为纪之附庸</text>
 <path d="M70,930L110,930" stroke="#C0392B" stroke-width="2.6" stroke-dasharray="11 6"/>
 <text x="122" y="935" font-size="13.5" fill="#3A3226">族群—文化界：商末在潍水（珍珠门文化西界）</text>
 <path d="M530,930L570,930" stroke="#8E44AD" stroke-width="2.6" stroke-dasharray="11 6"/>
@@ -428,8 +428,7 @@
 <text x="822.2" y="831.0" font-size="12" fill="#3A3226">0</text>
 <text x="1030.0" y="831.0" font-size="12" fill="#3A3226" text-anchor="middle">100 公里</text>
 <g><circle cx="82" cy="188" r="21" fill="#FBF8F1" fill-opacity="0.85" stroke="#8B7355" stroke-width="1.4"/><path d="M82,172L88,194L82,189L76,194Z" fill="#A63A2B"/><text x="82" y="168" font-size="12" fill="#3A3226" text-anchor="middle">北</text></g>
-<text x="550" y="1006" font-size="12" fill="#8B8375" text-anchor="middle">底图：山东省 16 地市 + 县区行政边界（DataV.GeoAtlas 公开数据）　地望：谭其骧《中国历史地图集》第一册春秋·齐鲁图组、杨伯峻《春秋左传注》　山高据《山东省志·自然地理志》</text>
+<text x="550" y="1006" font-size="12" fill="#8B8375" text-anchor="middle">底图：山东省 16 地市 + 县区行政边界（DataV.GeoAtlas 公开数据，等距圆柱投影）　地望：谭其骧《中国历史地图集》第一册春秋·齐鲁图组、杨伯峻《春秋左传注》　山高据《山东省志·自然地理志》</text>
 <text x="550" y="1020" font-size="12" fill="#8B8375" text-anchor="middle">齐域四至据《左传·僖公四年》"赐履"与《国语·齐语》　莒境据尹钧科《春秋莒国三都及疆域略考》</text>
 <text x="550" y="1034" font-size="12" fill="#8B8375" text-anchor="middle">豯养泽据民国《莱阳县志》及2018年莱西考古调查　百脉湖据宋《太平寰宇记》　各国色块与分域界线均为示意，不代表确切疆界</text>
-<text x="1090" y="1034" font-size="12" fill="#6B6255" text-anchor="end" font-weight="bold" letter-spacing="2">作图：松朗</text>
 </svg>
