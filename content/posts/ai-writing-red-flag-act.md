@@ -1,6 +1,7 @@
 +++
 title = "反对用AI写文章，是AI时代的“红旗法案”"
 date = 2026-09-24T14:30:00+08:00
+draft = true
 author = "Songsir（松朗）"
 description = "AI是秘书与参谋，不署名不上台；欧盟立法严而有宽，四道门为使用者留空间——把欧盟当“禁AI令”引用的人，连规则都没读完。"
 categories = ["科技述评"]
