@@ -1,0 +1,76 @@
+# IndexNow 自动提交（Bing + Yandex + Seznam）
+# 触发：push 到 main + 定时 + 手动
+name: IndexNow Submission
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Detect IndexNow key
+        run: |
+          # 从仓库根目录或 static/ 目录读取 IndexNow key 文件
+          KEY_FILE=$(find . -maxdepth 1 -name '*.txt' ! -name 'robots*' ! -name '*.md' 2>/dev/null | head -1)
+          if [ -z "$KEY_FILE" ]; then
+            KEY_FILE=$(find ./static -maxdepth 1 -name '*.txt' ! -name 'robots*' ! -name '*.md' 2>/dev/null | head -1)
+          fi
+          if [ -z "$KEY_FILE" ]; then
+            echo "ERROR: No IndexNow key file found in root or static/."
+            echo "INDEXNOW_KEY=" >> $GITHUB_ENV
+            exit 0
+          fi
+          INDEX_KEY=$(cat "$KEY_FILE")
+          echo "INDEXNOW_KEY=$INDEX_KEY" >> $GITHUB_ENV
+          echo "Detected IndexNow key: ${INDEX_KEY:0:8}..."
+
+      - name: Submit to IndexNow
+        if: env.INDEXNOW_KEY != ''
+        run: |
+          HOST="songsir-hub.github.io"
+          KEY="${{ env.INDEXNOW_KEY }}"
+
+          # 从线上 sitemap 获取 URL
+          SITEMAP_URL="https://$HOST/sitemap.xml"
+          URLS=$(curl -s "$SITEMAP_URL" | grep -oP '(?<=<url><loc>).*?(?=</loc>)' | head -50)
+          if [ -z "$URLS" ]; then
+            echo "WARN: No URLs found in sitemap, trying to fetch from GitHub Pages directly."
+            URLS=$(curl -s "https://api.github.com/repos/${{ github.repository }}/pages" | grep -oP '"url"\s*:\s*"\K[^"]+')
+          fi
+          if [ -z "$URLS" ]; then
+            echo "ERROR: Cannot fetch URLs. Aborting."
+            exit 1
+          fi
+
+          # 构建 JSON payload
+          PAYLOAD=$(echo "$URLS" | python3 -c "
+          import sys, json
+          urls = [line.strip() for line in sys.stdin if line.strip()]
+          print(json.dumps({'key': '${KEY}', 'urlList': urls}))
+          ")
+
+          # 提交到各 IndexNow 端点
+          for ENDPOINT in \
+            "https://api.indexnow.org/IndexNow" \
+            "https://www.bing.com/indexnow" \
+            "https://yandex.com/pixel" \
+            "https://searchanagram.com/indexnow"; do
+            echo "Submitting to: $ENDPOINT"
+            RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
+              -H "Content-Type: application/json" \
+              -d "$PAYLOAD" \
+              "$ENDPOINT" 2>/dev/null || echo "FAILED")
+            HTTP_CODE=$(echo "$RESPONSE" | tail -1)
+            echo "  HTTP $HTTP_CODE"
+            if [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "202" ]; then
+              echo "  OK"
+            fi
+          done
