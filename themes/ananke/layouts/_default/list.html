@@ -1,0 +1,46 @@
+{{ define "header" }}
+  {{/* 列表页与文章页共用 page-header.html：只保留顶部导航栏，不渲染全屏 hero/大标题横幅 */}}
+  {{ partial "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  {{/* 列表页版式与文章页一致：按视口宽 80% 居中单栏（.post，手机全屏宽），简洁文章列表 */}}
+  <article class="post">
+    <header class="post-header mb4">
+      <h1 class="f1 athelas mt3 mb1">{{ .Title }}</h1>
+      {{ with .Params.description }}
+      <p class="f4 fw1 lh-copy mid-gray tc">{{ . }}</p>
+      {{ end }}
+    </header>
+
+    <div class="post-content lh-copy serif f4 nested-links mid-gray">
+      {{ with .Content }}
+      <section class="mb5">
+        {{ . }}
+      </section>
+      {{ end }}
+
+      <section class="mb5">
+        {{ range .Paginator.Pages }}
+        <article class="mb4 pb4 bb b--light-gray">
+          <h2 class="f3 athelas mb2">
+            <a href="{{ .RelPermalink }}" class="link black dim">{{ .Title }}</a>
+          </h2>
+          {{ if not .Date.IsZero }}
+          <time class="f6 mid-gray db mb2" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+            {{ .Date | time.Format (default "January 2, 2006" .Site.Params.date_format) }}
+          </time>
+          {{ end }}
+          {{ with .Description }}
+          <p class="lh-copy f5">{{ . }}</p>
+          {{ else }}
+          <p class="lh-copy f5">{{ .Summary }}</p>
+          {{ end }}
+        </article>
+        {{ end }}
+      </section>
+
+      {{- template "_internal/pagination.html" . -}}
+    </div>
+  </article>
+{{ end }}

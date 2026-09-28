@@ -1,0 +1,26 @@
+{{ define "header" }}
+   {{/* We can override any block in the baseof file be defining it in the template */}}
+  {{ partial "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  {{/* 文章页版式照搬博雅小筑：760px 居中单栏（.post），无右侧栏；标题内联显示（文章页不挂全屏 hero） */}}
+  <article class="post">
+    <header class="post-header mb4">
+      {{ with .CurrentSection.Title }}<aside class="instapaper_ignoref b helvetica tracked">{{ . | upper }}</aside>{{ end }}
+      <h1 class="f1 athelas mt3 mb1">{{ .Title }}</h1>
+      <div class="f6 mid-gray">
+        {{ if not .Date.IsZero }}
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date | time.Format (default "January 2, 2006" .Site.Params.date_format) }}</time>
+        {{ end }}
+        {{ with .Params.categories }}
+        <span class="ml3">{{ range . }}<a href="/categories/{{ . | urlize }}/" class="link mid-gray hover-dark-gray mr2">#{{ . }}</a>{{ end }}</span>
+        {{ end }}
+      </div>
+    </header>
+    <div class="post-content lh-copy {{ $.Param "post_content_classes" | default "serif" }} f4 nested-links {{ $.Param "text_color" | default "mid-gray" }}">
+      {{- .Content -}}
+      {{- partial "tags.html" . -}}
+    </div>
+  </article>
+{{ end }}

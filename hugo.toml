@@ -9,7 +9,8 @@ title = "SongSir'BLOG"
 theme = 'ananke'
 
 enableRobotsTXT = true
-paginate = 10
+[pagination]
+  pagerSize = 10
 
 [outputs]
   home = ['HTML', 'RSS', 'JSON']

@@ -1,0 +1,38 @@
+{{/*
+  Use Hugo's native Table of contents feature. You must set `toc: true` in your parameters for this to show.
+  https://gohugo.io/content-management/toc/
+*/}}
+
+{{- if .Params.toc -}}
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">{{ i18n "whatsInThis" . }}</p>
+      {{ .TableOfContents }}
+  </div>
+{{- end -}}
+
+{{/*
+  相关阅读：只展示真正的文章栏目（posts/daguo/hardcore/industry），
+  排除“关于”等根级单页（其 Section 为空，不能按 Section!="about" 过滤）。
+  优先用 Hugo 原生 related；若站内文章尚少 related 为空，退化为最新文章。
+*/}}
+{{ $articleSections := slice "posts" "daguo" "hardcore" "industry" }}
+{{ $related := where (.Site.RegularPages.Related .) "Section" "in" $articleSections | first 15 }}
+{{ if not $related }}
+  {{ $related = where .Site.RegularPages "Section" "in" $articleSections | first 15 }}
+{{ end }}
+{{ $related = where $related "RelPermalink" "!=" .RelPermalink }}
+
+{{ with $related }}
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">相关阅读</p>
+    <ul class="pa0 list">
+	   {{ range . }}
+	     <li  class="mb2">
+          <a href="{{ .RelPermalink }}">
+            {{- .Title -}}
+          </a>
+        </li>
+	    {{ end }}
+    </ul>
+</div>
+{{ end }}
