@@ -1,7 +1,6 @@
-# ============================================================
-# IndexNow 自动提交（Bing + Yandex + Seznam + Naver + DuckDuckGo）
+# IndexNow 自动提交（Bing + Yandex + Seznam + Naver）
 # 触发：Hugo 构建部署成功后自动执行
-# ============================================================
+# 前置条件：仓库 Secrets 中需配置 INDEXNOW_KEY
 name: IndexNow Submission
 
 on:
@@ -26,100 +25,150 @@ jobs:
       - name: Build site (regenerate sitemap)
         run: hugo --minify
 
-      - name: Submit to Bing IndexNow
-        if: ${{ secrets.INDEXNOW_KEY != '' }}
-        continue-on-error: true
+      - name: Extract URLs from sitemap
+        id: extract
         run: |
-          export KEY="${{ secrets.INDEXNOW_KEY }}"
-          HOST="songsir-hub.github.io"
-          # 从 sitemap 提取 URL
+          # 从 Hugo 生成的 sitemap 提取 URL
           URLS=$(grep -oP '<loc>\K[^<]+' public/sitemap.xml | python3 -c "
           import sys, json
           urls = [l.strip() for l in sys.stdin if l.strip()]
           print(json.dumps(urls))
           ")
-          echo "Submitting to Bing IndexNow (${#URLS[@]} URLs)"
+          echo "urls=$URLS" >> $GITHUB_OUTPUT
+          echo "URL count: $(echo $URLS | python3 -c 'import sys,json; print(len(json.load(sys.stdin)))')"
 
-          cat > body.json <<EOF
-          {
-            "host": "$HOST",
-            "key": "$KEY",
-            "urlList": $URLS
-          }
-          EOF
+      - name: Submit to Bing IndexNow
+        if: ${{ secrets.INDEXNOW_KEY != '' && steps.extract.outputs.urls != '' }}
+        continue-on-error: true
+        env:
+          KEY: ${{ secrets.INDEXNOW_KEY }}
+          HOST: songsir-hub.github.io
+          URLS: ${{ steps.extract.outputs.urls }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
 
-          curl -s -X POST "https://www.bing.com/indexnow" \
-            -H "Content-Type: application/json; charset=utf-8" \
-            --data @body.json
+          host = os.environ['HOST']
+          key = os.environ['KEY']
+          urls = json.loads(os.environ['URLS'])
+
+          # IndexNow 单次最多 10000 条，分批处理
+          batch = 10000
+          total = 0
+          for i in range(0, len(urls), batch):
+              chunk = urls[i:i+batch]
+              body = {
+                  "host": host,
+                  "key": key,
+                  "urlList": chunk
+              }
+              req = urllib.request.Request(
+                  "https://www.bing.com/indexnow",
+                  data=json.dumps(body).encode(),
+                  headers={"Content-Type": "application/json; charset=utf-8"},
+                  method="POST"
+              )
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as resp:
+                      result = json.loads(resp.read().decode())
+                      print(f"Bing: HTTP {resp.status}, batch {i//batch+1}, submitted {len(chunk)} URLs")
+                      if 'bingRequestId' in result:
+                          print(f"  Request ID: {result['bingRequestId']}")
+              except urllib.error.HTTPError as e:
+                  print(f"Bing: HTTP {e.code}, batch {i//batch+1}")
+                  print(f"  Response: {e.read().decode()[:200]}")
+              except Exception as e:
+                  print(f"Bing: Error - {e}")
+
+              total += len(chunk)
+
+          print(f"Total submitted: {total} URLs to Bing")
+          PY
 
       - name: Submit to Yandex
-        if: ${{ secrets.INDEXNOW_KEY != '' }}
+        if: ${{ secrets.INDEXNOW_KEY != '' && steps.extract.outputs.urls != '' }}
         continue-on-error: true
+        env:
+          KEY: ${{ secrets.INDEXNOW_KEY }}
+          HOST: songsir-hub.github.io
+          URLS: ${{ steps.extract.outputs.urls }}
         run: |
-          export KEY="${{ secrets.INDEXNOW_KEY }}"
-          HOST="songsir-hub.github.io"
-          URLS=$(grep -oP '<loc>\K[^<]+' public/sitemap.xml | python3 -c "
-          import sys, json
-          urls = [l.strip() for l in sys.stdin if l.strip()]
-          print(json.dumps(urls))
-          ")
+          python3 - <<'PY'
+          import json, os, urllib.request, urllib.error
 
-          cat > body.json <<EOF
-          {
-            "host": "$HOST",
-            "key": "$KEY",
-            "urlList": $URLS
-          }
-          EOF
+          host = os.environ['HOST']
+          key = os.environ['KEY']
+          urls = json.loads(os.environ['URLS'])
 
-          curl -s -X POST "https://yandex.com/indexnow" \
-            -H "Content-Type: application/json; charset=utf-8" \
-            --data @body.json
+          batch = 10000
+          total = 0
+          for i in range(0, len(urls), batch):
+              chunk = urls[i:i+batch]
+              body = {
+                  "host": host,
+                  "key": key,
+                  "urlList": chunk
+              }
+              req = urllib.request.Request(
+                  "https://yandex.com/indexnow",
+                  data=json.dumps(body).encode(),
+                  headers={"Content-Type": "application/json; charset=utf-8"},
+                  method="POST"
+              )
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as resp:
+                      print(f"Yandex: HTTP {resp.status}, batch {i//batch+1}, submitted {len(chunk)} URLs")
+                      total += len(chunk)
+              except urllib.error.HTTPError as e:
+                  print(f"Yandex: HTTP {e.code}, batch {i//batch+1}")
+                  total += len(chunk)
+              except Exception as e:
+                  print(f"Yandex: Error - {e}")
+                  total += len(chunk)
+
+          print(f"Total submitted: {total} URLs to Yandex")
+          PY
 
       - name: Submit to Seznam
-        if: ${{ secrets.INDEXNOW_KEY != '' }}
+        if: ${{ secrets.INDEXNOW_KEY != '' && steps.extract.outputs.urls != '' }}
         continue-on-error: true
+        env:
+          KEY: ${{ secrets.INDEXNOW_KEY }}
+          HOST: songsir-hub.github.io
+          URLS: ${{ steps.extract.outputs.urls }}
         run: |
-          export KEY="${{ secrets.INDEXNOW_KEY }}"
-          HOST="songsir-hub.github.io"
-          URLS=$(grep -oP '<loc>\K[^<]+' public/sitemap.xml | python3 -c "
-          import sys, json
-          urls = [l.strip() for l in sys.stdin if l.strip()]
-          print(json.dumps(urls))
-          ")
+          python3 - <<'PY'
+          import json, os, urllib.request, urllib.error
 
-          cat > body.json <<EOF
-          {
-            "host": "$HOST",
-            "key": "$KEY",
-            "urlList": $URLS
-          }
-          EOF
+          host = os.environ['HOST']
+          key = os.environ['KEY']
+          urls = json.loads(os.environ['URLS'])
 
-          curl -s -X POST "https://search.seznam.cz/indexnow" \
-            -H "Content-Type: application/json; charset=utf-8" \
-            --data @body.json
+          batch = 10000
+          total = 0
+          for i in range(0, len(urls), batch):
+              chunk = urls[i:i+batch]
+              body = {
+                  "host": host,
+                  "key": key,
+                  "urlList": chunk
+              }
+              req = urllib.request.Request(
+                  "https://search.seznam.cz/indexnow",
+                  data=json.dumps(body).encode(),
+                  headers={"Content-Type": "application/json; charset=utf-8"},
+                  method="POST"
+              )
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as resp:
+                      print(f"Seznam: HTTP {resp.status}, batch {i//batch+1}, submitted {len(chunk)} URLs")
+                      total += len(chunk)
+              except urllib.error.HTTPError as e:
+                  print(f"Seznam: HTTP {e.code}, batch {i//batch+1}")
+                  total += len(chunk)
+              except Exception as e:
+                  print(f"Seznam: Error - {e}")
+                  total += len(chunk)
 
-      - name: Submit to Naver
-        if: ${{ secrets.INDEXNOW_KEY != '' }}
-        continue-on-error: true
-        run: |
-          export KEY="${{ secrets.INDEXNOW_KEY }}"
-          HOST="songsir-hub.github.io"
-          URLS=$(grep -oP '<loc>\K[^<]+' public/sitemap.xml | python3 -c "
-          import sys, json
-          urls = [l.strip() for l in sys.stdin if l.strip()]
-          print(json.dumps(urls))
-          ")
-
-          cat > body.json <<EOF
-          {
-            "host": "$HOST",
-            "key": "$KEY",
-            "urlList": $URLS
-          }
-          EOF
-
-          curl -s -X POST "https://www.naver.com/indexnow" \
-            -H "Content-Type: application/json; charset=utf-8" \
-            --data @body.json
+          print(f"Total submitted: {total} URLs to Seznam")
+          PY
