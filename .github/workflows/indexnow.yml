@@ -1,0 +1,125 @@
+# ============================================================
+# IndexNow 自动提交（Bing + Yandex + Seznam + Naver + DuckDuckGo）
+# 触发：Hugo 构建部署成功后自动执行
+# ============================================================
+name: IndexNow Submission
+
+on:
+  # 每次 Hugo 构建部署成功后触发
+  workflow_run:
+    workflows: ["Deploy Hugo site to Pages"]
+    types: [completed]
+  # 也可手动触发
+  workflow_dispatch:
+
+jobs:
+  indexnow:
+    # 仅在部署成功时执行
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Build site (regenerate sitemap)
+        run: hugo --minify
+
+      - name: Submit to Bing IndexNow
+        if: ${{ secrets.INDEXNOW_KEY != '' }}
+        continue-on-error: true
+        run: |
+          export KEY="${{ secrets.INDEXNOW_KEY }}"
+          HOST="songsir-hub.github.io"
+          # 从 sitemap 提取 URL
+          URLS=$(grep -oP '<loc>\K[^<]+' public/sitemap.xml | python3 -c "
+          import sys, json
+          urls = [l.strip() for l in sys.stdin if l.strip()]
+          print(json.dumps(urls))
+          ")
+          echo "Submitting to Bing IndexNow (${#URLS[@]} URLs)"
+
+          cat > body.json <<EOF
+          {
+            "host": "$HOST",
+            "key": "$KEY",
+            "urlList": $URLS
+          }
+          EOF
+
+          curl -s -X POST "https://www.bing.com/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            --data @body.json
+
+      - name: Submit to Yandex
+        if: ${{ secrets.INDEXNOW_KEY != '' }}
+        continue-on-error: true
+        run: |
+          export KEY="${{ secrets.INDEXNOW_KEY }}"
+          HOST="songsir-hub.github.io"
+          URLS=$(grep -oP '<loc>\K[^<]+' public/sitemap.xml | python3 -c "
+          import sys, json
+          urls = [l.strip() for l in sys.stdin if l.strip()]
+          print(json.dumps(urls))
+          ")
+
+          cat > body.json <<EOF
+          {
+            "host": "$HOST",
+            "key": "$KEY",
+            "urlList": $URLS
+          }
+          EOF
+
+          curl -s -X POST "https://yandex.com/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            --data @body.json
+
+      - name: Submit to Seznam
+        if: ${{ secrets.INDEXNOW_KEY != '' }}
+        continue-on-error: true
+        run: |
+          export KEY="${{ secrets.INDEXNOW_KEY }}"
+          HOST="songsir-hub.github.io"
+          URLS=$(grep -oP '<loc>\K[^<]+' public/sitemap.xml | python3 -c "
+          import sys, json
+          urls = [l.strip() for l in sys.stdin if l.strip()]
+          print(json.dumps(urls))
+          ")
+
+          cat > body.json <<EOF
+          {
+            "host": "$HOST",
+            "key": "$KEY",
+            "urlList": $URLS
+          }
+          EOF
+
+          curl -s -X POST "https://search.seznam.cz/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            --data @body.json
+
+      - name: Submit to Naver
+        if: ${{ secrets.INDEXNOW_KEY != '' }}
+        continue-on-error: true
+        run: |
+          export KEY="${{ secrets.INDEXNOW_KEY }}"
+          HOST="songsir-hub.github.io"
+          URLS=$(grep -oP '<loc>\K[^<]+' public/sitemap.xml | python3 -c "
+          import sys, json
+          urls = [l.strip() for l in sys.stdin if l.strip()]
+          print(json.dumps(urls))
+          ")
+
+          cat > body.json <<EOF
+          {
+            "host": "$HOST",
+            "key": "$KEY",
+            "urlList": $URLS
+          }
+          EOF
+
+          curl -s -X POST "https://www.naver.com/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            --data @body.json
