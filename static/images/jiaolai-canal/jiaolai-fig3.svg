@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300">
+        <rect width="680" height="300" fill="#f5faf5"/>
+        <!-- 标题 -->
+        <text x="340" y="25" text-anchor="middle" font-size="15" fill="#1a3c5e" font-weight="bold">夷安泽（都泊）位置与变迁示意图</text>
+        <!-- 地图区域 -->
+        <!-- 胶河（北段） -->
+        <path d="M 160,80 Q 175,100 180,125 Q 185,145 195,165 Q 210,190 220,200" stroke="#2a6b8e" stroke-width="4" fill="none"/>
+        <text x="130" y="95" font-size="10" fill="#2a6b8e" font-weight="bold">胶水（北）</text>
+        <text x="130" y="108" font-size="8" fill="#555">→ 莱州湾</text>
+        <!-- 沽河（南段） -->
+        <path d="M 340,240 Q 360,255 390,265 Q 430,275 470,280 Q 510,282 550,280" stroke="#2a6b8e" stroke-width="4" fill="none"/>
+        <text x="555" y="275" font-size="10" fill="#2a6b8e" font-weight="bold">大沽河</text>
+        <text x="555" y="288" font-size="8" fill="#555">→ 胶州湾</text>
+        <!-- 分水岭 -->
+        <rect x="185" y="170" width="170" height="55" rx="6" fill="#f0e8d0" stroke="#c0392b" stroke-width="2" stroke-dasharray="6,3"/>
+        <text x="270" y="190" text-anchor="middle" font-size="11" fill="#c0392b" font-weight="bold">分水岭</text>
+        <text x="270" y="205" text-anchor="middle" font-size="9" fill="#c0392b">平度姚家 海拔约30m</text>
+        <text x="270" y="218" text-anchor="middle" font-size="8" fill="#888">长约20公里</text>
+        <!-- 夷安泽 - 北魏时期 -->
+        <ellipse cx="480" cy="145" rx="80" ry="45" fill="#8cc9e8" opacity="0.25" stroke="#3498db" stroke-width="2" stroke-dasharray="4,2"/>
+        <text x="530" y="120" font-size="11" fill="#3498db" font-weight="bold">夷安泽（北魏）</text>
+        <text x="530" y="135" font-size="9" fill="#3498db">《水经注》载"潭周四十里"</text>
+        <!-- 夷安泽 - 宋代扩大 -->
+        <ellipse cx="480" cy="145" rx="115" ry="60" fill="#3498db" opacity="0.12" stroke="#2980b9" stroke-width="2.5" stroke-dasharray="6,3"/>
+        <text x="530" y="160" font-size="11" fill="#2980b9" font-weight="bold">都泊（北宋）</text>
+        <text x="530" y="175" font-size="9" fill="#2980b9">"东西百余里，灌田万顷"</text>
+        <!-- 夷安泽名称标注 - 中间 -->
+        <text x="480" y="145" text-anchor="middle" font-size="13" fill="#1a5276" font-weight="bold">夷安泽</text>
+        <text x="480" y="158" text-anchor="middle" font-size="9" fill="#1a5276">（都泊）</text>
+        <!-- 连接箭头：夷安泽 → 分水岭 -->
+        <path d="M 380,145 Q 330,160 290,175" stroke="#e67e22" stroke-width="2.5" fill="none" marker-end="url(#arrowOrange2)"/>
+        <text x="320" y="150" font-size="9" fill="#e67e22" font-weight="bold">水源补给</text>
+        <!-- 连接箭头：分水岭 → 南北方向 -->
+        <path d="M 270,225 Q 270,250 300,265" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#arrowGreen2)"/>
+        <text x="240" y="250" font-size="9" fill="#27ae60">南流</text>
+        <path d="M 270,170 Q 265,150 258,130" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#arrowGreen2)"/>
+        <text x="245" y="145" font-size="9" fill="#27ae60">北流</text>
+        <!-- 箭矢定义 -->
+        <defs>
+          <marker id="arrowOrange2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+            <path d="M0,0 L8,4 L0,8 Z" fill="#e67e22"/>
+          </marker>
+          <marker id="arrowGreen2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+            <path d="M0,0 L8,4 L0,8 Z" fill="#27ae60"/>
+          </marker>
+        </defs>
+        <!-- 图例 -->
+        <rect x="50" y="245" width="580" height="45" rx="5" fill="#fff" opacity="0.7" stroke="#ccc"/>
+        <line x1="70" y1="262" x2="100" y2="262" stroke="#3498db" stroke-width="2" stroke-dasharray="4,2"/>
+        <text x="105" y="266" font-size="9" fill="#555">北魏夷安泽（周四十里）</text>
+        <line x1="210" y1="262" x2="240" y2="262" stroke="#2980b9" stroke-width="2.5" stroke-dasharray="6,3"/>
+        <text x="245" y="266" font-size="9" fill="#555">北宋都泊（东西百余里，面积大幅增长）</text>
+        <text x="70" y="282" font-size="9" fill="#888">作用：天然"水柜"蓄水，为运河分水岭段提供水源调蓄——无水柜则运河不可通</text>
+      </svg>

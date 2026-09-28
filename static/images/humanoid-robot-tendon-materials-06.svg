@@ -1,0 +1,44 @@
+<svg viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="钢丝绳内部微动磨损示意">
+  <rect width="800" height="380" fill="#ffffff"/>
+  <g font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">
+    <text x="150" y="34" font-size="14" fill="#1e4f8f" text-anchor="middle" font-weight="bold">7×19 绳截面</text>
+    <circle cx="150" cy="176" r="112" fill="#f8fafc" stroke="#c3d5e8" stroke-width="2"/>
+    <circle cx="150" cy="176" r="30" fill="#e8eef6" stroke="#94a3b8" stroke-width="1.5"/>
+    <circle cx="150" cy="176" r="18" fill="#dbe7f6" stroke="#94a3b8" stroke-width="1"/>
+    <circle cx="150" cy="176" r="6" fill="#94a3b8"/>
+    <g fill="#e8eef6" stroke="#94a3b8" stroke-width="1.2">
+      <circle cx="150" cy="88" r="30"/><circle cx="202" cy="108" r="30"/><circle cx="230" cy="158" r="30"/>
+      <circle cx="214" cy="214" r="30"/><circle cx="166" cy="246" r="30"/><circle cx="114" cy="232" r="30"/>
+      <circle cx="94" cy="182" r="30"/>
+    </g>
+    <g fill="#94a3b8">
+      <circle cx="150" cy="88" r="2.5"/><circle cx="163" cy="82" r="2.5"/><circle cx="137" cy="82" r="2.5"/>
+      <circle cx="202" cy="108" r="2.5"/><circle cx="215" cy="102" r="2.5"/><circle cx="189" cy="102" r="2.5"/>
+      <circle cx="230" cy="158" r="2.5"/><circle cx="243" cy="152" r="2.5"/><circle cx="217" cy="152" r="2.5"/>
+      <circle cx="214" cy="214" r="2.5"/><circle cx="227" cy="208" r="2.5"/><circle cx="201" cy="208" r="2.5"/>
+      <circle cx="166" cy="246" r="2.5"/><circle cx="179" cy="240" r="2.5"/><circle cx="153" cy="240" r="2.5"/>
+      <circle cx="114" cy="232" r="2.5"/><circle cx="127" cy="226" r="2.5"/><circle cx="101" cy="226" r="2.5"/>
+      <circle cx="94" cy="182" r="2.5"/><circle cx="107" cy="176" r="2.5"/><circle cx="81" cy="176" r="2.5"/>
+    </g>
+    <text x="150" y="320" font-size="12" fill="#5b7086" text-anchor="middle">股数越多越柔：7×7 中等 · 7×19 高柔</text>
+    <text x="150" y="340" font-size="12" fill="#5b7086" text-anchor="middle">（机器人最常用）· 6×36 极柔</text>
+
+    <line x1="300" y1="40" x2="300" y2="350" stroke="#e2e8f0" stroke-width="2"/>
+
+    <text x="545" y="34" font-size="14" fill="#b91c1c" text-anchor="middle" font-weight="bold">放大：丝-丝接触点</text>
+    <rect x="372" y="54" width="376" height="240" rx="10" fill="#fdf2f2" stroke="#f0c0c0"/>
+    <circle cx="470" cy="150" r="48" fill="#e8eef6" stroke="#64748b" stroke-width="2"/>
+    <circle cx="620" cy="150" r="48" fill="#e8eef6" stroke="#64748b" stroke-width="2"/>
+    <ellipse cx="545" cy="150" rx="15" ry="28" fill="#dc2626" fill-opacity="0.5"/>
+    <text x="545" y="150" font-size="11" fill="#7f1d1d" text-anchor="middle">接触</text>
+    <text x="545" y="166" font-size="10" fill="#7f1d1d" text-anchor="middle">微区</text>
+    <path d="M462 150 m -16 -6 l 8 6 l -8 6" fill="none" stroke="#64748b" stroke-width="2"/>
+    <path d="M628 150 m 16 -6 l -8 6 l 8 6" fill="none" stroke="#64748b" stroke-width="2"/>
+    <text x="560" y="240" font-size="13" fill="#b91c1c" text-anchor="middle">往复滑动 → 微动磨损 + 微动疲劳</text>
+    <text x="560" y="266" font-size="12" fill="#7f1d1d" text-anchor="middle">这是钢丝绳最常见的损伤方式</text>
+
+    <rect x="372" y="308" width="376" height="52" rx="8" fill="#eef6ff" stroke="#185FA5"/>
+    <text x="560" y="330" font-size="13" fill="#185FA5" text-anchor="middle">涂层第一功能 = 隔丝减摩（不是防腐）</text>
+    <text x="560" y="350" font-size="12" fill="#2c5282" text-anchor="middle">磷化 / 涂塑的寿命增益主要来自把丝隔开</text>
+  </g>
+</svg>

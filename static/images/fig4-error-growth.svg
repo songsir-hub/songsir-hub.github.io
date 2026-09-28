@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="'Microsoft YaHei','PingFang SC',sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#4a5568"/></marker>
+  </defs>
+  <style>.t{font-size:14px;fill:#1a202c;}.ts{font-size:12px;fill:#4a5568;}</style>
+  <rect width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="32" text-anchor="middle" font-size="19" font-weight="bold" fill="#1a202c">位置误差随时间的传播与组合校正（示意，对数纵轴）</text>
+
+  <!-- 坐标轴 -->
+  <line x1="100" y1="470" x2="850" y2="470" stroke="#4a5568" stroke-width="1.6" marker-end="url(#arr)"/>
+  <line x1="100" y1="470" x2="100" y2="60" stroke="#4a5568" stroke-width="1.6" marker-end="url(#arr)"/>
+  <text class="ts" x="820" y="492">t / h</text>
+  <text class="ts" x="30" y="58">位置误差 / 海里</text>
+
+  <!-- y log 刻度 -->
+  <text class="ts" x="62" y="474">0.001</text>
+  <text class="ts" x="70" y="394">0.01</text>
+  <text class="ts" x="70" y="314">0.1</text>
+  <text class="ts" x="78" y="234">1</text>
+  <text class="ts" x="72" y="154">10</text>
+  <text class="ts" x="66" y="74">100</text>
+  <g stroke="#e2e8f0" stroke-width="1">
+    <line x1="100" y1="390" x2="840" y2="390"/><line x1="100" y1="310" x2="840" y2="310"/>
+    <line x1="100" y1="230" x2="840" y2="230"/><line x1="100" y1="150" x2="840" y2="150"/><line x1="100" y1="70" x2="840" y2="70"/>
+  </g>
+  <!-- x 刻度 -->
+  <text class="ts" x="94" y="492">0</text><text class="ts" x="214" y="492">4</text>
+  <text class="ts" x="334" y="492">8</text><text class="ts" x="448" y="492">12</text>
+  <text class="ts" x="568" y="492">16</text><text class="ts" x="688" y="492">20</text>
+  <text class="ts" x="806" y="492">24</text>
+
+  <!-- GNSS失效竖线 -->
+  <line x1="460" y1="70" x2="460" y2="470" stroke="#c53030" stroke-width="1.4" stroke-dasharray="6,4"/>
+  <text x="460" y="86" text-anchor="middle" font-size="13" fill="#c53030">GNSS 失效时刻</text>
+
+  <!-- 曲线 -->
+  <!-- GNSS/INS 松组合: ~0.01 nmile 平线 -->
+  <path d="M100,390 L840,390" fill="none" stroke="#276749" stroke-width="2.6"/>
+  <!-- INS/DVL: 缓慢线性（log下近似直线） -->
+  <path d="M110,425 L280,328 L460,304 L840,280" fill="none" stroke="#2b6cb0" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- GNSS中断后惯导接力 -->
+  <path d="M100,390 L460,390 L580,245 L700,197 L840,169" fill="none" stroke="#d69e2e" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- 纯惯导 t² -->
+  <path d="M115,390 L160,294 L220,245 L280,217 L340,197 L400,180 L460,169 L520,158 L580,149 L640,141 L700,134 L760,127 L840,121" fill="none" stroke="#c53030" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- 图例 -->
+  <rect x="120" y="104" width="230" height="106" rx="8" fill="#ffffff" stroke="#cbd5e0" stroke-width="1.2"/>
+  <line x1="136" y1="126" x2="168" y2="126" stroke="#c53030" stroke-width="2.6"/>
+  <text class="ts" x="176" y="130">纯惯导（导航级，t² 增长）</text>
+  <line x1="136" y1="152" x2="168" y2="152" stroke="#2b6cb0" stroke-width="2.6"/>
+  <text class="ts" x="176" y="156">SINS + DVL（行程比 0.1–0.16%D）</text>
+  <line x1="136" y1="178" x2="168" y2="178" stroke="#d69e2e" stroke-width="2.6"/>
+  <text class="ts" x="176" y="182">GNSS 中断后惯性"接力"</text>
+  <line x1="136" y1="196" x2="168" y2="196" stroke="#276749" stroke-width="2.6"/>
+  <text class="ts" x="176" y="200">GNSS/INS 组合（米级）</text>
+
+  <!-- 注释 -->
+  <text class="ts" x="700" y="408" fill="#276749" font-size="12">误差被观测"钉住"，不再发散</text>
+  <text class="ts" x="770" y="145" fill="#c53030" font-size="12">二次方增长</text>
+  <text class="ts" x="740" y="255" fill="#b7791f" font-size="12">从断点重新漂移</text>
+  <text x="884" y="553" text-anchor="end" font-size="11" fill="#a0aec0">制图：松朗</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="腱绳传动原理示意图">
+  <defs>
+    <linearGradient id="hBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2f7fd"/><stop offset="1" stop-color="#dfeaf7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#hBg)"/>
+
+  <rect x="60" y="112" width="410" height="180" rx="8" fill="#ffffff" stroke="#c3d5e8" stroke-width="2"/>
+  <text x="70" y="100" font-size="13" fill="#7b8ca0" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">前臂（近端）</text>
+
+  <rect x="86" y="150" width="110" height="96" rx="10" fill="#1e4f8f"/>
+  <text x="141" y="188" font-size="15" fill="#ffffff" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">电机</text>
+  <text x="141" y="210" font-size="12" fill="#bcd6f2" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">+ 减速器</text>
+  <text x="141" y="232" font-size="11" fill="#9dc0e6" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">置于近端</text>
+
+  <rect x="200" y="190" width="76" height="16" rx="4" fill="#e8eef6" stroke="#9bb4cd" stroke-width="1.5"/>
+  <text x="238" y="228" font-size="11" fill="#5b7086" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">滚珠丝杠</text>
+
+  <path d="M276 196 C 330 196, 350 168, 404 168" fill="none" stroke="#185FA5" stroke-width="4" stroke-linecap="round"/>
+  <path d="M276 208 C 335 208, 355 238, 409 238" fill="none" stroke="#7aa9dd" stroke-width="4" stroke-linecap="round"/>
+  <text x="336" y="150" font-size="12" fill="#185FA5" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">腱绳</text>
+
+  <circle cx="430" cy="168" r="16" fill="#ffffff" stroke="#185FA5" stroke-width="3"/>
+  <circle cx="430" cy="168" r="4" fill="#185FA5"/>
+  <circle cx="430" cy="238" r="16" fill="#ffffff" stroke="#7aa9dd" stroke-width="3"/>
+  <circle cx="430" cy="238" r="4" fill="#7aa9dd"/>
+  <text x="430" y="286" font-size="12" fill="#5b7086" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">腕部滑轮 / 导向面</text>
+
+  <rect x="470" y="140" width="76" height="150" rx="6" fill="#ffffff" stroke="#c3d5e8" stroke-width="2"/>
+  <text x="508" y="128" font-size="13" fill="#7b8ca0" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">手掌</text>
+
+  <path d="M446 168 C 466 168, 476 170, 486 172" fill="none" stroke="#185FA5" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M446 210 C 466 210, 480 214, 490 218" fill="none" stroke="#7aa9dd" stroke-width="3.5" stroke-linecap="round"/>
+
+  <g>
+    <rect x="556" y="158" width="58" height="24" rx="8" fill="#eef4fb" stroke="#185FA5" stroke-width="2"/>
+    <rect x="626" y="164" width="54" height="22" rx="7" fill="#e6eefa" stroke="#185FA5" stroke-width="2"/>
+    <rect x="692" y="170" width="46" height="20" rx="6" fill="#dbe7f6" stroke="#185FA5" stroke-width="2"/>
+    <circle cx="556" cy="170" r="4" fill="#185FA5"/><circle cx="626" cy="175" r="4" fill="#185FA5"/>
+    <text x="676" y="214" font-size="12" fill="#5b7086" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">近节 · 中节 · 末节</text>
+    <text x="676" y="236" font-size="12" fill="#5b7086" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">22 自由度 · 单手 44 根腱绳</text>
+  </g>
+
+  <g font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">
+    <rect x="86" y="308" width="150" height="54" rx="8" fill="#ffffff" stroke="#dbe4ee"/>
+    <text x="161" y="330" font-size="13" fill="#166534" text-anchor="middle">末端惯量 ↓45%</text>
+    <text x="161" y="350" font-size="13" fill="#166534" text-anchor="middle">指尖负载 ↓60%</text>
+    <rect x="252" y="308" width="150" height="54" rx="8" fill="#ffffff" stroke="#dbe4ee"/>
+    <text x="327" y="330" font-size="13" fill="#166534" text-anchor="middle">单自由度成本</text>
+    <text x="327" y="350" font-size="13" fill="#166534" text-anchor="middle">$200 → $50</text>
+  </g>
+
+  <text x="400" y="390" font-size="12" fill="#7b8ca0" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">生物方案：前臂肌肉 → 肌腱 → 指骨　｜　工程方案：电机 → 腱绳 → 指节</text>
+</svg>

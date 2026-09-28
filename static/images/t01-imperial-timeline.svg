@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 470" font-family="'Source Han Serif SC','Noto Serif CJK SC','Songti SC',SimSun,'宋体',serif">
+<defs><marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 z" fill="#8B7355"/></marker></defs>
+<rect width="920" height="470" fill="#FBF8F1"/>
+<text x="460" y="44" font-size="21" font-weight="bold" fill="#3A3226" text-anchor="middle">从秦始皇到明清：莱山被祭了两千年</text>
+<text x="460" y="67" font-size="13" fill="#6B6255" text-anchor="middle">证据分三级：正史记载 · 考古实证 · 方志传说（颜色区分）</text>
+<path d="M80,258 L850,258" stroke="#8B7355" stroke-width="2.2" fill="none"/>
+<path d="M850,258 L862,258" stroke="#8B7355" stroke-width="2.0" fill="none"/>
+<path d="M854.7,261.3 L862,258 L854.7,254.7" stroke="#8B7355" stroke-width="2.0" fill="none" stroke-linecap="round"/>
+<path d="M110,258 L110,200" stroke="#52795F" stroke-width="1.6" fill="none"/>
+<circle cx="110" cy="258" r="6.5" fill="#8FB39A" stroke="#52795F" stroke-width="2.0"/>
+<rect x="32" y="124" width="156" height="66" rx="7" fill="#8FB39A" fill-opacity="0.42" stroke="#52795F" stroke-width="1.8"/>
+<text x="110" y="146" font-size="13.5" font-weight="bold" fill="#3A3226" text-anchor="middle">秦始皇东巡</text>
+<text x="110" y="166" font-size="12" font-weight="bold" fill="#52795F" text-anchor="middle">前 219 年</text>
+<text x="110" y="182" font-size="10.8" fill="#6B6255" text-anchor="middle">始皇二十八年「东游海上，行礼祠名</text>
+<path d="M236,258 L236,200" stroke="#52795F" stroke-width="1.6" fill="none"/>
+<circle cx="236" cy="258" r="6.5" fill="#8FB39A" stroke="#52795F" stroke-width="2.0"/>
+<rect x="158" y="124" width="156" height="66" rx="7" fill="#8FB39A" fill-opacity="0.42" stroke="#52795F" stroke-width="1.8"/>
+<text x="236" y="146" font-size="13.5" font-weight="bold" fill="#3A3226" text-anchor="middle">汉武帝</text>
+<text x="236" y="166" font-size="12" font-weight="bold" fill="#52795F" text-anchor="middle">前 110 年</text>
+<text x="236" y="182" font-size="10.8" fill="#6B6255" text-anchor="middle">元封元年登封泰山「用事八神」；其</text>
+<path d="M362,258 L362,200" stroke="#52795F" stroke-width="1.6" fill="none"/>
+<circle cx="362" cy="258" r="6.5" fill="#8FB39A" stroke="#52795F" stroke-width="2.0"/>
+<rect x="284" y="124" width="156" height="66" rx="7" fill="#8FB39A" fill-opacity="0.42" stroke="#52795F" stroke-width="1.8"/>
+<text x="362" y="146" font-size="13.5" font-weight="bold" fill="#3A3226" text-anchor="middle">汉宣帝定制</text>
+<text x="362" y="166" font-size="12" font-weight="bold" fill="#52795F" text-anchor="middle">前 61 年</text>
+<text x="362" y="182" font-size="10.8" fill="#6B6255" text-anchor="middle">神爵元年「莱山于黄……成山祠日，</text>
+<path d="M500,258 L500,200" stroke="#3E7CA6" stroke-width="1.6" fill="none"/>
+<circle cx="500" cy="258" r="6.5" fill="#5E9BB8" stroke="#3E7CA6" stroke-width="2.0"/>
+<rect x="422" y="124" width="156" height="66" rx="7" fill="#5E9BB8" fill-opacity="0.42" stroke="#3E7CA6" stroke-width="1.8"/>
+<text x="500" y="146" font-size="13.5" font-weight="bold" fill="#3A3226" text-anchor="middle">考古发掘</text>
+<text x="500" y="166" font-size="12" font-weight="bold" fill="#3E7CA6" text-anchor="middle">1983 年</text>
+<text x="500" y="182" font-size="10.8" fill="#6B6255" text-anchor="middle">烟台市博物馆发掘月主祠基址；20</text>
+<path d="M640,258 L640,316" stroke="#B8743A" stroke-width="1.6" fill="none"/>
+<circle cx="640" cy="258" r="6.5" fill="#E5A55F" stroke="#B8743A" stroke-width="2.0"/>
+<rect x="562" y="316" width="156" height="66" rx="7" fill="#E5A55F" fill-opacity="0.42" stroke="#B8743A" stroke-width="1.8"/>
+<text x="640" y="338" font-size="13.5" font-weight="bold" fill="#3A3226" text-anchor="middle">唐代迁建</text>
+<text x="640" y="356" font-size="10.8" fill="#6B6255" text-anchor="middle">方志载唐太宗东征途经，命徐茂公迁</text>
+<text x="640" y="372" font-size="10.4" fill="#B8743A" text-anchor="middle">（方志 · 传说级）</text>
+<path d="M780,258 L780,316" stroke="#B8743A" stroke-width="1.6" fill="none"/>
+<circle cx="780" cy="258" r="6.5" fill="#E5A55F" stroke="#B8743A" stroke-width="2.0"/>
+<rect x="702" y="316" width="156" height="66" rx="7" fill="#E5A55F" fill-opacity="0.42" stroke="#B8743A" stroke-width="1.8"/>
+<text x="780" y="338" font-size="13.5" font-weight="bold" fill="#3A3226" text-anchor="middle">明清香火</text>
+<text x="780" y="356" font-size="10.8" fill="#6B6255" text-anchor="middle">元至元、明嘉靖正德重修；戚继光父</text>
+<text x="780" y="372" font-size="10.4" fill="#B8743A" text-anchor="middle">（方志 · 传说级）</text>
+<rect x="80" y="372" width="770" height="44" rx="9" fill="#FFFFFF" stroke="#8B7355" stroke-width="1.4"/>
+<path d="M100,408 L111.0,388 L122.0,408 z" fill="#8FB39A" stroke="#52795F" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="132" y="400" font-size="12.5" fill="#3A3226" text-anchor="start">正史（《史记》《汉书》）</text>
+<path d="M340,408 L351.0,388 L362.0,408 z" fill="#5E9BB8" stroke="#3E7CA6" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="372" y="400" font-size="12.5" fill="#3A3226" text-anchor="start">考古发掘</text>
+<path d="M500,408 L511.0,388 L522.0,408 z" fill="#E5A55F" stroke="#B8743A" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="532" y="400" font-size="12.5" fill="#3A3226" text-anchor="start">方志 · 题咏（后世纪述，别为一级）</text>
+<path d="M60,430 L860,430" stroke="#8B7355" stroke-width="1.2" stroke-dasharray="4 4" fill="none"/>
+<text x="60" y="450" font-size="11.5" fill="#6B6255" text-anchor="start">三座莱山中，只有龙口这一座被纳入国家祀典，并延续至明清。</text>
+<text x="860" y="450" font-size="11.5" fill="#6B6255" text-anchor="end">作图：松朗</text>
+</svg>

@@ -4,8 +4,8 @@ date = 2026-09-28T13:00:00+08:00
 author = "Songsir（松朗）"
 description = "基于1181家AI开发企业的实证数据，RAND最新报告揭示中美AI产业生态：底层架构高度趋同，真正分野在落地形态——美国偏纯软件与知识密集型行业，中国偏具身载体与实体经济；中国开源模型正以约1/4价格快速追赶。"
 categories = ["科技前沿"]
-featured_image = "/images/rand-ai-us-china-brief-cover.png"
 tags = ["AI","中美","RAND","具身智能","开源模型"]
+featured_image = "/images/rand-ai-us-china-brief-cover.png"
 +++ 
 
 ## 执行摘要 / Executive Summary

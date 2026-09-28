@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" font-family="'Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif">
+<rect width="1200" height="600" fill="#FFFFFF"/>
+<text x="30" y="42" font-size="25" font-weight="700" fill="#1B3A6B">图5　欧盟AI“落后清单”：采用率只有美国的七成甚至一半</text>
+<text x="30" y="70" font-size="16" fill="#555555">数据来源：布鲁金斯学会、圣路易斯联储（2026年初调查）、伦敦商学院与Sifted报告</text>
+<line x1="90" y1="430.0" x2="1120" y2="430.0" stroke="#C9D3DE" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="76" y="435.0" font-size="14" fill="#555555" text-anchor="end">0%</text>
+<line x1="90" y1="374.0" x2="1120" y2="374.0" stroke="#C9D3DE" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="76" y="379.0" font-size="14" fill="#555555" text-anchor="end">10%</text>
+<line x1="90" y1="318.0" x2="1120" y2="318.0" stroke="#C9D3DE" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="76" y="323.0" font-size="14" fill="#555555" text-anchor="end">20%</text>
+<line x1="90" y1="262.0" x2="1120" y2="262.0" stroke="#C9D3DE" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="76" y="267.0" font-size="14" fill="#555555" text-anchor="end">30%</text>
+<line x1="90" y1="206.0" x2="1120" y2="206.0" stroke="#C9D3DE" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="76" y="211.0" font-size="14" fill="#555555" text-anchor="end">40%</text>
+<line x1="90" y1="150.0" x2="1120" y2="150.0" stroke="#C9D3DE" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="76" y="155.0" font-size="14" fill="#555555" text-anchor="end">50%</text>
+<rect x="171.66666666666663" y="189.2" width="78" height="240.8" rx="5" fill="#1B3A6B"/>
+<text x="210.66666666666663" y="177.2" font-size="21" font-weight="700" fill="#1B3A6B" text-anchor="middle">43%</text>
+<text x="210.66666666666663" y="155.2" font-size="15" fill="#555555" text-anchor="middle">美国</text>
+<rect x="273.66666666666663" y="250.8" width="78" height="179.2" rx="5" fill="#7FA8D9"/>
+<text x="312.66666666666663" y="238.8" font-size="21" font-weight="700" fill="#2E6DB4" text-anchor="middle">32%</text>
+<text x="312.66666666666663" y="216.8" font-size="15" fill="#555555" text-anchor="middle">欧洲</text>
+<text x="261.66666666666663" y="464" font-size="17" font-weight="700" fill="#1B3A6B" text-anchor="middle">劳动者在工作中使用生成式AI</text>
+<text x="261.66666666666663" y="488" font-size="14" fill="#555555" text-anchor="middle">美国 43% ／ 欧洲六国均值 32%</text>
+<rect x="515.0" y="390.8" width="78" height="39.2" rx="5" fill="#1B3A6B"/>
+<text x="554.0" y="378.8" font-size="21" font-weight="700" fill="#1B3A6B" text-anchor="middle">7%</text>
+<text x="554.0" y="356.8" font-size="15" fill="#555555" text-anchor="middle">美国</text>
+<rect x="617.0" y="407.6" width="78" height="22.4" rx="5" fill="#7FA8D9"/>
+<text x="656.0" y="395.6" font-size="21" font-weight="700" fill="#2E6DB4" text-anchor="middle">4%</text>
+<text x="656.0" y="373.6" font-size="15" fill="#555555" text-anchor="middle">欧洲</text>
+<text x="605.0" y="464" font-size="17" font-weight="700" fill="#1B3A6B" text-anchor="middle">企业将AI用于生产商品和服务</text>
+<text x="605.0" y="488" font-size="14" fill="#555555" text-anchor="middle">美国 7% ／ 欧洲均值 4%</text>
+<rect x="858.3333333333333" y="239.6" width="78" height="190.4" rx="5" fill="#1B3A6B"/>
+<text x="897.3333333333333" y="227.6" font-size="21" font-weight="700" fill="#1B3A6B" text-anchor="middle">34%</text>
+<text x="897.3333333333333" y="205.6" font-size="15" fill="#555555" text-anchor="middle">美国</text>
+<rect x="960.3333333333333" y="318.0" width="78" height="112.0" rx="5" fill="#7FA8D9"/>
+<text x="999.3333333333333" y="306.0" font-size="21" font-weight="700" fill="#2E6DB4" text-anchor="middle">20%</text>
+<text x="999.3333333333333" y="284.0" font-size="15" fill="#555555" text-anchor="middle">欧洲</text>
+<text x="948.3333333333333" y="464" font-size="17" font-weight="700" fill="#1B3A6B" text-anchor="middle">企业使用AI（任意用途）</text>
+<text x="948.3333333333333" y="488" font-size="14" fill="#555555" text-anchor="middle">美国 34% ／ 欧盟 20%</text>
+<line x1="90" y1="430" x2="1120" y2="430" stroke="#1B3A6B" stroke-width="2"/>
+<text x="600" y="528" font-size="17" fill="#555555" text-anchor="middle">使用强度差距更大：AI参与的工作时长占美国总工时 5.2%，约为德、法、意的三倍</text>
+<text x="600" y="556" font-size="15" fill="#555555" text-anchor="middle">注：第三组为伦敦商学院与Sifted报告口径，与前两组调查口径不同，仅作参照</text>
+</svg>

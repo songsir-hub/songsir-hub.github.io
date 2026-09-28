@@ -1,0 +1,16 @@
+/* Cormorant Garamond 自托管字体（古典衬线，用于 .en 英文对照文本）
+   该文件位于 static/，不经 Hugo 资产管线，浏览器可直接解析 /fonts/ 绝对路径。 */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/cormorant-garamond-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/cormorant-garamond-latin-600-normal.woff2') format('woff2');
+}

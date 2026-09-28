@@ -1,0 +1,48 @@
+{{/*
+	GetFeaturedImage (Override)
+
+	This partial gets the url for featured image for a given page.
+	Override: If no featured image is found, return a default global background image.
+*/}}
+
+{{/* Declare a new string variable, $linkToCover */}}
+{{ $linkToCover := "" }}
+{{ $matches := "feature,cover" }}
+{{/* Use the value from front matter if present */}}
+{{ with .Params.featured_image }}
+  {{/* This is the default case, the image lives in the static directory.
+    In which case we'll use the static dir */}}
+  {{ $linkToCover = strings.Trim . "/" | urls.AbsURL }}
+  {{/* If we find a Page Resource matching the exact value, we use it instead. */}}
+  {{ with $.Resources.GetMatch . }}
+    {{ $linkToCover = .RelPermalink }}
+  {{ end }}
+{{ else }}
+  {{/* Use the first value from the images front matter array if present. */}}
+  {{ with .Params.images }}
+    {{ range first 1 . }}
+      {{ with . }}
+        {{ $linkToCover = strings.Trim . "/" | urls.AbsURL }}
+        {{/* If we find a Page Resource matching the exact value, we use it instead. */}}
+        {{ with $.Resources.GetMatch . }}
+          {{ $linkToCover = .RelPermalink }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{/* Find the first image with 'cover' in the name in this page bundle. */}}
+  {{ else }}
+    {{ with .Resources.ByType "image" }}
+      {{ with .GetMatch (fmt.Printf "**{%s}*" $matches) }}
+        {{ $linkToCover = .RelPermalink }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* DEFAULT: If no featured image found, use global background image */}}
+{{ if not $linkToCover }}
+  {{ $linkToCover = "/images/background.jpg" | urls.AbsURL }}
+{{ end }}
+
+{{/* return either a permalink, or the default global background image */}}
+{{ return $linkToCover }}

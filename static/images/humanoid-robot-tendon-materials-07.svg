@@ -1,0 +1,50 @@
+<svg viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="锰系磷化与锌系磷化结晶形态对比">
+  <rect width="800" height="320" fill="#ffffff"/>
+  <g font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">
+    <text x="210" y="30" font-size="14" fill="#185FA5" text-anchor="middle" font-weight="bold">锰系磷化 · 半球状层叠结晶</text>
+    <rect x="60" y="44" width="300" height="118" rx="8" fill="#f1f6fc" stroke="#c3d5e8"/>
+    <rect x="60" y="144" width="300" height="30" fill="#94a3b8"/>
+    <text x="210" y="164" font-size="12" fill="#ffffff" text-anchor="middle">钢丝基体</text>
+    <g fill="#185FA5" fill-opacity="0.75">
+      <path d="M76 144 a16 16 0 0 1 32 0 z"/><path d="M112 144 a16 16 0 0 1 32 0 z"/>
+      <path d="M148 144 a16 16 0 0 1 32 0 z"/><path d="M184 144 a16 16 0 0 1 32 0 z"/>
+      <path d="M220 144 a16 16 0 0 1 32 0 z"/><path d="M256 144 a16 16 0 0 1 32 0 z"/>
+      <path d="M292 144 a16 16 0 0 1 32 0 z"/><path d="M328 144 a16 16 0 0 1 32 0 z"/>
+    </g>
+    <g fill="#0ea5e9" fill-opacity="0.5">
+      <ellipse cx="92" cy="136" rx="7" ry="5"/><ellipse cx="128" cy="136" rx="7" ry="5"/>
+      <ellipse cx="164" cy="136" rx="7" ry="5"/><ellipse cx="200" cy="136" rx="7" ry="5"/>
+      <ellipse cx="236" cy="136" rx="7" ry="5"/><ellipse cx="272" cy="136" rx="7" ry="5"/>
+      <ellipse cx="308" cy="136" rx="7" ry="5"/><ellipse cx="344" cy="136" rx="7" ry="5"/>
+    </g>
+    <text x="210" y="96" font-size="12" fill="#1e4f8f" text-anchor="middle">油滴储存在半球内部 → 始终有油润滑</text>
+    <text x="210" y="118" font-size="12" fill="#1e4f8f" text-anchor="middle">受压时不易被拉断 =「膜轴承」</text>
+    <text x="210" y="200" font-size="13" fill="#166534" text-anchor="middle">✓ 抗微动磨损 · 寿命为光面绳的 2–3 倍</text>
+    <text x="210" y="222" font-size="12" fill="#47607d" text-anchor="middle">膜不导电，可抑制钢丝表面形成微电池</text>
+
+    <text x="600" y="30" font-size="14" fill="#b45309" text-anchor="middle" font-weight="bold">锌系磷化 · 叶状 / 针状结晶</text>
+    <rect x="450" y="44" width="300" height="118" rx="8" fill="#fdf6ec" stroke="#f0d9b5"/>
+    <rect x="450" y="144" width="300" height="30" fill="#94a3b8"/>
+    <text x="600" y="164" font-size="12" fill="#ffffff" text-anchor="middle">钢丝基体</text>
+    <g stroke="#d97706" stroke-width="3" stroke-linecap="round">
+      <line x1="470" y1="144" x2="466" y2="108"/><line x1="494" y1="144" x2="490" y2="102"/>
+      <line x1="518" y1="144" x2="522" y2="110"/><line x1="542" y1="144" x2="538" y2="100"/>
+      <line x1="566" y1="144" x2="570" y2="108"/><line x1="590" y1="144" x2="586" y2="102"/>
+      <line x1="614" y1="144" x2="618" y2="110"/><line x1="638" y1="144" x2="634" y2="100"/>
+      <line x1="662" y1="144" x2="666" y2="108"/><line x1="686" y1="144" x2="682" y2="102"/>
+      <line x1="710" y1="144" x2="714" y2="110"/><line x1="734" y1="144" x2="730" y2="100"/>
+    </g>
+    <g stroke="#dc2626" stroke-width="3" stroke-linecap="round">
+      <line x1="530" y1="144" x2="536" y2="124"/><line x1="620" y1="144" x2="626" y2="124"/>
+      <line x1="700" y1="144" x2="706" y2="124"/>
+    </g>
+    <text x="600" y="96" font-size="12" fill="#b45309" text-anchor="middle">针状结晶受压易折断、储油能力弱</text>
+    <text x="600" y="118" font-size="12" fill="#b45309" text-anchor="middle">（红色为受压折断的结晶）</text>
+    <text x="600" y="200" font-size="13" fill="#b45309" text-anchor="middle">△ 减摩性不如锰系</text>
+    <text x="600" y="222" font-size="12" fill="#7c4a12" text-anchor="middle">但皂化后形成硬脂酸锌层，利于拉拔</text>
+
+    <rect x="24" y="244" width="752" height="56" rx="8" fill="#f8fafc" stroke="#dbe4ee"/>
+    <text x="44" y="268" font-size="12" fill="#47607d">同一物理思想的两个尺度版本：锰系磷化（微米级化学转化结晶）与表面织构 + MoS₂ + HDLC（亚微米人工织构）。</text>
+    <text x="44" y="288" font-size="12" fill="#b45309">织构密度 14% 时摩擦系数约 0.03、磨损率较无织构 HDLC 降低 89% —— 微凹坑充当「润滑剂储库」与「磨屑陷阱」。</text>
+  </g>
+</svg>

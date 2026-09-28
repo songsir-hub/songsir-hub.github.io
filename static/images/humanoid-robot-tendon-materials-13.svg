@@ -1,0 +1,38 @@
+<svg viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="离散腱绳与一体编织骨架对比">
+  <rect width="800" height="280" fill="#ffffff"/>
+  <g font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">
+    <text x="200" y="30" font-size="14" fill="#5b7086" text-anchor="middle" font-weight="bold">现在：离散零件装配</text>
+    <rect x="60" y="46" width="280" height="150" rx="10" fill="#f8fafc" stroke="#c3d5e8"/>
+    <rect x="84" y="76" width="70" height="58" rx="6" fill="#e8eef6" stroke="#94a3b8"/>
+    <text x="119" y="110" font-size="11" fill="#5b7086" text-anchor="middle">骨架件</text>
+    <circle cx="196" cy="105" r="17" fill="#ffffff" stroke="#185FA5" stroke-width="2"/>
+    <text x="196" y="109" font-size="10" fill="#185FA5" text-anchor="middle">滑轮</text>
+    <rect x="250" y="82" width="66" height="46" rx="6" fill="#e8eef6" stroke="#94a3b8"/>
+    <text x="283" y="110" font-size="11" fill="#5b7086" text-anchor="middle">端子</text>
+    <path d="M119 96 C 160 96, 170 103, 179 103" stroke="#185FA5" stroke-width="3" fill="none"/>
+    <path d="M213 103 L248 103" stroke="#185FA5" stroke-width="3"/>
+    <text x="76" y="162" font-size="11.5" fill="#b91c1c">两个最脆弱的界面：滑轮接触面 · 端子连接面</text>
+    <text x="76" y="180" font-size="11.5" fill="#7b8ca0">→ 正是摩擦磨损与疲劳断裂的两大源头</text>
+    <text x="200" y="222" font-size="13" fill="#5b7086" text-anchor="middle">零件数多 · 装配一致性决定寿命</text>
+
+    <path d="M356 120 L404 120" stroke="#94a3b8" stroke-width="3"/>
+    <path d="M396 112 L404 120 L396 128" fill="none" stroke="#94a3b8" stroke-width="3"/>
+    <text x="380" y="102" font-size="12" fill="#94a3b8" text-anchor="middle">演进</text>
+
+    <text x="600" y="30" font-size="14" fill="#0f6b47" text-anchor="middle" font-weight="bold">终局：一体编织 / 打印</text>
+    <rect x="460" y="46" width="280" height="158" rx="10" fill="#eaf6ef" stroke="#15a06a"/>
+    <text x="600" y="70" font-size="11.5" fill="#0f6b47" text-anchor="middle">承重纤维 · 腱 · 布线 · 骨架 一次成型</text>
+    <path d="M484 128 C 520 100, 560 158, 596 128 C 632 100, 672 158, 708 128" stroke="#15a06a" stroke-width="3" fill="none"/>
+    <path d="M484 148 C 520 120, 560 178, 596 148 C 632 120, 672 178, 708 148" stroke="#7ccba6" stroke-width="3" fill="none"/>
+    <path d="M484 168 C 520 140, 560 198, 596 168 C 632 140, 672 198, 708 168" stroke="#15a06a" stroke-width="3" fill="none"/>
+    <g stroke="#a7d8c1" stroke-width="2" stroke-dasharray="4 4">
+      <line x1="500" y1="96" x2="500" y2="196"/><line x1="560" y1="96" x2="560" y2="196"/>
+      <line x1="620" y1="96" x2="620" y2="196"/><line x1="680" y1="96" x2="680" y2="196"/>
+    </g>
+    <text x="600" y="222" font-size="13" fill="#0f6b47" text-anchor="middle">无滑轮 · 无端子 · 无后装配</text>
+    <text x="600" y="242" font-size="12" fill="#7b8ca0" text-anchor="middle" opacity="0"> </text>
+
+    <rect x="24" y="244" width="752" height="30" rx="8" fill="#f8fafc" stroke="#dbe4ee"/>
+    <text x="400" y="264" font-size="12.5" fill="#47607d" text-anchor="middle">若该推断成立，今天围绕「哪种纤维最适合做绳」的讨论，五年后回看可能只是过渡期的技术形态。</text>
+  </g>
+</svg>

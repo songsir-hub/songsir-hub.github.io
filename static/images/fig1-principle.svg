@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="'Microsoft YaHei','PingFang SC',sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#4a5568"/></marker>
+    <marker id="arrB" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#2b6cb0"/></marker>
+  </defs>
+  <style>
+    .box{fill:#ffffff;stroke:#2b6cb0;stroke-width:1.6;rx:6;}
+    .sensor{fill:#f0f7ff;stroke:#2b6cb0;stroke-width:1.6;}
+    .calc{fill:#fffaf0;stroke:#c05621;stroke-width:1.6;}
+    .out{fill:#f0fff4;stroke:#276749;stroke-width:1.6;}
+    .t{font-size:15px;fill:#1a202c;}
+    .ts{font-size:12px;fill:#4a5568;}
+    .flow{stroke:#4a5568;stroke-width:1.6;fill:none;}
+  </style>
+  <rect width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="34" text-anchor="middle" font-size="19" font-weight="bold" fill="#1a202c">捷联惯性导航解算链</text>
+
+  <!-- 传感器列 -->
+  <rect class="sensor" x="30" y="90" width="130" height="52" rx="6"/>
+  <text class="t" x="95" y="112" text-anchor="middle">三轴陀螺仪</text>
+  <text class="ts" x="95" y="130" text-anchor="middle">角速率 ω(t)</text>
+
+  <rect class="sensor" x="30" y="330" width="130" height="52" rx="6"/>
+  <text class="t" x="95" y="352" text-anchor="middle">三轴加速度计</text>
+  <text class="ts" x="95" y="370" text-anchor="middle">比力 f(t)</text>
+
+  <!-- 姿态更新 -->
+  <rect class="calc" x="220" y="90" width="150" height="52" rx="6"/>
+  <text class="t" x="295" y="112" text-anchor="middle">姿态更新</text>
+  <text class="ts" x="295" y="130" text-anchor="middle">四元数/方向余弦</text>
+
+  <!-- 数学平台 -->
+  <rect class="calc" x="430" y="90" width="170" height="52" rx="6"/>
+  <text class="t" x="515" y="112" text-anchor="middle">姿态矩阵 C</text>
+  <text class="ts" x="515" y="130" text-anchor="middle">"数学平台"（载体系→导航系）</text>
+
+  <!-- 坐标变换 -->
+  <rect class="calc" x="430" y="330" width="170" height="52" rx="6"/>
+  <text class="t" x="515" y="352" text-anchor="middle">比力坐标变换</text>
+  <text class="ts" x="515" y="370" text-anchor="middle">fⁿ = C·f^b</text>
+
+  <!-- 有害加速度补偿 -->
+  <circle cx="515" cy="240" r="42" fill="#fff5f5" stroke="#c53030" stroke-width="1.8"/>
+  <text class="t" x="515" y="235" text-anchor="middle">有害加速度</text>
+  <text class="ts" x="515" y="253" text-anchor="middle">g、哥氏项补偿</text>
+
+  <!-- 一次积分 -->
+  <rect class="calc" x="660" y="330" width="120" height="52" rx="6"/>
+  <text class="t" x="720" y="352" text-anchor="middle">积分 ①</text>
+  <text class="ts" x="720" y="370" text-anchor="middle">→ 速度 vⁿ</text>
+
+  <!-- 二次积分 -->
+  <rect class="calc" x="660" y="440" width="120" height="52" rx="6"/>
+  <text class="t" x="720" y="462" text-anchor="middle">积分 ②</text>
+  <text class="ts" x="720" y="480" text-anchor="middle">→ 位置 Pⁿ</text>
+
+  <!-- 初始对准 -->
+  <rect class="sensor" x="220" y="440" width="150" height="52" rx="6"/>
+  <text class="t" x="295" y="462" text-anchor="middle">初始对准</text>
+  <text class="ts" x="295" y="480" text-anchor="middle">重力+地球自转基准</text>
+
+  <!-- 输出 -->
+  <rect class="out" x="30" y="430" width="0" height="0"/>
+  <rect class="out" x="820" y="360" width="60" height="160" rx="6"/>
+  <text class="t" x="850" y="420" text-anchor="middle" transform="rotate(90 850 420)"></text>
+  <text class="t" x="850" y="425" text-anchor="middle" font-size="15" fill="#1a202c" transform="rotate(-90 850 425)">姿态·速度·位置</text>
+
+  <!-- 连线 -->
+  <path class="flow" d="M160,116 L220,116" marker-end="url(#arr)"/>
+  <path class="flow" d="M370,116 L430,116" marker-end="url(#arr)"/>
+  <path class="flow" d="M515,142 L515,198" marker-end="url(#arr)"/>
+  <path class="flow" d="M160,356 L430,356" marker-end="url(#arr)"/>
+  <path class="flow" d="M515,330 L515,282" marker-end="url(#arrB)"/>
+  <path class="flow" d="M555,240 L600,240 L600,330" marker-end="url(#arr)"/>
+  <path class="flow" d="M600,240 L660,240 L660,116 L700,116 L700,440" marker-end="url(#arrB)"/>
+  <path class="flow" d="M550,356 L660,356" marker-end="url(#arr)"/>
+  <path class="flow" d="M720,382 L720,440" marker-end="url(#arr)"/>
+  <path class="flow" d="M780,466 L800,466" marker-end="url(#arrB)"/>
+  <path class="flow" d="M370,466 L430,466 L430,300" stroke-dasharray="5,4"/>
+  <text class="ts" x="400" y="500" text-anchor="middle">提供姿态初值</text>
+
+  <text class="ts" x="450" y="545" text-anchor="middle">积分是惯导的灵魂，也是误差累积的根源：器件误差经两次积分放大为位置漂移</text>
+  <text x="884" y="553" text-anchor="end" font-size="11" fill="#a0aec0">制图：松朗</text>
+</svg>

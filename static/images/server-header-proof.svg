@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" font-family="-apple-system, Segoe UI, Roboto, sans-serif">
+  <rect width="680" height="340" fill="#ffffff"/>
+  <text x="24" y="30" font-size="18" font-weight="700" fill="#111827">响应头中的隧道标记：Server: FastGithub</text>
+
+  <rect x="24" y="52" width="300" height="150" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="40" y="76" font-size="12" font-weight="700" fill="#475569">直连（未加速）</text>
+  <text x="40" y="100" font-family="monospace" font-size="11" fill="#334155">HTTP/2 200</text>
+  <text x="40" y="122" font-family="monospace" font-size="11" fill="#334155">server: github.com</text>
+  <text x="40" y="144" font-family="monospace" font-size="11" fill="#334155">content-type: text/html</text>
+  <text x="40" y="178" font-size="11" fill="#94a3b8">仅单一 server 头</text>
+
+  <rect x="356" y="52" width="300" height="150" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="372" y="76" font-size="12" font-weight="700" fill="#14532d">经 FastGithub（已加速）</text>
+  <text x="372" y="100" font-family="monospace" font-size="11" fill="#334155">HTTP/2 200</text>
+  <text x="372" y="122" font-family="monospace" font-size="11" fill="#334155">server: github.com</text>
+  <text x="372" y="144" font-family="monospace" font-size="11" font-weight="700" fill="#16a34a">server: FastGithub</text>
+  <text x="372" y="178" font-size="11" fill="#16a34a">出现双 server 头 = 隧道生效铁证</text>
+
+  <line x1="324" y1="127" x2="356" y2="127" stroke="#16a34a" stroke-width="2"/>
+  <polygon points="356,122 356,132 366,127" fill="#16a34a"/>
+  <text x="328" y="118" font-size="10" fill="#16a34a">新增</text>
+
+  <text x="24" y="240" font-size="12" fill="#475569">为什么可靠：</text>
+  <text x="24" y="264" font-size="11" fill="#475569">• 直连时只有一个 github.com 自己的 server 头；</text>
+  <text x="24" y="286" font-size="11" fill="#475569">• FastGithub 作为中间人会再追加一行 "Server: FastGithub"；</text>
+  <text x="24" y="308" font-size="11" fill="#475569">• 因此检测该头可排除"能直连就假报全绿"的误判。</text>
+</svg>

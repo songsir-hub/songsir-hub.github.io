@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" font-family="'Source Han Serif SC','Noto Serif CJK SC','Songti SC',SimSun,'宋体',serif">
+<defs><marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 z" fill="#8B7355"/></marker></defs>
+<rect width="920" height="480" fill="#FBF8F1"/>
+<text x="460" y="44" font-size="21" font-weight="bold" fill="#3A3226" text-anchor="middle">三座莱山的年代层位：两个时代，两套逻辑</text>
+<text x="460" y="67" font-size="13" fill="#6B6255" text-anchor="middle">名从族群来 · 名从故事来——同形而异源</text>
+<rect x="430" y="110" width="400" height="96" rx="8" fill="#E5A55F" fill-opacity="0.42" stroke="#B8743A" stroke-width="2.2"/>
+<text x="630" y="142" font-size="15.5" font-weight="bold" fill="#3A3226" text-anchor="middle">约八百年前 · 传说层积</text>
+<text x="630" y="168" font-size="14" font-weight="bold" fill="#B8743A" text-anchor="middle">烟台莱山（今马鞍山）</text>
+<text x="630" y="190" font-size="12" fill="#6B6255" text-anchor="middle">「北面来了一山」→ 来山 → 莱山｜名从故事来</text>
+<rect x="430" y="226" width="400" height="130" rx="8" fill="#8FB39A" fill-opacity="0.42" stroke="#52795F" stroke-width="2.2"/>
+<text x="630" y="258" font-size="15.5" font-weight="bold" fill="#3A3226" text-anchor="middle">先秦 · 族群自名</text>
+<text x="630" y="286" font-size="14" font-weight="bold" fill="#52795F" text-anchor="middle">龙口莱山（之莱山）</text>
+<text x="630" y="306" font-size="12" fill="#6B6255" text-anchor="middle">八神月主祠 · 秦汉书之黄县</text>
+<text x="630" y="330" font-size="14" font-weight="bold" fill="#52795F" text-anchor="middle">莱阳莱山（今旌旗山）</text>
+<text x="630" y="350" font-size="12" fill="#6B6255" text-anchor="middle">《汉志》长广莱山莱王祠</text>
+<rect x="80" y="110" width="300" height="246" rx="9" fill="#FFFFFF" stroke="#8B7355" stroke-width="1.8"/>
+<text x="230" y="146" font-size="15" font-weight="bold" fill="#3A3226" text-anchor="middle">同 一 个 字</text>
+<text x="230" y="230" font-size="76" font-weight="bold" fill="#3A3226" text-anchor="middle">莱</text>
+<text x="230" y="280" font-size="13" fill="#6B6255" text-anchor="middle">三种来历 · 两个时代</text>
+<path d="M110,306 L350,306" stroke="#8B7355" stroke-width="1.2" stroke-dasharray="4 4" fill="none"/>
+<text x="230" y="330" font-size="12.5" fill="#4E463A" text-anchor="middle">看到「莱」字地名，先问它</text>
+<text x="230" y="350" font-size="12.5" fill="#4E463A" text-anchor="middle">什么时候、因为什么被安上去</text>
+<path d="M390,158 L424,158" stroke="#B8743A" stroke-width="1.8" fill="none"/>
+<path d="M416.7,161.3 L424,158 L416.7,154.7" stroke="#B8743A" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+<path d="M390,291 L424,291" stroke="#52795F" stroke-width="1.8" fill="none"/>
+<path d="M416.7,294.3 L424,291 L416.7,287.7" stroke="#52795F" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+<rect x="80" y="384" width="750" height="40" rx="9" fill="#EFE6CE" fill-opacity="0.45" stroke="#8B7355" stroke-width="1.5"/>
+<text x="455" y="410" font-size="13.5" font-weight="bold" fill="#3A3226" text-anchor="middle">若不辨年代而三山并为一谈，便得到「莱夷有三处祭祀中心」——看似有力，实则落空</text>
+<path d="M60,440 L860,440" stroke="#8B7355" stroke-width="1.2" stroke-dasharray="4 4" fill="none"/>
+<text x="60" y="460" font-size="11.5" fill="#6B6255" text-anchor="start">烟台莱山与前两座无承袭关系，属传说层积，不能充作先秦莱祭的证据。</text>
+<text x="860" y="460" font-size="11.5" fill="#6B6255" text-anchor="end">作图：松朗</text>
+</svg>

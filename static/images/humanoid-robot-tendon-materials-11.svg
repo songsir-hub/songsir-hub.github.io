@@ -1,0 +1,60 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="人形机器人腱绳按部位选型地图">
+  <rect width="800" height="520" fill="#ffffff"/>
+  <g font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">
+    <text x="40" y="30" font-size="14" fill="#1e4f8f" font-weight="bold">部位 → 材料 → 决定性理由</text>
+    <text x="780" y="30" font-size="12" fill="#7b8ca0" text-anchor="end">色块 = 材料路线</text>
+
+    <!-- 行 1 -->
+    <text x="170" y="66" font-size="13" fill="#123f6d" text-anchor="end" font-weight="bold">指尖 / 指节</text>
+    <rect x="186" y="50" width="210" height="24" rx="5" fill="#185FA5"/>
+    <text x="291" y="67" font-size="11.5" fill="#ffffff" text-anchor="middle">超细 UHMWPE（高端用微型钨丝绳）</text>
+    <text x="400" y="67" font-size="12" fill="#47607d">直径可微型化、耐反复弯折，适配 20+ 自由度</text>
+
+    <!-- 行 2 -->
+    <text x="170" y="122" font-size="13" fill="#123f6d" text-anchor="end" font-weight="bold">手腕</text>
+    <rect x="186" y="106" width="150" height="24" rx="5" fill="#185FA5"/>
+    <text x="261" y="123" font-size="12" fill="#ffffff" text-anchor="middle">UHMWPE</text>
+    <rect x="340" y="106" width="52" height="24" rx="5" fill="#7c3aed"/>
+    <text x="366" y="123" font-size="11" fill="#ffffff" text-anchor="middle">＋芳纶</text>
+    <text x="408" y="123" font-size="12" fill="#47607d">长行程 + 反复弯折，并开始有保精度需求</text>
+
+    <!-- 行 3 -->
+    <text x="170" y="178" font-size="13" fill="#123f6d" text-anchor="end" font-weight="bold">肘 / 前臂</text>
+    <rect x="186" y="162" width="150" height="24" rx="5" fill="#185FA5"/>
+    <text x="261" y="179" font-size="12" fill="#ffffff" text-anchor="middle">UHMWPE</text>
+    <rect x="340" y="162" width="80" height="24" rx="5" fill="#475569"/>
+    <text x="380" y="179" font-size="11" fill="#ffffff" text-anchor="middle">316L 微绳</text>
+    <text x="436" y="179" font-size="12" fill="#47607d">负载上升、靠近驱动器，开始需要耐温</text>
+
+    <!-- 行 4 -->
+    <text x="170" y="234" font-size="13" fill="#123f6d" text-anchor="end" font-weight="bold">肩 / 颈部</text>
+    <rect x="186" y="218" width="210" height="24" rx="5" fill="#7c3aed"/>
+    <text x="291" y="235" font-size="11.5" fill="#ffffff" text-anchor="middle">混编复合腱绳（近电机处选芳纶）</text>
+    <text x="400" y="235" font-size="12" fill="#47607d">兼顾张力稳定、结构缓冲与绝缘</text>
+
+    <!-- 行 5 -->
+    <text x="170" y="290" font-size="13" fill="#123f6d" text-anchor="end" font-weight="bold">胸腹 / 躯干</text>
+    <rect x="186" y="274" width="210" height="24" rx="5" fill="#7c3aed"/>
+    <text x="291" y="291" font-size="11.5" fill="#ffffff" text-anchor="middle">混编复合腱绳 或 钢-塑复合</text>
+    <text x="400" y="291" font-size="12" fill="#47607d">行程大，对蠕变最敏感</text>
+
+    <!-- 行 6 -->
+    <text x="170" y="346" font-size="13" fill="#123f6d" text-anchor="end" font-weight="bold">腰髋 / 大腿 / 小腿</text>
+    <rect x="186" y="330" width="210" height="24" rx="5" fill="#d97706"/>
+    <text x="291" y="347" font-size="11.5" fill="#ffffff" text-anchor="middle">金属合金（钨丝 / 不锈钢）</text>
+    <text x="400" y="347" font-size="12" fill="#47607d">承载自重与行走冲击，绝不允许精度漂移</text>
+    <text x="400" y="366" font-size="11.5" fill="#7c4a12">备选：钛合金 / CFRP 推杆（长直行程场合）</text>
+
+    <!-- 行 7 -->
+    <text x="170" y="410" font-size="13" fill="#123f6d" text-anchor="end" font-weight="bold">高温 / 强电邻近</text>
+    <rect x="186" y="394" width="120" height="24" rx="5" fill="#15a06a"/>
+    <text x="246" y="411" font-size="12" fill="#ffffff" text-anchor="middle">芳纶</text>
+    <text x="324" y="411" font-size="12" fill="#47607d">超温 + 需绝缘；碳纤维因导电直接出局</text>
+
+    <line x1="40" y1="432" x2="760" y2="432" stroke="#e2e8f0" stroke-width="1.5"/>
+
+    <text x="40" y="458" font-size="12.5" fill="#5b7086">真实机型组合（产业综述口径，整机厂极少公开确认，建议按「未经厂商确认」看待）：</text>
+    <text x="40" y="480" font-size="12" fill="#8095ab">Optimus：UHMWPE + 微型金属绳　·　宇树 H1：上肢纤维 + 下肢金属　·　智元远征：国产改性抗蠕变 UHMWPE</text>
+    <text x="40" y="500" font-size="12" fill="#8095ab">优必选 Walker：国产纤维全覆盖　·　波士顿动力 Atlas：进口超细钨丝 + Dyneema（高成本组合）</text>
+  </g>
+</svg>

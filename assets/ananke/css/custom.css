@@ -1,0 +1,240 @@
+/* 自定义样式：首页背景图 + 标题样式 + 中英文对照 */
+
+/* 让首页 header 填满整个视口高度 */
+header.cover,
+header.bg-top {
+  min-height: 100vh !important;
+}
+
+/* 背景图完全覆盖 header 区域，不重复、不留白 */
+header[style*="background-image"] {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* 确保 overlay 层也填满整个 header */
+header.cover > div,
+header[style*="background-image"] > div {
+  min-height: 100vh !important;
+}
+
+/* 调淡背景图上的黑色遮罩，让图片更清晰明亮 */
+header.cover > div.bg-black-60,
+header[style*="background-image"] > div.bg-black-60 {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+/* ===== 首页主标题（仅 site-title 类）：加粗 + 加大，醒目突出 =====
+   注意：限定为 .site-title，避免误伤文章/关于页的 hero 标题 */
+header h1.site-title {
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 3rem !important;
+  letter-spacing: 0.02em !important;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.4) !important;
+}
+@media (min-width: 60em) {
+  header h1.site-title { font-size: 6rem !important; }
+}
+
+/* ===== 非首页 hero 标题（文章/关于/列表页）：与正文协调，约 2.25rem ===== */
+header .page-hero-title {
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+@media (min-width: 60em) {
+  header .page-hero-title { font-size: 2.25rem; }
+}
+
+/* ===== 首页副标题（标语/前言）：不再加粗，弱化处理，让主标题更突出 ===== */
+header h2 {
+  font-family: "KaiTi", "楷体", STKaiti, serif !important;
+  font-weight: 400 !important;
+  font-size: 1.4rem !important;
+  letter-spacing: 0.12em !important;
+  opacity: 0.92 !important;
+}
+@media (min-width: 60em) {
+  header h2 { font-size: 1.9rem !important; }
+}
+
+/* ===== 中英文对照（关于页 / 首页欢迎词）===== */
+/* 英文译文：深色宝石蓝、Cormorant 古典衬线，中文在上、英文在下 */
+.en {
+  display: block;
+  color: #0e3b73;   /* 加深宝石蓝 */
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 1.2em;   /* 加大一号 + Cormorant 视觉偏小补偿 */
+  margin-top: 0.25em;
+  line-height: 1.5;
+}
+/* 标题内的英文译文：同款衬线、略浅宝石蓝、稍重，作为副标题 */
+h2 .en,
+h3 .en {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  font-size: 0.84em;   /* 加大一号 */
+  color: #1e4f97;   /* 加深 */
+  margin-top: 0.15em;
+  letter-spacing: 0.02em;
+}
+/* 关于页中文译文：加大一号（与英文对照协调） */
+.zh {
+  font-size: 1.1em;
+}
+/* 强调绿（#137a52）：用于首页欢迎词与关于页笔名。
+   必须用 class 而非内联 style —— 部署链路的 HTML 压缩/净化会在 H2 标题语境下
+   剥离 style 属性，但会保留 class 属性（参考 .zh/.en 在线上存活）。
+   加 !important 以稳覆盖 .en / h2 .en 的宝石蓝。 */
+.accent-green {
+  color: #137a52 !important;
+}
+
+/* ===== 首页欢迎词正文：楷体（曾于标题协调重构时被误删，现恢复）===== */
+.is-home main article p {
+  font-family: "KaiTi", "楷体", STKaiti, serif !important;
+  font-size: 1.12em;   /* 首页欢迎词中文加大一号 */
+  text-indent: 2em;    /* 首行缩进 */
+  text-align: left;    /* 居左（覆盖主题默认居中） */
+}
+
+/* 欢迎词汉语：在首页通用 1.12em 基础上进一步放大。
+   注意必须用更高特异性的选择器（article.home-welcome）覆盖上方通用规则，
+   否则 .is-home main article p（特异性 0,1,3）会盖过 .home-welcome p（0,1,1）。
+   英文 .en 以 1.2em 相对父，自动等比放大，与原视觉比例保持一致。 */
+.is-home main article.home-welcome p {
+  font-size: 1.4em;
+}
+
+/* 首页"more"列表：3 列网格（标题 | ◆ | 标题），每对标题之间一个菱形。
+   ◆ 是真实 <span class="more-sep">，由模板插入在偶数索引标题之后，
+   确定性地只出现在两个标题"中间"，永不落到行首或行尾。 */
+.more-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;  /* 标题 | 菱形 | 标题 */
+  align-items: center;                  /* ◆ 垂直居中于较高的标题 */
+  row-gap: 1rem;                        /* 两行之间的垂直间距 */
+}
+.more-title {
+  margin: 0;                            /* 间距由网格控制，去掉 h2 默认外边距 */
+}
+.more-sep {
+  color: #1a4d8c;                       /* 宝石蓝 */
+  font-size: .9em;
+  font-weight: 400;
+  padding: 0 .6rem;                     /* ◆ 两侧等距，居中于标题之间 */
+  text-align: center;
+  user-select: none;
+}
+/* 窄屏（<768px）：改为单列堆叠，◆ 垂直居中于上下两个标题之间 */
+@media (max-width: 767px) {
+  .more-grid { grid-template-columns: 1fr; }
+  .more-sep { padding: .4rem 0; }
+}
+
+/* ===== 首页欢迎词容器：宽度与文章页(article.post)保持一致 ===== */
+/* 视口80%、两侧各10%留白；窄屏(<768px)满屏；左对齐 */
+.home-welcome {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .home-welcome {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* ===== 单页（文章 / 关于 / 搜索）统一阅读宽度 ===== */
+/* 正文宽度=视口80%，两侧各留白10%；窄屏(<768px)满屏显示 */
+article.post {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* 手机类窄屏：取消80%限制，满屏显示，仅保留内侧小边距防贴边 */
+@media (max-width: 767px) {
+  article.post {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* ===== 站内搜索页样式 ===== */
+.search-input {
+  box-sizing: border-box;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+  background: #fff;
+}
+.search-input:focus {
+  border-color: #357edd;
+  box-shadow: 0 0 0 3px rgba(53, 126, 221, .15);
+}
+#search-results { margin-top: 1rem; }
+.search-result-item:last-child { border-bottom: none !important; }
+.search-result-snippet mark {
+  background: #fff3a3;
+  color: inherit;
+  padding: 0 1px;
+  border-radius: 2px;
+}
+.search-tag {
+  display: inline-block;
+  font-size: .75rem;
+  color: #5a6472;
+  background: #eef1f5;
+  padding: 1px 6px;
+  border-radius: 10px;
+  margin-right: 4px;
+}
+
+/* ===== 首页文章卡片摘要：限制 8 行 ===== */
+.card-summary {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
+  line-clamp: 8;
+  overflow: hidden;
+}
+/* 窄屏（手机）下信息密度高，收紧为 6 行 */
+@media (max-width: 767px) {
+  .card-summary {
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+  }
+}
+
+/* ===== 首页 hero 下方访问统计 ===== */
+.visit-stats {
+  text-align: center;
+  font-size: .82rem;
+  color: #5a6472;
+  margin: 1.25rem auto 0;
+  letter-spacing: .04em;
+}
+.visit-stats .visit-item b {
+  color: #357edd;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.visit-stats .visit-sep {
+  margin: 0 .7rem;
+  color: #cbd5e0;
+}

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="'Microsoft YaHei','PingFang SC',sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#4a5568"/></marker>
+  </defs>
+  <style>.t{font-size:14px;fill:#1a202c;}.ts{font-size:11.5px;fill:#4a5568;}</style>
+  <rect width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="32" text-anchor="middle" font-size="19" font-weight="bold" fill="#1a202c">陀螺仪技术谱系：零偏稳定性 vs 成熟年代</text>
+
+  <!-- 坐标轴 -->
+  <line x1="90" y1="470" x2="850" y2="470" stroke="#4a5568" stroke-width="1.6" marker-end="url(#arr)"/>
+  <line x1="90" y1="470" x2="90" y2="70" stroke="#4a5568" stroke-width="1.6" marker-end="url(#arr)"/>
+  <text class="ts" x="820" y="492">年代</text>
+  <text class="ts" x="60" y="66">零偏稳定性 / (°/h)</text>
+
+  <!-- y log 刻度: y=470→10^2 ; 每 80px 一个数量级 -->
+  <line x1="86" y1="470" x2="94" y2="470" stroke="#4a5568"/><text class="ts" x="40" y="474">10²  (消费级)</text>
+  <line x1="86" y1="390" x2="94" y2="390" stroke="#4a5568"/><text class="ts" x="40" y="394">10⁰  (战术级)</text>
+  <line x1="86" y1="310" x2="94" y2="310" stroke="#4a5568"/><text class="ts" x="40" y="314">10⁻²  (导航级)</text>
+  <line x1="86" y1="230" x2="94" y2="230" stroke="#4a5568"/><text class="ts" x="34" y="234">10⁻⁴  (战略级)</text>
+  <line x1="86" y1="150" x2="94" y2="150" stroke="#a0aec0" stroke-dasharray="3,3"/><text class="ts" x="24" y="154">10⁻⁶  (量子潜力)</text>
+
+  <!-- x 刻度: 1950@130 每70px/10年 -->
+  <line x1="130" y1="470" x2="130" y2="476" stroke="#4a5568"/><text class="ts" x="118" y="492">1950</text>
+  <line x1="270" y1="470" x2="270" y2="476" stroke="#4a5568"/><text class="ts" x="258" y="492">1970</text>
+  <line x1="410" y1="470" x2="410" y2="476" stroke="#4a5568"/><text class="ts" x="398" y="492">1990</text>
+  <line x1="550" y1="470" x2="550" y2="476" stroke="#4a5568"/><text class="ts" x="538" y="492">2010</text>
+  <line x1="690" y1="470" x2="690" y2="476" stroke="#4a5568"/><text class="ts" x="678" y="492">2030</text>
+
+  <!-- 分级背景带 -->
+  <rect x="90" y="150" width="740" height="80" fill="#f0fff4" opacity="0.5"/>
+  <rect x="90" y="310" width="740" height="80" fill="#f0f7ff" opacity="0.5"/>
+  <text class="ts" x="826" y="200" text-anchor="end">战略/航海级</text>
+  <text class="ts" x="826" y="360" text-anchor="end">导航级</text>
+  <text class="ts" x="826" y="440" text-anchor="end">战术/消费级</text>
+
+  <!-- 器件气泡 -->
+  <!-- 液浮陀螺 1950-1980, 10^-3 (y≈270) -->
+  <ellipse cx="185" cy="270" rx="52" ry="26" fill="#e9d8fd" stroke="#6b46c1" stroke-width="1.6"/>
+  <text class="t" x="185" y="266" text-anchor="middle" font-size="13">液浮/气浮</text>
+  <text class="t" x="185" y="281" text-anchor="middle" font-size="13">转子陀螺</text>
+
+  <!-- 动力调谐 1970-1995, 10^-2 (y≈310) -->
+  <ellipse cx="320" cy="335" rx="50" ry="24" fill="#e9d8fd" stroke="#6b46c1" stroke-width="1.6"/>
+  <text class="t" x="320" y="331" text-anchor="middle" font-size="13">动力调谐</text>
+  <text class="t" x="320" y="346" text-anchor="middle" font-size="13">(挠性)</text>
+
+  <!-- RLG 1980-今, 5e-3 (y≈296) -->
+  <ellipse cx="470" cy="296" rx="46" ry="24" fill="#bee3f8" stroke="#2b6cb0" stroke-width="1.8"/>
+  <text class="t" x="470" y="301" text-anchor="middle" font-size="13">激光 RLG</text>
+
+  <!-- FOG 1990-今, 1e-3~1e-1 (y≈330 竖长) -->
+  <ellipse cx="560" cy="300" rx="42" ry="52" fill="#bee3f8" stroke="#2b6cb0" stroke-width="1.8"/>
+  <text class="t" x="560" y="296" text-anchor="middle" font-size="13">光纤</text>
+  <text class="t" x="560" y="312" text-anchor="middle" font-size="13">FOG</text>
+
+  <!-- MEMS 2000-今, 1~50 (y≈420) -->
+  <ellipse cx="620" cy="415" rx="55" ry="26" fill="#fbd38d" stroke="#c05621" stroke-width="1.8"/>
+  <text class="t" x="620" y="420" text-anchor="middle" font-size="13">MEMS</text>
+
+  <!-- NMR 2010-今, 1e-2~1e-3 (y≈300) -->
+  <ellipse cx="690" cy="345" rx="52" ry="22" fill="#9ae6b4" stroke="#276749" stroke-width="1.6"/>
+  <text class="t" x="690" y="350" text-anchor="middle" font-size="12.5">原子自旋 NMR</text>
+
+  <!-- AIG 2015-2030+, 1e-4~1e-5 (y≈210) -->
+  <ellipse cx="760" cy="205" rx="55" ry="30" fill="#9ae6b4" stroke="#276749" stroke-width="2" stroke-dasharray="7,4"/>
+  <text class="t" x="760" y="200" text-anchor="middle" font-size="13">原子干涉</text>
+  <text class="t" x="760" y="216" text-anchor="middle" font-size="13">陀螺 AIG</text>
+  <text class="ts" x="760" y="248" text-anchor="middle">2025 空间站在轨验证</text>
+
+  <!-- 趋势箭头 -->
+  <path d="M180,430 Q400,395 560,355" fill="none" stroke="#a0aec0" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+  <text class="ts" x="300" y="392">精度↑ 成本↓（民主化）</text>
+
+  <text class="ts" x="450" y="540" text-anchor="middle">代际更替：机械转子 → 光学（萨格奈克效应）→ 微机电 → 原子干涉（物质波）｜精度每代约提升 1–2 个数量级</text>
+  <text x="884" y="553" text-anchor="end" font-size="11" fill="#a0aec0">制图：松朗</text>
+</svg>

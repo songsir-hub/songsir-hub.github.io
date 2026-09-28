@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 706" font-family="'Source Han Serif SC','Noto Serif CJK SC','Songti SC',SimSun,'宋体',serif">
+<rect width="960" height="706" fill="#FBF8F1"/>
+
+<text x="480" y="46" font-size="25" fill="#3A3226" text-anchor="middle" font-weight="bold">来 · 麦 · 莱：三个字的字形演化与部件关系</text>
+<text x="480" y="74" font-size="12.5" fill="#6B6255" text-anchor="middle">甲骨文 → 金文 → 小篆 → 楷书　（摹绘示意，非原拓影印；正式引用请核《甲骨文编》《金文编》《说文解字》）</text>
+<rect x="56" y="106" width="856" height="40" fill="#F2EAD8" stroke="#C9BFA8" stroke-width="1.6"/>
+<text x="257.5" y="132" font-size="15" fill="#3A3226" text-anchor="middle" font-weight="bold">甲骨文</text>
+<text x="444.5" y="132" font-size="15" fill="#3A3226" text-anchor="middle" font-weight="bold">金文</text>
+<text x="631.5" y="132" font-size="15" fill="#3A3226" text-anchor="middle" font-weight="bold">小篆</text>
+<text x="818.5" y="132" font-size="15" fill="#3A3226" text-anchor="middle" font-weight="bold">楷书</text>
+<rect x="56" y="146" width="856" height="152" fill="#FFFDF7" stroke="#C9BFA8" stroke-width="1.4"/>
+<text x="110.0" y="198" font-size="32" fill="#C07830" text-anchor="middle" font-weight="bold">来</text>
+<text x="110.0" y="224" font-size="12" fill="#6B6255" text-anchor="middle">本义：小麦</text>
+<g transform="translate(257.5,218.0) scale(0.86)" fill="none" stroke="#C07830" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round"><path d="M0,-40 L0,28"/><path d="M-7,-49 L0,-38 L7,-49"/><path d="M0,-38 L-19,-19"/><path d="M0,-27 L-20,-3"/><path d="M0,-38 L19,-19"/><path d="M0,-27 L20,-3"/><path d="M0,-9 L-17,4"/><path d="M0,-9 L17,4"/><path d="M0,28 L-16,40"/><path d="M0,28 L16,40"/></g>
+<g transform="translate(444.5,218.0) scale(0.84)" fill="none" stroke="#C07830" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M0,-40 L0,28"/><path d="M-7,-49 L0,-38 L7,-49"/><path d="M0,-38 L-21,-17"/><path d="M0,-25 L-22,-1"/><path d="M0,-38 L21,-17"/><path d="M0,-25 L22,-1"/><path d="M-17,3 L17,3"/><path d="M0,28 L-16,40"/><path d="M0,28 L16,40"/></g>
+<g transform="translate(631.5,218.0) scale(0.86)" fill="none" stroke="#C07830" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M0,-30 L0,34"/><path d="M-15,-14 Q0,-35 15,-14"/><path d="M-15,-14 L-11,1"/><path d="M-9,-18 L-4,1"/><path d="M15,-14 L11,1"/><path d="M9,-18 L4,1"/><path d="M-18,9 L18,9"/><path d="M-12,9 L-17,31"/><path d="M12,9 L17,31"/></g>
+<text x="818.5" y="234.0" font-size="42" fill="#C07830" text-anchor="middle" font-weight="bold">來</text>
+<text x="70" y="284" font-size="12.5" fill="#6B6255" text-anchor="start">象麦株之形：上穗、中茎、下叶与根</text>
+<rect x="56" y="298" width="856" height="152" fill="#FFFDF7" stroke="#C9BFA8" stroke-width="1.4"/>
+<text x="110.0" y="350" font-size="32" fill="#C07830" text-anchor="middle" font-weight="bold">麦</text>
+<text x="110.0" y="376" font-size="12" fill="#6B6255" text-anchor="middle">来 + 夊</text>
+<g transform="translate(257.5,354.0) scale(0.8)" fill="none" stroke="#C07830" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round"><path d="M0,-40 L0,28"/><path d="M-7,-49 L0,-38 L7,-49"/><path d="M0,-38 L-19,-19"/><path d="M0,-27 L-20,-3"/><path d="M0,-38 L19,-19"/><path d="M0,-27 L20,-3"/><path d="M0,-9 L-17,4"/><path d="M0,-9 L17,4"/><path d="M0,28 L-16,40"/><path d="M0,28 L16,40"/></g><g transform="translate(257.5,354.0) scale(0.92)" fill="none" stroke="#C07830" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round"><path d="M-14,42 Q0,35 14,42"/><path d="M0,38 L0,55"/><path d="M0,55 L-14,64"/><path d="M-2,45 L13,55"/></g>
+<g transform="translate(444.5,356.0) scale(0.78)" fill="none" stroke="#C07830" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M0,-40 L0,28"/><path d="M-7,-49 L0,-38 L7,-49"/><path d="M0,-38 L-21,-17"/><path d="M0,-25 L-22,-1"/><path d="M0,-38 L21,-17"/><path d="M0,-25 L22,-1"/><path d="M-17,3 L17,3"/><path d="M0,28 L-16,40"/><path d="M0,28 L16,40"/></g><g transform="translate(444.5,356.0) scale(0.92)" fill="none" stroke="#C07830" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M-14,42 Q0,35 14,42"/><path d="M0,38 L0,55"/><path d="M0,55 L-14,64"/><path d="M-2,45 L13,55"/></g>
+<g transform="translate(631.5,352.0) scale(0.74)" fill="none" stroke="#C07830" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M0,-30 L0,34"/><path d="M-15,-14 Q0,-35 15,-14"/><path d="M-15,-14 L-11,1"/><path d="M-9,-18 L-4,1"/><path d="M15,-14 L11,1"/><path d="M9,-18 L4,1"/><path d="M-18,9 L18,9"/><path d="M-12,9 L-17,31"/><path d="M12,9 L17,31"/></g><g transform="translate(631.5,352.0) scale(0.92)" fill="none" stroke="#C07830" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M-14,42 Q0,35 14,42"/><path d="M0,38 L0,55"/><path d="M0,55 L-14,64"/><path d="M-2,45 L13,55"/></g>
+<text x="818.5" y="386.0" font-size="42" fill="#C07830" text-anchor="middle" font-weight="bold">麦</text>
+<text x="70" y="436" font-size="12.5" fill="#6B6255" text-anchor="start">「来」下加「夊」（脚），《说文》所谓「天所来也」</text>
+<rect x="56" y="450" width="856" height="152" fill="#FFFDF7" stroke="#C9BFA8" stroke-width="1.4"/>
+<text x="110.0" y="502" font-size="32" fill="#6E9450" text-anchor="middle" font-weight="bold">莱</text>
+<text x="110.0" y="528" font-size="12" fill="#6B6255" text-anchor="middle">艸 + 来</text>
+<circle cx="257.5" cy="516.0" r="26" fill="none" stroke="#9A9186" stroke-width="2.4" stroke-dasharray="6 5"/><line x1="238.5" y1="497.0" x2="276.5" y2="535.0" stroke="#9A9186" stroke-width="2.4"/><text x="257.5" y="556.0" font-size="12" fill="#9A9186" text-anchor="middle">卜辞无此形</text>
+<circle cx="444.5" cy="516.0" r="26" fill="none" stroke="#9A9186" stroke-width="2.4" stroke-dasharray="6 5"/><line x1="425.5" y1="497.0" x2="463.5" y2="535.0" stroke="#9A9186" stroke-width="2.4"/><text x="444.5" y="556.0" font-size="12" fill="#9A9186" text-anchor="middle">金文无此形</text>
+<g transform="translate(631.5,528.0) scale(0.72)" fill="none" stroke="#6E9450" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M0,-30 L0,34"/><path d="M-15,-14 Q0,-35 15,-14"/><path d="M-15,-14 L-11,1"/><path d="M-9,-18 L-4,1"/><path d="M15,-14 L11,1"/><path d="M9,-18 L4,1"/><path d="M-18,9 L18,9"/><path d="M-12,9 L-17,31"/><path d="M12,9 L17,31"/></g><g transform="translate(631.5,528.0) scale(1.0)" fill="none" stroke="#6E9450" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M-21,-54 L-21,-32"/><path d="M-28,-44 L-14,-44"/><path d="M3,-54 L3,-32"/><path d="M-4,-44 L10,-44"/></g>
+<text x="818.5" y="538.0" font-size="42" fill="#6E9450" text-anchor="middle" font-weight="bold">莱</text>
+<text x="70" y="588" font-size="12.5" fill="#6B6255" text-anchor="start">草字头加「来」声：藜、荒田、除草</text>
+<line x1="164" y1="106" x2="164" y2="602" stroke="#C9BFA8" stroke-width="1.4"/>
+<line x1="351" y1="106" x2="351" y2="602" stroke="#C9BFA8" stroke-width="1.4"/>
+<line x1="538" y1="106" x2="538" y2="602" stroke="#C9BFA8" stroke-width="1.4"/>
+<line x1="725" y1="106" x2="725" y2="602" stroke="#C9BFA8" stroke-width="1.4"/>
+<rect x="56" y="632" width="856" height="58" rx="8" fill="#F2EAD8" stroke="#C9BFA8" stroke-width="1.6"/>
+<text x="74" y="656" font-size="14" fill="#3A3226" text-anchor="start" font-weight="bold">关键事实：先秦卜辞与铜器上从未出现过艸头的「莱」。</text>
+<text x="74" y="678" font-size="13" fill="#6B6255" text-anchor="start">莱国之名的那个字，在金文里写作「釐」或「来」——「莱」是后起的形声写法。</text>
+<text x="912" y="690" font-size="11.5" fill="#6B6255" text-anchor="end">作图：松朗</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" width="1200" height="580" font-family="'Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif">
+<rect width="1200" height="580" fill="#FFFFFF"/>
+<text x="30" y="42" font-size="25" font-weight="700" fill="#1B3A6B">图4　欧盟《人工智能法》第50条：一副极严的面孔，四道极宽的门</text>
+<text x="30" y="70" font-size="16" fill="#555555">它规制的是“欺骗”，不是“使用”——很多人只读了前半句</text>
+<rect x="60" y="110" width="470" height="380" rx="10" fill="#FDEDEB" stroke="#C0392B" stroke-width="2"/>
+<text x="295" y="152" font-size="22" font-weight="700" fill="#C0392B" text-anchor="middle">从严的一面</text>
+<text x="295" y="178" font-size="15" fill="#555555" text-anchor="middle">2026年8月2日起适用并执行</text>
+<circle cx="92" cy="207" r="5" fill="#C0392B"/>
+<text x="110" y="212" font-size="16" fill="#333333">交互式AI必须告知用户在与AI打交道</text>
+<circle cx="92" cy="247" r="5" fill="#C0392B"/>
+<text x="110" y="252" font-size="16" fill="#333333">深度伪造图像 / 音频 / 视频必须清晰标识</text>
+<circle cx="92" cy="287" r="5" fill="#C0392B"/>
+<text x="110" y="292" font-size="16" fill="#333333">AI生成或篡改内容须带机器可读标记</text>
+<circle cx="92" cy="327" r="5" fill="#C0392B"/>
+<text x="110" y="332" font-size="16" fill="#333333">公共利益事项的AI生成文本须予披露</text>
+<line x1="90" y1="374" x2="500" y2="374" stroke="#C0392B" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="92" y="404" font-size="17" font-weight="700" fill="#C0392B">罚则：最高 1500万欧元 或 全球年营业额 3%</text>
+<text x="600" y="290" font-size="70" font-weight="700" fill="#C9D3DE" text-anchor="middle">⇄</text>
+<text x="600" y="330" font-size="15" fill="#555555" text-anchor="middle">同一部法律</text>
+<rect x="670" y="110" width="470" height="380" rx="10" fill="#E9F5EE" stroke="#1E8449" stroke-width="2"/>
+<text x="905" y="152" font-size="22" font-weight="700" fill="#1E8449" text-anchor="middle">留宽的一面</text>
+<text x="905" y="178" font-size="15" fill="#555555" text-anchor="middle">四道理性的门</text>
+<rect x="700" y="198" width="140" height="30" rx="15" fill="#FFFFFF" stroke="#1E8449" stroke-width="1.5"/>
+<text x="770" y="218" font-size="15" font-weight="700" fill="#1E8449" text-anchor="middle">人工审阅之门</text>
+<text x="854" y="218" font-size="15" fill="#333333">有人审阅、有编辑控制，即不必披露</text>
+<rect x="700" y="260" width="140" height="30" rx="15" fill="#FFFFFF" stroke="#1E8449" stroke-width="1.5"/>
+<text x="770" y="280" font-size="15" font-weight="700" fill="#1E8449" text-anchor="middle">辅助编辑之门</text>
+<text x="854" y="280" font-size="15" fill="#333333">仅作标准编辑辅助、未改语义者豁免</text>
+<rect x="700" y="322" width="140" height="30" rx="15" fill="#FFFFFF" stroke="#1E8449" stroke-width="1.5"/>
+<text x="770" y="342" font-size="15" font-weight="700" fill="#1E8449" text-anchor="middle">比例之门</text>
+<text x="854" y="342" font-size="15" fill="#333333">中小企业适用比例原则，优待扩至全部中小企业</text>
+<rect x="700" y="384" width="140" height="30" rx="15" fill="#FFFFFF" stroke="#1E8449" stroke-width="1.5"/>
+<text x="770" y="404" font-size="15" font-weight="700" fill="#1E8449" text-anchor="middle">过渡之门</text>
+<text x="854" y="404" font-size="15" fill="#333333">存量系统与旧内容设宽限期，不作追溯</text>
+<rect x="60" y="512" width="1080" height="50" rx="8" fill="#EAF1F9" stroke="#1B3A6B" stroke-width="1.5"/>
+<text x="600" y="543" font-size="18" font-weight="700" fill="#1B3A6B" text-anchor="middle">官方立法意图：减少欺骗和操纵，帮助人们作出知情选择 —— 追问的是“有没有人负责”，不是“有没有用工具”</text>
+</svg>

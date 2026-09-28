@@ -1,0 +1,40 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="碳纤维做柔性腱的四个致命伤">
+  <rect width="800" height="400" fill="#ffffff"/>
+  <g font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, sans-serif">
+    <text x="400" y="30" font-size="15" fill="#b91c1c" text-anchor="middle" font-weight="bold">碳纤维不是强度不够，而是「不能容错」</text>
+
+    <rect x="24" y="48" width="368" height="152" rx="10" fill="#fdecec" stroke="#dc2626" stroke-width="2"/>
+    <text x="44" y="74" font-size="14" fill="#b91c1c" font-weight="bold">伤害一 · 缺陷敏感性（最弱环）</text>
+    <text x="44" y="100" font-size="12.5" fill="#7f1d1d">线弹性脆性，无屈服平台，断裂由最大缺陷决定。</text>
+    <text x="44" y="122" font-size="12.5" fill="#7f1d1d">摩擦必然产生表面划痕 → 对碳纤维即裂纹源，</text>
+    <text x="44" y="144" font-size="12.5" fill="#7f1d1d">剩余强度按 √a 断崖下降；丝数越多利用率越低。</text>
+    <text x="44" y="170" font-size="12.5" fill="#b91c1c">UHMWPE 的划痕会钝化或原纤化耗能，不会立即断。</text>
+    <text x="44" y="192" font-size="12" fill="#991b1b">命中位置：磨损点</text>
+
+    <rect x="408" y="48" width="368" height="152" rx="10" fill="#fdecec" stroke="#dc2626" stroke-width="2"/>
+    <text x="428" y="74" font-size="14" fill="#b91c1c" font-weight="bold">伤害二 · 束内均载困难（高模量反噬）</text>
+    <text x="428" y="100" font-size="12.5" fill="#7f1d1d">载荷按 E·A 分配：模量越高，同样的长度误差</text>
+    <text x="428" y="122" font-size="12.5" fill="#7f1d1d">造成的应力偏差越大（T700 达 23%，UHMWPE 11%）。</text>
+    <text x="428" y="144" font-size="12.5" fill="#7f1d1d">UHMWPE 有黏弹松弛可自均载，碳纤维没有 →</text>
+    <text x="428" y="166" font-size="12.5" fill="#7f1d1d">最紧张的一根先断 → 逐根击破式雪崩。</text>
+    <text x="428" y="192" font-size="12" fill="#991b1b">解法：必须捻制/编织成螺旋，靠路径互换自均载</text>
+
+    <rect x="24" y="212" width="368" height="152" rx="10" fill="#fdecec" stroke="#dc2626" stroke-width="2"/>
+    <text x="44" y="238" font-size="14" fill="#b91c1c" font-weight="bold">伤害三 · 导电引发电偶腐蚀</text>
+    <text x="44" y="264" font-size="12.5" fill="#7f1d1d">碳纤维电位较正（类贵金属），与金属端子接触</text>
+    <text x="44" y="286" font-size="12.5" fill="#7f1d1d">并存在电解质时形成原电池：碳纤维作阴极被保护，</text>
+    <text x="44" y="308" font-size="12.5" fill="#7f1d1d">金属端子作阳极被加速腐蚀。</text>
+    <text x="44" y="334" font-size="12.5" fill="#b91c1c">终点恰在端子上 —— 与第一失效点叠加。</text>
+    <text x="44" y="356" font-size="12" fill="#991b1b">命中位置：端子连接（双重打击）</text>
+
+    <rect x="408" y="212" width="368" height="152" rx="10" fill="#fdecec" stroke="#dc2626" stroke-width="2"/>
+    <text x="428" y="238" font-size="14" fill="#b91c1c" font-weight="bold">伤害四 · 横向与径向性能极弱</text>
+    <text x="428" y="264" font-size="12.5" fill="#7f1d1d">轴向共价键承载，横向层间只有范德华力。</text>
+    <text x="428" y="286" font-size="12.5" fill="#7f1d1d">压接端子时劈裂；绳夹与导向套的挤压造成</text>
+    <text x="428" y="308" font-size="12.5" fill="#7f1d1d">外观不可见的隐性损伤；无法打结或自锁。</text>
+    <text x="428" y="334" font-size="12.5" fill="#b91c1c">一句话：它输的不是参数表，而是结构适配性。</text>
+    <text x="428" y="356" font-size="12" fill="#991b1b">命中位置：端子连接</text>
+
+    <text x="400" y="388" font-size="12.5" fill="#5b7086" text-anchor="middle">正确打开方式：放进不需要弯曲、不需要端子的地方（混编承重芯 / 刚性推杆 / 一体成型）</text>
+  </g>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520" role="img" aria-label="己侯钟拓片示意图">
+  <title>己侯钟拓片示意图</title>
+  <desc>春秋己侯铜钟，烟台市博物馆藏二级文物。合瓦形钟体，钲部铭文"己侯作宝钟"，通高26cm。</desc>
+  <rect x="0" y="0" width="680" height="520" fill="#faf8f4"/>
+  <g transform="translate(80, 60)">
+    <path d="M80 0 C80 -12, 95 -18, 105 -10 L105 0" fill="none" stroke="#5a4e3a" stroke-width="1.5" stroke-linecap="round"/>
+    <ellipse cx="92" cy="20" rx="14" ry="6" fill="#f0ebe0" stroke="#5a4e3a" stroke-width="1.2"/>
+    <rect x="78" y="26" width="28" height="18" rx="2" fill="#e8e0d0" stroke="#5a4e3a" stroke-width="1"/>
+    <line x1="78" y1="35" x2="106" y2="35" stroke="#5a4e3a" stroke-width="0.5" stroke-dasharray="2 2"/>
+    <rect x="80" y="44" width="24" height="80" rx="2" fill="#f5f0e6" stroke="#5a4e3a" stroke-width="1.2"/>
+    <rect x="84" y="52" width="16" height="64" fill="#ede6d8" stroke="#5a4e3a" stroke-width="0.5"/>
+    <text x="92" y="70" text-anchor="middle" font-size="10" fill="#3a2e1e" font-family="KaiTi, STKaiti, serif">己侯</text>
+    <text x="92" y="86" text-anchor="middle" font-size="10" fill="#3a2e1e" font-family="KaiTi, STKaiti, serif">作宝</text>
+    <text x="92" y="102" text-anchor="middle" font-size="10" fill="#3a2e1e" font-family="KaiTi, STKaiti, serif">钟</text>
+    <circle cx="83" cy="50" r="1.5" fill="#8a7a6a"/>
+    <circle cx="101" cy="50" r="1.5" fill="#8a7a6a"/>
+    <circle cx="83" cy="62" r="1.5" fill="#8a7a6a"/>
+    <circle cx="101" cy="62" r="1.5" fill="#8a7a6a"/>
+    <circle cx="83" cy="74" r="1.5" fill="#8a7a6a"/>
+    <circle cx="101" cy="74" r="1.5" fill="#8a7a6a"/>
+    <circle cx="83" cy="86" r="1.5" fill="#8a7a6a"/>
+    <circle cx="101" cy="86" r="1.5" fill="#8a7a6a"/>
+    <circle cx="83" cy="98" r="1.5" fill="#8a7a6a"/>
+    <circle cx="101" cy="98" r="1.5" fill="#8a7a6a"/>
+    <circle cx="83" cy="110" r="1.5" fill="#8a7a6a"/>
+    <circle cx="101" cy="110" r="1.5" fill="#8a7a6a"/>
+    <path d="M80 124 Q80 140, 74 150 L74 156 Q74 166, 84 170 L100 170 Q110 166, 110 156 L110 150 Q104 140, 104 124 Z" fill="#f5f0e6" stroke="#5a4e3a" stroke-width="1.2"/>
+    <path d="M74 170 L74 176 Q74 180, 80 180 L104 180 Q110 180, 110 176 L110 170" fill="none" stroke="#5a4e3a" stroke-width="1.2"/>
+    <rect x="78" y="180" width="28" height="14" rx="2" fill="#e8e0d0" stroke="#5a4e3a" stroke-width="1"/>
+    <g opacity="0.5">
+      <path d="M130 0 C130 -12, 145 -18, 155 -10 L155 20 L155 194 L145 194 L145 20 C145 8, 130 4, 130 0" fill="none" stroke="#8a7a6a" stroke-width="1" stroke-dasharray="4 3"/>
+      <text x="142" y="200" text-anchor="middle" font-size="9" fill="#8a7a6a">侧视</text>
+    </g>
+    <line x1="115" y1="0" x2="115" y2="194" stroke="#a09080" stroke-width="0.5" stroke-dasharray="3 3"/>
+    <text x="120" y="97" font-size="10" fill="#7a6a5a" font-family="PingFang SC, Microsoft YaHei, sans-serif">高26cm</text>
+  </g>
+  <g transform="translate(240, 40)">
+    <rect x="0" y="0" width="400" height="200" rx="8" fill="#fff" stroke="#e0d8c8" stroke-width="0.5"/>
+    <text x="16" y="28" font-size="14" font-weight="500" fill="#2a2418" font-family="PingFang SC, Microsoft YaHei, sans-serif">第三组器物参照</text>
+    <line x1="16" y1="38" x2="384" y2="38" stroke="#e0d8c8" stroke-width="0.5"/>
+    <g transform="translate(16, 50)">
+      <rect x="0" y="0" width="180" height="136" rx="6" fill="#f8f4ec" stroke="#e0d8c8" stroke-width="0.5"/>
+      <rect x="8" y="8" width="164" height="80" rx="4" fill="#f0ebe0"/>
+      <text x="90" y="48" text-anchor="middle" font-size="13" fill="#5a4e3a" font-family="KaiTi, STKaiti, serif">莱伯鼎铭文</text>
+      <text x="90" y="68" text-anchor="middle" font-size="12" fill="#8a7a6a" font-family="KaiTi, STKaiti, serif">「莱伯作旅鼎」</text>
+      <text x="12" y="102" font-size="11" fill="#4a3e2a" font-family="PingFang SC, sans-serif">龙口鲁家沟出土</text>
+      <text x="12" y="118" font-size="11" fill="#4a3e2a" font-family="PingFang SC, sans-serif">西周早期 · 中国国家博物馆</text>
+      <text x="12" y="130" font-size="10" fill="#8a7a6a" font-family="PingFang SC, sans-serif">已知时代最早莱国铜器</text>
+    </g>
+    <g transform="translate(204, 50)">
+      <rect x="0" y="0" width="180" height="136" rx="6" fill="#f8f4ec" stroke="#e0d8c8" stroke-width="0.5"/>
+      <rect x="8" y="8" width="164" height="80" rx="4" fill="#f0ebe0"/>
+      <text x="90" y="48" text-anchor="middle" font-size="13" fill="#5a4e3a" font-family="KaiTi, STKaiti, serif">己侯钟铭文</text>
+      <text x="90" y="68" text-anchor="middle" font-size="12" fill="#8a7a6a" font-family="KaiTi, STKaiti, serif">「己侯作宝钟」</text>
+      <text x="12" y="102" font-size="11" fill="#4a3e2a" font-family="PingFang SC, sans-serif">寿光纪台出土</text>
+      <text x="12" y="118" font-size="11" fill="#4a3e2a" font-family="PingFang SC, sans-serif">春秋早期 · 烟台市博物馆</text>
+      <text x="12" y="130" font-size="10" fill="#8a7a6a" font-family="PingFang SC, sans-serif">馆藏二级文物</text>
+    </g>
+  </g>
+  <text x="340" y="280" font-size="12" fill="#7a6a5a" font-family="PingFang SC, sans-serif">左：己侯钟线描（钲部铭文示意） · 右：潍淄己铭与胶东莱铭两组器物对照</text>
+  <text x="340" y="300" font-size="11" fill="#a09080" font-family="PingFang SC, sans-serif">图源：经烟台市博物馆公开资料重构 · 器物图版受版权保护，此处为示意性线描</text>
+  <g transform="translate(80, 330)">
+    <rect x="0" y="0" width="520" height="80" rx="6" fill="#f8f4ec" stroke="#e0d8c8" stroke-width="0.5"/>
+    <text x="16" y="24" font-size="11" fill="#4a3e2a" font-family="PingFang SC, sans-serif">【潍淄一组】寿光古城村 1983 年 64 件商末铜器 → 15 件铭"己竝"、3 件单铭"己"、1 件铭"妻"甗，零"莱"字</text>
+    <text x="16" y="44" font-size="11" fill="#4a3e2a" font-family="PingFang SC, sans-serif">【胶东一组】龙口鲁家沟／归城出土 → 莱伯鼎、启尊启卣、莱伯旅鼎等，铭文一律作"莱"</text>
+    <text x="16" y="64" font-size="11" fill="#8a7a6a" font-family="PingFang SC, sans-serif">—— 两组铜器群自名系统完全不交叉，是"零莱字"最直接的物质证据</text>
+  </g>
+</svg>

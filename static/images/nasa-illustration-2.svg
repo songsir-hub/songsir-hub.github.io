@@ -1,0 +1,32 @@
+<svg viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg">
+            <rect width="800" height="340" fill="#0d0d1a"/>
+            <circle cx="40" cy="60" r="1.2" fill="white" opacity="0.7"/><circle cx="700" cy="50" r="1.5" fill="white" opacity="0.8"/>
+            <!-- Sunshield -->
+            <g transform="translate(400, 210)">
+                <ellipse cx="0" cy="70" rx="150" ry="30" fill="none" stroke="#e8c040" stroke-width="1.2" opacity="0.3"/>
+                <ellipse cx="0" cy="50" rx="145" ry="27" fill="none" stroke="#e8c040" stroke-width="1" opacity="0.4"/>
+                <ellipse cx="0" cy="30" rx="140" ry="25" fill="none" stroke="#e8c040" stroke-width="0.8" opacity="0.5"/>
+                <ellipse cx="0" cy="10" rx="135" ry="23" fill="none" stroke="#e8c040" stroke-width="0.8" opacity="0.6"/>
+                <ellipse cx="0" cy="-10" rx="130" ry="21" fill="rgba(232,192,64,0.12)" stroke="#e8c040" stroke-width="1"/>
+            </g>
+            <!-- Mirror -->
+            <g transform="translate(365, 70)">
+                <polygon points="35,0 65,18 65,54 35,72 5,54 5,18" fill="#d4a017" stroke="#b8860b" stroke-width="1" opacity="0.9"/>
+                <polygon points="5,54 35,72 35,108 5,126 -25,108 -25,72" fill="#d4a017" stroke="#b8860b" stroke-width="1" opacity="0.85"/>
+                <polygon points="65,18 95,36 95,72 65,90 35,72 35,36" fill="#d4a017" stroke="#b8860b" stroke-width="1" opacity="0.88"/>
+                <polygon points="-25,72 5,90 5,126 -25,144 -55,126 -55,90" fill="#d4a017" stroke="#b8860b" stroke-width="1" opacity="0.82"/>
+                <polygon points="65,90 95,108 95,144 65,162 35,144 35,108" fill="#d4a017" stroke="#b8860b" stroke-width="1" opacity="0.86"/>
+                <polygon points="-25,18 5,36 5,72 -25,90 -55,72 -55,36" fill="#d4a017" stroke="#b8860b" stroke-width="1" opacity="0.84"/>
+                <polygon points="5,-18 35,0 35,36 5,54 -25,36 -25,0" fill="#d4a017" stroke="#b8860b" stroke-width="1" opacity="0.9"/>
+                <polygon points="95,36 125,54 125,90 95,108 65,90 65,54" fill="#d4a017" stroke="#b8860b" stroke-width="1" opacity="0.8"/>
+                <polygon points="-55,36 -25,54 -25,90 -55,108 -85,90 -85,54" fill="#d4a017" stroke="#b8860b" stroke-width="1" opacity="0.8"/>
+                <line x1="35" y1="-18" x2="35" y2="-55" stroke="#a0a0a0" stroke-width="2"/>
+                <line x1="-25" y1="-18" x2="-25" y2="-55" stroke="#a0a0a0" stroke-width="2"/>
+                <circle cx="5" cy="-55" r="14" fill="#e8c040" stroke="#d4a017" stroke-width="1.5"/>
+            </g>
+            <!-- IR waves -->
+            <path d="M 435 50 Q 520 20 600 45" stroke="#ff6b6b" stroke-width="1.5" fill="none" opacity="0.4" stroke-dasharray="4,4"/>
+            <path d="M 445 70 Q 540 40 620 60" stroke="#ff6b6b" stroke-width="1" fill="none" opacity="0.3" stroke-dasharray="3,5"/>
+            <text x="400" y="310" text-anchor="middle" fill="#e8e8f0" font-size="16" font-family="Noto Serif SC, serif" font-weight="600">詹姆斯·韦伯空间望远镜 · James Webb Space Telescope</text>
+            <text x="400" y="330" text-anchor="middle" fill="#9a9ab0" font-size="11">2021年发射 · 6.5米金铍主镜 · 红外波段 · L₂轨道</text>
+        </svg>

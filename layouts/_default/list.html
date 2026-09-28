@@ -1,0 +1,48 @@
+{{- define "main" -}}
+<main class="measure-wide center pv4">
+  <!-- Page title -->
+  <header class="mb5">
+    <h1 class="f2 b lh-solid">{{ .Title }}</h1>
+    {{- with .Description -}}<p class="f4 mid-gray mt2">{{ . }}</p>{{- end -}}
+  </header>
+
+  <!-- Post list -->
+  <ul class="list-unstyled ml0 pl0">
+    {{- range .Paginator.Pages -}}
+    <li class="mb5 pb4 bb b--black-10">
+      <!-- Title -->
+      <h2 class="f3 f2-ns b lh-title mv0">
+        <a href="{{ .RelPermalink }}" class="link dark-gray hover-blue">
+          {{ .Title }}
+        </a>
+      </h2>
+
+      <!-- Date + Categories -->
+      <div class="f6 mid-gray mv2">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+        {{- with .Params.categories -}}
+        <span class="ml3">
+          {{- range . -}}
+          <a href="/categories/{{ . | urlize }}/" class="link mid-gray hover-dark-gray mr2">#{{ . }}</a>
+          {{- end -}}
+        </span>
+        {{- end -}}
+      </div>
+
+      <!-- Summary（开头约 10 行，保留小标题，与首页一致） -->
+      <div class="f5 lh-copy mid-gray mv2">
+        {{ partial "teaser.html" . }}
+      </div>
+
+      <!-- Read more -->
+      <a href="{{ .RelPermalink }}" class="readmore-btn mt1 dib">
+        显示全文 &rarr;
+      </a>
+    </li>
+    {{- end -}}
+  </ul>
+
+  <!-- Pagination -->
+  {{- template "_internal/pagination.html" . -}}
+</main>
+{{- end -}}
