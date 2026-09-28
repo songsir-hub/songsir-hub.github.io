@@ -1,0 +1,50 @@
+# 站点可用性监控（每天两次，北京时间 8:00 和 20:00）
+name: Site Monitor
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # 8:00 UTC+8
+    - cron: '0 12 * * *'  # 20:00 UTC+8
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check site availability
+        run: |
+          HOST="songsir-hub.github.io"
+          CHECKS=()
+          STATUS=OK
+
+          # 检查首页
+          CODE=$(curl -s -o /dev/null -w "%{http_code}" "https://$HOST/")
+          if [ "$CODE" != "200" ]; then
+            STATUS=FAIL
+            CHECKS+=("首页 HTTP $CODE")
+          fi
+
+          # 检查 sitemap
+          CODE=$(curl -s -o /dev/null -w "%{http_code}" "https://$HOST/sitemap.xml")
+          if [ "$CODE" != "200" ]; then
+            STATUS=FAIL
+            CHECKS+=("sitemap.xml HTTP $CODE")
+          fi
+
+          # 检查 RSS
+          CODE=$(curl -s -o /dev/null -w "%{http_code}" "https://$HOST/index.xml")
+          if [ "$CODE" != "200" ]; then
+            STATUS=FAIL
+            CHECKS+=("index.xml HTTP $CODE")
+          fi
+
+          echo "监控结果: $STATUS"
+          for c in "${CHECKS[@]}"; do
+            echo "  ✗ $c"
+          done
+
+          if [ "$STATUS" = "FAIL" ]; then
+            echo "::error::站点监控失败: $(IFS=; echo "${CHECKS[*]}")"
+            exit 1
+          fi
+          echo "✓ 所有检查通过"
