@@ -1,19 +1,15 @@
 # IndexNow 自动提交（Bing + Yandex + Seznam + Naver）
 # 触发：Hugo 构建部署成功后自动执行
-# 前置条件：仓库 Secrets 中需配置 INDEXNOW_KEY
 name: IndexNow Submission
 
 on:
-  # 每次 Hugo 构建部署成功后触发
   workflow_run:
     workflows: ["Deploy Hugo site to Pages"]
     types: [completed]
-  # 也可手动触发
   workflow_dispatch:
 
 jobs:
   indexnow:
-    # 仅在部署成功时执行
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
@@ -22,153 +18,118 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Build site (regenerate sitemap)
+      - name: Build site
         run: hugo --minify
 
-      - name: Extract URLs from sitemap
+      - name: Extract URLs
         id: extract
         run: |
-          # 从 Hugo 生成的 sitemap 提取 URL
-          URLS=$(grep -oP '<loc>\K[^<]+' public/sitemap.xml | python3 -c "
+          URLS=$(grep -oP '<loc>\K[^<]+' public/sitemap.xml 2>/dev/null | python3 -c "
           import sys, json
           urls = [l.strip() for l in sys.stdin if l.strip()]
           print(json.dumps(urls))
           ")
           echo "urls=$URLS" >> $GITHUB_OUTPUT
-          echo "URL count: $(echo $URLS | python3 -c 'import sys,json; print(len(json.load(sys.stdin)))')"
+          COUNT=$(echo "$URLS" | python3 -c 'import sys,json; print(len(json.load(sys.stdin)))')
+          echo "Extracted $COUNT URLs"
 
-      - name: Submit to Bing IndexNow
-        if: ${{ secrets.INDEXNOW_KEY != '' && steps.extract.outputs.urls != '' }}
+      - name: Get IndexNow key from site
+        id: getkey
+        run: |
+          # 从站点根目录获取 key 文件（文件名 = 任意 .txt，内容为 64 位 hex）
+          KEY_FILE=$(ls /home/runner/work/*/*/*.txt 2>/dev/null | head -1)
+          if [ -n "$KEY_FILE" ]; then
+            KEY=$(cat "$KEY_FILE")
+            echo "key=$KEY" >> $GITHUB_OUTPUT
+            echo "Key file: $KEY_FILE"
+          else
+            # 尝试从构建后的 public/ 目录
+            KEY_FILE=$(find public -name '*.txt' 2>/dev/null | head -1)
+            if [ -n "$KEY_FILE" ]; then
+              KEY=$(cat "$KEY_FILE")
+              echo "key=$KEY" >> $GITHUB_OUTPUT
+            else
+              echo "key=" >> $GITHUB_OUTPUT
+            fi
+          fi
+
+      - name: Submit to Bing
+        if: ${{ steps.getkey.outputs.key != '' && steps.extract.outputs.urls != '[]' }}
         continue-on-error: true
         env:
-          KEY: ${{ secrets.INDEXNOW_KEY }}
+          KEY: ${{ steps.getkey.outputs.key }}
           HOST: songsir-hub.github.io
           URLS: ${{ steps.extract.outputs.urls }}
         run: |
           python3 - <<'PY'
-          import json, os, urllib.request
-
+          import json, os, urllib.request, urllib.error
           host = os.environ['HOST']
           key = os.environ['KEY']
           urls = json.loads(os.environ['URLS'])
-
-          # IndexNow 单次最多 10000 条，分批处理
-          batch = 10000
-          total = 0
-          for i in range(0, len(urls), batch):
-              chunk = urls[i:i+batch]
-              body = {
-                  "host": host,
-                  "key": key,
-                  "urlList": chunk
-              }
-              req = urllib.request.Request(
-                  "https://www.bing.com/indexnow",
-                  data=json.dumps(body).encode(),
-                  headers={"Content-Type": "application/json; charset=utf-8"},
-                  method="POST"
-              )
-              try:
-                  with urllib.request.urlopen(req, timeout=30) as resp:
-                      result = json.loads(resp.read().decode())
-                      print(f"Bing: HTTP {resp.status}, batch {i//batch+1}, submitted {len(chunk)} URLs")
-                      if 'bingRequestId' in result:
-                          print(f"  Request ID: {result['bingRequestId']}")
-              except urllib.error.HTTPError as e:
-                  print(f"Bing: HTTP {e.code}, batch {i//batch+1}")
-                  print(f"  Response: {e.read().decode()[:200]}")
-              except Exception as e:
-                  print(f"Bing: Error - {e}")
-
-              total += len(chunk)
-
-          print(f"Total submitted: {total} URLs to Bing")
-          PY
+          body = {"host": host, "key": key, "urlList": urls[:100]}
+          req = urllib.request.Request(
+              "https://www.bing.com/indexnow",
+              data=json.dumps(body).encode(),
+              headers={"Content-Type": "application/json"},
+              method="POST"
+          )
+          try:
+              with urllib.request.urlopen(req, timeout=30) as resp:
+                  result = json.loads(resp.read().decode())
+                  print(f"Bing: HTTP {resp.status}, submitted {len(urls[:100])} URLs")
+                  if 'bingRequestId' in result:
+                      print(f"Request ID: {result['bingRequestId']}")
+          except urllib.error.HTTPError as e:
+              print(f"Bing: HTTP {e.code}: {e.read().decode()[:200]}")
 
       - name: Submit to Yandex
-        if: ${{ secrets.INDEXNOW_KEY != '' && steps.extract.outputs.urls != '' }}
+        if: ${{ steps.getkey.outputs.key != '' && steps.extract.outputs.urls != '[]' }}
         continue-on-error: true
         env:
-          KEY: ${{ secrets.INDEXNOW_KEY }}
+          KEY: ${{ steps.getkey.outputs.key }}
           HOST: songsir-hub.github.io
           URLS: ${{ steps.extract.outputs.urls }}
         run: |
           python3 - <<'PY'
           import json, os, urllib.request, urllib.error
-
           host = os.environ['HOST']
           key = os.environ['KEY']
           urls = json.loads(os.environ['URLS'])
-
-          batch = 10000
-          total = 0
-          for i in range(0, len(urls), batch):
-              chunk = urls[i:i+batch]
-              body = {
-                  "host": host,
-                  "key": key,
-                  "urlList": chunk
-              }
-              req = urllib.request.Request(
-                  "https://yandex.com/indexnow",
-                  data=json.dumps(body).encode(),
-                  headers={"Content-Type": "application/json; charset=utf-8"},
-                  method="POST"
-              )
-              try:
-                  with urllib.request.urlopen(req, timeout=30) as resp:
-                      print(f"Yandex: HTTP {resp.status}, batch {i//batch+1}, submitted {len(chunk)} URLs")
-                      total += len(chunk)
-              except urllib.error.HTTPError as e:
-                  print(f"Yandex: HTTP {e.code}, batch {i//batch+1}")
-                  total += len(chunk)
-              except Exception as e:
-                  print(f"Yandex: Error - {e}")
-                  total += len(chunk)
-
-          print(f"Total submitted: {total} URLs to Yandex")
-          PY
+          body = {"host": host, "key": key, "urlList": urls[:100]}
+          req = urllib.request.Request(
+              "https://yandex.com/indexnow",
+              data=json.dumps(body).encode(),
+              headers={"Content-Type": "application/json"},
+              method="POST"
+          )
+          try:
+              with urllib.request.urlopen(req, timeout=30) as resp:
+                  print(f"Yandex: HTTP {resp.status}, submitted {len(urls[:100])} URLs")
+          except urllib.error.HTTPError as e:
+              print(f"Yandex: HTTP {e.code}: {e.read().decode()[:200]}")
 
       - name: Submit to Seznam
-        if: ${{ secrets.INDEXNOW_KEY != '' && steps.extract.outputs.urls != '' }}
+        if: ${{ steps.getkey.outputs.key != '' && steps.extract.outputs.urls != '[]' }}
         continue-on-error: true
         env:
-          KEY: ${{ secrets.INDEXNOW_KEY }}
+          KEY: ${{ steps.getkey.outputs.key }}
           HOST: songsir-hub.github.io
           URLS: ${{ steps.extract.outputs.urls }}
         run: |
           python3 - <<'PY'
           import json, os, urllib.request, urllib.error
-
           host = os.environ['HOST']
           key = os.environ['KEY']
           urls = json.loads(os.environ['URLS'])
-
-          batch = 10000
-          total = 0
-          for i in range(0, len(urls), batch):
-              chunk = urls[i:i+batch]
-              body = {
-                  "host": host,
-                  "key": key,
-                  "urlList": chunk
-              }
-              req = urllib.request.Request(
-                  "https://search.seznam.cz/indexnow",
-                  data=json.dumps(body).encode(),
-                  headers={"Content-Type": "application/json; charset=utf-8"},
-                  method="POST"
-              )
-              try:
-                  with urllib.request.urlopen(req, timeout=30) as resp:
-                      print(f"Seznam: HTTP {resp.status}, batch {i//batch+1}, submitted {len(chunk)} URLs")
-                      total += len(chunk)
-              except urllib.error.HTTPError as e:
-                  print(f"Seznam: HTTP {e.code}, batch {i//batch+1}")
-                  total += len(chunk)
-              except Exception as e:
-                  print(f"Seznam: Error - {e}")
-                  total += len(chunk)
-
-          print(f"Total submitted: {total} URLs to Seznam")
-          PY
+          body = {"host": host, "key": key, "urlList": urls[:100]}
+          req = urllib.request.Request(
+              "https://search.seznam.cz/indexnow",
+              data=json.dumps(body).encode(),
+              headers={"Content-Type": "application/json"},
+              method="POST"
+          )
+          try:
+              with urllib.request.urlopen(req, timeout=30) as resp:
+                  print(f"Seznam: HTTP {resp.status}, submitted {len(urls[:100])} URLs")
+          except urllib.error.HTTPError as e:
+              print(f"Seznam: HTTP {e.code}: {e.read().decode()[:200]}")
