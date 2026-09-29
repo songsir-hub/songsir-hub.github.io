@@ -1,0 +1,2 @@
+{{/* ShowDate - placeholder */}}
+{{ with .Date }}<span class="post-date">{{ .Format (default "January 2, 2006" (index site.Params "date_form")) }}</span>{{ end }}
