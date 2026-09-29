@@ -1,4 +1,7 @@
 # 搜索引擎收录 + 公众号侵权监控（每天两次，北京时间 8:00 和 20:00）
+# 判定口径（2026-09-29 放宽）：
+#   - "未收录" 属新站正常状态 → 仅 ::warning，不算故障（需收录请用 Google Search Console 提交 sitemap）
+#   - "发现非官方域名抄袭" → ::error + exit 1（真该报警）
 name: Search & Plagiarism Monitor
 
 on:
@@ -14,42 +17,49 @@ jobs:
       - name: Check Baidu/Google index + WeChat plagiarism
         run: |
           HOST="songsir-hub.github.io"
+          WARN=0
           ISSUES=()
 
-          # 1. 检查 Baidu 收录
+          # 1. 检查 Baidu 收录（抓取不到视为"未知"，不误报未收录）
           BAIDU=$(curl -s "https://www.baidu.com/s?wd=site:$HOST" --max-time 30 2>/dev/null || echo "")
-          if echo "$BAIDU" | grep -q "没有找到"; then
-            ISSUES+=("百度未收录任何 $HOST 页面")
+          if [ -z "$BAIDU" ]; then
+            echo "::warning::百度检索不可达或无结果（新站未收录属正常，请到百度站长平台/Google Search Console 查看索引状态）"
+            WARN=1
+          elif echo "$BAIDU" | grep -q "没有找到"; then
+            echo "::warning::百度未收录任何 $HOST 页面（新站冷启动期属正常）"
+            WARN=1
           fi
 
-          # 2. 检查 Google 收录（通过 r.jina.ai 代理，绕过国内限制）
+          # 2. 检查 Google 收录（r.jina.ai 代理常 429/失败，抓取不到就跳过，绝不误报"未收录"）
           GOOGLE=$(curl -s "https://r.jina.ai/https://www.google.com/search?q=site:$HOST" --max-time 30 2>/dev/null || echo "")
-          if [ -z "$GOOGLE" ] || echo "$GOOGLE" | grep -q "No results found"; then
-            ISSUES+=("Google 未收录任何 $HOST 页面")
+          if [ -z "$GOOGLE" ]; then
+            echo "::warning::Google 检索代理不可达，本次跳过 Google 收录检查（不影响站点）"
+            WARN=1
+          elif echo "$GOOGLE" | grep -q "No results found"; then
+            echo "::warning::Google 未收录任何 $HOST 页面（请用 Google Search Console 提交 sitemap 并等待索引）"
+            WARN=1
           fi
 
-          # 3. 检查公众号侵权
-          # 搜索关键词：博雅小筑 文章标题（取前几个文章标题）
+          # 3. 检查公众号/外部抄袭（发现非官方域名才真报警）
           POSTS=$(curl -s "https://$HOST/sitemap.xml" | grep -oP '(?<=<loc>).*?(?=</loc>)' | grep '/posts/' | head -5)
           for URL in $POSTS; do
-            # 从 URL 提取 slug
             SLUG=$(echo "$URL" | sed 's|.*/posts/||; s|/||')
-            # 在百度搜索文章标题 + "博雅小筑"
             BSEARCH=$(curl -s "https://www.baidu.com/s?wd=${SLUG}%20博雅小筑" --max-time 15 2>/dev/null || echo "")
             if [ -n "$BSEARCH" ] && ! echo "$BSEARCH" | grep -q "没有找到"; then
-              # 找到结果，检查是否有非官方域名
               FOUND_DOMAINS=$(echo "$BSEARCH" | grep -oP 'https?://[a-zA-Z0-9.-]+\.[a-z]{2,}' | grep -v "$HOST" | sort -u | head -5)
               if [ -n "$FOUND_DOMAINS" ]; then
-                ISSUES+=("文章 '$SLUG' 在百度搜索中发现了非官方域名: $(echo $FOUND_DOMAINS | tr '\n' ' '))
+                ISSUES+=("文章 '$SLUG' 在百度搜索中发现了非官方域名: $(echo $FOUND_DOMAINS | tr '\n' ' ')")
               fi
             fi
           done
 
-          # 汇总
-          if [ ${#ISSUES[@]} -eq 0 ]; then
+          # 汇总：只有"真抄袭"才 exit 1，"未收录"仅作 warning
+          if [ ${#ISSUES[@]} -eq 0 ] && [ "$WARN" = "0" ]; then
             echo "✓ 所有监控项通过"
+          elif [ ${#ISSUES[@]} -eq 0 ]; then
+            echo "::warning::无抄袭，但有 $WARN 项收录/可达性提示（见上方 warning）"
           else
-            echo "::error::发现 ${#ISSUES[@]} 个监控项需要关注:"
+            echo "::error::发现 ${#ISSUES[@]} 个疑似抄袭/侵权:"
             for issue in "${ISSUES[@]}"; do
               echo "  ✗ $issue"
             done
