@@ -6,7 +6,7 @@ title = '关于 / About'
 
 ## <span class="zh">你好，我是</span><span class="accent-green">松朗（松风月朗）</span><span class="zh">👋</span><br>Hello, I'm <span class="accent-green">SongSir</span> 👋
 
-<span class="zh">欢迎来到我的个人博客。这里是我记录思考、沉淀知识的地方。</span><span class="en">Welcome to my personal blog. This is where I record my thoughts and consolidate knowledge.</span>
+<span class="zh"><span class="accent-green">博观万象·雅集一筑，松墨染翰·朗韵成章</span>　欢迎来到我的个人博客。这里是我记录思考、沉淀知识的地方。</span><span class="en">Welcome to my personal blog. This is where I record my thoughts and consolidate knowledge.</span>
 
 ## <span class="zh">关于我</span><span class="en">About Me</span>
 
