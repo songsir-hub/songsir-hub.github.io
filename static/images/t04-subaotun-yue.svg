@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 620" width="100%" font-family="Songti SC, SimSun, STSong, serif">
+<defs>
+  <linearGradient id="seaGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#DCE9F2"/>
+    <stop offset="100%" stop-color="#C7DCEA"/>
+  </linearGradient>
+  <filter id="landShadow" x="-5%" y="-5%" width="110%" height="110%">
+    <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#7A6A50" flood-opacity="0.28"/>
+  </filter>
+  <filter id="pinShadow" x="-50%" y="-50%" width="200%" height="200%">
+    <feDropShadow dx="0.8" dy="1.2" stdDeviation="1.0" flood-color="#2E2418" flood-opacity="0.55"/>
+  </filter>
+</defs>
+<rect width="920" height="620" fill="#FBF8F1"/>
+<rect x="20" y="20" width="880" height="580" fill="none" stroke="#C9B98F" stroke-width="1.4" stroke-dasharray="6 4"/>
+<rect x="354" y="70" width="52" height="120" rx="6" fill="#FCFAF4" stroke="#5A4022" stroke-width="3"/>
+<line x1="380" y1="74" x2="380" y2="186" stroke="#5A4022" stroke-width="1.2" stroke-dasharray="3 3"/>
+<path d="M354,188 L406,188 L530,360 Q380,420 230,360 Z" fill="#F1E6CE" stroke="#5A4022" stroke-width="3" stroke-linejoin="round"/>
+<path d="M230,360 Q380,420 530,360" fill="none" stroke="#5A4022" stroke-width="3"/>
+<circle cx="380" cy="250" r="34" fill="#FBF8F1" stroke="#5A4022" stroke-width="3"/>
+<rect x="324" y="292" width="112" height="56" fill="none" stroke="#8A3B2B" stroke-width="2.4"/>
+<line x1="358" y1="292" x2="358" y2="348" stroke="#8A3B2B" stroke-width="1.2"/>
+<line x1="402" y1="292" x2="402" y2="348" stroke="#8A3B2B" stroke-width="1.2"/>
+<text x="380" y="332" font-size="26" font-weight="bold" fill="#8A3B2B" text-anchor="middle">丑</text>
+<line x1="406" y1="130" x2="640" y2="130" stroke="#7A6A50" stroke-width="1.2"/>
+<text x="650" y="135" font-size="15" fill="#3A3226">銎（纳柲之管）</text>
+<line x1="414" y1="250" x2="640" y2="250" stroke="#7A6A50" stroke-width="1.2"/>
+<text x="650" y="255" font-size="15" fill="#3A3226">圆穿（系绳/装饰）</text>
+<line x1="436" y1="320" x2="640" y2="320" stroke="#7A6A50" stroke-width="1.2"/>
+<text x="650" y="325" font-size="15" fill="#8A3B2B">「亚丑」族徽（亚形框内丑字，示意）</text>
+<line x1="530" y1="368" x2="640" y2="368" stroke="#7A6A50" stroke-width="1.2"/>
+<text x="650" y="373" font-size="15" fill="#3A3226">刃部（弧形阔刃）</text>
+<text x="460" y="46" font-size="22" font-weight="bold" fill="#2E2820" text-anchor="middle" letter-spacing="1">苏埠屯大墓出土铜钺（线描示意）</text>
+<rect x="40" y="440" width="840" height="150" rx="7" fill="#FCFAF4" stroke="#D8CEB6" stroke-width="1.2"/>
+<text x="56" y="466" font-size="13.5" fill="#5A5245">苏埠屯（今山东青州）商代大墓出土大型铜钺，墓主属「亚丑」族——商代东方一支显赫的亲商封族。</text>
+<text x="56" y="490" font-size="13.5" fill="#5A5245">钺为军事权杖之象征；亚丑墓地规格高、带「亚丑」铭的铜器群散布东方，</text>
+<text x="56" y="514" font-size="13.5" fill="#5A5245">标示商王朝在潍淄以东设据点、施影响的实物证据。</text>
+<text x="56" y="538" font-size="13.5" fill="#5A5245">本图为线描示意图，非发掘照片；器形据公开著录摹绘，意在说明「东方封族据点」的武力象征，不作考古测绘。</text>
+<text x="56" y="562" font-size="13.5" fill="#8B8375">作图：松朗</text>
+</svg>
