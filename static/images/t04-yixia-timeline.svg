@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 600" width="100%" font-family="Songti SC, SimSun, STSong, serif">
+<defs>
+  <linearGradient id="seaGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#DCE9F2"/>
+    <stop offset="100%" stop-color="#C7DCEA"/>
+  </linearGradient>
+  <filter id="landShadow" x="-5%" y="-5%" width="110%" height="110%">
+    <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#7A6A50" flood-opacity="0.28"/>
+  </filter>
+  <filter id="pinShadow" x="-50%" y="-50%" width="200%" height="200%">
+    <feDropShadow dx="0.8" dy="1.2" stdDeviation="1.0" flood-color="#2E2418" flood-opacity="0.55"/>
+  </filter>
+</defs>
+<rect width="1040" height="600" fill="#FBF8F1"/>
+<text x="520" y="46" font-size="24" font-weight="bold" fill="#2E2820" text-anchor="middle" letter-spacing="2">夷夏内战时间线（传世叙事序列）</text>
+<text x="520" y="74" font-size="14" fill="#6B6255" text-anchor="middle">后羿代夏 — 寒浞杀羿 — 少康复国（夏代，年代为传世序列，非精确纪年）</text>
+<line x1="80" y1="300" x2="960" y2="300" stroke="#7A6A50" stroke-width="3"/>
+<path d="M960,300 l-14,-7 l0,14 Z" fill="#7A6A50"/>
+<text x="72" y="328" font-size="14" fill="#3A3226" text-anchor="end" font-style="italic">夏初</text>
+<text x="968" y="328" font-size="14" fill="#3A3226" font-style="italic">稍后</text>
+<circle cx="80.0" cy="300" r="11" fill="#8A3B2B" stroke="#FBF8F1" stroke-width="2.4"/>
+<circle cx="80.0" cy="300" r="4" fill="#FBF8F1"/>
+<text x="80.0" y="248" font-size="16" font-weight="bold" fill="#8A3B2B" text-anchor="middle">太康失国</text>
+<text x="80.0" y="268" font-size="12.5" fill="#3A3226" text-anchor="middle">出猎洛水之南，国中无主</text>
+<line x1="80.0" y1="270" x2="80.0" y2="289" stroke="#8A3B2B" stroke-width="1.4" stroke-dasharray="3 3"/>
+<circle cx="256.0" cy="300" r="11" fill="#A63A2B" stroke="#FBF8F1" stroke-width="2.4"/>
+<circle cx="256.0" cy="300" r="4" fill="#FBF8F1"/>
+<text x="256.0" y="230" font-size="16" font-weight="bold" fill="#A63A2B" text-anchor="middle">后羿代夏</text>
+<text x="256.0" y="250" font-size="12.5" fill="#3A3226" text-anchor="middle">因夏民以代夏政</text>
+<text x="256.0" y="268" font-size="12.5" fill="#3A3226" text-anchor="middle">东夷第一次西进夺权</text>
+<line x1="256.0" y1="270" x2="256.0" y2="289" stroke="#A63A2B" stroke-width="1.4" stroke-dasharray="3 3"/>
+<circle cx="449.6" cy="300" r="11" fill="#A63A2B" stroke="#FBF8F1" stroke-width="2.4"/>
+<circle cx="449.6" cy="300" r="4" fill="#FBF8F1"/>
+<text x="449.6" y="336" font-size="16" font-weight="bold" fill="#A63A2B" text-anchor="middle">寒浞杀羿</text>
+<text x="449.6" y="356" font-size="12.5" fill="#3A3226" text-anchor="middle">代夏政，夷系夺权余波</text>
+<line x1="449.6" y1="330" x2="449.6" y2="311" stroke="#A63A2B" stroke-width="1.4" stroke-dasharray="3 3"/>
+<circle cx="625.6" cy="300" r="11" fill="#A63A2B" stroke="#FBF8F1" stroke-width="2.4"/>
+<circle cx="625.6" cy="300" r="4" fill="#FBF8F1"/>
+<text x="625.6" y="230" font-size="16" font-weight="bold" fill="#A63A2B" text-anchor="middle">灭斟灌斟寻</text>
+<text x="625.6" y="250" font-size="12.5" fill="#3A3226" text-anchor="middle">浇处「过」（今莱州）</text>
+<text x="625.6" y="268" font-size="12.5" fill="#3A3226" text-anchor="middle">战火东扩至胶东</text>
+<line x1="625.6" y1="270" x2="625.6" y2="289" stroke="#A63A2B" stroke-width="1.4" stroke-dasharray="3 3"/>
+<circle cx="819.2" cy="300" r="11" fill="#2E6DA4" stroke="#FBF8F1" stroke-width="2.4"/>
+<circle cx="819.2" cy="300" r="4" fill="#FBF8F1"/>
+<text x="819.2" y="336" font-size="16" font-weight="bold" fill="#2E6DA4" text-anchor="middle">少康中兴</text>
+<text x="819.2" y="356" font-size="12.5" fill="#3A3226" text-anchor="middle">借斟灌斟寻残余复国</text>
+<text x="819.2" y="374" font-size="12.5" fill="#3A3226" text-anchor="middle">夏之反扑</text>
+<line x1="819.2" y1="330" x2="819.2" y2="311" stroke="#2E6DA4" stroke-width="1.4" stroke-dasharray="3 3"/>
+<rect x="60" y="470" width="920" height="100" rx="7" fill="#FCFAF4" stroke="#D8CEB6" stroke-width="1.2"/>
+<text x="76" y="496" font-size="13.3" fill="#5A5245">东夷与夏的关系始终双向：东夷人既在夏的朝廷里做官（皋陶掌刑、伯益掌山泽），也在夏的战场上与夏为敌。</text>
+<text x="76" y="518" font-size="13.3" fill="#5A5245">后羿代夏—寒浞乱政—少康复国，最完整的叙述出自《左传》襄公四年、哀公元年（春秋末年魏绛、伍员追述，去夏初逾千年）。</text>
+<text x="76" y="540" font-size="13.3" fill="#8B8375">夏史无当时文字自证，本时间线为「传世叙事骨架」，非信史事件链。　作图：松朗</text>
+</svg>
