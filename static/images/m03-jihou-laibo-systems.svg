@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" role="img" aria-label="己侯钟与莱伯鼎自名系统对照">
+  <title>己侯钟与莱伯鼎自名系统对照</title>
+  <desc>图4-2 春秋早期己侯钟（烟台市博物馆藏）与西周早期莱伯鼎（龙口鲁家沟出土）自名系统对照。左侧为两器线描，右侧为铭文字形与自名系统对照表。</desc>
+  <rect x="0" y="0" width="1200" height="780" fill="#faf8f4"/>
+
+  <!-- ============ 左：己侯钟线描 ============ -->
+  <g transform="translate(60,60)">
+    <text x="105" y="0" text-anchor="middle" font-size="20" font-weight="600" fill="#2a2418" font-family="PingFang SC, Microsoft YaHei, sans-serif">己侯钟</text>
+    <text x="105" y="24" text-anchor="middle" font-size="14" fill="#7a6a5a" font-family="PingFang SC, Microsoft YaHei, sans-serif">春秋早期 · 烟台市博物馆藏</text>
+
+    <g transform="translate(0,50)">
+      <!-- 悬钮 -->
+      <path d="M78 0 C78 -16, 96 -24, 112 -14 L112 0" fill="none" stroke="#5a4e3a" stroke-width="3" stroke-linecap="round"/>
+      <ellipse cx="95" cy="20" rx="17" ry="8" fill="#f0ebe0" stroke="#5a4e3a" stroke-width="2.4"/>
+      <rect x="76" y="30" width="38" height="22" rx="3" fill="#e8e0d0" stroke="#5a4e3a" stroke-width="2"/>
+      <line x1="76" y1="41" x2="114" y2="41" stroke="#5a4e3a" stroke-width="1" stroke-dasharray="3 3"/>
+
+      <!-- 合瓦形钟体 -->
+      <path d="M78 52 L112 52 L118 250 Q118 268, 100 276 L90 276 Q72 268, 72 250 Z" fill="#f5f0e6" stroke="#5a4e3a" stroke-width="2.6"/>
+      <!-- 钟体正视面 -->
+      <path d="M86 60 L104 60 L108 248 Q108 262, 95 268 Q82 262, 82 248 Z" fill="#ede6d8" stroke="#5a4e3a" stroke-width="1"/>
+      <!-- 钲部铭文区 -->
+      <rect x="86" y="74" width="18" height="150" fill="#f8f4ec" stroke="#a09080" stroke-width="1"/>
+      <text x="95" y="94" text-anchor="middle" font-size="15" fill="#3a2e1e" font-family="KaiTi, STKaiti, serif">己</text>
+      <text x="95" y="116" text-anchor="middle" font-size="15" fill="#3a2e1e" font-family="KaiTi, STKaiti, serif">侯</text>
+      <text x="95" y="138" text-anchor="middle" font-size="15" fill="#3a2e1e" font-family="KaiTi, STKaiti, serif">作</text>
+      <text x="95" y="160" text-anchor="middle" font-size="15" fill="#3a2e1e" font-family="KaiTi, STKaiti, serif">宝</text>
+      <text x="95" y="182" text-anchor="middle" font-size="15" fill="#3a2e1e" font-family="KaiTi, STKaiti, serif">钟</text>
+
+      <!-- 枚 -->
+      <g fill="#8a7a6a">
+        <circle cx="80" cy="80" r="3"/><circle cx="110" cy="80" r="3"/>
+        <circle cx="80" cy="102" r="3"/><circle cx="110" cy="102" r="3"/>
+        <circle cx="80" cy="124" r="3"/><circle cx="110" cy="124" r="3"/>
+        <circle cx="80" cy="146" r="3"/><circle cx="110" cy="146" r="3"/>
+        <circle cx="80" cy="168" r="3"/><circle cx="110" cy="168" r="3"/>
+        <circle cx="80" cy="190" r="3"/><circle cx="110" cy="190" r="3"/>
+      </g>
+      <!-- 竑/两栾 -->
+      <path d="M78 200 Q74 230, 76 254" fill="none" stroke="#a09080" stroke-width="1.2"/>
+      <path d="M112 200 Q116 230, 114 254" fill="none" stroke="#a09080" stroke-width="1.2"/>
+    </g>
+
+    <!-- 尺寸标注 -->
+    <g transform="translate(150,70)">
+      <line x1="0" y1="0" x2="0" y2="276" stroke="#a09080" stroke-width="1" stroke-dasharray="4 4"/>
+      <line x1="-5" y1="0" x2="5" y2="0" stroke="#a09080" stroke-width="1.4"/>
+      <line x1="-5" y1="276" x2="5" y2="276" stroke="#a09080" stroke-width="1.4"/>
+      <text x="8" y="142" font-size="14" fill="#7a6a5a" font-family="PingFang SC, Microsoft YaHei, sans-serif">通高 26cm</text>
+    </g>
+  </g>
+
+  <!-- ============ 中：莱伯鼎线描 ============ -->
+  <g transform="translate(330,60)">
+    <text x="120" y="0" text-anchor="middle" font-size="20" font-weight="600" fill="#2a2418" font-family="PingFang SC, Microsoft YaHei, sans-serif">莱伯鼎</text>
+    <text x="120" y="24" text-anchor="middle" font-size="14" fill="#7a6a5a" font-family="PingFang SC, Microsoft YaHei, sans-serif">西周早期 · 龙口鲁家沟出土 · 中国国家博物馆</text>
+
+    <g transform="translate(0,50)">
+      <!-- 双耳 -->
+      <path d="M52 92 L40 76 Q34 70, 40 62 L52 54" fill="none" stroke="#5a4e3a" stroke-width="5" stroke-linecap="round"/>
+      <path d="M188 92 L200 76 Q206 70, 200 62 L188 54" fill="none" stroke="#5a4e3a" stroke-width="5" stroke-linecap="round"/>
+      <!-- 口沿 -->
+      <path d="M44 92 Q120 74, 196 92 L192 106 Q120 90, 48 106 Z" fill="#e8e0d0" stroke="#5a4e3a" stroke-width="2.4"/>
+      <!-- 腹部 -->
+      <path d="M48 106 Q120 90, 192 106 Q196 152, 172 190 Q120 208, 68 190 Q44 152, 48 106 Z" fill="#f5f0e6" stroke="#5a4e3a" stroke-width="2.6"/>
+      <!-- 窃曲纹带 -->
+      <path d="M50 118 Q85 108, 120 118 Q155 128, 190 118" fill="none" stroke="#8a7a6a" stroke-width="1.6"/>
+      <path d="M50 126 Q85 116, 120 126 Q155 136, 190 126" fill="none" stroke="#8a7a6a" stroke-width="1.6"/>
+      <!-- 铭文区（腹部示意） -->
+      <rect x="82" y="140" width="76" height="40" rx="3" fill="#f8f4ec" stroke="#a09080" stroke-width="1"/>
+      <text x="120" y="158" text-anchor="middle" font-size="13" fill="#3a2e1e" font-family="KaiTi, STKaiti, serif">莱伯作</text>
+      <text x="120" y="174" text-anchor="middle" font-size="13" fill="#3a2e1e" font-family="KaiTi, STKaiti, serif">旅鼎</text>
+      <!-- 三足 -->
+      <path d="M74 190 Q68 216, 62 238 Q60 246, 68 248 L80 248 Q86 246, 84 238 Q80 214, 84 190 Z" fill="#ede6d8" stroke="#5a4e3a" stroke-width="2"/>
+      <path d="M156 190 Q162 216, 168 238 Q170 246, 162 248 L150 248 Q144 246, 146 238 Q150 214, 146 190 Z" fill="#ede6d8" stroke="#5a4e3a" stroke-width="2"/>
+      <path d="M113 194 Q113 218, 115 240 Q116 248, 124 248 L132 248 Q138 246, 136 238 Q130 216, 127 194 Z" fill="#ede6d8" stroke="#5a4e3a" stroke-width="2"/>
+    </g>
+    <g transform="translate(226,70)">
+      <line x1="0" y1="0" x2="0" y2="248" stroke="#a09080" stroke-width="1" stroke-dasharray="4 4"/>
+      <line x1="-5" y1="0" x2="5" y2="0" stroke="#a09080" stroke-width="1.4"/>
+      <line x1="-5" y1="248" x2="5" y2="248" stroke="#a09080" stroke-width="1.4"/>
+      <text x="8" y="128" font-size="14" fill="#7a6a5a" font-family="PingFang SC, Microsoft YaHei, sans-serif">通高约 26cm</text>
+    </g>
+  </g>
+
+  <!-- ============ 右：自名系统对照 ============ -->
+  <g transform="translate(690,60)">
+    <rect x="0" y="0" width="450" height="420" rx="10" fill="#ffffff" stroke="#e0d8c8" stroke-width="1"/>
+    <text x="24" y="36" font-size="19" font-weight="600" fill="#2a2418" font-family="PingFang SC, Microsoft YaHei, sans-serif">两套自名系统对照</text>
+    <line x1="24" y1="50" x2="426" y2="50" stroke="#e0d8c8" stroke-width="1"/>
+
+    <!-- 潍淄一组 -->
+    <g transform="translate(24,70)">
+      <rect x="0" y="0" width="402" height="140" rx="8" fill="#f8f4ec" stroke="#e0d8c8" stroke-width="1"/>
+      <rect x="0" y="0" width="6" height="140" rx="3" fill="#8a6a4a"/>
+      <text x="22" y="30" font-size="16" font-weight="600" fill="#5a3e22" font-family="PingFang SC, Microsoft YaHei, sans-serif">潍淄一组 ｜ 己 / 纪</text>
+      <text x="22" y="58" font-size="14" fill="#4a3e2a" font-family="PingFang SC, Microsoft YaHei, sans-serif">己侯钟、己侯簋、益都侯城己器群</text>
+      <text x="22" y="82" font-size="14" fill="#4a3e2a" font-family="PingFang SC, Microsoft YaHei, sans-serif">1983 寿光古城村 64 件商末铜器：</text>
+      <text x="22" y="106" font-size="14" fill="#4a3e2a" font-family="PingFang SC, Microsoft YaHei, sans-serif">15 件铭“己竝”、3 件单铭“己”、1 件“妻”甗</text>
+      <text x="22" y="130" font-size="14" font-weight="600" fill="#8a2a1a" font-family="PingFang SC, Microsoft YaHei, sans-serif">核心字汇只有“己 / 纪”，零“莱”字</text>
+    </g>
+
+    <!-- 胶东一组 -->
+    <g transform="translate(24,226)">
+      <rect x="0" y="0" width="402" height="140" rx="8" fill="#f8f4ec" stroke="#e0d8c8" stroke-width="1"/>
+      <rect x="0" y="0" width="6" height="140" rx="3" fill="#3a6a4a"/>
+      <text x="22" y="30" font-size="16" font-weight="600" fill="#1e4a32" font-family="PingFang SC, Microsoft YaHei, sans-serif">胶东一组 ｜ 莱</text>
+      <text x="22" y="58" font-size="14" fill="#4a3e2a" font-family="PingFang SC, Microsoft YaHei, sans-serif">归城及近旁，西周早中期自作器集中一地</text>
+      <text x="22" y="82" font-size="14" fill="#4a3e2a" font-family="PingFang SC, Microsoft YaHei, sans-serif">莱伯鼎、莱伯旅鼎、启尊启卣、莱伯鬲</text>
+      <text x="22" y="106" font-size="14" fill="#4a3e2a" font-family="PingFang SC, Microsoft YaHei, sans-serif">铭文一律作“莱 / 来”，无一作“己”</text>
+      <text x="22" y="130" font-size="14" font-weight="600" fill="#8a2a1a" font-family="PingFang SC, Microsoft YaHei, sans-serif">核心字汇只有“莱”，零“己”字</text>
+    </g>
+  </g>
+
+  <!-- 结论条 -->
+  <g transform="translate(60,660)">
+    <rect x="0" y="0" width="1080" height="76" rx="10" fill="#f4f0e6" stroke="#e0d8c8" stroke-width="1"/>
+    <text x="24" y="30" font-size="15" fill="#3a2e1e" font-family="PingFang SC, Microsoft YaHei, sans-serif">两组铜器群自名系统完全不交叉：一区铭“己 / 纪”，一区铭“莱”——互不替用，是“零莱字”最直接的物质证据。</text>
+    <text x="24" y="56" font-size="13" fill="#8a7a6a" font-family="PingFang SC, Microsoft YaHei, sans-serif">结语：自称器的分布形态指向两个中心，而非“一个中心 + 一次迁移”；胶东“莱”字自名器的年代（西周早中期）早于任何可设想的“东迁”约三百年。</text>
+  </g>
+
+  <!-- 图源 -->
+  <text x="60" y="762" font-size="12" fill="#a09080" font-family="PingFang SC, Microsoft YaHei, sans-serif">据烟台市博物馆、中国国家博物馆公开资料及《殷周金文集成》著录信息摹绘；器物图版受版权保护，此处为示意性线描。</text>
+  <text x="1140" y="762" font-size="12" fill="#a09080" text-anchor="end" font-family="PingFang SC, Microsoft YaHei, sans-serif">作图：松朗</text>
+</svg>

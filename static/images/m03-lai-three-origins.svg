@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="'Source Han Serif SC','Noto Serif CJK SC','Songti SC',SimSun,'宋体',serif">
+<rect width="960" height="600" fill="#FBF8F1"/>
+
+<text x="480" y="44" font-size="25" fill="#3A3226" text-anchor="middle" font-weight="bold">潍淄那个“来”字，可能从哪里来</text>
+<text x="480" y="72" font-size="12.5" fill="#6B6255" text-anchor="middle">三条候选来源并置：本书主线、中原同名、炎帝一系——后两者存而不论</text>
+
+<!-- 中心问题 -->
+<rect x="330" y="94" width="300" height="58" rx="10" fill="#E8DFC8" stroke="#A89A78" stroke-width="2"/>
+<text x="480" y="120" font-size="16" fill="#3A3226" text-anchor="middle" font-weight="bold">潍淄出现“来（釐）”字</text>
+<text x="480" y="141" font-size="12" fill="#6B6255" text-anchor="middle">三千年有铭铜器里，来纽字只现一次</text>
+
+<line x1="480" y1="152" x2="480" y2="174" stroke="#A89A78" stroke-width="2"/>
+<line x1="160" y1="174" x2="800" y2="174" stroke="#A89A78" stroke-width="2"/>
+<line x1="160" y1="174" x2="160" y2="198" stroke="#A89A78" stroke-width="1.6"/>
+<line x1="480" y1="174" x2="480" y2="198" stroke="#A89A78" stroke-width="1.6"/>
+<line x1="800" y1="174" x2="800" y2="198" stroke="#A89A78" stroke-width="1.6"/>
+
+<!-- A 主线 -->
+<rect x="28" y="198" width="264" height="212" rx="10" fill="#FFFDF7" stroke="#C07830" stroke-width="2.6"/>
+<text x="160" y="226" font-size="15" fill="#C07830" text-anchor="middle" font-weight="bold">A　征服者的他称</text>
+<text x="160" y="247" font-size="12" fill="#6B6255" text-anchor="middle">本书主线的处理</text>
+<line x1="46" y1="258" x2="274" y2="258" stroke="#E0D7C0" stroke-width="1.2"/>
+<text x="160" y="282" font-size="13" fill="#3A3226" text-anchor="middle">叔夷钟“釐仆三百又五十家”</text>
+<text x="160" y="304" font-size="13" fill="#3A3226" text-anchor="middle">齐灵公赐齐臣叔夷的莱人奴仆</text>
+<text x="160" y="330" font-size="12.5" fill="#C07830" text-anchor="middle" font-weight="bold">性质：征服者写的他称</text>
+<text x="160" y="352" font-size="12" fill="#3A3226" text-anchor="middle">这群莱人自己一字未留</text>
+<text x="160" y="378" font-size="11.5" fill="#6E9450" text-anchor="middle">有铭文直证：<tspan font-weight="bold">成立</tspan></text>
+<text x="160" y="396" font-size="11" fill="#6B6255" text-anchor="middle">《集成》272—285</text>
+
+<!-- B 中原 -->
+<rect x="348" y="198" width="264" height="212" rx="10" fill="#FFFDF7" stroke="#5B7FA6" stroke-width="1.8" stroke-dasharray="7 4"/>
+<text x="480" y="226" font-size="15" fill="#5B7FA6" text-anchor="middle" font-weight="bold">B　中原另有同名</text>
+<text x="480" y="247" font-size="12" fill="#6B6255" text-anchor="middle">异说之一</text>
+<line x1="366" y1="258" x2="594" y2="258" stroke="#E0D7C0" stroke-width="1.2"/>
+<text x="480" y="282" font-size="13" fill="#3A3226" text-anchor="middle">《左传》“会于时来”·杜预注郑地</text>
+<text x="480" y="304" font-size="13" fill="#3A3226" text-anchor="middle">《通志》“来氏，子姓”食采于郲</text>
+<text x="480" y="330" font-size="12.5" fill="#5B7FA6" text-anchor="middle" font-weight="bold">性质：同名，未必同实</text>
+<text x="480" y="352" font-size="12" fill="#3A3226" text-anchor="middle">无中原“来”器出土</text>
+<text x="480" y="378" font-size="11.5" fill="#8A8A8A" text-anchor="middle">资料不足：<tspan font-weight="bold">存而不论</tspan></text>
+<text x="480" y="396" font-size="11" fill="#6B6255" text-anchor="middle">地在今河南荥阳</text>
+
+<!-- C 炎帝 -->
+<rect x="668" y="198" width="264" height="212" rx="10" fill="#FFFDF7" stroke="#8A6EA6" stroke-width="1.8" stroke-dasharray="7 4"/>
+<text x="800" y="226" font-size="15" fill="#8A6EA6" text-anchor="middle" font-weight="bold">C　炎帝一系“帝来”</text>
+<text x="800" y="247" font-size="12" fill="#6B6255" text-anchor="middle">异说之二</text>
+<line x1="686" y1="258" x2="914" y2="258" stroke="#E0D7C0" stroke-width="1.2"/>
+<text x="800" y="282" font-size="13" fill="#3A3226" text-anchor="middle">《帝王世纪》炎帝八世第六：帝来</text>
+<text x="800" y="304" font-size="13" fill="#3A3226" text-anchor="middle">异本作“帝釐”，罗苹注“釐来互音”</text>
+<text x="800" y="330" font-size="12.5" fill="#8A6EA6" text-anchor="middle" font-weight="bold">性质：同名号，无地望</text>
+<text x="800" y="352" font-size="12" fill="#3A3226" text-anchor="middle">各本皆不记帝来居地</text>
+<text x="800" y="378" font-size="11.5" fill="#8A8A8A" text-anchor="middle">无支点：<tspan font-weight="bold">存而不论</tspan></text>
+<text x="800" y="396" font-size="11" fill="#6B6255" text-anchor="middle">王献唐“莱夷炎帝后裔”另一路径</text>
+
+<!-- 判断标准条 -->
+<rect x="28" y="428" width="904" height="112" rx="10" fill="#F2EAD8" stroke="#C9BFA8" stroke-width="1.8"/>
+<text x="48" y="456" font-size="15" fill="#3A3226" text-anchor="start" font-weight="bold">判据：要动摇 A，得用物证，不能用同名</text>
+
+<rect x="48" y="470" width="424" height="52" rx="8" fill="#FFFDF7" stroke="#6E9450" stroke-width="1.6"/>
+<text x="68" y="492" font-size="13" fill="#6E9450" text-anchor="start" font-weight="bold">能动摇的</text>
+<text x="68" y="511" font-size="12.5" fill="#3A3226" text-anchor="start">潍淄出土先周有铭器物，带“来”字族徽</text>
+
+<rect x="488" y="470" width="424" height="52" rx="8" fill="#FFFDF7" stroke="#C07830" stroke-width="1.6"/>
+<text x="508" y="492" font-size="13" fill="#C07830" text-anchor="start" font-weight="bold">不能动摇的</text>
+<text x="508" y="511" font-size="12.5" fill="#3A3226" text-anchor="start">仅凭“某地也有同音的名字”一类推断</text>
+
+<text x="480" y="562" font-size="13" fill="#3A3226" text-anchor="middle" font-weight="bold">先秦文献把“莱夷”与“潍、淄”写在同一句里的，只有《禹贡》一条——</text>
+<text x="480" y="584" font-size="13" fill="#C07830" text-anchor="middle">“海岱惟青州……潍、淄其道……莱夷作牧”　这是全部讨论的起点。</text>
+
+<text x="912" y="598" font-size="11.5" fill="#6B6255" text-anchor="end">作图：松朗</text>
+</svg>

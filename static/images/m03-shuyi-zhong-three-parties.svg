@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" font-family="'Source Han Serif SC','Noto Serif CJK SC','Songti SC',SimSun,'宋体',serif">
+<rect width="960" height="560" fill="#FBF8F1"/>
+
+<text x="480" y="44" font-size="25" fill="#3A3226" text-anchor="middle" font-weight="bold">唯一一次跨区：叔夷钟里的“釐仆”是谁写的</text>
+<text x="480" y="72" font-size="12.5" fill="#6B6255" text-anchor="middle">潍淄三千年有铭铜器里，“来纽字”只出现一次——而这一次，是征服者替被征服者记的名</text>
+
+<!-- 上：器物信息条 -->
+<rect x="28" y="94" width="904" height="86" rx="10" fill="#F5EDE0" stroke="#C9BFA8" stroke-width="1.8"/>
+<text x="48" y="122" font-size="15" fill="#3A3226" text-anchor="start" font-weight="bold">叔夷钟（叔弓镈）</text>
+<text x="200" y="122" font-size="13" fill="#6B6255" text-anchor="start">春秋晚期·齐灵公时器　《殷周金文集成》272—285　宋代出土于临淄，原器今佚</text>
+<text x="48" y="152" font-size="17" fill="#C07830" text-anchor="start" font-weight="bold">铭文：“釐仆三百又五十家”</text>
+<text x="380" y="152" font-size="13" fill="#6B6255" text-anchor="start">＝一批被赐给齐臣叔夷的莱人奴仆</text>
+<text x="48" y="172" font-size="12" fill="#6B6255" text-anchor="start">器为齐人奉齐君之命所铸；铭文以第三人称叙述“我获得了这些人”。</text>
+
+<!-- 中：三方对照 -->
+<text x="480" y="216" font-size="15" fill="#3A3226" text-anchor="middle" font-weight="bold">同一个“釐”字，三种署名人</text>
+
+<!-- 卡A 莱人自铸 -->
+<rect x="28" y="236" width="288" height="140" rx="10" fill="#FFFDF7" stroke="#6E9450" stroke-width="2"/>
+<text x="172" y="264" font-size="15" fill="#6E9450" text-anchor="middle" font-weight="bold">莱人自铸</text>
+<line x1="46" y1="278" x2="298" y2="278" stroke="#E0D7C0" stroke-width="1.2"/>
+<text x="172" y="302" font-size="13" fill="#3A3226" text-anchor="middle">釐伯鬲、莱伯鼎</text>
+<text x="172" y="324" font-size="13" fill="#3A3226" text-anchor="middle">崮河崖四鬲</text>
+<text x="172" y="352" font-size="12" fill="#6E9450" text-anchor="middle">自称“釐伯”“莱伯”</text>
+<text x="172" y="370" font-size="11.5" fill="#6B6255" text-anchor="middle">声系：来纽｜地：胶东</text>
+
+<!-- 卡B 王朝军吏 -->
+<rect x="336" y="236" width="288" height="140" rx="10" fill="#FFFDF7" stroke="#5B7FA6" stroke-width="2"/>
+<text x="480" y="264" font-size="15" fill="#5B7FA6" text-anchor="middle" font-weight="bold">西周王朝军吏</text>
+<line x1="354" y1="278" x2="606" y2="278" stroke="#E0D7C0" stroke-width="1.2"/>
+<text x="480" y="302" font-size="13" fill="#3A3226" text-anchor="middle">史密簋</text>
+<text x="480" y="324" font-size="13" fill="#3A3226" text-anchor="middle">与南夷、杞夷、舟夷并列</text>
+<text x="480" y="352" font-size="12" fill="#5B7FA6" text-anchor="middle">东征所讨对象之一</text>
+<text x="480" y="370" font-size="11.5" fill="#6B6255" text-anchor="middle">声系：来纽｜地：西方</text>
+
+<!-- 卡C 齐国国君 -->
+<rect x="644" y="236" width="288" height="140" rx="10" fill="#FFFDF7" stroke="#C07830" stroke-width="2.4"/>
+<text x="788" y="264" font-size="15" fill="#C07830" text-anchor="middle" font-weight="bold">齐国国君</text>
+<line x1="662" y1="278" x2="914" y2="278" stroke="#E0D7C0" stroke-width="1.2"/>
+<text x="788" y="302" font-size="13" fill="#3A3226" text-anchor="middle">叔夷钟</text>
+<text x="788" y="324" font-size="13" fill="#3A3226" text-anchor="middle">在潍淄，以齐立场</text>
+<text x="788" y="352" font-size="12" fill="#C07830" text-anchor="middle">他称——被征服者的名</text>
+<text x="788" y="370" font-size="11.5" fill="#6B6255" text-anchor="middle">声系：来纽｜地：潍淄</text>
+
+<!-- 下：结论 -->
+<rect x="28" y="398" width="904" height="96" rx="10" fill="none" stroke="#C07830" stroke-width="2.2"/>
+<text x="480" y="428" font-size="15.5" fill="#3A3226" text-anchor="middle" font-weight="bold">它不是“莱人自己跑到潍淄署了个名”，而是“征服者把被征服者写进了自己的功勋簿”。</text>
+<text x="480" y="456" font-size="13.5" fill="#C07830" text-anchor="middle">这群莱人自己，一个字也没有留下。</text>
+<text x="480" y="480" font-size="13" fill="#6B6255" text-anchor="middle">潍淄缺的不是“莱”这个字，而是“以莱自称”这件事。</text>
+
+<text x="912" y="550" font-size="11.5" fill="#6B6255" text-anchor="end">作图：松朗</text>
+</svg>

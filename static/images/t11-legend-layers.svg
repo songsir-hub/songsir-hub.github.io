@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 830" width="1100" height="830" font-family="Source Han Serif SC, PingFang SC, Microsoft YaHei, Hiragino Sans GB, sans-serif">
+  <rect width="1100" height="830" fill="#fbf9f5"/>
+
+  <!-- 标题 -->
+  <text x="60" y="46" font-size="25" font-weight="bold" fill="#33291f">五条说法的层位：越往下越晚，也越难核验</text>
+  <text x="60" y="74" font-size="14" fill="#6b6158">同一套材料，站在哪一层，决定了它能当证据还是只能当记忆。本书凡引传说，必先标层位。</text>
+
+  <!-- 左侧时间轴 -->
+  <line x1="40" y1="112" x2="40" y2="742" stroke="#c8bda9" stroke-width="2"/>
+  <polygon points="40,752 34,738 46,738" fill="#c8bda9"/>
+  <text x="26" y="108" font-size="12" fill="#8a7f70" text-anchor="middle">早</text>
+  <text x="26" y="768" font-size="12" fill="#8a7f70" text-anchor="middle">晚</text>
+
+  <!-- 层一：先秦原文层 -->
+  <rect x="60" y="110" width="1000" height="92" rx="8" fill="#f7f0e2" stroke="#c19a5b" stroke-width="1.5"/>
+  <text x="80" y="140" font-size="16" font-weight="bold" fill="#7a5320">先秦原文层</text>
+  <text x="80" y="162" font-size="12" fill="#8a7f70">有实物或有经文</text>
+  <text x="80" y="182" font-size="12" fill="#8a7f70">可直接核验</text>
+  <text x="216" y="142" font-size="15" fill="#33291f">参照系：纪侯姜姓（姜萦簋、《春秋》“纪季姜”）；两座先秦莱山与莱王祠</text>
+  <text x="216" y="168" font-size="12.5" fill="#6b6158">这一层是下面五层的对照基准——它站得住，不是因为说法老，而是因为有物有文</text>
+  <text x="1040" y="150" font-size="13" font-weight="bold" fill="#7a5320" text-anchor="end">可据</text>
+  <text x="1040" y="170" font-size="11.5" fill="#8a7f70" text-anchor="end">二重直证</text>
+
+  <!-- 层二：汉·谶纬与谱系层 -->
+  <rect x="60" y="212" width="1000" height="92" rx="8" fill="#f4eee4" stroke="#b3a483" stroke-width="1.5"/>
+  <text x="80" y="242" font-size="16" font-weight="bold" fill="#6b5a3c">汉·谶纬与谱系层</text>
+  <text x="80" y="264" font-size="12" fill="#8a7f70">汉人追述上古</text>
+  <text x="80" y="284" font-size="12" fill="#8a7f70">无地望、无实物</text>
+  <text x="216" y="244" font-size="15" fill="#33291f">① 炎帝八世的“帝来”（《春秋命历序》《帝王世纪》）</text>
+  <text x="216" y="270" font-size="12.5" fill="#6b6158">“釐、来互音”只说明字可互借；先秦文献里姜姓与莱从未并置，孔颖达自己就不肯认这个等式</text>
+  <text x="1040" y="252" font-size="13" font-weight="bold" fill="#8a7f70" text-anchor="end">无从判定</text>
+  <text x="1040" y="272" font-size="11.5" fill="#8a7f70" text-anchor="end">缺物证支点</text>
+
+  <!-- 层三：汉晋地记层 -->
+  <rect x="60" y="314" width="1000" height="92" rx="8" fill="#f1ece4" stroke="#a89c8b" stroke-width="1.5"/>
+  <text x="80" y="344" font-size="16" font-weight="bold" fill="#5f5647">汉晋地记层</text>
+  <text x="80" y="366" font-size="12" fill="#8a7f70">为古地名配解释</text>
+  <text x="80" y="386" font-size="12" fill="#8a7f70">三解并存</text>
+  <text x="216" y="346" font-size="15" fill="#33291f">④ 不夜“有日夜出”（《齐地记》）</text>
+  <text x="216" y="372" font-size="12.5" fill="#6b6158">天象说、东夷语音译说、后人附会说——三解无从裁断，但“这个解释本身已成为历史的一部分”</text>
+  <text x="1040" y="354" font-size="13" font-weight="bold" fill="#8a7f70" text-anchor="end">三说并记</text>
+  <text x="1040" y="374" font-size="11.5" fill="#8a7f70" text-anchor="end">不作裁断</text>
+
+  <!-- 层四：唐宋谱系层 -->
+  <rect x="60" y="416" width="1000" height="92" rx="8" fill="#eee9e2" stroke="#9d9284" stroke-width="1.5"/>
+  <text x="80" y="446" font-size="16" font-weight="bold" fill="#544c40">唐宋谱系层</text>
+  <text x="80" y="468" font-size="12" fill="#8a7f70">去西周一千五百年</text>
+  <text x="80" y="488" font-size="12" fill="#8a7f70">晚出的封国叙事</text>
+  <text x="216" y="448" font-size="15" fill="#33291f">② “炎帝之后封纪”（《元和姓纂》《通志·氏族略》）</text>
+  <text x="216" y="474" font-size="12.5" fill="#6b6158">姓可直证，源不可据。姜水姜姓属族姓起源的神话地理，推不出人群自关中东迁的路线</text>
+  <text x="1040" y="456" font-size="13" font-weight="bold" fill="#8a7f70" text-anchor="end">姓与源分开</text>
+  <text x="1040" y="476" font-size="11.5" fill="#8a7f70" text-anchor="end">源不可据</text>
+
+  <!-- 层五：明清方志层 -->
+  <rect x="60" y="518" width="1000" height="92" rx="8" fill="#ebe6df" stroke="#92887b" stroke-width="1.5"/>
+  <text x="80" y="548" font-size="16" font-weight="bold" fill="#4a4338">明清方志层</text>
+  <text x="80" y="570" font-size="12" fill="#8a7f70">地方世代相传</text>
+  <text x="80" y="590" font-size="12" fill="#8a7f70">无先秦文献</text>
+  <text x="216" y="550" font-size="15" fill="#33291f">③ 纪侯奔纪王崮、纪山为“莱（纪）镇山”</text>
+  <text x="216" y="576" font-size="12.5" fill="#6b6158">王恩田：“纪王崮的故事只能是个传说。”属地方记忆而非学术考据；与帝来说一缺文、一缺物</text>
+  <text x="1040" y="558" font-size="13" font-weight="bold" fill="#8a7f70" text-anchor="end">地方记忆层</text>
+  <text x="1040" y="578" font-size="11.5" fill="#8a7f70" text-anchor="end">不作论据</text>
+
+  <!-- 层六：晚出民间层 -->
+  <rect x="60" y="620" width="1000" height="92" rx="8" fill="#e8e3dc" stroke="#877d71" stroke-width="1.5"/>
+  <text x="80" y="650" font-size="16" font-weight="bold" fill="#413b32">晚出民间层</text>
+  <text x="80" y="672" font-size="12" fill="#8a7f70">约八百年前</text>
+  <text x="80" y="692" font-size="12" fill="#8a7f70">民间词源故事</text>
+  <text x="216" y="652" font-size="15" fill="#33291f">⑤ 烟台莱山“一夜突来一山”</text>
+  <text x="216" y="678" font-size="12.5" fill="#6b6158">与《汉书·地理志》在册的两座先秦莱山同名而不同源；故事是假的，得名这件事是真的</text>
+  <text x="1040" y="660" font-size="13" font-weight="bold" fill="#8a7f70" text-anchor="end">改名层</text>
+  <text x="1040" y="680" font-size="11.5" fill="#8a7f70" text-anchor="end">别于原生层</text>
+
+  <!-- 判语 -->
+  <rect x="60" y="726" width="1000" height="66" rx="8" fill="#eae3d5" stroke="#bda98a" stroke-width="1.2"/>
+  <text x="80" y="752" font-size="14" font-weight="bold" fill="#6b5a3c">五条无一见于先秦，全靠“音近”或“名同”建立联系，且都在解释一个已经读不懂的名字</text>
+  <text x="80" y="776" font-size="13" fill="#5f5647">处置：一律记录在案、标明层位、不作论据使用。传说可以写进历史，但不能写进证据。</text>
+
+  <text x="1040" y="812" font-size="11.5" fill="#a09080" text-anchor="end">作图：松朗</text>
+  <text x="60" y="812" font-size="11.5" fill="#a09080">层位依各说最早可考出处排定；核验栏为本书判断，非原始文献所标</text>
+</svg>

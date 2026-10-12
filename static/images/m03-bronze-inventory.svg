@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 790" font-family="'Source Han Serif SC','Noto Serif CJK SC','Songti SC',SimSun,'宋体',serif">
+<rect width="960" height="790" fill="#FBF8F1"/>
+
+<text x="480" y="42" font-size="25" fill="#3A3226" text-anchor="middle" font-weight="bold">本篇所据青铜器一览</text>
+<text x="480" y="70" font-size="12.5" fill="#6B6255" text-anchor="middle">甲组：莱族自己怎么写这个字（自称）　　乙组：外人怎么写（他称、对照）</text>
+
+<!-- ============ 甲组 ============ -->
+<rect x="28" y="92" width="436" height="470" rx="10" fill="#FFFDF7" stroke="#C07830" stroke-width="2.4"/>
+<text x="246" y="122" font-size="17" fill="#C07830" text-anchor="middle" font-weight="bold">甲组　来纽字作自称</text>
+<text x="246" y="144" font-size="12" fill="#6B6255" text-anchor="middle">莱族自己铸的器上，写的是釐／来</text>
+<line x1="48" y1="156" x2="444" y2="156" stroke="#E0D7C0" stroke-width="1.2"/>
+
+<!-- 1 旅鼎+莱伯鼎 -->
+<rect x="46" y="168" width="400" height="106" rx="8" fill="#F5EDE0" stroke="#C9BFA8" stroke-width="1.4"/>
+<text x="60" y="190" font-size="14" fill="#3A3226" text-anchor="start" font-weight="bold">① 旅鼎 · 莱伯鼎（同坑一对）</text>
+<text x="60" y="210" font-size="12" fill="#3A3226" text-anchor="start">1896 年同出山东黄县莱阴（今龙口鲁家沟）</text>
+<text x="60" y="228" font-size="12" fill="#3A3226" text-anchor="start">旅鼎族徽唐兰隶“来”（马承源别释“乘”）</text>
+<text x="60" y="246" font-size="12" fill="#3A3226" text-anchor="start">莱伯鼎铭“莱伯作旅鼎”——陈梦家释“假作莱”</text>
+<text x="60" y="264" font-size="11.5" fill="#6B6255" text-anchor="start">王献唐旧释“华”，崮河崖器出后其说改从</text>
+
+<!-- 2 釐伯鬲 -->
+<rect x="46" y="288" width="400" height="90" rx="8" fill="#F5EDE0" stroke="#C9BFA8" stroke-width="1.4"/>
+<text x="60" y="310" font-size="14" fill="#3A3226" text-anchor="start" font-weight="bold">② 釐伯鬲（一组四件，西周晚期）</text>
+<text x="60" y="330" font-size="12" fill="#3A3226" text-anchor="start">1976 年 3 月日照崮河崖一号墓出土</text>
+<text x="60" y="348" font-size="12" fill="#3A3226" text-anchor="start">铭 13 字“釐伯媵女子乍宝鬲，子孙永宝用”</text>
+<text x="60" y="366" font-size="11.5" fill="#6B6255" text-anchor="start">四件同铭｜今藏日照市博物馆</text>
+
+<!-- 3 史密簋 -->
+<rect x="46" y="392" width="400" height="86" rx="8" fill="#F5EDE0" stroke="#C9BFA8" stroke-width="1.4"/>
+<text x="60" y="414" font-size="14" fill="#3A3226" text-anchor="start" font-weight="bold">③ 史密簋（西周中期，铭 93 字）</text>
+<text x="60" y="434" font-size="12" fill="#3A3226" text-anchor="start">1986 年陕西安康王家坝出土｜今藏安康博物馆</text>
+<text x="60" y="452" font-size="12" fill="#3A3226" text-anchor="start">铭“率族人、莱伯、僰、虎，周伐长必”</text>
+<text x="60" y="470" font-size="11.5" fill="#6B6255" text-anchor="start">按：器为周王朝史官史密所铸，非莱族自铸</text>
+
+<!-- 4 庚壶 -->
+<rect x="46" y="492" width="400" height="58" rx="8" fill="#F5EDE0" stroke="#C9BFA8" stroke-width="1.4"/>
+<text x="60" y="514" font-size="14" fill="#3A3226" text-anchor="start" font-weight="bold">④ 庚壶</text>
+<text x="60" y="534" font-size="12" fill="#3A3226" text-anchor="start">传世器，今藏台北故宫博物院；铭“齐三军围釐”</text>
+
+<!-- ============ 乙组 ============ -->
+<rect x="496" y="92" width="436" height="470" rx="10" fill="#FFFDF7" stroke="#5B7FA6" stroke-width="2.4"/>
+<text x="714" y="122" font-size="17" fill="#5B7FA6" text-anchor="middle" font-weight="bold">乙组　他称与对照器</text>
+<text x="714" y="144" font-size="12" fill="#6B6255" text-anchor="middle">征服者／他国怎么写这个字</text>
+<line x1="516" y1="156" x2="912" y2="156" stroke="#E0D7C0" stroke-width="1.2"/>
+
+<!-- 5 叔夷钟 -->
+<rect x="514" y="168" width="400" height="128" rx="8" fill="#EAF0F6" stroke="#C9BFA8" stroke-width="1.4"/>
+<text x="528" y="190" font-size="14" fill="#3A3226" text-anchor="start" font-weight="bold">⑤ 叔夷钟 · 叔夷镈</text>
+<text x="528" y="210" font-size="12" fill="#3A3226" text-anchor="start">北宋宣和五年（1123）临淄齐故城出土</text>
+<text x="528" y="228" font-size="12" fill="#3A3226" text-anchor="start">原器已佚，仅存宋代摹本（《集成》272—285）</text>
+<text x="528" y="248" font-size="12" fill="#3A3226" text-anchor="start">铭作“釐仆三百又五十家”“余易女釐都”</text>
+<text x="528" y="268" font-size="11.5" fill="#5B7FA6" text-anchor="start">齐灵公所赐；莱人自己一字未留</text>
+<text x="528" y="286" font-size="11.5" fill="#6B6255" text-anchor="start">潍淄三千年有铭器中，来纽字仅此一次</text>
+
+<!-- 6 麦器 -->
+<rect x="514" y="310" width="400" height="102" rx="8" fill="#EDEDEA" stroke="#9A9A9A" stroke-width="1.4" stroke-dasharray="6 4"/>
+<text x="528" y="332" font-size="14" fill="#5A5A5A" text-anchor="start" font-weight="bold">⑥ 麦尊 · 麦彝（对照器，非莱属）</text>
+<text x="528" y="352" font-size="12" fill="#5A5A5A" text-anchor="start">传世器，原器早佚｜《西清古鉴》卷八著录</text>
+<text x="528" y="370" font-size="12" fill="#5A5A5A" text-anchor="start">作册麦为邢侯史官，“麦氏四器”之一</text>
+<text x="528" y="388" font-size="12" fill="#5A5A5A" text-anchor="start">铭记邢侯受封，与莱族无涉</text>
+<text x="528" y="404" font-size="11.5" fill="#8A8A8A" text-anchor="start">列此以辨“麦”属明纽，非来纽一族</text>
+
+<!-- 图阙提示 -->
+<rect x="514" y="426" width="400" height="132" rx="8" fill="#FFF9EC" stroke="#D9C79A" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="528" y="448" font-size="13" fill="#8A7330" text-anchor="start" font-weight="bold">图阙说明</text>
+<text x="528" y="470" font-size="11.5" fill="#6B6255" text-anchor="start">配图以实物照片、拓片为主。无实物可据者不配图，</text>
+<text x="528" y="488" font-size="11.5" fill="#6B6255" text-anchor="start">不代以摹绘，以免以摹本充真：</text>
+<text x="528" y="510" font-size="11.5" fill="#6B6255" text-anchor="start">· 旅鼎、釐伯鬲：藏馆有实物，网络无可用原图</text>
+<text x="528" y="528" font-size="11.5" fill="#6B6255" text-anchor="start">· 叔夷钟、麦器：原器久佚，仅存摹本，已注明</text>
+<text x="528" y="546" font-size="11.5" fill="#6B6255" text-anchor="start">· 庚壶：台北故宫数字典藏有官方图，可参看</text>
+
+<!-- 底：判语 -->
+<rect x="28" y="586" width="904" height="160" rx="10" fill="#F2EAD8" stroke="#C9BFA8" stroke-width="1.8"/>
+<text x="48" y="616" font-size="15" fill="#3A3226" text-anchor="start" font-weight="bold">这六件器排出来的结论</text>
+<text x="48" y="644" font-size="13" fill="#3A3226" text-anchor="start">甲组四件，出土于胶东与东方，来纽字作自称；</text>
+<text x="48" y="670" font-size="13" fill="#3A3226" text-anchor="start">乙组两件，作者是齐君与邢侯史官——</text>
+<text x="48" y="696" font-size="13" fill="#3A3226" text-anchor="start">唯一的“他称”，写在别人的功勋簿上。</text>
+<text x="48" y="726" font-size="13" fill="#C07830" text-anchor="start" font-weight="bold">自名的地界，到胶东与东方为止；这道界线，三千年没被越过。</text>
+
+<text x="912" y="778" font-size="11.5" fill="#6B6255" text-anchor="end">作图：松朗</text>
+</svg>

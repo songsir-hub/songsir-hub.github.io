@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" width="960" height="620" font-family="PingFang SC, Microsoft YaHei, SimSun, sans-serif">
+  <rect width="960" height="620" fill="#fbfaf7"/>
+
+  <!-- ===== 标题 ===== -->
+  <text x="480" y="40" text-anchor="middle" font-size="23" font-weight="700" fill="#23211d">东西两莱分域示意图</text>
+  <text x="480" y="66" text-anchor="middle" font-size="13" fill="#7a7368">据《莱夷与莱国：东西两系并存与演化脉络》｜示意，非实测地图</text>
+  <text x="480" y="86" text-anchor="middle" font-size="12" fill="#948c80">左西右东；海岸线走向、河道弯曲与地名间距均为示意，不代表实际比例</text>
+
+  <!-- 方位 -->
+  <text x="40" y="140" font-size="13" fill="#7a7368">◀ 西</text>
+  <text x="920" y="140" text-anchor="end" font-size="13" fill="#7a7368">东 ▶</text>
+
+  <!-- ===== 图幅底 ===== -->
+  <rect x="60" y="110" width="840" height="300" fill="#ffffff" stroke="#ded8ce" stroke-width="1"/>
+
+  <!-- ===== 三区色块 ===== -->
+  <rect x="60"  y="150" width="120" height="230" fill="#efeee9"/>
+  <rect x="180" y="150" width="285" height="230" fill="#f8ecd9"/>
+  <rect x="465" y="150" width="155" height="230" fill="#f1f5ef"/>
+  <rect x="620" y="150" width="280" height="230" fill="#e6eff5"/>
+
+  <!-- 区隔竖线 -->
+  <line x1="180" y1="150" x2="180" y2="380" stroke="#ded8ce" stroke-width="1"/>
+  <line x1="465" y1="150" x2="465" y2="380" stroke="#ded8ce" stroke-width="1"/>
+  <line x1="620" y1="150" x2="620" y2="380" stroke="#ded8ce" stroke-width="1"/>
+
+  <!-- ===== 区名条 ===== -->
+  <text x="120" y="170" text-anchor="middle" font-size="14" font-weight="700" fill="#5d574c">齐 核 心</text>
+  <text x="120" y="187" text-anchor="middle" font-size="11" fill="#8a8377">营丘・临淄</text>
+
+  <text x="322" y="170" text-anchor="middle" font-size="14" font-weight="700" fill="#8a5a1c">潍 淄 区</text>
+  <text x="322" y="187" text-anchor="middle" font-size="11" fill="#a2793c">莱（姜姓）・入周称"纪"</text>
+
+  <text x="542" y="170" text-anchor="middle" font-size="12" font-weight="700" fill="#5c6b56">分 界 带</text>
+  <text x="542" y="187" text-anchor="middle" font-size="11" fill="#8a9484">潍水・胶水・湿地</text>
+
+  <text x="760" y="170" text-anchor="middle" font-size="14" font-weight="700" fill="#2f6288">胶 东 区</text>
+  <text x="760" y="187" text-anchor="middle" font-size="11" fill="#5a7f9c">东莱（子姓）・归城为中心</text>
+
+  <!-- ===== 河流 ===== -->
+  <path d="M110,200 C103,238 117,272 110,310 C103,348 117,360 110,380" fill="none" stroke="#6f9dbd" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="-300" y="104" transform="rotate(-90)" font-size="12" fill="#4d7b9c">淄水</text>
+
+  <path d="M490,196 C483,236 497,272 490,312 C483,350 497,362 490,380" fill="none" stroke="#6f9dbd" stroke-width="2.6" stroke-linecap="round"/>
+  <text x="-300" y="484" transform="rotate(-90)" font-size="12" fill="#4d7b9c">潍水</text>
+
+  <path d="M546,196 C540,236 552,272 546,312 C540,350 552,362 546,380" fill="none" stroke="#7fae9c" stroke-width="2.2" stroke-dasharray="7 5" stroke-linecap="round"/>
+  <text x="-266" y="540" transform="rotate(-90)" font-size="12" fill="#5d8c7c">胶水（今北胶莱河）</text>
+
+  <path d="M602,196 C596,236 608,272 602,312 C596,350 608,362 602,380" fill="none" stroke="#c07a4a" stroke-width="2.6" stroke-dasharray="9 4" stroke-linecap="round"/>
+  <text x="-268" y="596" transform="rotate(-90)" font-size="12" fill="#a85f2c">姑尤（大、小沽河）</text>
+
+  <!-- ===== 潍淄区遗址点 ===== -->
+  <circle cx="228" cy="214" r="4.5" fill="#8a5a1c"/>
+  <text x="236" y="210" font-size="12" fill="#3b3b3b">临朐</text>
+
+  <circle cx="292" cy="196" r="4.5" fill="#3f7d5a"/>
+  <text x="300" y="192" font-size="12" fill="#2f6046">东阳（晏弱所城）</text>
+
+  <circle cx="272" cy="252" r="4.5" fill="#8a5a1c"/>
+  <text x="280" y="248" font-size="12" fill="#3b3b3b">昌乐</text>
+
+  <circle cx="330" cy="304" r="7" fill="#8a5a1c" stroke="#ffffff" stroke-width="2"/>
+  <text x="344" y="300" font-size="12" font-weight="700" fill="#7a4a10">寿光纪台</text>
+  <text x="344" y="316" font-size="11" fill="#8a8377">纪都，前 690 年以前</text>
+
+  <circle cx="300" cy="348" r="5" fill="#a2793c"/>
+  <text x="310" y="352" font-size="12" fill="#3b3b3b">益都侯城（1983"己"器群）</text>
+
+  <circle cx="437" cy="292" r="7.5" fill="#b03a2e" stroke="#ffffff" stroke-width="2"/>
+  <text x="450" y="288" font-size="12" font-weight="700" fill="#912e24">昌邑郲地</text>
+  <text x="450" y="304" font-size="11" fill="#8a8377">莱都，前 690—前 567</text>
+  <text x="450" y="318" font-size="10.5" fill="#b03a2e">领先假说，未获考古确证</text>
+
+  <!-- ===== 胶东区遗址点与莱山 ===== -->
+  <circle cx="656" cy="212" r="4.5" fill="#2f6288"/>
+  <text x="664" y="208" font-size="12" fill="#3b3b3b">蓬莱（登州）</text>
+
+  <circle cx="690" cy="262" r="8" fill="#2f6288" stroke="#ffffff" stroke-width="2"/>
+  <text x="704" y="258" font-size="12" font-weight="700" fill="#1f4a6b">归城（龙口）</text>
+  <text x="704" y="274" font-size="11" fill="#8a8377">东莱中心・自铭"莱伯""莱子"</text>
+
+  <!-- 龙口莱山：先秦原生 -->
+  <polygon points="660,352 651,372 669,372" fill="#8b5a2b"/>
+  <text x="676" y="368" font-size="12" font-weight="700" fill="#6f451f">龙口莱山</text>
+  <text x="676" y="383" font-size="11" fill="#8a8377">619.4m・《汉志》"有莱山"・月主所祠</text>
+
+  <!-- 莱阳莱山（今旌旗山）：先秦原生 -->
+  <polygon points="758,352 749,372 767,372" fill="#8b5a2b"/>
+  <text x="774" y="368" font-size="12" font-weight="700" fill="#6f451f">莱阳莱山</text>
+  <text x="774" y="383" font-size="11" fill="#8a8377">今旌旗山・约315m・莱阳因"莱山之阳"得名</text>
+
+  <!-- 烟台莱山：晚出 -->
+  <polygon points="828,300 819,320 837,320" fill="#b6b0a6"/>
+  <text x="844" y="306" font-size="12" fill="#6d675e">烟台莱山</text>
+  <text x="844" y="321" font-size="11" fill="#948c80">突来一山→来山→莱山・1994设区</text>
+
+  <circle cx="806" cy="212" r="4.5" fill="#2f6288"/>
+  <text x="814" y="208" font-size="12" fill="#3b3b3b">烟台</text>
+
+  <circle cx="878" cy="262" r="4.5" fill="#2f6288"/>
+  <text x="858" y="248" font-size="12" fill="#3b3b3b">荣成不夜</text>
+
+  <!-- ===== 两条界线的标注 ===== -->
+  <line x1="546" y1="392" x2="546" y2="404" stroke="#5d8c7c" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="546" y="416" text-anchor="middle" font-size="11" fill="#5d8c7c">汉 北海郡／东莱郡 分界</text>
+
+  <line x1="602" y1="392" x2="602" y2="404" stroke="#a85f2c" stroke-width="1.4" stroke-dasharray="8 4"/>
+  <text x="620" y="416" text-anchor="middle" font-size="11" fill="#a85f2c">前 522 年齐之东界（晏婴论疆）</text>
+
+  <!-- ===== 图例 ===== -->
+  <rect x="60" y="440" width="840" height="86" fill="#ffffff" stroke="#e4ded4" stroke-width="1"/>
+  <text x="76" y="462" font-size="12" font-weight="700" fill="#5d574c">图例</text>
+
+  <circle cx="92" cy="488" r="5" fill="#8a5a1c"/>
+  <text x="104" y="492" font-size="11.5" fill="#3b3b3b">潍淄区都邑・遗址（自名"己／纪／㠱"）</text>
+
+  <circle cx="330" cy="488" r="5" fill="#2f6288"/>
+  <text x="342" y="492" font-size="11.5" fill="#3b3b3b">胶东区都邑・遗址（自名"莱伯""莱子"）</text>
+
+  <polygon points="600,483 592,496 608,496" fill="#8b5a2b"/>
+  <text x="616" y="492" font-size="11.5" fill="#3b3b3b">先秦原生莱山（族名冠山・祭祀山）</text>
+
+  <polygon points="600,510 592,523 608,523" fill="#b6b0a6"/>
+  <text x="616" y="519" font-size="11.5" fill="#3b3b3b">晚出莱山（传说层积・约八百年前）</text>
+
+  <circle cx="330" cy="515" r="5" fill="#b03a2e"/>
+  <text x="342" y="519" font-size="11.5" fill="#3b3b3b">推定而未确证（领先假说）</text>
+
+  <circle cx="92" cy="515" r="5" fill="#3f7d5a"/>
+  <text x="104" y="519" font-size="11.5" fill="#3b3b3b">齐国军事设施</text>
+
+  <!-- ===== 注 ===== -->
+  <text x="60" y="552" font-size="11.5" fill="#6d675e">注一：潍淄区所见商周有铭铜器自名一律作"己／纪／㠱"，"莱"字一次未见；胶东归城一带自名器则作"莱伯""莱子"或缀"来"族徽。</text>
+  <text x="60" y="570" font-size="11.5" fill="#6d675e">注二：姑尤（大、小沽河）一线为《左传·昭公二十年》晏婴所论齐之东界；胶水（今北胶莱河）为汉代北海郡与东莱郡之分界。二者并非同一条线。</text>
+  <text x="60" y="588" font-size="11.5" fill="#6d675e">注三：潍淄"莱"之地名遗存当于"纪"（寿光纪台）与"郲"（昌邑郲地）中求之；胶东则保存"莱"字。两组地名各自成片，中间无过渡带。</text>
+</svg>

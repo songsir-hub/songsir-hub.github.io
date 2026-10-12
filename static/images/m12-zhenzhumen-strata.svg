@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" font-family="'Source Han Serif SC','Noto Serif CJK SC','Songti SC',SimSun,'宋体',serif">
+<defs><marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 z" fill="#8B7355"/></marker></defs>
+<rect width="920" height="520" fill="#FBF8F1"/>
+<text x="460" y="44" font-size="21" font-weight="bold" fill="#3A3226" text-anchor="middle">珍珠门遗址三期地层：一条五百年的文化序列</text>
+<text x="460" y="68" font-size="13" fill="#6B6255" text-anchor="middle">下层商代晚期 · 中层西周早期 · 上层西周中晚期｜1986 年定名“珍珠门文化”</text>
+
+<text x="185" y="106" font-size="13" font-weight="bold" fill="#6B6255" text-anchor="middle">地 层 堆 积</text>
+
+<rect x="70" y="120" width="230" height="90" rx="6" fill="#DFD3B8" stroke="#8B7355" stroke-width="1.8"/>
+<text x="185" y="170" font-size="19" font-weight="bold" fill="#3A3226" text-anchor="middle">上 层</text>
+<rect x="70" y="210" width="230" height="90" rx="6" fill="#CBB894" stroke="#8B7355" stroke-width="1.8"/>
+<text x="185" y="260" font-size="19" font-weight="bold" fill="#3A3226" text-anchor="middle">中 层</text>
+<rect x="70" y="300" width="230" height="100" rx="6" fill="#B79B71" stroke="#8B7355" stroke-width="1.8"/>
+<text x="185" y="355" font-size="19" font-weight="bold" fill="#3A3226" text-anchor="middle">下 层</text>
+
+<path d="M306,165 L334,165" stroke="#8B7355" stroke-width="1.6" fill="none" marker-end="url(#ah)"/>
+<path d="M306,255 L334,255" stroke="#8B7355" stroke-width="1.6" fill="none" marker-end="url(#ah)"/>
+<path d="M306,350 L334,350" stroke="#8B7355" stroke-width="1.6" fill="none" marker-end="url(#ah)"/>
+
+<rect x="340" y="120" width="540" height="90" rx="8" fill="#FFFFFF" stroke="#C0A36A" stroke-width="2"/>
+<text x="358" y="147" font-size="15" font-weight="bold" fill="#3A3226">上层 · 西周中晚期</text>
+<text x="358" y="171" font-size="13.5" font-weight="bold" fill="#B8743A">几何印纹硬陶</text>
+<text x="358" y="194" font-size="12" fill="#6B6255">硬陶作风近南方越文化，暗示跨海交流通道</text>
+
+<rect x="340" y="210" width="540" height="90" rx="8" fill="#FFFFFF" stroke="#52795F" stroke-width="2"/>
+<text x="358" y="237" font-size="15" font-weight="bold" fill="#3A3226">中层 · 西周早期</text>
+<text x="358" y="261" font-size="13.5" font-weight="bold" fill="#52795F">泥质灰陶豆盘</text>
+<text x="358" y="284" font-size="12" fill="#6B6255">灰陶豆是典型中原器形，周文化影响开始渗入胶东</text>
+
+<rect x="340" y="300" width="540" height="100" rx="8" fill="#FFFFFF" stroke="#B5453B" stroke-width="2"/>
+<text x="358" y="327" font-size="15" font-weight="bold" fill="#3A3226">下层 · 商代晚期</text>
+<text x="358" y="351" font-size="13.5" font-weight="bold" fill="#B5453B">夹砂红陶鬲足 · 卜骨</text>
+<text x="358" y="374" font-size="12" fill="#6B6255">陶器仍守本地传统；卜骨则表明中原占卜习俗东传</text>
+
+<path d="M70,432 L880,432" stroke="#8B7355" stroke-width="1.2" stroke-dasharray="4 4" fill="none"/>
+<text x="70" y="454" font-size="11.5" fill="#6B6255">1980—1983 年北京大学考古系等两次发掘，揭露 800 平方米；1986 年正式定名“珍珠门文化”。</text>
+<text x="880" y="454" font-size="11.5" fill="#6B6255" text-anchor="end">作图：松朗　自制示意图</text>
+<text x="460" y="484" font-size="12.5" font-weight="bold" fill="#4E463A" text-anchor="middle">三期叠压：商末至西周中晚期，同一地点连续居住约五百年</text>
+</svg>

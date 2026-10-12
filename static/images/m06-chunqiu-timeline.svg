@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 640" font-family="'Source Han Serif SC','Noto Serif CJK SC','Songti SC',SimSun,'宋体',serif">
+<rect width="920" height="640" fill="#FBF8F1"/>
+<defs><pattern id="hz" width="9" height="9" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="9" stroke="#C9C0AA" stroke-width="1.3"/></pattern></defs>
+<text x="460" y="42" font-size="22" font-weight="bold" fill="#3A3226" text-anchor="middle">《春秋》编年里的两个名字：纪止于前 690，莱起于前 602</text>
+<text x="460" y="66" font-size="13.5" fill="#6B6255" text-anchor="middle">二百四十二年间，二者作为政治主体从未同年并见</text>
+<circle cx="596.0" cy="90.0" r="4.2" fill="#3A3226"/>
+<text x="606.0" y="94.0" font-size="11.5" fill="#3A3226">《春秋》经</text>
+<circle cx="676.0" cy="90.0" r="4.2" fill="#FBF8F1" stroke="#3A3226" stroke-width="1.6"/>
+<text x="686.0" y="94.0" font-size="11.5" fill="#3A3226">《左传》传</text>
+<path d="M752.8,86.8 L759.2,93.2 M759.2,86.8 L752.8,93.2" stroke="#3A3226" stroke-width="1.8"/>
+<text x="766.0" y="94.0" font-size="11.5" fill="#3A3226">纪叔姬三条</text>
+<text x="95" y="208" font-size="26" font-weight="bold" fill="#3E7CA6" text-anchor="end">纪</text>
+<path d="M113.1,200.0 L208.3,200.0" stroke="#3E7CA6" stroke-width="5" fill="none"/>
+<path d="M208.3,200.0 L850.0,200.0" stroke="#3E7CA6" stroke-width="2" stroke-opacity="0.32" stroke-dasharray="5,4" fill="none"/>
+<circle cx="113.1" cy="200.0" r="4.2" fill="#3E7CA6"/>
+<path d="M113.1,194.0 L113.1,96.0 L121.1,96.0" stroke="#8B7355" stroke-width="1" stroke-opacity="0.75" fill="none"/>
+<text x="125.1" y="100.0" font-size="12.5" fill="#3E7CA6">前 721 伯姬归于纪</text>
+<circle cx="156.1" cy="200.0" r="4.2" fill="#3E7CA6"/>
+<path d="M156.1,194.0 L156.1,118.0 L164.1,118.0" stroke="#8B7355" stroke-width="1" stroke-opacity="0.75" fill="none"/>
+<text x="168.1" y="122.0" font-size="12.5" fill="#3E7CA6">前 707 齐侯、郑伯如纪（传：欲以袭之）</text>
+<circle cx="168.3" cy="200.0" r="4.2" fill="#3E7CA6"/>
+<path d="M168.3,194.0 L168.3,140.0 L176.3,140.0" stroke="#8B7355" stroke-width="1" stroke-opacity="0.75" fill="none"/>
+<text x="180.3" y="144.0" font-size="12.5" fill="#3E7CA6">前 703 纪季姜归于京师</text>
+<circle cx="199.0" cy="200.0" r="4.2" fill="#3E7CA6"/>
+<path d="M199.0,194.0 L199.0,162.0 L207.0,162.0" stroke="#8B7355" stroke-width="1" stroke-opacity="0.75" fill="none"/>
+<text x="211.0" y="166.0" font-size="12.5" fill="#3E7CA6">前 693 齐师迁纪郱、鄑、郚</text>
+<circle cx="208.3" cy="200.0" r="5.0" fill="#B0432E"/>
+<path d="M208.3,194.0 L208.3,184.0 L216.3,184.0" stroke="#B0432E" stroke-width="1" stroke-opacity="0.75" fill="none"/>
+<text x="220.3" y="188.0" font-size="12.5" fill="#B0432E" font-weight="bold">前 690 纪侯大去其国</text>
+<path d="M229.4,196.6 L236.2,203.4 M236.2,196.6 L229.4,203.4" stroke="#3E7CA6" stroke-width="1.8" stroke-opacity="0.65"/>
+<path d="M281.6,196.6 L288.4,203.4 M288.4,196.6 L281.6,203.4" stroke="#3E7CA6" stroke-width="1.8" stroke-opacity="0.65"/>
+<text x="236" y="222" font-size="11.5" fill="#6B6255">前 682、前 665、前 664：仅存的三条「纪」，主语都是嫁入纪国的鲁女</text>
+<path d="M208.3,206.0 L208.3,468.0" stroke="#B0432E" stroke-width="1.8" stroke-dasharray="6,4" fill="none"/>
+<rect x="208.3" y="228.0" width="270.2" height="164.0" fill="url(#hz)" fill-opacity="0.55"/>
+<rect x="208.3" y="228.0" width="270.2" height="164.0" fill="none" stroke="#C9C0AA" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="343.4" y="262" font-size="12.5" fill="#4E463A" text-anchor="middle">前 690 之后，「纪」不再作为政治主体出现</text>
+<text x="343.4" y="288" font-size="12" fill="#6B6255" text-anchor="middle">此后八十八年，《春秋》既无「纪」，也无「莱」</text>
+<text x="343.4" y="312" font-size="12.5" fill="#4E463A" text-anchor="middle">前 602 起改称「莱」，此后再无「纪」</text>
+<text x="95" y="408" font-size="26" font-weight="bold" fill="#C07830" text-anchor="end">莱</text>
+<path d="M110.0,400.0 L478.5,400.0" stroke="#C07830" stroke-width="2" stroke-opacity="0.32" stroke-dasharray="5,4" fill="none"/>
+<path d="M478.5,400.0 L585.9,400.0" stroke="#C07830" stroke-width="5" fill="none"/>
+<path d="M585.9,400.0 L850.0,400.0" stroke="#C07830" stroke-width="2" stroke-opacity="0.32" stroke-dasharray="5,4" fill="none"/>
+<circle cx="478.5" cy="400.0" r="4.2" fill="#C07830"/>
+<path d="M478.5,394.0 L478.5,310.0 L486.5,310.0" stroke="#8B7355" stroke-width="1" stroke-opacity="0.75" fill="none"/>
+<text x="490.5" y="314.0" font-size="12.5" fill="#3A3226">前 602 公会齐侯伐莱</text>
+<circle cx="484.6" cy="400.0" r="4.2" fill="#C07830"/>
+<path d="M484.6,394.0 L484.6,332.0 L492.6,332.0" stroke="#8B7355" stroke-width="1" stroke-opacity="0.75" fill="none"/>
+<text x="496.6" y="336.0" font-size="12.5" fill="#3A3226">前 600 齐侯伐莱</text>
+<circle cx="573.7" cy="400.0" r="4.2" fill="#FBF8F1" stroke="#C07830" stroke-width="1.8"/>
+<path d="M573.7,394.0 L573.7,354.0 L581.7,354.0" stroke="#8B7355" stroke-width="1" stroke-opacity="0.75" fill="none"/>
+<text x="585.7" y="358.0" font-size="12.5" fill="#3A3226">前 571（传）齐侯伐莱；同年城东阳以偪之</text>
+<circle cx="585.9" cy="400.0" r="5" fill="#C07830" stroke="#B0432E" stroke-width="1.8"/>
+<path d="M585.9,394.0 L585.9,376.0 L593.9,376.0" stroke="#8B7355" stroke-width="1" stroke-opacity="0.75" fill="none"/>
+<text x="597.9" y="380.0" font-size="12.5" fill="#3A3226">前 567 齐侯灭莱（传：迁莱于郳）</text>
+<circle cx="791.7" cy="400.0" r="4.2" fill="#FBF8F1" stroke="#C07830" stroke-width="1.8"/>
+<path d="M791.7,406.0 L791.7,418.0" stroke="#8B7355" stroke-width="1" stroke-opacity="0.75"/>
+<text x="783" y="430" font-size="11.5" fill="#6B6255" text-anchor="end">前 500（传）夹谷之会，「莱人」以兵劫鲁侯——灭莱后六十七年</text>
+<path d="M110.0,468.0 L850.0,468.0" stroke="#8B7355" stroke-width="1.2" fill="none"/>
+<path d="M110.0,464.0 L110.0,472.0" stroke="#8B7355" stroke-width="1.2"/>
+<text x="110.0" y="490.0" font-size="11.5" fill="#6B6255" text-anchor="middle">前 722</text>
+<path d="M177.6,464.0 L177.6,472.0" stroke="#8B7355" stroke-width="1.2"/>
+<text x="177.6" y="490.0" font-size="11.5" fill="#6B6255" text-anchor="middle">前 700</text>
+<path d="M331.1,464.0 L331.1,472.0" stroke="#8B7355" stroke-width="1.2"/>
+<text x="331.1" y="490.0" font-size="11.5" fill="#6B6255" text-anchor="middle">前 650</text>
+<path d="M484.6,464.0 L484.6,472.0" stroke="#8B7355" stroke-width="1.2"/>
+<text x="484.6" y="490.0" font-size="11.5" fill="#6B6255" text-anchor="middle">前 600</text>
+<path d="M638.1,464.0 L638.1,472.0" stroke="#8B7355" stroke-width="1.2"/>
+<text x="638.1" y="490.0" font-size="11.5" fill="#6B6255" text-anchor="middle">前 550</text>
+<path d="M791.7,464.0 L791.7,472.0" stroke="#8B7355" stroke-width="1.2"/>
+<text x="791.7" y="490.0" font-size="11.5" fill="#6B6255" text-anchor="middle">前 500</text>
+<path d="M850.0,464.0 L850.0,472.0" stroke="#8B7355" stroke-width="1.2"/>
+<text x="850.0" y="490.0" font-size="11.5" fill="#6B6255" text-anchor="middle">前 481</text>
+<rect x="50" y="500" width="820" height="76" rx="8" fill="#EFE6CE" fill-opacity="0.55" stroke="#8B7355" stroke-width="1.6"/>
+<text x="64" y="526" font-size="13" fill="#3A3226">读法：两条带子首尾相接、中间不重叠——前 690 之前齐的东境对手叫「纪」，前 602 之后叫「莱」。</text>
+<text x="64" y="552" font-size="13" fill="#3A3226">若二者本是两个国家，本该在编年里并见；而《春秋》二百四十二年间，一次也没有。</text>
+<text x="50" y="612" font-size="11.5" fill="#6B6255">据《春秋》经文与杨伯峻《春秋左传注》：实心＝经文条目，空心＝传文条目，×＝经文中的纪叔姬三条（主语为鲁女）。自制示意图，非统计图表。</text>
+<text x="870" y="612" font-size="11.5" fill="#6B6255" text-anchor="end">作图：松朗</text>
+</svg>

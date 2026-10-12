@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" font-family="'Source Han Serif SC','Noto Serif CJK SC','Songti SC',SimSun,'宋体',serif">
+<rect width="960" height="640" fill="#FBF8F1"/>
+
+<text x="480" y="44" font-size="25" fill="#3A3226" text-anchor="middle" font-weight="bold">来纽字群的六个名字：谁跟“莱”是一家人</text>
+<text x="480" y="72" font-size="12.5" fill="#6B6255" text-anchor="middle">同声（来纽 l-）是入族的凭据；麦属明纽（m-），只是一次词义假借，不在族内</text>
+
+<!-- 根系块 -->
+<rect x="330" y="96" width="300" height="58" rx="10" fill="#E8DFC8" stroke="#A89A78" stroke-width="2"/>
+<text x="480" y="122" font-size="19" fill="#3A3226" text-anchor="middle" font-weight="bold">来纽（l-）</text>
+<text x="480" y="143" font-size="12" fill="#6B6255" text-anchor="middle">同一个声符，加不同形旁分派到植物／国族／水系</text>
+
+<!-- 五条分支 -->
+<line x1="480" y1="154" x2="480" y2="176" stroke="#A89A78" stroke-width="2"/>
+<line x1="110" y1="176" x2="850" y2="176" stroke="#A89A78" stroke-width="2"/>
+<!-- 竖线到各卡 -->
+<line x1="110" y1="176" x2="110" y2="200" stroke="#A89A78" stroke-width="1.6"/>
+<line x1="295" y1="176" x2="295" y2="200" stroke="#A89A78" stroke-width="1.6"/>
+<line x1="480" y1="176" x2="480" y2="200" stroke="#A89A78" stroke-width="1.6"/>
+<line x1="665" y1="176" x2="665" y2="200" stroke="#A89A78" stroke-width="1.6"/>
+<line x1="850" y1="176" x2="850" y2="200" stroke="#A89A78" stroke-width="1.6"/>
+
+<!-- 卡1 来/莱 -->
+<rect x="28" y="200" width="164" height="168" rx="10" fill="#FFFDF7" stroke="#C9BFA8" stroke-width="1.8"/>
+<text x="110" y="232" font-size="30" fill="#C07830" text-anchor="middle" font-weight="bold">来／莱</text>
+<text x="110" y="256" font-size="12" fill="#6B6255" text-anchor="middle">声同、后起加形</text>
+<line x1="46" y1="268" x2="174" y2="268" stroke="#E0D7C0" stroke-width="1.2"/>
+<text x="110" y="292" font-size="12.5" fill="#3A3226" text-anchor="middle">“莱”从艸、来声，</text>
+<text x="110" y="312" font-size="12.5" fill="#3A3226" text-anchor="middle">艸头表草（藜）义，</text>
+<text x="110" y="332" font-size="12.5" fill="#3A3226" text-anchor="middle">非另造一族名。</text>
+<text x="110" y="356" font-size="11.5" fill="#6E9450" text-anchor="middle">族徽：旅鼎（唐兰隶“来”）</text>
+
+<!-- 卡2 釐 -->
+<rect x="213" y="200" width="164" height="168" rx="10" fill="#FFFDF7" stroke="#C07830" stroke-width="2.4"/>
+<text x="295" y="232" font-size="30" fill="#C07830" text-anchor="middle" font-weight="bold">釐</text>
+<text x="295" y="256" font-size="12" fill="#6B6255" text-anchor="middle">从里得声，来纽之部</text>
+<line x1="231" y1="268" x2="359" y2="268" stroke="#E0D7C0" stroke-width="1.2"/>
+<text x="295" y="292" font-size="12.5" fill="#3A3226" text-anchor="middle">先秦铜器凡该写“莱”</text>
+<text x="295" y="312" font-size="12.5" fill="#3A3226" text-anchor="middle">之处，绝大多数作“釐”。</text>
+<text x="295" y="336" font-size="11.5" fill="#C07830" text-anchor="middle" font-weight="bold">莱族自名的正体</text>
+<text x="295" y="356" font-size="11.5" fill="#6E9450" text-anchor="middle">釐伯鬲·史密簋·庚壶</text>
+
+<!-- 卡3 斄 -->
+<rect x="398" y="200" width="164" height="168" rx="10" fill="#FFFDF7" stroke="#C9BFA8" stroke-width="1.8"/>
+<text x="480" y="232" font-size="30" fill="#C07830" text-anchor="middle" font-weight="bold">斄</text>
+<text x="480" y="256" font-size="12" fill="#6B6255" text-anchor="middle">从犛得声，来纽之部</text>
+<line x1="416" y1="268" x2="544" y2="268" stroke="#E0D7C0" stroke-width="1.2"/>
+<text x="480" y="292" font-size="12.5" fill="#3A3226" text-anchor="middle">本义为犛牛之类牲畜，</text>
+<text x="480" y="312" font-size="12.5" fill="#3A3226" text-anchor="middle">与“莱”无字义关系。</text>
+<text x="480" y="336" font-size="11.5" fill="#C07830" text-anchor="middle" font-weight="bold">前 522 景公“伐斄”</text>
+<text x="480" y="356" font-size="11.5" fill="#6E9450" text-anchor="middle">《晏子春秋》</text>
+
+<!-- 卡4 郲 -->
+<rect x="583" y="200" width="164" height="168" rx="10" fill="#FFFDF7" stroke="#C9BFA8" stroke-width="1.8"/>
+<text x="665" y="232" font-size="30" fill="#C07830" text-anchor="middle" font-weight="bold">郲</text>
+<text x="665" y="256" font-size="12" fill="#6B6255" text-anchor="middle">从邑、来得声</text>
+<line x1="601" y1="268" x2="729" y2="268" stroke="#E0D7C0" stroke-width="1.2"/>
+<text x="665" y="292" font-size="12.5" fill="#3A3226" text-anchor="middle">邑旁专为地名国名而造，</text>
+<text x="665" y="312" font-size="12.5" fill="#3A3226" text-anchor="middle">是“那一国”的专用字。</text>
+<text x="665" y="336" font-size="11.5" fill="#C07830" text-anchor="middle" font-weight="bold">杜预：“郲，即莱国”</text>
+<text x="665" y="356" font-size="11.5" fill="#6E9450" text-anchor="middle">地望不作落实</text>
+
+<!-- 卡5 涞（新） -->
+<rect x="768" y="200" width="164" height="168" rx="10" fill="#FFFDF7" stroke="#5B7FA6" stroke-width="2"/>
+<text x="850" y="232" font-size="30" fill="#5B7FA6" text-anchor="middle" font-weight="bold">涞</text>
+<text x="850" y="256" font-size="12" fill="#6B6255" text-anchor="middle">从水、来声（洛哀切）</text>
+<line x1="786" y1="268" x2="914" y2="268" stroke="#E0D7C0" stroke-width="1.2"/>
+<text x="850" y="292" font-size="12.5" fill="#3A3226" text-anchor="middle">本义水名：涞水＝今</text>
+<text x="850" y="312" font-size="12.5" fill="#3A3226" text-anchor="middle">拒马河，源出河北涞源。</text>
+<text x="850" y="336" font-size="11.5" fill="#5B7FA6" text-anchor="middle" font-weight="bold">涞源·涞水两县得名</text>
+<text x="850" y="356" font-size="11.5" fill="#6E9450" text-anchor="middle">加氵构水名之例</text>
+
+<!-- 麦（界外）条 -->
+<rect x="28" y="384" width="904" height="60" rx="10" fill="#F0F0EC" stroke="#9A9A9A" stroke-width="1.8" stroke-dasharray="6 4"/>
+<text x="48" y="410" font-size="17" fill="#8A8A8A" text-anchor="start" font-weight="bold">麦</text>
+<text x="82" y="410" font-size="13" fill="#5A5A5A" text-anchor="start">明纽（m-），非来纽——《诗》“贻我来牟”，“来”解作麦属词义假借，非同纽通假</text>
+<text x="82" y="432" font-size="12" fill="#8A8A8A" text-anchor="start">它与上面五字隔着一条声纽的界线，不属同一家族。</text>
+
+<!-- 下：声系二分对照条 -->
+<rect x="28" y="462" width="904" height="146" rx="10" fill="#F2EAD8" stroke="#C9BFA8" stroke-width="1.8"/>
+<text x="48" y="490" font-size="15" fill="#3A3226" text-anchor="start" font-weight="bold">分界线：声系二分，三千年不走</text>
+
+<!-- 见纽 -->
+<rect x="48" y="506" width="410" height="56" rx="8" fill="#FFFDF7" stroke="#6E9450" stroke-width="1.8"/>
+<text x="70" y="530" font-size="15" fill="#6E9450" text-anchor="start" font-weight="bold">见纽（k-）｜潍淄</text>
+<text x="70" y="552" font-size="16" fill="#3A3226" text-anchor="start">己　纪　㠱</text>
+<text x="438" y="542" font-size="12" fill="#6E9450" text-anchor="end">在潍淄畅通无阻</text>
+
+<!-- 来纽 -->
+<rect x="502" y="506" width="410" height="56" rx="8" fill="#FFFDF7" stroke="#C07830" stroke-width="1.8"/>
+<text x="524" y="530" font-size="15" fill="#C07830" text-anchor="start" font-weight="bold">来纽（l-）｜胶东</text>
+<text x="524" y="552" font-size="16" fill="#3A3226" text-anchor="start">来　釐　斄　郲　涞</text>
+<text x="892" y="542" font-size="12" fill="#C07830" text-anchor="end">在潍淄零自称</text>
+
+<text x="480" y="586" font-size="12.5" fill="#6B6255" text-anchor="middle">潍淄三千年有铭铜器里，见纽三字自名不断，来纽诸字只在叔夷钟被他称一次——</text>
+<text x="480" y="604" font-size="12.5" fill="#6B6255" text-anchor="middle">缺的不是“莱”这个字，而是“以莱自称”这件事。</text>
+
+<text x="912" y="632" font-size="11.5" fill="#6B6255" text-anchor="end">作图：松朗</text>
+</svg>

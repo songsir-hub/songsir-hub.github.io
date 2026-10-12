@@ -137,6 +137,8 @@ featured_image = '/images/laiyi-map-01.svg'
 
 ---
 
+<p align="center">◄ <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU0MzE0MTUyNg==&amp;action=getalbum&amp;album_id=4684151481250578437"><strong>莱夷与莱国：东西两系并存与演化脉络系列文章合集</strong></a> ►</p>
+
 ## 参考文献
 
 【1】傅斯年：《夷夏东西说》，原载《“中央研究院”历史语言研究所集刊》外编第一种《庆祝蔡元培先生六十五岁论文集》，1933 年（商出东方说之代表性论述）。

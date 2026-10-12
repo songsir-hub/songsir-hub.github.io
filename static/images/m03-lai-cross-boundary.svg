@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" font-family="'Source Han Serif SC','Noto Serif CJK SC','Songti SC',SimSun,'宋体',serif">
+<rect width="960" height="660" fill="#FBF8F1"/>
+
+<text x="480" y="44" font-size="25" fill="#3A3226" text-anchor="middle" font-weight="bold">跨出去的是“字”，不是“莱”</text>
+<text x="480" y="72" font-size="12.5" fill="#6B6255" text-anchor="middle">两种“跨”必须分开看：一种是征服者写下被征服者的名，一种是文字被别处借去记音</text>
+
+<!-- 左：自称不跨 -->
+<rect x="28" y="96" width="440" height="248" rx="10" fill="#FFFDF7" stroke="#C07830" stroke-width="2.2"/>
+<text x="248" y="126" font-size="17" fill="#C07830" text-anchor="middle" font-weight="bold">一、自名的地界：从不跨出胶东与东方</text>
+<line x1="52" y1="140" x2="444" y2="140" stroke="#E0D7C0" stroke-width="1.2"/>
+
+<text x="52" y="168" font-size="13.5" fill="#3A3226" text-anchor="start" font-weight="bold">胶东·东方铜器</text>
+<text x="52" y="192" font-size="13" fill="#3A3226" text-anchor="start">莱族首领自称“釐伯”“莱伯”——</text>
+<text x="52" y="212" font-size="13" fill="#3A3226" text-anchor="start">釐伯鬲、史密簋、莱伯鼎、崮河崖四鬲</text>
+
+<line x1="52" y1="228" x2="444" y2="228" stroke="#E0D7C0" stroke-width="1"/>
+
+<text x="52" y="252" font-size="13.5" fill="#3A3226" text-anchor="start" font-weight="bold">潍淄·三千年有铭铜器</text>
+<text x="52" y="276" font-size="13" fill="#3A3226" text-anchor="start">见纽字（己／纪／㠱）自称不断；</text>
+<text x="52" y="296" font-size="13" fill="#3A3226" text-anchor="start">来纽字出现次数＝<tspan fill="#C07830" font-weight="bold">一</tspan>，且系外人他称。</text>
+<text x="52" y="322" font-size="12" fill="#6B6255" text-anchor="start">自名受族群名号制度约束，不因同音而互换。</text>
+
+<!-- 右：字跨 -->
+<rect x="492" y="96" width="440" height="248" rx="10" fill="#FFFDF7" stroke="#5B7FA6" stroke-width="2.2"/>
+<text x="712" y="126" font-size="17" fill="#5B7FA6" text-anchor="middle" font-weight="bold">二、字形的地界：可以为别处借音</text>
+<line x1="516" y1="140" x2="908" y2="140" stroke="#E0D7C0" stroke-width="1.2"/>
+
+<text x="516" y="164" font-size="13" fill="#3A3226" text-anchor="start" font-weight="bold">① 关中“斄”＝邰（读胎）</text>
+<text x="516" y="184" font-size="12.5" fill="#3A3226" text-anchor="start">《汉书·地理志》“斄，周后稷所封”，</text>
+<text x="516" y="202" font-size="12.5" fill="#3A3226" text-anchor="start">颜师古注“读与邰同”，地今陕西武功。</text>
+
+<text x="516" y="228" font-size="13" fill="#3A3226" text-anchor="start" font-weight="bold">② “釐”＝赐、谥、福、嫠</text>
+<text x="516" y="248" font-size="12.5" fill="#3A3226" text-anchor="start">《诗》“釐尔圭瓒”传：“釐，赐也”；</text>
+<text x="516" y="266" font-size="12.5" fill="#3A3226" text-anchor="start">《史记》僖公作“釐公”；祠官“祝釐”＝福。</text>
+
+<text x="516" y="292" font-size="13" fill="#3A3226" text-anchor="start" font-weight="bold">③ “涞”＝河北之水与两县</text>
+<text x="516" y="312" font-size="12.5" fill="#3A3226" text-anchor="start">《说文》“淶……从水來聲”，即今拒马河，</text>
+<text x="516" y="330" font-size="12.5" fill="#3A3226" text-anchor="start">涞源、涞水两县皆由此水得名。</text>
+
+<!-- 中间竖分界 -->
+<line x1="480" y1="110" x2="480" y2="344" stroke="#C9BFA8" stroke-width="2" stroke-dasharray="7 5"/>
+<circle cx="480" cy="110" r="4" fill="#C9BFA8"/><circle cx="480" cy="344" r="4" fill="#C9BFA8"/>
+
+<!-- 下：唯一 一次跨声系 -->
+<rect x="28" y="366" width="904" height="112" rx="10" fill="#F5EDE0" stroke="#C9BFA8" stroke-width="1.8"/>
+<text x="48" y="394" font-size="15" fill="#3A3226" text-anchor="start" font-weight="bold">例外：唯一一次跨区出现——而且是征服者写的</text>
+<rect x="48" y="406" width="864" height="56" rx="8" fill="#FFFDF7" stroke="#C07830" stroke-width="1.6"/>
+<text x="70" y="430" font-size="14" fill="#3A3226" text-anchor="start"><tspan font-weight="bold">叔夷钟（叔弓镈）</tspan>　“釐仆三百又五十家”——齐灵公赐齐臣叔夷的莱人奴仆，器为齐人所铸</text>
+<text x="70" y="452" font-size="13" fill="#C07830" text-anchor="start">性质＝征服者对被征服者的他称；这群莱人自己，一个字也没留下。</text>
+
+<!-- 结论条 -->
+<rect x="28" y="498" width="904" height="70" rx="10" fill="none" stroke="#C07830" stroke-width="2.2"/>
+<text x="480" y="528" font-size="16" fill="#3A3226" text-anchor="middle" font-weight="bold">同声通假，能解决“是不是同一个词”；不能解决“是不是同一个实体”</text>
+<text x="480" y="552" font-size="12.5" fill="#6B6255" text-anchor="middle">所以：见“斄”“釐”“涞”不可径断为“莱”——都得回到语境另找证据</text>
+
+<text x="480" y="600" font-size="12" fill="#6B6255" text-anchor="middle">三个出界实例，一个比一个远：关中周人祖地　→　谥号与祭祀常语　→　河北水系与县名</text>
+<text x="480" y="622" font-size="12" fill="#6B6255" text-anchor="middle">它们跨出去的都是“字”，从来不是“莱”这个族群。</text>
+
+<text x="912" y="650" font-size="11.5" fill="#6B6255" text-anchor="end">作图：松朗</text>
+</svg>
