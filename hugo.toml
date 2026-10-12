@@ -27,6 +27,7 @@ enableRobotsTXT = true
   body_classes = 'avenir bg-near-white'
   recent_posts_number = 3
   background_image = '/images/background.jpg'
+  cover_dimming_class = 'bg-black-40'
 
 [params.ananke]
   custom_css = ["custom.css"]
