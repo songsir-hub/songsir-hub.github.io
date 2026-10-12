@@ -146,7 +146,7 @@ T 系列下一篇：**《珍珠门与陶器边界：潍河两岸的两个世界�
 
 ---
 
-<p align="center">· <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU0MzE0MTUyNg==&amp;action=getalbum&amp;album_id=4684151481250578437"><strong>莱夷与莱国：东西两系并存与演化脉络系列文章合集</strong></a> ·</p>
+<p align="center">◄ <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU0MzE0MTUyNg==&amp;action=getalbum&amp;album_id=4684151481250578437"><strong>莱夷与莱国：东西两系并存与演化脉络系列文章合集</strong></a> ►</p>
 
 ---
 
