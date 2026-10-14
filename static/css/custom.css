@@ -509,3 +509,11 @@ nav > div.flex-l.center.items-center.justify-between > a {
   max-width: 100%;
   height: auto;
 }
+
+
+/* 首页 hero：加高 + 背景图居中取景（博雅之璧：玉璧+底座均显示；遮罩铺满，与博雅高科一致） */
+.hero-home { background-position: center 48% !important; }
+.hero-home > div { min-height: 75vh; }
+@media screen and (max-width: 768px) {
+  .hero-home > div { min-height: 60vh; }
+}
