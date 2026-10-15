@@ -251,7 +251,7 @@ featured_image = '/images/m03-cover.png'
 
 **下一篇预告**：《蓬莱、莱阳、莱州：地名里的“莱”从哪来》——山东地图上带“莱”的地名有六处，来历却分四层，得名年代从西汉一直排到一九九四年。六个点看上去像一户人家散在各地，真能拿来推先秦莱人分布的，只有其中三处。
 
-<p align="center">◄ <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU0MzE0MTUyNg==&amp;action=getalbum&amp;album_id=4684151481250578437"><strong>莱夷与莱国：东西两系并存与演化脉络系列文章合集</strong></a> ►</p>
+<span style="display:block;text-align:center">[**“莱夷与莱国：东西两系并存与演化脉络”系列合集可点此访问**](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU0MzE0MTUyNg==&action=getalbum&album_id=4684151481250578437)</span>
 
 ## 参考文献
 

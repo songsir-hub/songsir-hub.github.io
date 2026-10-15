@@ -311,7 +311,7 @@ featured_image = '/images/laiyi-map-v3.svg'
 
 ---
 
-<p align="center">◄ <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU0MzE0MTUyNg==&amp;action=getalbum&amp;album_id=4684151481250578437"><strong>莱夷与莱国：东西两系并存与演化脉络系列文章合集</strong></a> ►</p>
+<span style="display:block;text-align:center">[**“莱夷与莱国：东西两系并存与演化脉络”系列合集可点此访问**](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU0MzE0MTUyNg==&action=getalbum&album_id=4684151481250578437)</span>
 
 ## 参考文献
 
