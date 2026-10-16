@@ -1,6 +1,6 @@
 +++
 title = '2027年全球经济：七大权威机构的预测、共识与分歧'
-date = '2026-10-17T00:30:00+08:00'
+date = '2026-10-17T00:20:00+08:00'
 draft = false
 author = '松朗'
 featured_image = '/images/global-economy-2027-forecasts.svg'
