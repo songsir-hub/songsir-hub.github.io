@@ -1,0 +1,28 @@
+<svg viewBox="0 0 320 200" width="100%" role="img" aria-label="美股10月15日涨跌">
+        <text x="10" y="16" font-size="12" fill="#444">美股 10/15 收盘涨跌幅（红涨绿跌）</text>
+        <!-- Dow +1.08 -->
+        <text x="8" y="42" font-size="11" fill="#333">道指</text>
+        <rect x="55" y="34" width="110" height="13" fill="#d62728"></rect>
+        <text x="170" y="44" font-size="11" fill="#d62728">+1.08%</text>
+        <!-- S&P +0.33 -->
+        <text x="8" y="64" font-size="11" fill="#333">标普</text>
+        <rect x="55" y="56" width="34" height="13" fill="#d62728"></rect>
+        <text x="94" y="66" font-size="11" fill="#d62728">+0.33%</text>
+        <!-- Nasdaq +0.08 -->
+        <text x="8" y="86" font-size="11" fill="#333">纳指</text>
+        <rect x="55" y="78" width="9" height="13" fill="#d62728"></rect>
+        <text x="68" y="88" font-size="11" fill="#d62728">+0.08%</text>
+        <!-- SOX -0.88 -->
+        <text x="8" y="108" font-size="11" fill="#333">费半</text>
+        <rect x="55" y="100" width="92" height="13" fill="#2ca02c"></rect>
+        <text x="152" y="110" font-size="11" fill="#2ca02c">-0.88% 七连跌</text>
+        <!-- Gold +2.06 -->
+        <text x="8" y="132" font-size="11" fill="#333">黄金</text>
+        <rect x="55" y="124" width="212" height="13" fill="#d62728"></rect>
+        <text x="272" y="134" font-size="11" fill="#d62728">+2.06%</text>
+        <!-- WTI +2.59 -->
+        <text x="8" y="156" font-size="11" fill="#333">WTI</text>
+        <rect x="55" y="148" width="268" height="13" fill="#d62728"></rect>
+        <text x="270" y="158" font-size="11" fill="#d62728">+2.59%</text>
+        <text x="10" y="186" font-size="10.5" fill="#888">注：纳指几乎持平，反弹由价值/周期领涨，科技仍弱</text>
+      </svg>

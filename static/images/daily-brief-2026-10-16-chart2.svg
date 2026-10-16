@@ -1,0 +1,20 @@
+<svg viewBox="0 0 320 200" width="100%" role="img" aria-label="人民币中间价走势">
+        <text x="10" y="16" font-size="12" fill="#444">人民币兑美元中间价（近期，↓=升值）</text>
+        <!-- y scale 6.72-6.74 -->
+        <line x1="50" y1="30" x2="50" y2="170" stroke="#ccc" stroke-width="1"></line>
+        <line x1="50" y1="170" x2="300" y2="170" stroke="#ccc" stroke-width="1"></line>
+        <text x="14" y="34" font-size="10" fill="#888">6.72</text>
+        <text x="14" y="130" font-size="10" fill="#888">6.73</text>
+        <text x="14" y="172" font-size="10" fill="#888">6.74</text>
+        <!-- points: 10/8 6.7351(y~150), 10/9 6.7330(y~135), 10/14 6.7249(y~75), 10/15 6.7253(y~78) -->
+        <polyline points="70,150 130,135 200,75 270,78" fill="none" stroke="#1f4e79" stroke-width="2.5"></polyline>
+        <circle cx="70" cy="150" r="4" fill="#1f4e79"></circle>
+        <circle cx="130" cy="135" r="4" fill="#1f4e79"></circle>
+        <circle cx="200" cy="75" r="4" fill="#1f4e79"></circle>
+        <circle cx="270" cy="78" r="4" fill="#1f4e79"></circle>
+        <text x="62" y="165" font-size="9.5" fill="#555">10/8</text>
+        <text x="120" y="150" font-size="9.5" fill="#555">10/9</text>
+        <text x="190" y="68" font-size="9.5" fill="#555">10/14</text>
+        <text x="258" y="71" font-size="9.5" fill="#555">10/15</text>
+        <text x="10" y="190" font-size="10.5" fill="#888">10/15 报 6.7253，即期守 6.69，年内升约 4%</text>
+      </svg>

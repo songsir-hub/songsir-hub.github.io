@@ -1,0 +1,16 @@
+<svg viewBox="0 0 320 150" width="100%" role="img" aria-label="美国通胀同比">
+      <text x="10" y="16" font-size="12" fill="#444">美国 9 月通胀同比（%，红=高于预期）</text>
+      <!-- CPI 3.7 expected 3.6 -->
+      <text x="8" y="46" font-size="11" fill="#333">CPI</text>
+      <rect x="55" y="34" width="120" height="15" fill="#d62728"></rect>
+      <text x="180" y="46" font-size="11" fill="#d62728">3.7%（预期3.6）</text>
+      <!-- Core CPI 2.6 expected 2.5 -->
+      <text x="8" y="74" font-size="11" fill="#333">核心CPI</text>
+      <rect x="55" y="62" width="84" height="15" fill="#d62728"></rect>
+      <text x="144" y="74" font-size="11" fill="#d62728">2.6%（预期2.5）</text>
+      <!-- PPI 6.3 expected 5.3 -->
+      <text x="8" y="102" font-size="11" fill="#333">PPI</text>
+      <rect x="55" y="90" width="206" height="15" fill="#d62728"></rect>
+      <text x="266" y="102" font-size="11" fill="#d62728">6.3%（预期5.3）</text>
+      <text x="10" y="132" font-size="10.5" fill="#888">PPI 创 2022-12 以来最高；能源 +10.8% 推高 10/29 PCE</text>
+    </svg>
