@@ -1,0 +1,24 @@
+<svg viewBox="0 0 680 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A股 2026-10-16 收盘涨跌">
+  <rect x="0" y="0" width="680" height="270" fill="#ffffff"/>
+  <text x="20" y="30" font-size="17" font-weight="700" fill="#1f2329">A股 10/16 收盘涨跌（%）— 沪指尾盘翻红</text>
+  <text x="20" y="50" font-size="12" fill="#5b6168">红=涨 · 绿=跌 · 成交约 1.55 万亿缩量 · 科创综指 8 连跌</text>
+  <line x1="60" y1="135" x2="630" y2="135" stroke="#9aa0a6" stroke-width="1"/>
+  <text x="60" y="128" font-size="11" fill="#9aa0a6">0%</text>
+  <!-- 上证 +0.24 (红 上) -->
+  <rect x="90" y="114" width="70" height="21" fill="#d8392b"/>
+  <text x="125" y="108" font-size="12" fill="#d8392b" text-anchor="middle">+0.24%</text>
+  <text x="125" y="158" font-size="12" fill="#1f2329" text-anchor="middle">上证</text>
+  <!-- 深成 -0.12 (绿 下) -->
+  <rect x="230" y="135" width="70" height="11" fill="#1a9e4b"/>
+  <text x="265" y="158" font-size="12" fill="#1a9e4b" text-anchor="middle">-0.12%</text>
+  <text x="265" y="158" font-size="12" fill="#1f2329" text-anchor="middle"> </text>
+  <text x="265" y="175" font-size="12" fill="#1f2329" text-anchor="middle">深成</text>
+  <!-- 创业板 -0.39 (绿 下) -->
+  <rect x="370" y="135" width="70" height="35" fill="#1a9e4b"/>
+  <text x="405" y="182" font-size="12" fill="#1a9e4b" text-anchor="middle">-0.39%</text>
+  <text x="405" y="175" font-size="12" fill="#1f2329" text-anchor="middle">创业板</text>
+  <!-- 科创综指 -0.18 (绿 下) -->
+  <rect x="510" y="135" width="70" height="16" fill="#1a9e4b"/>
+  <text x="545" y="163" font-size="12" fill="#1a9e4b" text-anchor="middle">-0.18%</text>
+  <text x="545" y="175" font-size="12" fill="#1f2329" text-anchor="middle">科创综</text>
+</svg>

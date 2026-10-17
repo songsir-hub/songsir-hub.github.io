@@ -1,0 +1,19 @@
+<svg viewBox="0 0 680 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="美股本周累计涨跌">
+  <rect x="0" y="0" width="680" height="270" fill="#ffffff"/>
+  <text x="20" y="30" font-size="17" font-weight="700" fill="#1f2329">美股本周累计涨跌（%）— 10/13–10/16</text>
+  <text x="20" y="50" font-size="12" fill="#5b6168">红=涨 · 绿=跌 · 纳指创"AI 交易黑暗 6 月"以来最大单周跌幅</text>
+  <line x1="60" y1="135" x2="630" y2="135" stroke="#9aa0a6" stroke-width="1"/>
+  <text x="60" y="128" font-size="11" fill="#9aa0a6">0%</text>
+  <!-- 道指 +0.67 (红 上) -->
+  <rect x="150" y="124" width="80" height="11" fill="#d8392b"/>
+  <text x="190" y="118" font-size="12" fill="#d8392b" text-anchor="middle">+0.67%</text>
+  <text x="190" y="158" font-size="12" fill="#1f2329" text-anchor="middle">道指</text>
+  <!-- 标普 -1.95 (绿 下) -->
+  <rect x="330" y="135" width="80" height="31" fill="#1a9e4b"/>
+  <text x="370" y="182" font-size="12" fill="#1a9e4b" text-anchor="middle">-1.95%</text>
+  <text x="370" y="158" font-size="12" fill="#1f2329" text-anchor="middle">标普</text>
+  <!-- 纳指 -4.48 (绿 下) -->
+  <rect x="510" y="135" width="80" height="72" fill="#1a9e4b"/>
+  <text x="550" y="223" font-size="12" fill="#1a9e4b" text-anchor="middle">-4.48%</text>
+  <text x="550" y="158" font-size="12" fill="#1f2329" text-anchor="middle">纳指</text>
+</svg>
