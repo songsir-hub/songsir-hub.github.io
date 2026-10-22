@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" font-family="-apple-system,Segoe UI,Roboto,Microsoft YaHei,sans-serif">
+<rect width="660" height="300" fill="#ffffff"/>
+<line x1="56" y1="258.0" x2="638" y2="258.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="262.0" fill="#33414f" font-size="11" text-anchor="end">3644.11</text>
+<line x1="56" y1="202.0" x2="638" y2="202.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="206.0" fill="#33414f" font-size="11" text-anchor="end">3670.40</text>
+<line x1="56" y1="146.0" x2="638" y2="146.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="150.0" fill="#33414f" font-size="11" text-anchor="end">3696.70</text>
+<line x1="56" y1="90.0" x2="638" y2="90.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="94.0" fill="#33414f" font-size="11" text-anchor="end">3723.00</text>
+<line x1="56" y1="34.0" x2="638" y2="34.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="38.0" fill="#33414f" font-size="11" text-anchor="end">3749.29</text>
+<polyline fill="none" stroke="#1f2d3d" stroke-width="2.4" points="56.0,104.3 201.5,73.1 347.0,63.6 492.5,111.2 638.0,228.4"/>
+<circle cx="56.0" cy="104.3" r="3.4" fill="#1f2d3d"/>
+<circle cx="201.5" cy="73.1" r="3.4" fill="#1f2d3d"/>
+<circle cx="347.0" cy="63.6" r="3.4" fill="#1f2d3d"/>
+<circle cx="492.5" cy="111.2" r="3.4" fill="#1f2d3d"/>
+<circle cx="638.0" cy="228.4" r="3.8" fill="#237804"/>
+<text x="56.0" y="95.3" fill="#33414f" font-size="11" text-anchor="middle">3716.28</text>
+<text x="201.5" y="64.1" fill="#33414f" font-size="11" text-anchor="middle">3730.92</text>
+<text x="347.0" y="54.6" fill="#33414f" font-size="11" text-anchor="middle">3735.37</text>
+<text x="492.5" y="102.2" fill="#33414f" font-size="11" text-anchor="middle">3713.03</text>
+<text x="638.0" y="219.4" fill="#237804" font-size="12" text-anchor="middle" font-weight="700">3658.03</text>
+<text x="56.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/16</text>
+<text x="201.5" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/19</text>
+<text x="347.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/20</text>
+<text x="492.5" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/21</text>
+<text x="638.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/22</text>
+</svg>
