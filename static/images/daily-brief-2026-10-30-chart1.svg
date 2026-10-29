@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" font-family="-apple-system,Segoe UI,Roboto,Microsoft YaHei,sans-serif">
+<rect width="660" height="300" fill="#ffffff"/>
+<line x1="56" y1="258.0" x2="638" y2="258.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="262.0" fill="#33414f" font-size="11" text-anchor="end">3639.44</text>
+<line x1="56" y1="202.0" x2="638" y2="202.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="206.0" fill="#33414f" font-size="11" text-anchor="end">3656.18</text>
+<line x1="56" y1="146.0" x2="638" y2="146.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="150.0" fill="#33414f" font-size="11" text-anchor="end">3672.91</text>
+<line x1="56" y1="90.0" x2="638" y2="90.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="94.0" fill="#33414f" font-size="11" text-anchor="end">3689.64</text>
+<line x1="56" y1="34.0" x2="638" y2="34.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="38.0" fill="#33414f" font-size="11" text-anchor="end">3706.38</text>
+<polyline fill="none" stroke="#1f2d3d" stroke-width="2.4" points="56.0,195.8 172.4,87.2 288.8,63.6 405.2,228.4 521.6,117.4 638.0,217.9"/>
+<circle cx="56.0" cy="195.8" r="3.4" fill="#1f2d3d"/>
+<circle cx="172.4" cy="87.2" r="3.4" fill="#1f2d3d"/>
+<circle cx="288.8" cy="63.6" r="3.4" fill="#1f2d3d"/>
+<circle cx="405.2" cy="228.4" r="3.4" fill="#1f2d3d"/>
+<circle cx="521.6" cy="117.4" r="3.4" fill="#1f2d3d"/>
+<circle cx="638.0" cy="217.9" r="3.8" fill="#237804"/>
+<text x="56.0" y="186.8" fill="#33414f" font-size="11" text-anchor="middle">3658.03</text>
+<text x="172.4" y="78.2" fill="#33414f" font-size="11" text-anchor="middle">3690.48</text>
+<text x="288.8" y="54.6" fill="#33414f" font-size="11" text-anchor="middle">3697.52</text>
+<text x="405.2" y="219.4" fill="#33414f" font-size="11" text-anchor="middle">3648.30</text>
+<text x="521.6" y="108.4" fill="#33414f" font-size="11" text-anchor="middle">3681.47</text>
+<text x="638.0" y="208.9" fill="#237804" font-size="12" text-anchor="middle" font-weight="700">3651.43</text>
+<text x="56.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/22</text>
+<text x="172.4" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/23</text>
+<text x="288.8" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/26</text>
+<text x="405.2" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/27</text>
+<text x="521.6" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/28</text>
+<text x="638.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/29</text>
+</svg>
