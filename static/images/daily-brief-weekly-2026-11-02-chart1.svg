@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" font-family="-apple-system,Segoe UI,Roboto,Microsoft YaHei,sans-serif">
+<rect width="660" height="300" fill="#ffffff"/>
+
+<text x="140.0" y="26" fill="#33414f" font-size="11">-80</text>
+<text x="240.0" y="26" fill="#33414f" font-size="11" text-anchor="middle">-40</text>
+<text x="340.0" y="26" fill="#33414f" font-size="11" text-anchor="middle">0</text>
+<text x="440.0" y="26" fill="#33414f" font-size="11" text-anchor="middle">+40</text>
+<text x="540.0" y="26" fill="#33414f" font-size="11" text-anchor="middle">+80</text>
+<text x="640.0" y="26" fill="#33414f" font-size="11" text-anchor="middle">+120</text>
+<line x1="340.0" y1="34" x2="340.0" y2="256.0" stroke="#d9e1e8" stroke-width="1"/>
+<rect x="340.0" y="52" width="259.5" height="20" rx="2" fill="#1f2d3d"/>
+<text x="130" y="61" fill="#1f2d3d" font-size="13" font-weight="600" text-anchor="end">+103.8%</text>
+<text x="130" y="75" fill="#33414f" font-size="11" text-anchor="end">电子制造</text>
+<rect x="340.0" y="96" width="199.2" height="20" rx="2" fill="#1f2d3d"/>
+<text x="130" y="105" fill="#1f2d3d" font-size="13" font-weight="600" text-anchor="end">+79.7%</text>
+<text x="130" y="119" fill="#33414f" font-size="11" text-anchor="end">有色金属</text>
+<rect x="340.0" y="140" width="123.0" height="20" rx="2" fill="#1f2d3d"/>
+<text x="130" y="149" fill="#1f2d3d" font-size="13" font-weight="600" text-anchor="end">+49.2%</text>
+<text x="130" y="163" fill="#33414f" font-size="11" text-anchor="end">化工</text>
+<rect x="283.0" y="184" width="57.0" height="20" rx="2" fill="#cf1322"/>
+<text x="130" y="193" fill="#cf1322" font-size="13" font-weight="600" text-anchor="end">-22.8%</text>
+<text x="130" y="207" fill="#33414f" font-size="11" text-anchor="end">汽车制造</text>
+<rect x="156.8" y="228" width="183.2" height="20" rx="2" fill="#cf1322"/>
+<text x="130" y="237" fill="#cf1322" font-size="13" font-weight="600" text-anchor="end">-73.3%</text>
+<text x="130" y="251" fill="#33414f" font-size="11" text-anchor="end">黑色冶炼</text>
+</svg>
