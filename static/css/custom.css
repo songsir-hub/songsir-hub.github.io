@@ -517,3 +517,7 @@ nav > div.flex-l.center.items-center.justify-between > a {
 @media screen and (max-width: 768px) {
   .hero-home > div { min-height: 60vh; }
 }
+
+/* 单篇文章页 header：博雅之璧居中取景，避免 bg-top 只露天空切掉底座（与首页/列表一致）。
+   仅覆盖 background-position，不改高度；首页/列表页本就 center 48%，无影响。 */
+header.cover.bg-top { background-position: center 48% !important; }
