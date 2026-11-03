@@ -211,7 +211,7 @@
 <text x="963.5" y="364.2" font-size="15" fill="#B3A88C" text-anchor="middle" letter-spacing="2">威海</text>
 <text x="457.5" y="769.6" font-size="15" fill="#B3A88C" text-anchor="middle" letter-spacing="2">青岛</text>
 <path d="M70,648 L170,648" stroke="#8B7355" stroke-width="1.6" marker-end="url(#ah)"/>
-<text x="176" y="652" font-size="12.5" fill="#6B6255">西去：潍淄流域（纪·西莱）——无一座以「莱」为名的山</text>
+<text x="176" y="652" font-size="12.5" fill="#6B6255">西去：潍淄流域（纪·西莱）——无一座以"莱"为名的山</text>
 <g filter="url(#psh)">
 <path d="M536.0,319.2 L551.0,344.2 L521.0,344.2 Z" fill="#8FB39A" stroke="#4A7154" stroke-width="2.2"/>
 <rect x="507.7" y="307.7" width="16" height="16" fill="#A98BB0" stroke="#6E5480" stroke-width="2.0" rx="2"/>
@@ -251,6 +251,6 @@
 <path d="M1094,140 L1103,172 L1094,165 L1085,172 Z" fill="#4E463A"/>
 <text x="1094" y="190" font-size="12" fill="#4E463A" text-anchor="middle">北</text>
 <line x1="62" y1="856" x2="1138" y2="856" stroke="#8B7355" stroke-width="1" stroke-dasharray="4 4"/>
-<text x="62" y="876" font-size="12" fill="#6B6255">三座莱山全部落在胶东（潍河以东）；潍淄流域有纪、有郳，却无一座以「莱」为名的山。龙口莱山主峰与烟台莱山为方位推定点，月主祠与旌旗山为实测坐标。</text>
+<text x="62" y="876" font-size="12" fill="#6B6255">三座莱山全部落在胶东（潍河以东）；潍淄流域有纪、有郳，却无一座以"莱"为名的山。龙口莱山主峰与烟台莱山为方位推定点，月主祠与旌旗山为实测坐标。</text>
 <text x="1138" y="900" font-size="12" fill="#6B6255" text-anchor="end">作图：松朗　底图数据：DataV.GeoAtlas（GCJ-02）</text>
 </svg>
