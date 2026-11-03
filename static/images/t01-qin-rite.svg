@@ -2,7 +2,7 @@
 <defs><marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 z" fill="#8B7355"/></marker></defs>
 <rect width="920" height="520" fill="#FBF8F1"/>
 <text x="460" y="44" font-size="21" font-weight="bold" fill="#3A3226" text-anchor="middle">秦始皇怎样祭这座山</text>
-<text x="460" y="67" font-size="13" fill="#6B6255" text-anchor="middle">据《史记·封禅书》「皆各用一牢具祠，而巫祝所损益，珪币杂异焉」绘制的场景示意</text>
+<text x="460" y="67" font-size="13" fill="#6B6255" text-anchor="middle">据《史记·封禅书》"皆各用一牢具祠，而巫祝所损益，珪币杂异焉"绘制的场景示意</text>
 <path d="M70,418 L850,418" stroke="#8B7355" stroke-width="2.0" fill="none"/>
 <path d="M300,418 L300,330 L620,330 L620,418 Z" fill="#EFE6CE" stroke="#8B7355" stroke-width="2.0"/>
 <rect x="340" y="268" width="240" height="64" rx="4" fill="#A98BB0" fill-opacity="0.85" stroke="#6E5480" stroke-width="2.4"/>
