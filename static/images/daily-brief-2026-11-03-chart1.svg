@@ -1,35 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" font-family="-apple-system,Segoe UI,Roboto,Microsoft YaHei,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" viewBox="0 0 660 300" font-family="-apple-system,Segoe UI,Roboto,Microsoft YaHei,sans-serif">
 <rect width="660" height="300" fill="#ffffff"/>
-<line x1="56" y1="258.0" x2="638" y2="258.0" stroke="#d9e1e8" stroke-width="1"/>
-<text x="50" y="262.0" fill="#33414f" font-size="11" text-anchor="end">3581.29</text>
-<line x1="56" y1="202.0" x2="638" y2="202.0" stroke="#d9e1e8" stroke-width="1"/>
-<text x="50" y="206.0" fill="#33414f" font-size="11" text-anchor="end">3614.78</text>
-<line x1="56" y1="146.0" x2="638" y2="146.0" stroke="#d9e1e8" stroke-width="1"/>
-<text x="50" y="150.0" fill="#33414f" font-size="11" text-anchor="end">3648.27</text>
-<line x1="56" y1="90.0" x2="638" y2="90.0" stroke="#d9e1e8" stroke-width="1"/>
-<text x="50" y="94.0" fill="#33414f" font-size="11" text-anchor="end">3681.76</text>
-<line x1="56" y1="34.0" x2="638" y2="34.0" stroke="#d9e1e8" stroke-width="1"/>
-<text x="50" y="38.0" fill="#33414f" font-size="11" text-anchor="end">3715.25</text>
-<polyline fill="none" stroke="#1f2d3d" stroke-width="2.4" points="56.0,75.4 153.0,63.6 250.0,145.9 347.0,90.5 444.0,140.7 541.0,228.4 638.0,163.1"/>
-<circle cx="56.0" cy="75.4" r="3.4" fill="#1f2d3d"/>
-<circle cx="153.0" cy="63.6" r="3.4" fill="#1f2d3d"/>
-<circle cx="250.0" cy="145.9" r="3.4" fill="#1f2d3d"/>
-<circle cx="347.0" cy="90.5" r="3.4" fill="#1f2d3d"/>
-<circle cx="444.0" cy="140.7" r="3.4" fill="#1f2d3d"/>
-<circle cx="541.0" cy="228.4" r="3.4" fill="#1f2d3d"/>
-<circle cx="638.0" cy="163.1" r="3.8" fill="#cf1322"/>
-<text x="56.0" y="66.4" fill="#33414f" font-size="11" text-anchor="middle">3690.48</text>
-<text x="153.0" y="54.6" fill="#33414f" font-size="11" text-anchor="middle">3697.52</text>
-<text x="250.0" y="136.9" fill="#33414f" font-size="11" text-anchor="middle">3648.30</text>
-<text x="347.0" y="81.5" fill="#33414f" font-size="11" text-anchor="middle">3681.47</text>
-<text x="444.0" y="131.7" fill="#33414f" font-size="11" text-anchor="middle">3651.43</text>
-<text x="541.0" y="219.4" fill="#33414f" font-size="11" text-anchor="middle">3599.02</text>
-<text x="638.0" y="154.1" fill="#cf1322" font-size="12" text-anchor="middle" font-weight="700">3638.03</text>
-<text x="56.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/23</text>
-<text x="153.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/26</text>
-<text x="250.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/27</text>
-<text x="347.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/28</text>
-<text x="444.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/29</text>
-<text x="541.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/30</text>
+<line x1="56.0" y1="258.0" x2="638.0" y2="258.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="262.0" fill="#33414f" font-size="11" text-anchor="end">3,550.00</text>
+<line x1="56.0" y1="202.0" x2="638.0" y2="202.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="206.0" fill="#33414f" font-size="11" text-anchor="end">3,600.00</text>
+<line x1="56.0" y1="146.0" x2="638.0" y2="146.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="150.0" fill="#33414f" font-size="11" text-anchor="end">3,650.00</text>
+<line x1="56.0" y1="90.0" x2="638.0" y2="90.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="94.0" fill="#33414f" font-size="11" text-anchor="end">3,700.00</text>
+<line x1="56.0" y1="34.0" x2="638.0" y2="34.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="38.0" fill="#33414f" font-size="11" text-anchor="end">3,750.00</text>
+<polyline fill="none" stroke="#1f2d3d" stroke-width="2.4" points="56.0,137.0 139.1,100.7 222.3,92.8 305.4,147.9 388.6,110.8 471.7,144.4 554.9,203.1 638.0,159.4"/>
+<circle cx="56.0" cy="137.0" r="3.4" fill="#1f2d3d"/>
+<circle cx="139.1" cy="100.7" r="3.4" fill="#1f2d3d"/>
+<circle cx="222.3" cy="92.8" r="3.4" fill="#1f2d3d"/>
+<circle cx="305.4" cy="147.9" r="3.4" fill="#1f2d3d"/>
+<circle cx="388.6" cy="110.8" r="3.4" fill="#1f2d3d"/>
+<circle cx="471.7" cy="144.4" r="3.4" fill="#1f2d3d"/>
+<circle cx="554.9" cy="203.1" r="3.4" fill="#1f2d3d"/>
+<circle cx="638.0" cy="159.4" r="3.8" fill="#cf1322"/>
+<text x="56.0" y="128.0" fill="#33414f" font-size="11" text-anchor="middle" font-weight="400">3,658.03</text>
+<text x="139.1" y="91.7" fill="#33414f" font-size="11" text-anchor="middle" font-weight="400">3,690.48</text>
+<text x="222.3" y="83.8" fill="#33414f" font-size="11" text-anchor="middle" font-weight="400">3,697.52</text>
+<text x="305.4" y="138.9" fill="#33414f" font-size="11" text-anchor="middle" font-weight="400">3,648.30</text>
+<text x="388.6" y="101.8" fill="#33414f" font-size="11" text-anchor="middle" font-weight="400">3,681.47</text>
+<text x="471.7" y="135.4" fill="#33414f" font-size="11" text-anchor="middle" font-weight="400">3,651.43</text>
+<text x="554.9" y="194.1" fill="#33414f" font-size="11" text-anchor="middle" font-weight="400">3,599.02</text>
+<text x="638.0" y="150.4" fill="#cf1322" font-size="12" text-anchor="middle" font-weight="700">3,638.03</text>
+<text x="56.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/22</text>
+<text x="139.1" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/23</text>
+<text x="222.3" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/26</text>
+<text x="305.4" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/27</text>
+<text x="388.6" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/28</text>
+<text x="471.7" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/29</text>
+<text x="554.9" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/30</text>
 <text x="638.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">11/2</text>
+<text x="74" y="17" fill="#33414f" font-size="11.5" font-weight="700">上证指数（点）</text>
 </svg>

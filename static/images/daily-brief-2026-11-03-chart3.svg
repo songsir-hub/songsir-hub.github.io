@@ -1,35 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" font-family="-apple-system,Segoe UI,Roboto,Microsoft YaHei,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" viewBox="0 0 660 300" font-family="-apple-system,Segoe UI,Roboto,Microsoft YaHei,sans-serif">
 <rect width="660" height="300" fill="#ffffff"/>
-<line x1="56" y1="258.0" x2="638" y2="258.0" stroke="#d9e1e8" stroke-width="1"/>
-<text x="50" y="262.0" fill="#33414f" font-size="11" text-anchor="end">6.7130</text>
-<line x1="56" y1="202.0" x2="638" y2="202.0" stroke="#d9e1e8" stroke-width="1"/>
-<text x="50" y="206.0" fill="#33414f" font-size="11" text-anchor="end">6.7145</text>
-<line x1="56" y1="146.0" x2="638" y2="146.0" stroke="#d9e1e8" stroke-width="1"/>
-<text x="50" y="150.0" fill="#33414f" font-size="11" text-anchor="end">6.7159</text>
-<line x1="56" y1="90.0" x2="638" y2="90.0" stroke="#d9e1e8" stroke-width="1"/>
-<text x="50" y="94.0" fill="#33414f" font-size="11" text-anchor="end">6.7173</text>
-<line x1="56" y1="34.0" x2="638" y2="34.0" stroke="#d9e1e8" stroke-width="1"/>
-<text x="50" y="38.0" fill="#33414f" font-size="11" text-anchor="end">6.7188</text>
-<polyline fill="none" stroke="#1f2d3d" stroke-width="2.4" points="56.0,63.6 153.0,134.2 250.0,98.9 347.0,122.5 444.0,193.1 541.0,228.4 638.0,197.0"/>
-<circle cx="56.0" cy="63.6" r="3.4" fill="#1f2d3d"/>
-<circle cx="153.0" cy="134.2" r="3.4" fill="#1f2d3d"/>
-<circle cx="250.0" cy="98.9" r="3.4" fill="#1f2d3d"/>
-<circle cx="347.0" cy="122.5" r="3.4" fill="#1f2d3d"/>
-<circle cx="444.0" cy="193.1" r="3.4" fill="#1f2d3d"/>
-<circle cx="541.0" cy="228.4" r="3.4" fill="#1f2d3d"/>
-<circle cx="638.0" cy="197.0" r="3.8" fill="#237804"/>
-<text x="56.0" y="54.6" fill="#33414f" font-size="11" text-anchor="middle">6.7180</text>
-<text x="153.0" y="125.2" fill="#33414f" font-size="11" text-anchor="middle">6.7162</text>
-<text x="250.0" y="89.9" fill="#33414f" font-size="11" text-anchor="middle">6.7171</text>
-<text x="347.0" y="113.5" fill="#33414f" font-size="11" text-anchor="middle">6.7165</text>
-<text x="444.0" y="184.1" fill="#33414f" font-size="11" text-anchor="middle">6.7147</text>
-<text x="541.0" y="219.4" fill="#33414f" font-size="11" text-anchor="middle">6.7138</text>
-<text x="638.0" y="188.0" fill="#237804" font-size="12" text-anchor="middle" font-weight="700">6.7146</text>
-<text x="56.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/23</text>
-<text x="153.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/26</text>
-<text x="250.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/27</text>
-<text x="347.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/28</text>
-<text x="444.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/29</text>
-<text x="541.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/30</text>
+<line x1="56.0" y1="258.0" x2="638.0" y2="258.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="262.0" fill="#33414f" font-size="11" text-anchor="end">6.7120</text>
+<line x1="56.0" y1="213.2" x2="638.0" y2="213.2" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="217.2" fill="#33414f" font-size="11" text-anchor="end">6.7140</text>
+<line x1="56.0" y1="168.4" x2="638.0" y2="168.4" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="172.4" fill="#33414f" font-size="11" text-anchor="end">6.7160</text>
+<line x1="56.0" y1="123.6" x2="638.0" y2="123.6" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="127.6" fill="#33414f" font-size="11" text-anchor="end">6.7180</text>
+<line x1="56.0" y1="78.8" x2="638.0" y2="78.8" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="82.8" fill="#33414f" font-size="11" text-anchor="end">6.7200</text>
+<line x1="56.0" y1="34.0" x2="638.0" y2="34.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="38.0" fill="#33414f" font-size="11" text-anchor="end">6.7220</text>
+<polyline fill="none" stroke="#1f2d3d" stroke-width="2.4" points="56.0,90.0 139.1,123.6 222.3,163.9 305.4,143.8 388.6,157.2 471.7,197.5 554.9,217.7 638.0,199.8"/>
+<circle cx="56.0" cy="90.0" r="3.4" fill="#1f2d3d"/>
+<circle cx="139.1" cy="123.6" r="3.4" fill="#1f2d3d"/>
+<circle cx="222.3" cy="163.9" r="3.4" fill="#1f2d3d"/>
+<circle cx="305.4" cy="143.8" r="3.4" fill="#1f2d3d"/>
+<circle cx="388.6" cy="157.2" r="3.4" fill="#1f2d3d"/>
+<circle cx="471.7" cy="197.5" r="3.4" fill="#1f2d3d"/>
+<circle cx="554.9" cy="217.7" r="3.4" fill="#1f2d3d"/>
+<circle cx="638.0" cy="199.8" r="3.8" fill="#237804"/>
+<text x="56.0" y="81.0" fill="#33414f" font-size="11" text-anchor="middle" font-weight="400">6.7195</text>
+<text x="139.1" y="114.6" fill="#33414f" font-size="11" text-anchor="middle" font-weight="400">6.7180</text>
+<text x="222.3" y="154.9" fill="#33414f" font-size="11" text-anchor="middle" font-weight="400">6.7162</text>
+<text x="305.4" y="134.8" fill="#33414f" font-size="11" text-anchor="middle" font-weight="400">6.7171</text>
+<text x="388.6" y="148.2" fill="#33414f" font-size="11" text-anchor="middle" font-weight="400">6.7165</text>
+<text x="471.7" y="188.5" fill="#33414f" font-size="11" text-anchor="middle" font-weight="400">6.7147</text>
+<text x="554.9" y="208.7" fill="#33414f" font-size="11" text-anchor="middle" font-weight="400">6.7138</text>
+<text x="638.0" y="190.8" fill="#237804" font-size="12" text-anchor="middle" font-weight="700">6.7146</text>
+<text x="56.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/22</text>
+<text x="139.1" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/23</text>
+<text x="222.3" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/26</text>
+<text x="305.4" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/27</text>
+<text x="388.6" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/28</text>
+<text x="471.7" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/29</text>
+<text x="554.9" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/30</text>
 <text x="638.0" y="284" fill="#33414f" font-size="11" text-anchor="middle">11/2</text>
+<text x="74" y="17" fill="#33414f" font-size="11.5" font-weight="700">人民币兑美元中间价</text>
 </svg>
