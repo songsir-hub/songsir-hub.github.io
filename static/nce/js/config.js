@@ -4,7 +4,7 @@
  */
 
 export const CONFIG = {
-  DEFAULT_BOOK_KEY: 'YL5A',
+  DEFAULT_BOOK_KEY: 'NCE1',
 
   STORAGE_KEYS: {
     BOOK_SELECTION: 'selectedBookKey',
@@ -14,7 +14,7 @@ export const CONFIG = {
     THEME: 'theme',
   },
 
-  AVAILABLE_SPEEDS: [0.5, 0.75, 1.0, 1.25, 1.5, 2.0],
+  AVAILABLE_SPEEDS: [0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0],
   TRANSLATION_MODES: ['show', 'english', 'chinese', 'blur'],
   LOOP_MODES: ['off', 'click', 'one', 'list', 'book'],
 
