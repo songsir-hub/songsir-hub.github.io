@@ -85,8 +85,7 @@ export class ReadingSystem {
       onBookChange: (bookKey) => this.#onBookSelect(bookKey),
     });
 
-    this.speedBtn = qs('#speedBtn');
-    this.speedText = qs('#speedText');
+    this.speedSelect = qs('#speedSelect');
     this.loopToggleBtn = qs('#loopToggleBtn');
     this.toggleTranslationBtn = qs('#toggleTranslationBtn');
 
@@ -245,7 +244,13 @@ export class ReadingSystem {
   #bindChrome() {
     const { signal } = this.abort;
 
-    on(this.speedBtn, 'click', () => this.#cycleSpeed(), { signal });
+    on(this.speedSelect, 'change', () => {
+      const value = parseFloat(this.speedSelect.value);
+      this.state.playbackRate = value;
+      this.player.setRate(value);
+      setStorage(this.config.STORAGE_KEYS.PLAYBACK_RATE, value);
+      this.toast.show(`播放速度 ${value}x`);
+    }, { signal });
     on(this.loopToggleBtn, 'click', () => this.#cycleLoopMode(), { signal });
     on(this.toggleTranslationBtn, 'click', () => this.#cycleTranslation(), { signal });
 
@@ -384,8 +389,10 @@ export class ReadingSystem {
   }
 
   #updateSpeedUI() {
-    setText(this.speedText, `${this.state.playbackRate}x`);
-    toggleClass(this.speedBtn, 'active', this.state.playbackRate !== 1.0);
+    const rate = this.state.playbackRate;
+    if (this.speedSelect) {
+      this.speedSelect.value = String(rate);
+    }
   }
 
   #onAudioEnded() {
