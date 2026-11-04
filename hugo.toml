@@ -69,7 +69,7 @@ enableRobotsTXT = true
   icon = 'rss'
 
 # ============================================================
-# 菜单导航（三栏下拉：科创发展 / 历史文化 / 品味生活）
+# 菜单导航（三栏下拉：科创发展 / 历史文化 / 修身养性）
 # - 原"首页/文章/分类"由品牌链接 + 三栏下拉替代
 # - 子菜单 parent 指向对应分类页 /categories/<分类名>/
 # - 各子栏目分类页为占位（content/categories/<名>/_index.md），
@@ -150,31 +150,31 @@ enableRobotsTXT = true
   weight = 26
 
 [[menus.main]]
-  name = '品味生活'
+  name = '修身养性'
   weight = 30
 
 [[menus.main]]
-  name = '对症下药'
-  parent = '品味生活'
-  url = '/categories/对症下药/'
+  name = '学习教育'
+  parent = '修身养性'
+  url = '/categories/学习教育/'
   weight = 31
 
 [[menus.main]]
-  name = '经络穴位'
-  parent = '品味生活'
-  url = '/categories/经络穴位/'
+  name = '健康管理'
+  parent = '修身养性'
+  url = '/categories/健康管理/'
   weight = 32
 
 [[menus.main]]
-  name = '食疗养生'
-  parent = '品味生活'
-  url = '/categories/食疗养生/'
+  name = '生活智慧'
+  parent = '修身养性'
+  url = '/categories/生活智慧/'
   weight = 33
 
 [[menus.main]]
-  name = '生活百科'
-  parent = '品味生活'
-  url = '/categories/生活百科/'
+  name = '认知觉醒'
+  parent = '修身养性'
+  url = '/categories/认知觉醒/'
   weight = 34
 
 # 顶级链接（无 parent，site-navigation.html 的 else 分支会渲染为 nav-link）
