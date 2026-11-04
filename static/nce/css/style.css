@@ -1452,3 +1452,42 @@ body::-webkit-scrollbar-thumb:hover,
     scroll-behavior: auto !important;
   }
 }
+
+/* 语速下拉（替代原 speed-btn 循环切换）：玻璃质感、与周边控件一致 */
+.speed-select {
+  height: var(--control-h);
+  min-width: 76px;
+  padding: 0 10px 0 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--paper-3);
+  color: var(--ink-2);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 10 6%22><path d=%22M0 0 L10 0 L5 6 Z%22 fill=%22%23d9a441%22/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 6px center;
+  background-size: 10px 6px;
+}
+.speed-select:hover {
+  background-color: var(--accent-3);
+  border-color: var(--accent-1);
+  color: var(--accent-1);
+  transform: translateY(-1px);
+}
+.speed-select:active {
+  transform: scale(0.96);
+}
+@media (max-width: 768px) {
+  .speed-select {
+    min-width: 64px;
+    font-size: 12px;
+  }
+}
