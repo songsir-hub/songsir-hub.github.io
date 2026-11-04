@@ -33,7 +33,7 @@ featured_image = '/images/nce-cover.svg'
 
 ## 入口
 
-> 在线点读入口：[新概念英语点读学习](/nce/)
+> **在线点读入口：<b style="font-size:1.3em; color:#c0392b;">[新概念英语点读学习](/nce/)</b>**
 
 ---
 *说明：本工具改编自开源项目 [iChochy/NCE](https://github.com/iChochy/NCE)（MIT 协议），音频与文本源自第三方（tangx/New-Concept-English），仅供个人学习与研究之用，请支持正版教材。*
