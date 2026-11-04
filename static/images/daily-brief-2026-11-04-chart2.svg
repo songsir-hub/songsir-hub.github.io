@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" viewBox="0 0 660 300" font-family="-apple-system,Segoe UI,Roboto,Microsoft YaHei,sans-serif">
+<rect width="660" height="300" fill="#ffffff"/>
+<line x1="56" y1="258" x2="638" y2="258" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="262" fill="#33414f" font-size="11" text-anchor="end">24,500</text>
+<line x1="56" y1="213" x2="638" y2="213" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="217" fill="#33414f" font-size="11" text-anchor="end">25,000</text>
+<line x1="56" y1="168" x2="638" y2="168" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="172" fill="#33414f" font-size="11" text-anchor="end">25,500</text>
+<line x1="56" y1="124" x2="638" y2="124" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="128" fill="#33414f" font-size="11" text-anchor="end">26,000</text>
+<line x1="56" y1="79" x2="638" y2="79" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="83" fill="#33414f" font-size="11" text-anchor="end">26,500</text>
+<line x1="56" y1="34" x2="638" y2="34" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="38" fill="#33414f" font-size="11" text-anchor="end">27,000</text>
+<polyline fill="none" stroke="#1f2d3d" stroke-width="2.4" points="56,123 139,128 222,108 305,81 388,74 471,107 554,174 638,135"/>
+<circle cx="56" cy="123" r="3.4" fill="#1f2d3d"/>
+<circle cx="139" cy="128" r="3.4" fill="#1f2d3d"/>
+<circle cx="222" cy="108" r="3.4" fill="#1f2d3d"/>
+<circle cx="305" cy="81" r="3.4" fill="#1f2d3d"/>
+<circle cx="388" cy="74" r="3.4" fill="#1f2d3d"/>
+<circle cx="471" cy="107" r="3.4" fill="#1f2d3d"/>
+<circle cx="554" cy="174" r="3.4" fill="#1f2d3d"/>
+<circle cx="638" cy="135" r="3.8" fill="#cf1322"/>
+<text x="56" y="114" fill="#33414f" font-size="11" text-anchor="middle">26,009</text>
+<text x="139" y="119" fill="#33414f" font-size="11" text-anchor="middle">25,955</text>
+<text x="222" y="99" fill="#33414f" font-size="11" text-anchor="middle">26,169</text>
+<text x="305" y="72" fill="#33414f" font-size="11" text-anchor="middle">26,478</text>
+<text x="388" y="65" fill="#33414f" font-size="11" text-anchor="middle">26,550</text>
+<text x="471" y="98" fill="#33414f" font-size="11" text-anchor="middle">26,185</text>
+<text x="554" y="165" fill="#33414f" font-size="11" text-anchor="middle">25,164</text>
+<text x="638" y="126" fill="#cf1322" font-size="12" text-anchor="middle" font-weight="700">25,373</text>
+<text x="56" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/22</text>
+<text x="139" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/23</text>
+<text x="222" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/26</text>
+<text x="305" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/27</text>
+<text x="388" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/28</text>
+<text x="471" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/29</text>
+<text x="554" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/30</text>
+<text x="638" y="284" fill="#33414f" font-size="11" text-anchor="middle">11/3</text>
+<text x="74" y="17" fill="#33414f" font-size="11.5" font-weight="700">纳斯达克综合指数（点）</text>
+</svg>
