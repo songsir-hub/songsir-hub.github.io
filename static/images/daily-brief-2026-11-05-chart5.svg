@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" viewBox="0 0 660 300" font-family="-apple-system,Segoe UI,Roboto,Microsoft YaHei,sans-serif">
+<rect width="660" height="300" fill="#ffffff"/>
+<line x1="56" y1="258" x2="638" y2="258" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="262" fill="#33414f" font-size="11" text-anchor="end">6.7120</text>
+<line x1="56" y1="202" x2="638" y2="202" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="206" fill="#33414f" font-size="11" text-anchor="end">6.7140</text>
+<line x1="56" y1="146" x2="638" y2="146" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="150" fill="#33414f" font-size="11" text-anchor="end">6.7160</text>
+<line x1="56" y1="90" x2="638" y2="90" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="94" fill="#33414f" font-size="11" text-anchor="end">6.7180</text>
+<line x1="56" y1="34" x2="638" y2="34" stroke="#d9e1e8" stroke-width="1"/>
+<text x="50" y="38" fill="#33414f" font-size="11" text-anchor="end">6.7200</text>
+<polyline fill="none" stroke="#1f2d3d" stroke-width="2.4" points="56,140.4 139.1,115.2 222.3,132 305.4,182.4 388.6,207.6 471.7,185.2 554.9,174 638,90"/>
+<circle cx="56" cy="140.4" r="3.4" fill="#1f2d3d"/>
+<circle cx="139.1" cy="115.2" r="3.4" fill="#1f2d3d"/>
+<circle cx="222.3" cy="132" r="3.4" fill="#1f2d3d"/>
+<circle cx="305.4" cy="182.4" r="3.4" fill="#1f2d3d"/>
+<circle cx="388.6" cy="207.6" r="3.4" fill="#1f2d3d"/>
+<circle cx="471.7" cy="185.2" r="3.4" fill="#1f2d3d"/>
+<circle cx="554.9" cy="174" r="3.4" fill="#1f2d3d"/>
+<circle cx="638" cy="90" r="3.8" fill="#cf1322"/>
+<text x="56" y="131" fill="#33414f" font-size="11" text-anchor="middle">6.7162</text>
+<text x="139.1" y="106" fill="#33414f" font-size="11" text-anchor="middle">6.7171</text>
+<text x="222.3" y="123" fill="#33414f" font-size="11" text-anchor="middle">6.7165</text>
+<text x="305.4" y="173" fill="#33414f" font-size="11" text-anchor="middle">6.7147</text>
+<text x="388.6" y="198" fill="#33414f" font-size="11" text-anchor="middle">6.7138</text>
+<text x="471.7" y="176" fill="#33414f" font-size="11" text-anchor="middle">6.7146</text>
+<text x="554.9" y="165" fill="#33414f" font-size="11" text-anchor="middle">6.7150</text>
+<text x="638" y="81" fill="#cf1322" font-size="12" text-anchor="middle" font-weight="700">6.7180</text>
+<text x="56" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/26</text>
+<text x="139.1" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/27</text>
+<text x="222.3" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/28</text>
+<text x="305.4" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/29</text>
+<text x="388.6" y="284" fill="#33414f" font-size="11" text-anchor="middle">10/30</text>
+<text x="471.7" y="284" fill="#33414f" font-size="11" text-anchor="middle">11/2</text>
+<text x="554.9" y="284" fill="#33414f" font-size="11" text-anchor="middle">11/3</text>
+<text x="638" y="284" fill="#33414f" font-size="11" text-anchor="middle">11/4</text>
+<text x="74" y="17" fill="#33414f" font-size="11.5" font-weight="700">人民币兑美元中间价</text>
+</svg>
