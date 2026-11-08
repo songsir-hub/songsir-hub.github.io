@@ -34,6 +34,7 @@ featured_image = '/images/nce-cover.svg'
 ## 入口
 
 > **在线点读入口：<b style="font-size:1.3em; color:#c0392b;">[新概念英语点读学习](/nce/)</b>**
+
 ## 下载单文件与部署（两种方法）
 
 **下载**：[⬇ `nce-single-file.html`](https://songsir-hub.github.io/nce/nce-single-file.html)（单文件 648 KB，不含音频）
@@ -61,6 +62,16 @@ featured_image = '/images/nce-cover.svg'
 | 适合 | 随手发朋友试用 | 长期用、要离线 |
 
 二者互补：**单文件是「轻入口」，PWA 是「离线完整版」**。
+
+
+
+## 一句话推广
+
+> **一个网页版的《新概念英语》点读，电脑 / 平板 / 手机都能装，装一次以后没网也能点着学。**
+
+- 在线直接用：[songsir-hub.github.io/nce/](https://songsir-hub.github.io/nce/)
+- 发朋友试用：把 648 KB 的 [单文件](https://songsir-hub.github.io/nce/nce-single-file.html) 甩过去，联网双击即开
+- 长期离线学：在线版选「安装应用 / 添加到主屏幕」，装成 App，断网可点读
 
 
 ---
