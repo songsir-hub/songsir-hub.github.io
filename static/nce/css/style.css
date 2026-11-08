@@ -1580,28 +1580,42 @@ body::-webkit-scrollbar-thumb:hover,
   }
 }
 
-/* 手机端：双指缩放后允许页面滚动/拖动
-   —— 缩放时浏览器不会重排，只放大视口；所以整条链路 (html/body/#app/.container)
-   都必须能纵向溢出滚动，只放开 body 是不够的。 */
+/* ============================================================
+   手机端缩放后可拖动（2026-11-08）
+   根因：本页原设计为"整屏定高 + 各面板内部滚动"，整条链路
+   html/body/#app/.container 全被 overflow:hidden 或固定高度锁死。
+   双指放大后内容溢出，但没有任何一层能承接滚动，手指就拖不动。
+   对策：≤768px 时彻底放弃内部滚动架构，回归浏览器原生整页滚动。
+   ============================================================ */
 @media (max-width: 768px) {
   html,
   body {
-    height: auto;
-    overflow-x: hidden;
-    overflow-y: auto;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    -webkit-overflow-scrolling: touch;
   }
 
+  /* 关键：整页唯一滚动源就是文档本身，内部容器一律不设滚动 */
   #app,
-  .container {
-    overflow-x: hidden;
-    overflow-y: auto;
-    touch-action: pan-x pan-y;
+  .container,
+  .player-section,
+  .unit-list {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    touch-action: auto !important;
   }
 
-  /* 触摸滚动区允许手势，避免被父级裁切吃掉 */
+  /* 原本的独立滚动区改为自然高度，交给整页滚动 */
   .lyrics-container,
   #unitListContainer {
-    touch-action: pan-y;
-    overscroll-behavior: auto;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    touch-action: auto !important;
+    overscroll-behavior: auto !important;
   }
 }
