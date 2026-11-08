@@ -8,7 +8,7 @@
  *   · book.json / data.json：stale-while-revalidate（离线优先 + 后台校验）
  */
 
-const SW_VERSION = 'nce-pwa-v1';
+const SW_VERSION = 'nce-pwa-v2';
 const CACHE_NAME = `nce-${SW_VERSION}`;
 const AUDIO_PREFIX = 'audio/';
 
@@ -101,17 +101,22 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // 静态资源与数据：stale-while-revalidate
+  // 静态资源与数据：network-first（在线拿最新，离线回退缓存）
+  // 原为 stale-while-revalidate，导致每次改 CSS/JS 都先返回旧缓存，
+  // 用户装成 PWA 后长期看到旧版本，改样式等于白改。
   event.respondWith(
     (async () => {
       const cache = await caches.open(CACHE_NAME);
-      const cached = await cache.match(req);
-      const network = fetch(req).then((resp) => {
-        if (resp.ok) cache.put(req, resp.clone());
+      try {
+        const resp = await fetch(req);
+        if (resp && resp.ok) {
+          cache.put(req, resp.clone());
+        }
         return resp;
-      }).catch(() => null);
-      if (cached) return cached;
-      return network || Response.error();
+      } catch (e) {
+        const cached = await cache.match(req);
+        return cached || Response.error();
+      }
     })()
   );
 });
