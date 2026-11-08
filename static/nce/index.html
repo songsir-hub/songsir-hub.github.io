@@ -102,6 +102,9 @@
           <label class="book-select-wrap">
             <span class="select-label">课本</span>
             <select class="book-select" id="bookSelect" aria-label="选择课本">
+    <a id="downloadSingle" class="download-single-btn" href="nce-single-file.html" download>
+      <span class="dl-icon">⬇</span> 下载单文件版（离线使用）
+    </a>
               <option value="">选择课本</option>
             </select>
           </label>
@@ -262,3 +265,10 @@
 </script>
 </body>
 </html>
+
+<style>
+/* 单文件下载入口 */
+.download-single-btn{display:inline-flex;align-items:center;gap:6px;margin-top:10px;padding:7px 16px;border-radius:999px;background:rgba(224,163,74,.15);border:1px solid rgba(224,163,74,.4);color:#e0a34a;font-size:13px;text-decoration:none;transition:all .2s}
+.download-single-btn:hover{background:rgba(224,163,74,.3);transform:translateY(-1px)}
+.download-single-btn .dl-icon{font-size:15px}
+</style>
