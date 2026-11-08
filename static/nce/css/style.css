@@ -1270,12 +1270,18 @@ body::-webkit-scrollbar-thumb:hover,
     padding: calc(6px + env(safe-area-inset-top)) calc(8px + env(safe-area-inset-right))
       calc(6px + env(safe-area-inset-bottom)) calc(8px + env(safe-area-inset-left));
     gap: 6px;
-    overflow: hidden;
+    /* 缩放后内容会溢出，这里必须允许纵向滚动，否则整页拖不动 */
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .container {
     grid-template-columns: 1fr;
     gap: 6px;
+    /* 单列堆叠后不需要裁切，放开后缩放也能拖 */
+    overflow: visible;
+    min-height: auto;
   }
 
   .desktop-only {
@@ -1313,6 +1319,17 @@ body::-webkit-scrollbar-thumb:hover,
   .player-section,
   .unit-list {
     border-radius: 14px;
+    min-height: auto;
+  }
+
+  /* 手机端播放区不再锁死高度，歌词区自己保留内部滚动 */
+  .player-section {
+    flex: 0 0 auto;
+    overflow: visible;
+  }
+
+  .unit-list {
+    height: auto;
   }
 
   .book-info {
@@ -1563,14 +1580,28 @@ body::-webkit-scrollbar-thumb:hover,
   }
 }
 
-/* 手机端：双指缩放后允许页面滚动/拖动 */
+/* 手机端：双指缩放后允许页面滚动/拖动
+   —— 缩放时浏览器不会重排，只放大视口；所以整条链路 (html/body/#app/.container)
+   都必须能纵向溢出滚动，只放开 body 是不够的。 */
 @media (max-width: 768px) {
-  html, body, #app {
-    overflow: auto;
+  html,
+  body {
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  #app,
+  .container {
+    overflow-x: hidden;
+    overflow-y: auto;
     touch-action: pan-x pan-y;
   }
-  #app {
-    height: auto;
-    min-height: 0;
+
+  /* 触摸滚动区允许手势，避免被父级裁切吃掉 */
+  .lyrics-container,
+  #unitListContainer {
+    touch-action: pan-y;
+    overscroll-behavior: auto;
   }
 }
