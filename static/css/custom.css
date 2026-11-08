@@ -462,6 +462,11 @@ nav > div.flex-l.center.items-center.justify-between > a {
   .dropdown li a.dropdown-link {
     color: rgba(255,255,255,0.90);
     padding: 0.4rem 0.7rem;
+    font-size: 1.2rem;
+  }
+  .site-menu > li.nav-item > .nav-link {
+    font-size: 1.4rem;
+    padding: 0.5rem 0.4rem;
   }
 }
 
