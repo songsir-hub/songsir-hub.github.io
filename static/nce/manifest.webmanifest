@@ -1,21 +1,27 @@
 {
-  "name": "新概念英语 NCE 听力播放器",
-  "short_name": "新概念英语",
-  "description": "新概念英语 New Concept English 听力与课文播放器，支持课本选择、课程列表、逐句播放与中英对照。",
+  "name": "新概念英语点读学习 | 博雅小筑",
+  "short_name": "新概念点读",
+  "description": "新概念英语 NCE 离线点读学习系统，支持课本选择、逐句点读、中英对照，免网可用。",
   "lang": "zh-CN",
   "dir": "ltr",
   "start_url": "./",
   "scope": "./",
-  "display": "fullscreen",
-  "display_override": ["fullscreen", "standalone", "minimal-ui", "browser"],
+  "display": "standalone",
+  "display_override": ["standalone", "fullscreen", "minimal-ui", "browser"],
   "orientation": "any",
   "theme_color": "#f7f3ee",
   "background_color": "#f7f3ee",
   "categories": ["education", "music"],
   "icons": [
     {
-      "src": "apple-touch-icon.png",
-      "sizes": "180x180",
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     }

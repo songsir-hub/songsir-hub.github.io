@@ -1112,6 +1112,74 @@ body.blur-translation .lyric-line:hover .lyric-text {
   box-shadow: var(--shadow-sm);
 }
 
+/* 打赏 Tab 切换 */
+.sponsor-tabs {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0 14px;
+  flex-wrap: wrap;
+}
+
+.sponsor-tab {
+  padding: 6px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--paper-3);
+  color: var(--ink-2);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sponsor-tab:hover {
+  border-color: var(--accent-1);
+  color: var(--ink-1);
+}
+
+.sponsor-tab.active {
+  background: var(--accent-3);
+  border-color: var(--accent-1);
+  color: var(--ink-1);
+  font-weight: 600;
+}
+
+.sponsor-panels {
+  min-height: 0;
+}
+
+.sponsor-panel {
+  display: none;
+  text-align: center;
+}
+
+.sponsor-panel.active {
+  display: block;
+  animation: riseIn 0.25s ease both;
+}
+
+.sponsor-desc {
+  color: var(--ink-3);
+  font-size: 13px;
+  margin: 8px 0 0;
+}
+
+.sponsor-link {
+  display: inline-block;
+  margin: 12px 0;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: var(--accent-3);
+  border: 1px solid var(--accent-1);
+  color: var(--ink-1);
+  text-decoration: none;
+  font-size: 15px;
+  transition: transform 0.15s ease;
+}
+
+.sponsor-link:hover {
+  transform: translateY(-1px);
+}
+
 .like-and-support a,
 .footer a {
   color: var(--ink-2);
