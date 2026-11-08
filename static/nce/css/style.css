@@ -1581,14 +1581,22 @@ body::-webkit-scrollbar-thumb:hover,
 }
 
 /* ============================================================
-   触屏设备缩放后可拖动（2026-11-08）
-   根因：本页原设计为"整屏定高 + 各面板内部滚动"，整条链路
-   html/body/#app/.container 全被 overflow:hidden 或固定高度锁死。
-   双指放大后内容溢出，但没有任何一层能承接滚动，手指就拖不动。
+   触屏设备：滚动与吸顶布局（2026-11-08）
+   
+   【为什么这么写】
+   原设计是"整屏定高 100dvh + 三个面板各自内部滚动"。双指放大后
+   视口变小、内容溢出，但 html/body/#app/.container 全被
+   overflow:hidden 或固定高度锁死，没有任何一层能承接滚动，
+   所以表现为"能放大、但整页拖不动"。
 
-   注：断点从 768px 放宽到 1024px，并追加 pointer:coarse（触屏）
-   兜底 —— 部分手机在浏览器缩放下 CSS 视口宽度会超过 768px，
-   只按 768px 判定会漏掉这些设备。
+   【对策：混合式】
+   · 文档本身可滚动（解决缩放后拖不动，这是核心）
+   · 页头 + 课本信息 + 播放控制 用 sticky 吸顶（不用翻回去找播放器）
+   · 歌词区保留自己的内部滚动（长课文不把整页撑爆）
+
+   【断点】1024px + pointer:coarse 双保险：部分手机 CSS 视口宽度
+   会超过 768px，只按宽度判定会漏掉这些设备（平板能拖、手机不能
+   拖的差异就出在这里）。
    ============================================================ */
 @media (max-width: 1024px), (pointer: coarse) {
   html,
@@ -1601,11 +1609,10 @@ body::-webkit-scrollbar-thumb:hover,
     -webkit-overflow-scrolling: touch;
   }
 
-  /* 整页唯一滚动源是文档本身，内部容器一律不设滚动 */
+  /* 文档本身是滚动源，这些容器一律不设滚动 */
   #app,
   .container,
-  .player-section,
-  .unit-list {
+  .player-column {
     height: auto !important;
     min-height: 0 !important;
     max-height: none !important;
@@ -1613,13 +1620,50 @@ body::-webkit-scrollbar-thumb:hover,
     touch-action: auto !important;
   }
 
-  /* 原本的独立滚动区改为自然高度，交给整页滚动 */
-  .lyrics-container,
-  #unitListContainer {
+  /* 页头吸顶：放大后往下读课文，仍能一眼看到标题与主题切换 */
+  .app-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+
+  /* 播放区：整块吸在页头下面，不用翻回去找 */
+  .book-info,
+  .control-panel {
+    position: sticky;
+    z-index: 40;
+  }
+
+  .book-info {
+    top: calc(56px + env(safe-area-inset-top));
+  }
+
+  /* 控制面板紧贴 book-info 下方（手机端 book-info 固定 48px 高） */
+  .control-panel {
+    top: calc(56px + 48px + env(safe-area-inset-top) + 12px);
+  }
+
+  /* 歌词区：填满剩余高度，自己内部滚动。长课文不撑爆整页，
+     短课文也不会在下面留一大片空白 */
+  .player-section {
+    display: flex;
+    flex-direction: column;
     height: auto !important;
+    min-height: 0 !important;
     max-height: none !important;
     overflow: visible !important;
-    touch-action: auto !important;
-    overscroll-behavior: auto !important;
   }
+
+  .lyrics-container {
+    flex: 1 1 auto;
+    min-height: 40vh;
+    max-height: calc(100dvh - 180px);
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    touch-action: pan-y !important;
+    overscroll-behavior: contain !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* 手机端课本列表本就 display:none，这里不必处理 */
 }
