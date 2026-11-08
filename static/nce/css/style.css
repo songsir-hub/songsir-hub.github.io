@@ -1581,23 +1581,27 @@ body::-webkit-scrollbar-thumb:hover,
 }
 
 /* ============================================================
-   手机端缩放后可拖动（2026-11-08）
+   触屏设备缩放后可拖动（2026-11-08）
    根因：本页原设计为"整屏定高 + 各面板内部滚动"，整条链路
    html/body/#app/.container 全被 overflow:hidden 或固定高度锁死。
    双指放大后内容溢出，但没有任何一层能承接滚动，手指就拖不动。
-   对策：≤768px 时彻底放弃内部滚动架构，回归浏览器原生整页滚动。
+
+   注：断点从 768px 放宽到 1024px，并追加 pointer:coarse（触屏）
+   兜底 —— 部分手机在浏览器缩放下 CSS 视口宽度会超过 768px，
+   只按 768px 判定会漏掉这些设备。
    ============================================================ */
-@media (max-width: 768px) {
+@media (max-width: 1024px), (pointer: coarse) {
   html,
   body {
     height: auto !important;
     min-height: 0 !important;
     max-height: none !important;
     overflow: visible !important;
+    touch-action: auto !important;
     -webkit-overflow-scrolling: touch;
   }
 
-  /* 关键：整页唯一滚动源就是文档本身，内部容器一律不设滚动 */
+  /* 整页唯一滚动源是文档本身，内部容器一律不设滚动 */
   #app,
   .container,
   .player-section,
