@@ -5,7 +5,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
   <meta name="description" content="新概念英语点读系统，在线课文朗读、单句点读、中英对照，支持课本选择、文章列表、逐句播放与中英对照。" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,6 +54,32 @@
       "image": "https://songsir-hub.github.io/images/nce-cover.svg"
     }
   </script>
+
+<script>
+  // PWA 安装引导：拦截 beforeinstallprompt，显示“安装到桌面”按钮
+  let deferredPrompt = null;
+  const installBtn = document.createElement('button');
+  installBtn.id = 'nce-install-btn';
+  installBtn.className = 'nce-install-btn';
+  installBtn.textContent = '📲 安装到桌面';
+  installBtn.style.cssText = 'position:fixed;top:8px;right:8px;z-index:1000;display:none;padding:8px 14px;border:1px solid #8a8578;background:#fff;color:#3f3f46;border-radius:999px;font-size:14px;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.08)';
+  document.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    installBtn.style.display = 'block';
+    document.body.appendChild(installBtn);
+    installBtn.onclick = () => {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then(choice => {
+          if (choice.outcome === 'accepted') installBtn.style.display = 'none';
+          deferredPrompt = null;
+        });
+      }
+    };
+  });
+  document.addEventListener('appinstalled', () => { installBtn.style.display = 'none'; });
+</script>
 </head>
 <body>
 <div id="app">
