@@ -5,7 +5,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="description" content="新概念英语点读系统，在线课文朗读、单句点读、中英对照，支持课本选择、文章列表、逐句播放与中英对照。" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -102,9 +102,6 @@
           <label class="book-select-wrap">
             <span class="select-label">课本</span>
             <select class="book-select" id="bookSelect" aria-label="选择课本">
-    <a id="downloadSingle" class="download-single-btn" href="nce-single-file.html" download>
-      <span class="dl-icon">⬇</span> 下载单文件版（离线使用）
-    </a>
               <option value="">选择课本</option>
             </select>
           </label>
@@ -207,7 +204,7 @@
               </div>
               <span id="duration" class="time-display">0:00</span>
             </div>
-            <select id="speedSelect" class="speed-select" type="button" title="播放速度" aria-label="播放速度">
+            <select id="speedSelect" class="speed-select" title="播放速度" aria-label="播放速度">
               <option value="0.5">0.5x</option>
               <option value="0.75">0.75x</option>
               <option value="1" selected>1.0x</option>
@@ -265,10 +262,3 @@
 </script>
 </body>
 </html>
-
-<style>
-/* 单文件下载入口 */
-.download-single-btn{display:inline-flex;align-items:center;gap:6px;margin-top:10px;padding:7px 16px;border-radius:999px;background:rgba(224,163,74,.15);border:1px solid rgba(224,163,74,.4);color:#e0a34a;font-size:13px;text-decoration:none;transition:all .2s}
-.download-single-btn:hover{background:rgba(224,163,74,.3);transform:translateY(-1px)}
-.download-single-btn .dl-icon{font-size:15px}
-</style>
