@@ -92,14 +92,14 @@ body.dark-theme {
 
 html,
 body {
-  height: 100%;
+  height: auto;;
 }
 
 body {
   font-family: var(--font-sans);
-  min-height: 100dvh;
-  height: 100dvh;
-  overflow: hidden;
+  min-height: auto;
+  height: auto;
+  overflow: auto;
   color: var(--ink-1);
   line-height: 1.5;
   letter-spacing: -0.01em;
@@ -138,8 +138,8 @@ img {
 #app {
   max-width: 1440px;
   margin: 0 auto;
-  min-height: 100dvh;
-  height: 100dvh;
+  min-height: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1265,8 +1265,8 @@ body::-webkit-scrollbar-thumb:hover,
   }
 
   #app {
-    height: 100dvh;
-    min-height: 100dvh;
+    height: auto;
+    min-height: auto;
     padding: calc(6px + env(safe-area-inset-top)) calc(8px + env(safe-area-inset-right))
       calc(6px + env(safe-area-inset-bottom)) calc(8px + env(safe-area-inset-left));
     gap: 6px;
@@ -1560,5 +1560,17 @@ body::-webkit-scrollbar-thumb:hover,
   .speed-select {
     min-width: 64px;
     font-size: 12px;
+  }
+}
+
+/* 手机端：双指缩放后允许页面滚动/拖动 */
+@media (max-width: 768px) {
+  html, body, #app {
+    overflow: auto;
+    touch-action: pan-x pan-y;
+  }
+  #app {
+    height: auto;
+    min-height: 0;
   }
 }
