@@ -1667,3 +1667,30 @@ body::-webkit-scrollbar-thumb:hover,
 
   /* 手机端课本列表本就 display:none，这里不必处理 */
 }
+
+/* ============================================================
+   竖屏专用覆盖（2026-11-09）
+   问题：竖屏手机高度小，三处 sticky（页头 + 课本信息 + 播放控制）
+   累计约占 180px，再叠加双指放大后视觉高度被进一步压缩，
+   歌词区被 max-height:calc(100dvh-180px) 锁死且内部 overflow:auto，
+   导致放大后整页拖不动、歌词也拖不动。
+   对策：竖屏只保留「页头吸顶」，课本信息与播放控制改为随页滚动，
+   歌词区放开为整页滚动（max-height:none），双指放大后整页可拖。
+   横屏（landscape）不受此块影响，沿用上面的混合式布局。
+   ============================================================ */
+@media (max-width: 1024px) and (orientation: portrait),
+       (pointer: coarse) and (orientation: portrait) {
+  .book-info,
+  .control-panel {
+    position: static !important;
+    top: auto !important;
+  }
+
+  .lyrics-container {
+    flex: none !important;
+    min-height: auto !important;
+    max-height: none !important;
+    overflow-y: visible !important;
+    overscroll-behavior: auto !important;
+  }
+}
