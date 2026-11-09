@@ -10,6 +10,19 @@
   var MAXLEN = 80;
   var RATES = [0.8, 1.0, 1.25, 1.5, 1.75];
 
+  /* ---- 调试开关：URL 带 ?ttsdebug=1 时在左下角打印朗读序列，用于锁定"首段读两遍"根因 ---- */
+  var DEBUG = /[?&]ttsdebug=1/.test(location.search || '');
+  var dbgEl = null;
+  if (DEBUG) {
+    dbgEl = document.createElement('div');
+    dbgEl.style.cssText = 'position:fixed;left:4px;bottom:4px;max-width:92vw;max-height:42vh;overflow:auto;' +
+      'background:rgba(0,0,0,.82);color:#0f0;font:11px/1.4 monospace;z-index:99999;padding:4px 6px;' +
+      'border-radius:6px;white-space:pre-wrap;';
+    document.body.appendChild(dbgEl);
+    dbgEl.textContent = 'TTS debug on\n';
+  }
+  function dbg(t) { if (DEBUG && dbgEl) dbgEl.textContent += t; }
+
   /* ---- language detection: CJK vs Latin char ratio ---- */
   function detectLang(text) {
     var cjk = 0, latin = 0, i, ch;
@@ -172,6 +185,10 @@
     function speakCurrent() {
       clearStuck();
       if (s.idx >= chunks.length) { finish(); return; }
+      /* 防重入锁：当前句仍在朗读（activeUtt 未清空）时，任何重复触发都直接丢弃。
+         这是"首段读两遍"的根治手段——无论是安卓 visibilitychange 误触、
+         引擎重复回调，还是事件重复绑定，都无法再让同一句被 speak 两次。 */
+      if (s.activeUtt) { dbg('[blocked dup idx=' + s.idx + ']\n'); return; }
       var voice = (voiceOverride && voiceOverride.lang === s.lang) ? voiceOverride : pickVoice(s.lang);
       var text = chunks[s.idx].text;
       var u = new window.SpeechSynthesisUtterance(text);
@@ -183,10 +200,21 @@
       s.utt = u;
       liveUtts.push(u);
       if (liveUtts.length > 8) liveUtts.shift();
+      /* 标记当前在飞的朗读对象，供防重入判定与"过期回调"丢弃使用 */
+      s.activeUtt = u;
+      dbg('speak idx=' + s.idx + ' (' + text.slice(0, 8) + (text.length > 8 ? '\u2026' : '') + ')\n');
       /* 真正开始读了就取消卡死计时 */
       u.onstart = function () { clearStuck(); };
-      u.onend = function () { if (!s.playing) return; advance(); };
+      u.onend = function () {
+        /* 过期 utterance（已被 cancel 取代）的回调一律忽略，避免竞态导致跳句/重复 */
+        if (u !== s.activeUtt) return;
+        s.activeUtt = null;
+        if (!s.playing) return;
+        advance();
+      };
       u.onerror = function (e) {
+        if (u !== s.activeUtt) return;
+        s.activeUtt = null;
         if (!s.playing) return;
         /* 自己 cancel() 触发的 interrupted/canceled 交给 stuck 兜底，避免重复推进 */
         if (e && (e.error === 'interrupted' || e.error === 'canceled')) return;
@@ -205,11 +233,11 @@
       var est = Math.max(6000, Math.min(30000, text.length * 90 + 4000));
       stuckTimer = setTimeout(function () {
         stuckTimer = null;
+        if (u !== s.activeUtt) return;
+        s.activeUtt = null;
         if (!s.playing) return;
         /* 先临时置 false，避免 cancel() 同步触发的 onend/onerror 重复 advance 导致跳句 */
-        s.playing = false;
-        try { window.speechSynthesis.cancel(); } catch (e2) {}
-        s.playing = true;
+        s.playing = false; try { window.speechSynthesis.cancel(); } catch (e2) {} s.playing = true;
         advance();
       }, est);
     }
@@ -217,6 +245,7 @@
     function start() {
       if (s.idx >= chunks.length) s.idx = 0;
       s.playing = true;
+      s.activeUtt = null;   /* 显式允许重新朗读当前句 */
       setBtn();
       speakCurrent();
       startKeepAlive();
@@ -236,16 +265,18 @@
       /* 安卓 Chrome 的 resume() 不可靠（pause 不更新状态、resume 失效），
          直接取消当前句并重读当前句才能"续读" */
       if (IS_TOUCH) {
+        s.activeUtt = null;
         try { window.speechSynthesis.cancel(); } catch (e) {}
         setTimeout(function () { if (s.playing) speakCurrent(); }, 60);
         return;
       }
-      try { window.speechSynthesis.resume(); } catch (e) { speakCurrent(); }
+      try { window.speechSynthesis.resume(); } catch (e) { s.activeUtt = null; speakCurrent(); }
       startKeepAlive();
     }
 
     function restart() {
       stopKeepAlive();
+      s.activeUtt = null;
       try { window.speechSynthesis.cancel(); } catch (e) {}
       s.idx = 0;
       clearMark();
@@ -258,6 +289,7 @@
 
     function stop() {
       s.playing = false;
+      s.activeUtt = null;
       stopKeepAlive();
       s.idx = 0;
       try { window.speechSynthesis.cancel(); } catch (e) {}
@@ -269,6 +301,7 @@
 
     function finish() {
       s.playing = false;
+      s.activeUtt = null;
       stopKeepAlive();
       clearMark();
       s.nowEl.textContent = label().done;
@@ -294,16 +327,20 @@
   var sessions = [];
 
   /* 息屏/切后台后安卓 Chrome 会暂停 TTS 且 resume() 无效；开屏后自动重读当前句续上。
-     关键守卫：只在"先息屏(hidden)再开屏(visible)"时重读，避免首次播放时页面可见态
-     切换被误判为"息屏回来"，导致首段被重复朗读两遍 */
+     关键守卫：① 仅在"先息屏(hidden)再开屏(visible)"时重读；
+     ② 隐藏时长 < 400ms 视为安卓 TTS 启动瞬间的误触抖动（系统通知/焦点切换），
+        直接丢弃，避免首段被重复朗读两遍；
+     ③ 重读走的仍是 speakCurrent，内有 activeUtt 防重入锁，二次保险。 */
   document.addEventListener('visibilitychange', function () {
     if (document.visibilityState !== 'visible') {
-      sessions.forEach(function (ss) { if (ss.playing) ss.hideInterrupted = true; });
+      var now = Date.now();
+      sessions.forEach(function (ss) { if (ss.playing) { ss.hiddenAt = now; ss.hideInterrupted = true; } });
       return;
     }
     sessions.forEach(function (ss) {
       if (ss.hideInterrupted && ss.playing && !window.speechSynthesis.speaking) {
         ss.hideInterrupted = false;
+        if (ss.hiddenAt && (Date.now() - ss.hiddenAt) < 400) return;  // 误触抖动，不重读
         try { window.speechSynthesis.cancel(); } catch (e) {}
         setTimeout(function () { if (ss.playing && ss.speakAt) ss.speakAt(); }, 60);
       }
@@ -323,11 +360,13 @@
     bar.appendChild(host);
     var sess = {
       chunks: chunks, lang: lang, idx: 0, playing: false, lastEl: null,
+      activeUtt: null, hiddenAt: 0, hideInterrupted: false,
       btn: host.querySelector('.tts-btn'),
       stopEl: host.querySelector('.tts-stop'),
       nowEl: host.querySelector('.tts-now'),
       progEl: host.querySelector('.tts-prog i')
     };
+    if (DEBUG) dbg('[' + lang + ' chunks=' + chunks.length + ']\n');
     wireSession(sess, chunks);
     sessions.push(sess);
     return sess;
@@ -356,7 +395,7 @@
     if (wasSpeaking) {
       try { window.speechSynthesis.cancel(); } catch (e) {}
       sessions.forEach(function (s) {
-        if (s.playing) { s.speakAt(); startKeepAlive(); }
+        if (s.playing) { s.activeUtt = null; s.speakAt(); startKeepAlive(); }
       });
     }
   });
