@@ -161,6 +161,7 @@
     var stuckTimer = null;
     function clearStuck() { if (stuckTimer) { clearTimeout(stuckTimer); stuckTimer = null; } }
     function advance() {
+      clearStuck();
       s.idx++;
       if (s.idx >= chunks.length) { finish(); return; }
       /* 安卓 Chrome 在 onend 内同步 speak 常导致下一句不发音 / 卡死；
@@ -187,14 +188,15 @@
       u.onend = function () { if (!s.playing) return; advance(); };
       u.onerror = function (e) {
         if (!s.playing) return;
-        /* 我们自己 cancel() 触发的 interrupted 交给 stuck 兜底，避免重复推进 */
-        if (e && e.error === 'interrupted') return;
+        /* 自己 cancel() 触发的 interrupted/canceled 交给 stuck 兜底，避免重复推进 */
+        if (e && (e.error === 'interrupted' || e.error === 'canceled')) return;
         advance();
       };
       markNow();
-      /* 每次 speak 前 cancel() 清空 pending 队列（安卓 pending 堆积是卡死主因之一），
-         并用 setTimeout(0) 包裹 speak，修复 onend 顺序/触发问题（社区验证） */
-      try { window.speechSynthesis.cancel(); } catch (e2) {}
+      /* 用 setTimeout(0) 包裹 speak，修复 onend 顺序/触发问题（社区验证）。
+         注意：不在每句开头 cancel()，否则 cancel 会同步触发上一句残留的 onend/onerror，
+         在 s.playing 仍为真时再次 advance，造成重复/跳句。清队列改由 stuckTimer
+         与显式 stop/restart 负责。 */
       setTimeout(function () {
         try { window.speechSynthesis.speak(u); } catch (e2) {}
       }, 0);
@@ -230,8 +232,15 @@
 
     function resume() {
       s.playing = true;
-      try { window.speechSynthesis.resume(); } catch (e) { speakCurrent(); }
       setBtn();
+      /* 安卓 Chrome 的 resume() 不可靠（pause 不更新状态、resume 失效），
+         直接取消当前句并重读当前句才能"续读" */
+      if (IS_TOUCH) {
+        try { window.speechSynthesis.cancel(); } catch (e) {}
+        setTimeout(function () { if (s.playing) speakCurrent(); }, 60);
+        return;
+      }
+      try { window.speechSynthesis.resume(); } catch (e) { speakCurrent(); }
       startKeepAlive();
     }
 
@@ -283,6 +292,17 @@
   var bar = document.createElement('div');
   bar.className = 'tts-bar';
   var sessions = [];
+
+  /* 息屏/切后台后安卓 Chrome 会暂停 TTS 且 resume() 无效；开屏后自动重读当前句续上 */
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState !== 'visible') return;
+    sessions.forEach(function (ss) {
+      if (ss.playing && !window.speechSynthesis.speaking) {
+        try { window.speechSynthesis.cancel(); } catch (e) {}
+        setTimeout(function () { if (ss.playing && ss.speakAt) ss.speakAt(); }, 60);
+      }
+    });
+  });
 
   function buildSession(lang, chunks) {
     var l = LABEL[lang];
