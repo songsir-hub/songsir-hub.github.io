@@ -293,11 +293,17 @@
   bar.className = 'tts-bar';
   var sessions = [];
 
-  /* 息屏/切后台后安卓 Chrome 会暂停 TTS 且 resume() 无效；开屏后自动重读当前句续上 */
+  /* 息屏/切后台后安卓 Chrome 会暂停 TTS 且 resume() 无效；开屏后自动重读当前句续上。
+     关键守卫：只在"先息屏(hidden)再开屏(visible)"时重读，避免首次播放时页面可见态
+     切换被误判为"息屏回来"，导致首段被重复朗读两遍 */
   document.addEventListener('visibilitychange', function () {
-    if (document.visibilityState !== 'visible') return;
+    if (document.visibilityState !== 'visible') {
+      sessions.forEach(function (ss) { if (ss.playing) ss.hideInterrupted = true; });
+      return;
+    }
     sessions.forEach(function (ss) {
-      if (ss.playing && !window.speechSynthesis.speaking) {
+      if (ss.hideInterrupted && ss.playing && !window.speechSynthesis.speaking) {
+        ss.hideInterrupted = false;
         try { window.speechSynthesis.cancel(); } catch (e) {}
         setTimeout(function () { if (ss.playing && ss.speakAt) ss.speakAt(); }, 60);
       }
