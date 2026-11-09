@@ -71,7 +71,6 @@
   var rateIdx = 1;
   var voiceOverride = null;
   var keepAlive = null;
-  var watchDog = null;
   var activeEl = null;
 
   /* ---- labels per language ---- */
@@ -151,27 +150,44 @@
       }
     }
 
+    var stuckTimer = null;
+    function clearStuck() { if (stuckTimer) { clearTimeout(stuckTimer); stuckTimer = null; } }
+    function advance() {
+      s.idx++;
+      if (s.idx >= chunks.length) finish();
+      else speakCurrent();
+    }
+
     function speakCurrent() {
+      clearStuck();
       if (s.idx >= chunks.length) { finish(); return; }
       var voice = (voiceOverride && voiceOverride.lang === s.lang) ? voiceOverride : pickVoice(s.lang);
-      var u = new window.SpeechSynthesisUtterance(chunks[s.idx].text);
+      var text = chunks[s.idx].text;
+      var u = new window.SpeechSynthesisUtterance(text);
       u.lang = (voice && voice.lang) || (s.lang === 'en' ? 'en-US' : 'zh-CN');
       if (voice) u.voice = voice;
       u.rate = RATES[rateIdx];
       u.pitch = 1;
-      u.onstart = function () { if (watchDog) { clearTimeout(watchDog); watchDog = null; } };
-      u.onend = function () { if (!s.playing) return; s.idx++; if (s.idx >= chunks.length) finish(); else speakCurrent(); };
-      u.onerror = function () { if (!s.playing) return; s.idx++; if (s.idx >= chunks.length) finish(); else speakCurrent(); };
+      /* 真正开始读了就取消卡死计时 */
+      u.onstart = function () { clearStuck(); };
+      u.onend = function () { if (!s.playing) return; advance(); };
+      u.onerror = function (e) {
+        if (!s.playing) return;
+        /* 我们自己 cancel() 触发的 interrupted 交给 stuck 兜底，避免重复推进 */
+        if (e && e.error === 'interrupted') return;
+        advance();
+      };
       markNow();
       window.speechSynthesis.speak(u);
-      if (!watchDog) {
-        watchDog = setTimeout(function () {
-          watchDog = null;
-          if (s.playing && !window.speechSynthesis.speaking) {
-            s.nowEl.textContent = (s.lang === 'en') ? 'No English voice detected' : '\u5f53\u524d\u6d4f\u89c8\u5668\u672a\u68c0\u6d4b\u5230\u53ef\u7528\u8bed\u97f3';
-          }
-        }, 3000);
-      }
+      /* 每句独立的卡死检测：移动端常因某句合成静默卡死（onend/onerror 都不触发），
+         超时则强制取消并推进下一句，避免"读几行就停"停在某一句 */
+      var est = Math.max(6000, Math.min(30000, text.length * 90 + 4000));
+      stuckTimer = setTimeout(function () {
+        stuckTimer = null;
+        if (!s.playing) return;
+        try { window.speechSynthesis.cancel(); } catch (e2) {}
+        advance();
+      }, est);
     }
 
     function start() {
