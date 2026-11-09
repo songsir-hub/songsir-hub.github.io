@@ -103,8 +103,10 @@
     stopKeepAlive();
     keepAlive = setInterval(function () {
       var sp = window.speechSynthesis;
+      /* 页面不可见时不做 pause/resume，避免切后台仍反复扰动 TTS */
+      if (document.visibilityState !== 'visible') return;
       if (sp.speaking && !sp.paused) { sp.pause(); sp.resume(); }
-    }, 9000);
+    }, 13000);
   }
 
   /* ---- per-button session: wire up state machine on an already-built s object ---- */
@@ -136,7 +138,16 @@
         s.lastEl = c.el;
         s.lastEl.className = (s.lastEl.className || '') + ' tts-active';
         activeEl = s.lastEl;
-        try { s.lastEl.scrollIntoView({ block: 'center', behavior: 'smooth' }); } catch (e) {}
+        /* 滚动优化：每 3 句才考虑滚一次，且仅在当前句已滚出可视区时才滚；
+           用 auto 而非 smooth，避免手机端高频平滑滚动造成卡顿 */
+        if ((s.idx % 3 === 0)) {
+          try {
+            var r = s.lastEl.getBoundingClientRect();
+            if (r.bottom < 0 || r.top > (window.innerHeight || document.documentElement.clientHeight)) {
+              s.lastEl.scrollIntoView({ block: 'center', behavior: 'auto' });
+            }
+          } catch (e) {}
+        }
       }
     }
 
