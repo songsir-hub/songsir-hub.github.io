@@ -7,7 +7,7 @@
 
   var SEL = 'p, h2, h3, h4, h5, li, blockquote';
   var SKIP = 'pre, code, figure, script, style, .tts-bar, .tts-voice-row';
-  var MAXLEN = 100;
+  var MAXLEN = 80;
   var RATES = [0.8, 1.0, 1.25, 1.5, 1.75];
 
   /* ---- language detection: CJK vs Latin char ratio ---- */
@@ -39,7 +39,8 @@
     return out;
   }
   function splitText(t) {
-    var rough = t.match(/[^。\uff01\uff00\uff1f\uff1b\u003b]+[.\uff01\uff00\uff1f\uff1b\u003b]?/g) || [t];
+    /* 逗号也参与切分：安卓上对长句 cut-out 概率更高，单句越短越稳 */
+    var rough = t.match(/[^。\uff01\uff00\uff1f\uff1b\u003b\uff0c\u002c]+[。\uff01\uff00\uff1f\uff1b\u003b\uff0c\u002c]?/g) || [t];
     var out = [];
     rough.forEach(function (s) {
       s = s.trim();
@@ -72,6 +73,10 @@
   var voiceOverride = null;
   var keepAlive = null;
   var activeEl = null;
+  /* 触屏设备（手机/平板）判定：用于禁用安卓上会破坏状态机的 pause/resume 保活 */
+  var IS_TOUCH = !!(window.matchMedia && window.matchMedia('(pointer: coarse)').matches);
+  /* 防止 SpeechSynthesisUtterance 被 GC 回收导致 onend/onstart 不触发（Chromium bug #509488） */
+  var liveUtts = [];
 
   /* ---- labels per language ---- */
   var LABEL = {
@@ -100,6 +105,9 @@
   function stopKeepAlive() { if (keepAlive) { clearInterval(keepAlive); keepAlive = null; } }
   function startKeepAlive() {
     stopKeepAlive();
+    /* 安卓 Chrome 的 pause()/resume() 会破坏状态机，导致后续 speak 掉进 pending 卡死；
+       社区一致结论：此保活仅桌面可用，触屏设备必须禁用 */
+    if (IS_TOUCH) return;
     keepAlive = setInterval(function () {
       var sp = window.speechSynthesis;
       /* 页面不可见时不做 pause/resume，避免切后台仍反复扰动 TTS */
@@ -170,6 +178,10 @@
       if (voice) u.voice = voice;
       u.rate = RATES[rateIdx];
       u.pitch = 1;
+      /* 防 GC：把 utterance 存进高作用域数组，避免朗读中被回收导致 onend 不触发（Chromium #509488） */
+      s.utt = u;
+      liveUtts.push(u);
+      if (liveUtts.length > 8) liveUtts.shift();
       /* 真正开始读了就取消卡死计时 */
       u.onstart = function () { clearStuck(); };
       u.onend = function () { if (!s.playing) return; advance(); };
@@ -180,7 +192,12 @@
         advance();
       };
       markNow();
-      window.speechSynthesis.speak(u);
+      /* 每次 speak 前 cancel() 清空 pending 队列（安卓 pending 堆积是卡死主因之一），
+         并用 setTimeout(0) 包裹 speak，修复 onend 顺序/触发问题（社区验证） */
+      try { window.speechSynthesis.cancel(); } catch (e2) {}
+      setTimeout(function () {
+        try { window.speechSynthesis.speak(u); } catch (e2) {}
+      }, 0);
       /* 每句独立的卡死检测：移动端常因某句合成静默卡死（onend/onerror 都不触发），
          超时则强制取消并推进下一句，避免"读几行就停"停在某一句 */
       var est = Math.max(6000, Math.min(30000, text.length * 90 + 4000));
