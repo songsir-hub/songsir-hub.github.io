@@ -64,6 +64,25 @@
     return out;
   }
 
+  /* ---- 去重：修复"首段读两遍"等 DOM/收集重复 ----
+     两种情形：① 相邻两个 chunk 文本+元素完全相同（同一句被收两次）；
+     ② 开头的若干 chunk 整体重复一次（如首段在 DOM 里出现两遍，被切成 [P,P,Q]）。
+     两者都折叠成一份，从根上避免同一段被朗读两遍。 */
+  function dedupeChunks(arr) {
+    var out = [];
+    for (var i = 0; i < arr.length; i++) {
+      if (out.length && arr[i].text === out[out.length - 1].text && arr[i].el === out[out.length - 1].el) continue;
+      out.push(arr[i]);
+    }
+    var n = out.length;
+    for (var L = 1; L <= Math.floor(n / 2); L++) {
+      var ok = true;
+      for (var k = 0; k < L; k++) { if (out[k].text !== out[L + k].text) { ok = false; break; } }
+      if (ok) { out = out.slice(0, L).concat(out.slice(2 * L)); break; }
+    }
+    return out;
+  }
+
   /* ---- collect chunks by language ---- */
   var zhChunks = [], enChunks = [];
   Array.prototype.forEach.call(content.querySelectorAll(SEL), function (el) {
@@ -74,6 +93,10 @@
     var target = (lang === 'en') ? enChunks : zhChunks;
     splitText(t).forEach(function (s) { target.push({ text: s, el: el }); });
   });
+  var zhBefore = zhChunks.length, enBefore = enChunks.length;
+  zhChunks = dedupeChunks(zhChunks);
+  enChunks = dedupeChunks(enChunks);
+  if (DEBUG) dbg('dedupe zh ' + zhBefore + '->' + zhChunks.length + ', en ' + enBefore + '->' + enChunks.length + '\n');
   var hasZH = zhChunks.length > 0;
   var hasEN = enChunks.length > 0;
   if (!hasZH && !hasEN) return;
