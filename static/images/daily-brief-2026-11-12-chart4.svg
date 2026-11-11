@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" viewBox="0 0 660 300" font-family="-apple-system,Segoe UI,Roboto,Microsoft YaHei,sans-serif">
+<rect width="660" height="300" fill="#ffffff"/>
+<text x="14" y="18" fill="#1f2d3d" font-size="12" font-weight="700">AI 算力链最新业绩与订单增速（%）</text>
+<text x="646" y="18" fill="#33414f" font-size="10.5" text-anchor="end">Q3 同比，多源披露</text>
+<line x1="66.0" y1="248.0" x2="640.0" y2="248.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="60.0" y="252.0" fill="#33414f" font-size="11" text-anchor="end">0</text>
+<line x1="66.0" y1="199.0" x2="640.0" y2="199.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="60.0" y="203.0" fill="#33414f" font-size="11" text-anchor="end">50</text>
+<line x1="66.0" y1="150.0" x2="640.0" y2="150.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="60.0" y="154.0" fill="#33414f" font-size="11" text-anchor="end">100</text>
+<line x1="66.0" y1="101.0" x2="640.0" y2="101.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="60.0" y="105.0" fill="#33414f" font-size="11" text-anchor="end">150</text>
+<line x1="66.0" y1="52.0" x2="640.0" y2="52.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="60.0" y="56.0" fill="#33414f" font-size="11" text-anchor="end">200</text>
+<line x1="66.0" y1="248.0" x2="640.0" y2="248.0" stroke="#b8c4ce" stroke-width="1.2"/>
+<rect x="111.0" y="83.4" width="64.0" height="164.6" fill="#0b5cab" rx="2"/>
+<text x="143.0" y="75.4" fill="#1f2d3d" font-size="12.5" text-anchor="middle" font-weight="700">168.00</text>
+<text x="143.0" y="266" fill="#33414f" font-size="11" text-anchor="middle">CoreWeave 营收</text>
+<rect x="253.0" y="113.7" width="64.0" height="134.3" fill="#0b5cab" rx="2"/>
+<text x="285.0" y="105.7" fill="#1f2d3d" font-size="12.5" text-anchor="middle" font-weight="700">137.00</text>
+<text x="285.0" y="266" fill="#33414f" font-size="11" text-anchor="middle">光模块净利</text>
+<rect x="395.0" y="114.2" width="64.0" height="133.8" fill="#0b5cab" rx="2"/>
+<text x="427.0" y="106.2" fill="#1f2d3d" font-size="12.5" text-anchor="middle" font-weight="700">136.50</text>
+<text x="427.0" y="266" fill="#33414f" font-size="11" text-anchor="middle">Lumentum 营收</text>
+<rect x="537.0" y="153.9" width="64.0" height="94.1" fill="#0b5cab" rx="2"/>
+<text x="569.0" y="145.9" fill="#1f2d3d" font-size="12.5" text-anchor="middle" font-weight="700">96.00</text>
+<text x="569.0" y="266" fill="#33414f" font-size="11" text-anchor="middle">光模块营收</text>
+<text x="76" y="40" fill="#33414f" font-size="11">单位：%</text>
+</svg>
