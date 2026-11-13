@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" viewBox="0 0 660 300" font-family="-apple-system,Segoe UI,Roboto,Microsoft YaHei,sans-serif">
+<rect width="660" height="300" fill="#ffffff"/>
+<text x="14" y="18" fill="#1f2d3d" font-size="12" font-weight="700">COMEX 黄金期货三日收盘（美元/盎司）</text>
+<text x="646" y="18" fill="#33414f" font-size="10.5" text-anchor="end">11/12 跌破 10/30 前低 3879.3</text>
+<line x1="66.0" y1="248.0" x2="640.0" y2="248.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="60.0" y="252.0" fill="#33414f" font-size="11" text-anchor="end">0</text>
+<line x1="66.0" y1="208.8" x2="640.0" y2="208.8" stroke="#d9e1e8" stroke-width="1"/>
+<text x="60.0" y="212.8" fill="#33414f" font-size="11" text-anchor="end">1000</text>
+<line x1="66.0" y1="169.6" x2="640.0" y2="169.6" stroke="#d9e1e8" stroke-width="1"/>
+<text x="60.0" y="173.6" fill="#33414f" font-size="11" text-anchor="end">2000</text>
+<line x1="66.0" y1="130.4" x2="640.0" y2="130.4" stroke="#d9e1e8" stroke-width="1"/>
+<text x="60.0" y="134.4" fill="#33414f" font-size="11" text-anchor="end">3000</text>
+<line x1="66.0" y1="91.2" x2="640.0" y2="91.2" stroke="#d9e1e8" stroke-width="1"/>
+<text x="60.0" y="95.2" fill="#33414f" font-size="11" text-anchor="end">4000</text>
+<line x1="66.0" y1="52.0" x2="640.0" y2="52.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="60.0" y="56.0" fill="#33414f" font-size="11" text-anchor="end">5000</text>
+<line x1="66.0" y1="248.0" x2="640.0" y2="248.0" stroke="#b8c4ce" stroke-width="1.2"/>
+<rect x="134.7" y="89.6" width="64.0" height="158.4" fill="#0b5cab" rx="2"/>
+<text x="166.7" y="81.6" fill="#1f2d3d" font-size="12.5" text-anchor="middle" font-weight="700">4040.50</text>
+<text x="166.7" y="266" fill="#33414f" font-size="11" text-anchor="middle">11/10</text>
+<rect x="324.0" y="91.4" width="64.0" height="156.6" fill="#0b5cab" rx="2"/>
+<text x="356.0" y="83.4" fill="#1f2d3d" font-size="12.5" text-anchor="middle" font-weight="700">3994.30</text>
+<text x="356.0" y="266" fill="#33414f" font-size="11" text-anchor="middle">11/11</text>
+<rect x="513.3" y="96.0" width="64.0" height="152.0" fill="#0b5cab" rx="2"/>
+<text x="545.3" y="88.0" fill="#1f2d3d" font-size="12.5" text-anchor="middle" font-weight="700">3878.40</text>
+<text x="545.3" y="266" fill="#33414f" font-size="11" text-anchor="middle">11/12</text>
+<text x="76" y="40" fill="#33414f" font-size="11">单位：美元/盎司</text>
+</svg>
