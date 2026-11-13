@@ -524,5 +524,14 @@ nav > div.flex-l.center.items-center.justify-between > a {
 }
 
 /* 单篇文章页 header：博雅之璧居中取景，避免 bg-top 只露天空切掉底座（与首页/列表一致）。
-   仅覆盖 background-position，不改高度；首页/列表页本就 center 48%，无影响。 */
+   首页/列表页本就 center 48%，无影响。 */
 header.cover.bg-top { background-position: center 48% !important; }
+
+
+/* 单篇文章/关于页标题背景：桌面端适度加高，让博雅之璧上下多露一点。
+   用 :not(.hero-home) 排除首页/列表页（它们仍是 75vh）；
+   移动端缩放后图高本就小于容器高，加高只会加剧左右裁切，故限定 >=769px。
+   取景仍为 center 48%，不动。 */
+@media screen and (min-width: 769px) {
+  header.cover.bg-top:not(.hero-home) > div { min-height: 50vh; }
+}
