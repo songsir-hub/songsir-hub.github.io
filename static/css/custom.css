@@ -540,3 +540,10 @@ header.cover.bg-top { background-position: center 48% !important; }
     min-height: max(75vh, 35rem);
   }
 }
+
+/* 首页最近文章卡片：摘要里不再重复渲染正文首图。
+   summary-with-image.html 左侧已输出同一张缩略图，Hugo 自动摘要又把
+   <figure><img> 包进 .card-summary，造成同一 URL 同页画两次（字节增量≈0，
+   但布局与视觉重复）。这里只隐藏摘要区的 figure，不动模板；
+   分页页用 teaser.html 本就无图，不受影响。待以后改 layouts 时再从 DOM 层根治。 */
+.card-summary figure { display: none; }
