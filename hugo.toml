@@ -69,11 +69,13 @@ enableRobotsTXT = true
   icon = 'rss'
 
 # ============================================================
-# 菜单导航（三栏下拉：科创发展 / 历史文化 / 修身养性）
-# - 原"首页/文章/分类"由品牌链接 + 三栏下拉替代
+# 菜单导航（四栏下拉：科创发展 / 历史文化 / 修身养性 / 博雅精品）
+# - 原"首页/文章/分类"由品牌链接 + 四栏下拉替代
 # - 子菜单 parent 指向对应分类页 /categories/<分类名>/
 # - 各子栏目分类页为占位（content/categories/<名>/_index.md），
 #   待对应文章归入该分类后即自动填充
+# - 「AI与IT」显示名与分类页标题一致；URL 沿用 /categories/it应用/，
+#   以保留 5 篇既有文章与外链，不改动 content/posts/
 # ============================================================
 [[menus.main]]
   name = '科创发展'
@@ -86,7 +88,7 @@ enableRobotsTXT = true
   weight = 11
 
 [[menus.main]]
-  name = 'IT应用'
+  name = 'AI与IT'
   parent = '科创发展'
   url = '/categories/it应用/'
   weight = 12
@@ -177,11 +179,37 @@ enableRobotsTXT = true
   url = '/categories/认知觉醒/'
   weight = 34
 
-# 顶级链接（无 parent，site-navigation.html 的 else 分支会渲染为 nav-link）
+# 博雅精品：伞形产品入口（原「标签」聚合页替换）
+# - 子项落到 /boya/ 内锚点与 /nce/ 在线点读
 [[menus.main]]
-  name = '标签'
-  url = '/tags/'
+  name = '博雅精品'
   weight = 40
+
+[[menus.main]]
+  name = '博雅总览'
+  parent = '博雅精品'
+  url = '/boya/'
+  weight = 41
+
+[[menus.main]]
+  name = '博雅阅读器'
+  parent = '博雅精品'
+  url = '/boya/#reader'
+  weight = 42
+
+[[menus.main]]
+  name = '博雅有声书库'
+  parent = '博雅精品'
+  url = '/boya/#library'
+  weight = 43
+
+[[menus.main]]
+  name = '在线点读'
+  parent = '博雅精品'
+  url = '/nce/'
+  weight = 44
+
+# 顶级直链（无 parent，site-navigation.html 的 else 分支渲染为 nav-link）
 
 [[menus.main]]
   name = '搜索'

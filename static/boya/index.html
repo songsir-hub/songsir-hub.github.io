@@ -74,10 +74,13 @@
       border: 1px solid var(--line);
       border-radius: 3px;
       padding: 1.3rem 1.4rem;
+      scroll-margin-top: 1.5rem;
     }
+    .card:target { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(140,74,53,.12); }
     .card h3 { margin: 0 0 .15rem; font-size: 1.08rem; letter-spacing: .04em; }
     .card .en-name { display: block; margin: 0 0 .8rem; font-size: .8rem; color: var(--ink-soft); letter-spacing: .08em; }
     .card p { margin: 0; font-size: .93rem; color: var(--ink-soft); }
+    .card .card-link { margin: .8rem 0 0; font-size: .9rem; }
     .note {
       margin-top: 1.1rem;
       padding: .9rem 1.1rem;
@@ -137,23 +140,25 @@
     <section id="products">
       <h2>两件东西<span class="en">Two things, two jobs</span></h2>
       <div class="products">
-        <div class="card">
+        <div class="card" id="reader">
           <h3>博雅阅读器</h3>
           <span class="en-name">Boya Reader</span>
           <p>一个不联网的 Android 阅读器。把存储卡里的网页、文本、Word 与 EPUB 变成能读、能听的页面，管的是「怎么读」。</p>
+          <p class="card-link"><a href="#origin">名字的来处 →</a></p>
         </div>
-        <div class="card">
+        <div class="card" id="library">
           <h3>博雅有声书库</h3>
           <span class="en-name">Boya Library</span>
-          <p>随卡分发的网页卡包。音频与逐句文字排在一起，点一句读一句；离开阅读器，用普通浏览器也打得开，管的是「读什么」。</p>
+          <p>随卡分发的网页卡包：音频与逐句字幕排在一起，点一句读一句。目录由 data.json 与 book.json 组织，同名 mp3 与 lrc 一一对应；离开阅读器，用普通浏览器也打得开。</p>
+          <p class="card-link"><a href="/nce/">在线点读 →</a></p>
         </div>
       </div>
-      <p class="note">两者共用「博雅」词根，靠后缀区分：一个是运行时，一个是内容。技术形态上仍称 HTML 点读系统，两边靠一份不变的契约对接，各自演进互不牵扯。</p>
+      <p class="note">两者共用「博雅」词根，靠后缀区分：一个是运行时，一个是内容。技术形态上仍称 HTML 点读系统，两边靠一份不变的契约对接，各自演进互不牵扯。在线点读以《新概念英语》为例，教材与录音属第三方内容，仅供个人学习研究；下面的作品索引只收自制、公有领域或已明确授权的内容。阅读器目前只随卡分发，此处不提供下载。</p>
     </section>
 
     <section id="works">
       <h2>作品索引<span class="en">Works</span></h2>
-      <p>这里将来收录可以公开分享的自制卡包。条目由 <code>works.json</code> 驱动，一条一行，只记版本、作者、许可与反馈入口，不放音频本体。</p>
+      <p>这里将来收录可以公开分享的自制卡包。条目由 <a href="works.json">works.json</a> 驱动，一条一行，只记版本、作者、许可与反馈入口，不放音频本体。</p>
       <ul class="works" id="works-list" aria-live="polite"></ul>
       <p class="empty" id="works-empty">眼下还是空的。三处卡包副本尚未收敛成一份权威源，上游基线与许可清单也还在整理；整理完之前不开放作品提交，先把话说清楚，免得日后扯皮。</p>
     </section>
@@ -176,6 +181,7 @@
       <span>© 2026 博雅小筑 · 松朗</span>
       <a href="/">回主页</a>
       <a href="/posts/">读文章</a>
+      <a href="/nce/">在线点读</a>
     </div>
   </footer>
 
