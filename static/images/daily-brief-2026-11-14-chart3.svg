@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" viewBox="0 0 660 300" font-family="-apple-system,Segoe UI,Roboto,Microsoft YaHei,sans-serif">
+<rect width="660" height="300" fill="#ffffff"/>
+<text x="14" y="18" fill="#1f2d3d" font-size="12" font-weight="700">本周（11/9—13）主要资产累计涨跌（%）</text>
+<line x1="470.0" y1="63.3" x2="470.0" y2="245.7" stroke="#b8c4ce" stroke-width="1.2"/>
+<text x="470.0" y="258.7" fill="#33414f" font-size="10.5" text-anchor="middle">0</text>
+<rect x="348.3" y="73.3" width="121.7" height="11.5" fill="#237804" rx="1.5"/>
+<text x="342.3" y="83.1" fill="#237804" font-size="11.5" font-weight="700" text-anchor="end">-6.34%</text>
+<text x="168.0" y="83.1" fill="#33414f" font-size="11.5" text-anchor="end">COMEX 银</text>
+<rect x="381.7" y="93.0" width="88.3" height="11.5" fill="#237804" rx="1.5"/>
+<text x="375.7" y="102.7" fill="#237804" font-size="11.5" font-weight="700" text-anchor="end">-4.60%</text>
+<text x="168.0" y="102.7" fill="#33414f" font-size="11.5" text-anchor="end">COMEX 金</text>
+<rect x="430.5" y="112.5" width="39.5" height="11.5" fill="#237804" rx="1.5"/>
+<text x="424.5" y="122.3" fill="#237804" font-size="11.5" font-weight="700" text-anchor="end">-2.06%</text>
+<text x="168.0" y="122.3" fill="#33414f" font-size="11.5" text-anchor="end">布伦特</text>
+<rect x="429.7" y="132.2" width="40.3" height="11.5" fill="#237804" rx="1.5"/>
+<text x="423.7" y="141.9" fill="#237804" font-size="11.5" font-weight="700" text-anchor="end">-2.10%</text>
+<text x="168.0" y="141.9" fill="#33414f" font-size="11.5" text-anchor="end">WTI</text>
+<rect x="462.1" y="151.8" width="7.9" height="11.5" fill="#237804" rx="1.5"/>
+<text x="456.1" y="161.5" fill="#237804" font-size="11.5" font-weight="700" text-anchor="end">-0.41%</text>
+<text x="168.0" y="161.5" fill="#33414f" font-size="11.5" text-anchor="end">上证指数</text>
+<rect x="470.0" y="171.4" width="39.7" height="11.5" fill="#cf1322" rx="1.5"/>
+<text x="515.7" y="181.1" fill="#cf1322" font-size="11.5" font-weight="700" text-anchor="start">+2.07%</text>
+<text x="168.0" y="181.1" fill="#33414f" font-size="11.5" text-anchor="end">道指</text>
+<rect x="470.0" y="191.0" width="43.6" height="11.5" fill="#cf1322" rx="1.5"/>
+<text x="519.6" y="200.7" fill="#cf1322" font-size="11.5" font-weight="700" text-anchor="start">+2.27%</text>
+<text x="168.0" y="200.7" fill="#33414f" font-size="11.5" text-anchor="end">纳指</text>
+<rect x="470.0" y="210.6" width="48.2" height="11.5" fill="#cf1322" rx="1.5"/>
+<text x="524.2" y="220.3" fill="#cf1322" font-size="11.5" font-weight="700" text-anchor="start">+2.51%</text>
+<text x="168.0" y="220.3" fill="#33414f" font-size="11.5" text-anchor="end">标普500</text>
+<rect x="470.0" y="230.2" width="124.0" height="11.5" fill="#cf1322" rx="1.5"/>
+<text x="600.0" y="239.9" fill="#cf1322" font-size="11.5" font-weight="700" text-anchor="start">+6.46%</text>
+<text x="168.0" y="239.9" fill="#33414f" font-size="11.5" text-anchor="end">日经225</text>
+</svg>
