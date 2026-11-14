@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="博雅阅读器与博雅有声书库：名字的来处、两件产品的边界、作品索引与参与方式。" />
+  <title>博雅 · 阅读与有声书｜博雅小筑</title>
+  <style>
+    :root {
+      --paper: #f7f4ec;
+      --ink: #2f3437;
+      --ink-soft: #5f6769;
+      --line: #dcd5c5;
+      --accent: #8c4a35;
+      --accent-soft: #b98a6d;
+      --panel: #fffdf7;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.9;
+      letter-spacing: .01em;
+    }
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); }
+    a:hover { color: #6d3524; border-bottom-color: #6d3524; }
+    .hero {
+      position: relative;
+      min-height: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 3rem 1.5rem 2.2rem;
+      background-color: #cfc9b8;
+      background-image: linear-gradient(180deg, rgba(247,244,236,.34) 0%, rgba(247,244,236,.86) 62%, var(--paper) 100%), url('/images/background.jpg');
+      background-size: cover;
+      background-position: center 48%;
+      background-repeat: no-repeat;
+      border-bottom: 1px solid var(--line);
+    }
+    .hero-inner { width: 100%; max-width: 860px; margin: 0 auto; }
+    .eyebrow { margin: 0 0 .5rem; font-size: .82rem; letter-spacing: .22em; color: var(--ink-soft); }
+    h1 {
+      margin: 0;
+      font-family: "Songti SC", "STSong", "SimSun", serif;
+      font-size: clamp(1.9rem, 5vw, 2.9rem);
+      font-weight: 600;
+      letter-spacing: .08em;
+      line-height: 1.35;
+    }
+    .hero .sub { margin: .6rem 0 0; color: var(--ink-soft); font-size: .95rem; }
+    .credit { margin: 1.4rem 0 0; font-size: .78rem; color: var(--ink-soft); letter-spacing: .03em; }
+    main { max-width: 860px; margin: 0 auto; padding: 2.6rem 1.5rem 4rem; }
+    section { margin: 0 0 3rem; }
+    h2 {
+      margin: 0 0 1rem;
+      padding-left: .8rem;
+      border-left: 3px solid var(--accent);
+      font-family: "Songti SC", "STSong", "SimSun", serif;
+      font-size: 1.42rem;
+      font-weight: 600;
+      letter-spacing: .06em;
+    }
+    h2 .en { margin-left: .6rem; font-family: inherit; font-size: .78rem; font-weight: 400; color: var(--ink-soft); letter-spacing: .1em; }
+    p { margin: 0 0 1rem; }
+    .lede { font-size: 1.05rem; }
+    .products { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      padding: 1.3rem 1.4rem;
+    }
+    .card h3 { margin: 0 0 .15rem; font-size: 1.08rem; letter-spacing: .04em; }
+    .card .en-name { display: block; margin: 0 0 .8rem; font-size: .8rem; color: var(--ink-soft); letter-spacing: .08em; }
+    .card p { margin: 0; font-size: .93rem; color: var(--ink-soft); }
+    .note {
+      margin-top: 1.1rem;
+      padding: .9rem 1.1rem;
+      background: rgba(255,255,255,.55);
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      font-size: .92rem;
+      color: var(--ink-soft);
+    }
+    .works { list-style: none; margin: 0; padding: 0; }
+    .works li {
+      padding: .9rem 0;
+      border-bottom: 1px dashed var(--line);
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem 1rem;
+      align-items: baseline;
+    }
+    .works .w-title { font-weight: 600; }
+    .works .w-meta { font-size: .84rem; color: var(--ink-soft); }
+    .works .w-links { font-size: .84rem; }
+    .empty { margin: 0; padding: 1.1rem 1.2rem; border: 1px dashed var(--line); background: rgba(255,255,255,.5); color: var(--ink-soft); font-size: .94rem; }
+    .rules { margin: 0; padding-left: 1.3rem; color: var(--ink-soft); font-size: .94rem; }
+    .rules li { margin-bottom: .45rem; }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 1.6rem 1.5rem 2.4rem;
+      color: var(--ink-soft);
+      font-size: .85rem;
+    }
+    footer .inner { max-width: 860px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; }
+    @media (max-width: 640px) {
+      .hero { min-height: 260px; padding: 2.2rem 1.2rem 1.6rem; }
+      .products { grid-template-columns: 1fr; }
+      main { padding: 2rem 1.2rem 3rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">博 雅 小 筑 · 作 品 页</p>
+      <h1>博雅 · 阅读与有声书</h1>
+      <p class="sub">Boya Reader &amp; Boya Library</p>
+      <p class="credit">页首照片：澳门大学莲花广场「博雅之璧」，松朗摄于澳大校园</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="origin">
+      <h2>名字的来处<span class="en">Where the name comes from</span></h2>
+      <p class="lede">「博雅」二字取自这座个人主页的名字——博雅小筑；而博雅小筑，又得名于澳门大学莲花广场上那座「博雅之璧」。</p>
+      <p>雕塑由国家教育部赠送给澳门大学，委托中央美术学院组织设计与创作，二〇一八年落成于校园。它承载澳大「仁、义、礼、知、信」的校训，也寄着「大博」「大雅」的育人期许：为学要眼界广博，为人要举止清雅。以这两个字为名，是给自己留一个尺子。</p>
+      <p>后来做了一款阅读器、又整理出一套随卡分发的有声书网页，都沿用了这个词根。名字是旧的，东西是新的。</p>
+    </section>
+
+    <section id="products">
+      <h2>两件东西<span class="en">Two things, two jobs</span></h2>
+      <div class="products">
+        <div class="card">
+          <h3>博雅阅读器</h3>
+          <span class="en-name">Boya Reader</span>
+          <p>一个不联网的 Android 阅读器。把存储卡里的网页、文本、Word 与 EPUB 变成能读、能听的页面，管的是「怎么读」。</p>
+        </div>
+        <div class="card">
+          <h3>博雅有声书库</h3>
+          <span class="en-name">Boya Library</span>
+          <p>随卡分发的网页卡包。音频与逐句文字排在一起，点一句读一句；离开阅读器，用普通浏览器也打得开，管的是「读什么」。</p>
+        </div>
+      </div>
+      <p class="note">两者共用「博雅」词根，靠后缀区分：一个是运行时，一个是内容。技术形态上仍称 HTML 点读系统，两边靠一份不变的契约对接，各自演进互不牵扯。</p>
+    </section>
+
+    <section id="works">
+      <h2>作品索引<span class="en">Works</span></h2>
+      <p>这里将来收录可以公开分享的自制卡包。条目由 <code>works.json</code> 驱动，一条一行，只记版本、作者、许可与反馈入口，不放音频本体。</p>
+      <ul class="works" id="works-list" aria-live="polite"></ul>
+      <p class="empty" id="works-empty">眼下还是空的。三处卡包副本尚未收敛成一份权威源，上游基线与许可清单也还在整理；整理完之前不开放作品提交，先把话说清楚，免得日后扯皮。</p>
+    </section>
+
+    <section id="join">
+      <h2>参与与边界<span class="en">Taking part</span></h2>
+      <p>建议、报错，或想推荐一份值得做成卡包的公有领域文本，可以到 <a href="https://github.com/songsir-hub/songsir-hub.github.io/issues" target="_blank" rel="noopener noreferrer">Issues</a> 留一句，标题写上作品名即可。等基线补齐，这里会按 <code>manifest.json</code> 的字段开放作品提交。</p>
+      <ul class="rules">
+        <li>只收自己录的朗读与原创字幕、公有领域文本，以及已明确授权可再分发的内容；第三方教材和原版录音不进这个池子。</li>
+        <li>每个卡包自带署名与许可说明，改一版升一次版本号。</li>
+        <li>阅读器不内置内容市场，书库不托管大体积音频；两件东西都不联网、不要账号。</li>
+        <li>反馈留在可检索的地方，不建群，也不做需要天天照看的渠道。</li>
+      </ul>
+      <p class="note">播放器代码来自开源项目 iChochy/NCE，按 MIT 许可随包保留授权文件与致谢；许可只覆盖代码，不覆盖课文、录音与字幕。此处为技术说明，非法律意见。</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="inner">
+      <span>© 2026 博雅小筑 · 松朗</span>
+      <a href="/">回主页</a>
+      <a href="/posts/">读文章</a>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var list = document.getElementById('works-list');
+      var empty = document.getElementById('works-empty');
+      function safeHref(u) {
+        if (typeof u !== 'string') return '';
+        return /^(https?:\/\/|\/|\.\/)/i.test(u.trim()) ? u.trim() : '';
+      }
+      function text(tag, cls, value) {
+        var el = document.createElement(tag);
+        if (cls) el.className = cls;
+        el.textContent = value == null ? '' : String(value);
+        return el;
+      }
+      function link(href, label) {
+        var u = safeHref(href);
+        if (!u) return text('span', 'w-meta', label || '—');
+        var a = text('a', '', label || u);
+        a.href = u;
+        if (/^https?:/i.test(u)) { a.target = '_blank'; a.rel = 'noopener noreferrer'; }
+        return a;
+      }
+      function render(data) {
+        var works = (data && Array.isArray(data.works)) ? data.works : [];
+        if (!works.length) return;
+        empty.hidden = true;
+        works.forEach(function (w) {
+          var li = document.createElement('li');
+          li.appendChild(text('span', 'w-title', w.title || w.id || '未命名作品'));
+          li.appendChild(text('span', 'w-meta', [w.author, w.version, w.license, w.source, w.updated].filter(Boolean).join(' · ')));
+          var links = document.createElement('span');
+          links.className = 'w-links';
+          if (safeHref(w.entry)) { links.appendChild(link(w.entry, '打开')); links.appendChild(document.createTextNode('　')); }
+          if (safeHref(w.feedback)) links.appendChild(link(w.feedback, '反馈'));
+          if (links.childNodes.length) li.appendChild(links);
+          list.appendChild(li);
+        });
+      }
+      fetch('works.json', { cache: 'no-store' })
+        .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(render)
+        .catch(function () { empty.textContent = '索引暂时读不出来，稍后再试；也可以直接到 Issues 留言。'; });
+    })();
+  </script>
+</body>
+</html>
