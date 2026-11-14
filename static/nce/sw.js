@@ -8,7 +8,7 @@
  *   · book.json / data.json：stale-while-revalidate（离线优先 + 后台校验）
  */
 
-const SW_VERSION = 'nce-pwa-v2';
+const SW_VERSION = 'nce-pwa-v2-nospon';
 const CACHE_NAME = `nce-${SW_VERSION}`;
 const AUDIO_PREFIX = 'audio/';
 
@@ -18,7 +18,6 @@ const APP_SHELL = [
   'index.html',
   'manifest.webmanifest',
   'data.json',
-  'sponsor.json',
   'favicon.ico',
   'css/style.css',
   'js/main.js',
@@ -30,7 +29,6 @@ const APP_SHELL = [
   'js/ui/LyricsView.js',
   'js/ui/UnitView.js',
   'js/ui/Toast.js',
-  'js/ui/modal.js',
   'js/ui/theme.js',
   'js/managers/CacheManager.js',
   'js/utils/LRCParser.js',

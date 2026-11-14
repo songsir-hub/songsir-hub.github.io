@@ -5,7 +5,6 @@
 
 import { ReadingSystem } from './ReadingSystem.js';
 import { ThemeManager } from './ui/theme.js';
-import { SupportModal } from './ui/modal.js';
 
 function boot() {
   try {
@@ -14,20 +13,13 @@ function boot() {
     });
     themeManager.init();
 
-    const supportModal = new SupportModal({
-      modal: document.getElementById('supportModal'),
-      openBtn: document.getElementById('supportBtn'),
-      closeBtn: document.getElementById('supportCloseBtn'),
-    });
-    supportModal.init();
-
     const readingSystem = new ReadingSystem();
 
     if (window.__DEV__) {
-      Object.assign(window, { readingSystem, themeManager, supportModal });
+      Object.assign(window, { readingSystem, themeManager });
     }
 
-    return { readingSystem, themeManager, supportModal };
+    return { readingSystem, themeManager };
   } catch (error) {
     console.error('Failed to initialize iReader:', error);
     document.body.replaceChildren();
