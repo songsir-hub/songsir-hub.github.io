@@ -69,7 +69,7 @@ enableRobotsTXT = true
   icon = 'rss'
 
 # ============================================================
-# 菜单导航（四栏下拉：科创发展 / 历史文化 / 修身养性 / 博雅精品）
+# 菜单导航（四栏下拉：科创发展 / 历史文化 / 修身养性 / 博雅作品）
 # - 原"首页/文章/分类"由品牌链接 + 四栏下拉替代
 # - 子菜单 parent 指向对应分类页 /categories/<分类名>/
 # - 各子栏目分类页为占位（content/categories/<名>/_index.md），
@@ -179,33 +179,33 @@ enableRobotsTXT = true
   url = '/categories/认知觉醒/'
   weight = 34
 
-# 博雅精品：伞形产品入口（原「标签」聚合页替换）
+# 博雅作品：伞形产品入口（原「标签」聚合页替换）
 # - 子项落到 /boya/ 内锚点与 /nce/ 在线点读
 [[menus.main]]
-  name = '博雅精品'
+  name = '博雅作品'
   weight = 40
 
 [[menus.main]]
   name = '博雅总览'
-  parent = '博雅精品'
+  parent = '博雅作品'
   url = '/boya/'
   weight = 41
 
 [[menus.main]]
   name = '博雅阅读器'
-  parent = '博雅精品'
+  parent = '博雅作品'
   url = '/boya/#reader'
   weight = 42
 
 [[menus.main]]
   name = '博雅有声书库'
-  parent = '博雅精品'
+  parent = '博雅作品'
   url = '/boya/#library'
   weight = 43
 
 [[menus.main]]
   name = '在线点读'
-  parent = '博雅精品'
+  parent = '博雅作品'
   url = '/nce/'
   weight = 44
 
