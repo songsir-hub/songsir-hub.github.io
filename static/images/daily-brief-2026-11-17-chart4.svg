@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" viewBox="0 0 660 300" font-family="-apple-system,Segoe UI,Roboto,Microsoft YaHei,sans-serif">
+<rect width="660" height="300" fill="#ffffff"/>
+<text x="14" y="18" fill="#1f2d3d" font-size="12" font-weight="700">SemiAnalysis 对 AI 算力预测的下修幅度（%）</text>
+<line x1="470.0" y1="92.7" x2="470.0" y2="216.3" stroke="#b8c4ce" stroke-width="1.2"/>
+<text x="470.0" y="229.3" fill="#33414f" font-size="10.5" text-anchor="middle">0</text>
+<rect x="367.3" y="102.7" width="102.7" height="11.5" fill="#237804" rx="1.5"/>
+<text x="361.3" y="112.5" fill="#237804" font-size="11.5" font-weight="700" text-anchor="end">-28.00%</text>
+<text x="168.0" y="112.5" fill="#33414f" font-size="11.5" text-anchor="end">2028资本开支</text>
+<rect x="323.3" y="122.3" width="146.7" height="11.5" fill="#237804" rx="1.5"/>
+<text x="317.3" y="132.1" fill="#237804" font-size="11.5" font-weight="700" text-anchor="end">-40.00%</text>
+<text x="168.0" y="132.1" fill="#33414f" font-size="11.5" text-anchor="end">2030资本开支</text>
+<rect x="407.7" y="141.9" width="62.3" height="11.5" fill="#237804" rx="1.5"/>
+<text x="401.7" y="151.7" fill="#237804" font-size="11.5" font-weight="700" text-anchor="end">-17.00%</text>
+<text x="168.0" y="151.7" fill="#33414f" font-size="11.5" text-anchor="end">硅片面积26-30</text>
+<rect x="360.0" y="161.6" width="110.0" height="11.5" fill="#237804" rx="1.5"/>
+<text x="354.0" y="171.3" fill="#237804" font-size="11.5" font-weight="700" text-anchor="end">-30.00%</text>
+<text x="168.0" y="171.3" fill="#33414f" font-size="11.5" text-anchor="end">2028HBM需求</text>
+<rect x="345.3" y="181.2" width="124.7" height="11.5" fill="#237804" rx="1.5"/>
+<text x="339.3" y="190.9" fill="#237804" font-size="11.5" font-weight="700" text-anchor="end">-34.00%</text>
+<text x="168.0" y="190.9" fill="#33414f" font-size="11.5" text-anchor="end">2030功耗需求</text>
+<rect x="228.0" y="200.8" width="242.0" height="11.5" fill="#237804" rx="1.5"/>
+<text x="222.0" y="210.5" fill="#237804" font-size="11.5" font-weight="700" text-anchor="end">-66.00%</text>
+<text x="168.0" y="210.5" fill="#33414f" font-size="11.5" text-anchor="end">英伟达2030出货</text>
+</svg>
