@@ -5,69 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="博雅阅读器与博雅有声书库：名字的来处、两件产品的边界、作品索引与参与方式。" />
   <title>博雅 · 阅读与有声书｜博雅小筑</title>
+  <!-- 站点导航条与其余页面完全一致：引入线上站点样式三件套（Ananke+Tachyons / 字体 / 古典水墨主题），
+       保证「博雅作品」四栏下拉、品牌 SongSir'BLOG、社交图标与全站同一套视觉 -->
+  <link rel="stylesheet" href="/ananke/css/main.min.css" />
+  <link rel="stylesheet" href="/css/fonts.css" />
+  <link rel="stylesheet" href="/css/custom.css" />
   <style>
+    /* 本页正文版式：套用站内古典水墨基调（金棕 #b8956a / #8b6914、宣纸 #f5efe3、宋体），
+       与古文类文章页保持一致；仅本页专用，不影响站内模板 */
     :root {
-      --paper: #f7f4ec;
-      --ink: #2f3437;
-      --ink-soft: #5f6769;
-      --line: #dcd5c5;
-      --accent: #8c4a35;
-      --accent-soft: #b98a6d;
-      --panel: #fffdf7;
+      --paper: #f5efe3;
+      --ink: #1a1208;
+      --ink-soft: #5a4633;
+      --line: #b8956a;
+      --accent: #8b6914;
+      --accent-soft: #c8a84b;
+      --panel: #faf4e6;
+      --serif: 'Noto Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', 'SimSun', serif;
     }
     * { box-sizing: border-box; }
     html { -webkit-text-size-adjust: 100%; }
     body {
       margin: 0;
       background: var(--paper);
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 39px,
+          rgba(100,70,30,0.06) 39px, rgba(100,70,30,0.06) 40px);
       color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-family: var(--serif);
       font-size: 16px;
       line-height: 1.9;
       letter-spacing: .01em;
     }
-    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); }
-    a:hover { color: #6d3524; border-bottom-color: #6d3524; }
-    .hero {
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(200,168,75,.5); }
+    a:hover { color: #6d5310; border-bottom-color: #6d5310; }
+    main { max-width: 860px; margin: 0 auto; padding: 2.6rem 1.5rem 4rem; }
+    .classical-article {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 40px 50px;
+      margin: 30px 0;
+      box-shadow: 0 2px 6px rgba(90,60,20,.12), 0 8px 30px rgba(60,35,10,.18);
       position: relative;
-      min-height: 320px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 3rem 1.5rem 2.2rem;
-      background-color: #cfc9b8;
-      background-image: linear-gradient(180deg, rgba(247,244,236,.34) 0%, rgba(247,244,236,.86) 62%, var(--paper) 100%), url('/images/background.jpg');
-      background-size: cover;
-      background-position: center 48%;
-      background-repeat: no-repeat;
-      border-bottom: 1px solid var(--line);
     }
-    .hero-inner { width: 100%; max-width: 860px; margin: 0 auto; }
-    .eyebrow { margin: 0 0 .5rem; font-size: .82rem; letter-spacing: .22em; color: var(--ink-soft); }
+    .classical-article::before,
+    .classical-article::after {
+      content: '';
+      position: absolute;
+      top: 20px; bottom: 20px;
+      width: 3px;
+      background: linear-gradient(180deg, transparent 0%, var(--line) 10%, var(--line) 90%, transparent 100%);
+    }
+    .classical-article::before { left: 12px; }
+    .classical-article::after  { right: 12px; }
+    .eyebrow { margin: 0 0 1rem; font-size: .82rem; letter-spacing: .24em; color: var(--accent); text-align: center; }
+    .title-block { text-align: center; margin-bottom: 26px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
     h1 {
       margin: 0;
-      font-family: "Songti SC", "STSong", "SimSun", serif;
-      font-size: clamp(1.9rem, 5vw, 2.9rem);
-      font-weight: 600;
-      letter-spacing: .08em;
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 4.6vw, 2.7rem);
+      font-weight: 700;
+      letter-spacing: .12em;
       line-height: 1.35;
+      color: var(--ink);
     }
-    .hero .sub { margin: .6rem 0 0; color: var(--ink-soft); font-size: .95rem; }
-    .credit { margin: 1.4rem 0 0; font-size: .78rem; color: var(--ink-soft); letter-spacing: .03em; }
-    main { max-width: 860px; margin: 0 auto; padding: 2.6rem 1.5rem 4rem; }
+    .hero-sub { margin: .55rem 0 0; color: var(--ink-soft); font-size: .98rem; letter-spacing: .06em; text-align: center; }
+    .credit { margin: 1rem 0 0; font-size: .8rem; color: var(--ink-soft); letter-spacing: .03em; text-align: center; }
     section { margin: 0 0 3rem; }
     h2 {
-      margin: 0 0 1rem;
-      padding-left: .8rem;
+      margin: 0 0 1.2rem;
+      padding-left: .9rem;
       border-left: 3px solid var(--accent);
-      font-family: "Songti SC", "STSong", "SimSun", serif;
+      font-family: var(--serif);
       font-size: 1.42rem;
-      font-weight: 600;
-      letter-spacing: .06em;
+      font-weight: 700;
+      letter-spacing: .08em;
+      color: var(--ink);
     }
-    h2 .en { margin-left: .6rem; font-family: inherit; font-size: .78rem; font-weight: 400; color: var(--ink-soft); letter-spacing: .1em; }
-    p { margin: 0 0 1rem; }
-    .lede { font-size: 1.05rem; }
+    h2 .en { margin-left: .6rem; font-family: var(--serif); font-size: .78rem; font-weight: 400; color: var(--ink-soft); letter-spacing: .1em; }
+    p { margin: 0 0 1rem; text-align: justify; }
+    .lede { font-size: 1.06rem; }
+    .chapter-divider { display: flex; align-items: center; gap: 16px; margin: 2rem 0 3rem; }
+    .chapter-divider::before, .chapter-divider::after {
+      content: ''; flex: 1; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+    }
+    .chapter-divider-text { color: var(--accent); font-size: .9rem; letter-spacing: .1em; }
     .products { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
     .card {
       background: var(--panel);
@@ -75,19 +99,20 @@
       border-radius: 3px;
       padding: 1.3rem 1.4rem;
       scroll-margin-top: 1.5rem;
+      transition: border-color .2s, box-shadow .2s;
     }
-    .card:target { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(140,74,53,.12); }
-    .card h3 { margin: 0 0 .15rem; font-size: 1.08rem; letter-spacing: .04em; }
+    .card:target { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(139,105,20,.12); }
+    .card h3 { margin: 0 0 .15rem; font-family: var(--serif); font-size: 1.12rem; font-weight: 700; letter-spacing: .04em; color: var(--ink); }
     .card .en-name { display: block; margin: 0 0 .8rem; font-size: .8rem; color: var(--ink-soft); letter-spacing: .08em; }
-    .card p { margin: 0; font-size: .93rem; color: var(--ink-soft); }
+    .card p { margin: 0; font-size: .95rem; color: var(--ink-soft); text-align: left; }
     .card .card-link { margin: .8rem 0 0; font-size: .9rem; }
     .note {
       margin-top: 1.1rem;
-      padding: .9rem 1.1rem;
-      background: rgba(255,255,255,.55);
-      border: 1px solid var(--line);
-      border-radius: 3px;
-      font-size: .92rem;
+      padding: 1rem 1.2rem;
+      background: rgba(200,168,75,.08);
+      border-left: 4px solid var(--accent-soft);
+      border-radius: 0 2px 2px 0;
+      font-size: .94rem;
       color: var(--ink-soft);
     }
     .works { list-style: none; margin: 0; padding: 0; }
@@ -99,91 +124,152 @@
       gap: .4rem 1rem;
       align-items: baseline;
     }
-    .works .w-title { font-weight: 600; }
+    .works .w-title { font-weight: 600; color: var(--ink); }
     .works .w-meta { font-size: .84rem; color: var(--ink-soft); }
     .works .w-links { font-size: .84rem; }
-    .empty { margin: 0; padding: 1.1rem 1.2rem; border: 1px dashed var(--line); background: rgba(255,255,255,.5); color: var(--ink-soft); font-size: .94rem; }
+    .empty { margin: 0; padding: 1.1rem 1.2rem; border: 1px dashed var(--line); background: rgba(255,253,247,.5); color: var(--ink-soft); font-size: .94rem; }
     .rules { margin: 0; padding-left: 1.3rem; color: var(--ink-soft); font-size: .94rem; }
     .rules li { margin-bottom: .45rem; }
-    footer {
+    .source-note {
+      margin-top: 2.2rem;
+      padding-top: 1.4rem;
       border-top: 1px solid var(--line);
-      padding: 1.6rem 1.5rem 2.4rem;
-      color: var(--ink-soft);
       font-size: .85rem;
+      color: #8b6d3a;
+      letter-spacing: .04em;
+      line-height: 1.8;
+      text-align: center;
     }
-    footer .inner { max-width: 860px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; }
+    .source-note a { color: var(--accent); }
+    @media (max-width: 768px) {
+      .site-menu { gap: .5rem; }
+      .site-menu > li.nav-item > .nav-link { font-size: 1rem; }
+    }
     @media (max-width: 640px) {
-      .hero { min-height: 260px; padding: 2.2rem 1.2rem 1.6rem; }
       .products { grid-template-columns: 1fr; }
       main { padding: 2rem 1.2rem 3rem; }
+      .classical-article { padding: 24px 18px; }
+      h1 { font-size: 1.6rem; }
     }
   </style>
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">博 雅 小 筑 · 作 品 页</p>
+  <!-- 顶部导航条：与全站 site-navigation.html 同结构，复用站点样式渲染，
+       品牌 SongSir'BLOG + 四栏下拉（科创发展/历史文化/修身养性/博雅作品）+ 社交图标 -->
+  <nav class="pv3 ph3 ph4-ns" role="navigation">
+    <div class="flex-l center items-center justify-between">
+      <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">SongSir'BLOG</a>
+      <div class="flex-l items-center">
+        <ul class="pl0 mr3 site-menu">
+          <li class="nav-item has-children">
+            <span class="nav-link nav-trigger" tabindex="0" aria-haspopup="true" aria-expanded="false">科创发展</span>
+            <ul class="dropdown">
+              <li><a class="dropdown-link" href="/categories/科技前沿/">科技前沿</a></li>
+              <li><a class="dropdown-link" href="/categories/it应用/">AI与IT</a></li>
+              <li><a class="dropdown-link" href="/categories/科技述评/">科技述评</a></li>
+              <li><a class="dropdown-link" href="/categories/科创万象/">科创万象</a></li>
+              <li><a class="dropdown-link" href="/categories/经济发展/">经济发展</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-children">
+            <span class="nav-link nav-trigger" tabindex="0" aria-haspopup="true" aria-expanded="false">历史文化</span>
+            <ul class="dropdown">
+              <li><a class="dropdown-link" href="/categories/东夷莱夷/">东夷莱夷</a></li>
+              <li><a class="dropdown-link" href="/categories/古文品鉴/">古文品鉴</a></li>
+              <li><a class="dropdown-link" href="/categories/沽河文化/">沽河文化</a></li>
+              <li><a class="dropdown-link" href="/categories/名篇品鉴/">名篇品鉴</a></li>
+              <li><a class="dropdown-link" href="/categories/文化博览/">文化博览</a></li>
+              <li><a class="dropdown-link" href="/categories/诗词歌赋/">诗词歌赋</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-children">
+            <span class="nav-link nav-trigger" tabindex="0" aria-haspopup="true" aria-expanded="false">修身养性</span>
+            <ul class="dropdown">
+              <li><a class="dropdown-link" href="/categories/学习教育/">学习教育</a></li>
+              <li><a class="dropdown-link" href="/categories/健康管理/">健康管理</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-children">
+            <span class="nav-link nav-trigger" tabindex="0" aria-haspopup="true" aria-expanded="false">博雅作品</span>
+            <ul class="dropdown">
+              <li><a class="dropdown-link" href="/boya/">博雅总览</a></li>
+              <li><a class="dropdown-link" href="/boya/#reader">博雅阅读器</a></li>
+              <li><a class="dropdown-link" href="/boya/#library">博雅有声书库</a></li>
+              <li><a class="dropdown-link" href="/nce/">在线点读</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="ananke-socials">
+          <a href="https://github.com/songsir-hub/" target="_blank" rel="noopener" class="ananke-social-link link-transition github link dib z-999 pt3 pt0-l mr1" title="follow on GitHub - Opens in a new window" aria-label="follow on GitHub - Opens in a new window"><span class="icon"><svg role="img" viewBox="0 0 24 24"><title>GitHub</title><path d="M12 .297c-6.63.0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577.0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93.0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176.0.0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22.0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22.0 1.606-.015 2.896-.015 3.286.0.315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span></a>
+          <a href="https://songsir-hub.github.io/index.xml" target="_blank" rel="noopener" class="ananke-social-link link-transition rss link dib z-999 pt3 pt0-l mr1" title="follow on RSS - Opens in a new window" aria-label="follow on RSS - Opens in a new window"><span class="icon"><svg role="img" viewBox="0 0 24 24"><title>RSS</title><path d="M19.199 24C19.199 13.467 10.533 4.8.0 4.8V0c13.165.0 24 10.835 24 24h-4.801zM3.291 17.415c1.814.0 3.293 1.479 3.293 3.295.0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526.0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727.0 15.909 7.184 15.909 15.91z"/></svg></span></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 紧凑页面头：博雅之璧背景 + 居中标题（与站内文章页 header 一致，去重后的唯一 H1） -->
+  <header style="background: linear-gradient(180deg, rgba(245,239,227,.2) 0%, rgba(245,239,227,.55) 50%, #f5efe3 100%), url('/images/background.jpg'); background-size: cover; background-position: center 48%; background-repeat: no-repeat; background-color: #cfc9b8; border-bottom: 1px solid #b8956a; padding: 2.4rem 1.5rem 1.8rem;">
+    <div style="max-width: 860px; margin: 0 auto;">
+      <p class="eyebrow" style="text-align:center;">博 雅 小 筑 · 作 品 页</p>
       <h1>博雅 · 阅读与有声书</h1>
-      <p class="sub">Boya Reader &amp; Boya Library</p>
+      <p class="hero-sub">Boya Reader &amp; Boya Library</p>
       <p class="credit">页首照片：澳门大学莲花广场「博雅之璧」，松朗摄于澳大校园</p>
     </div>
   </header>
 
   <main>
-    <section id="origin">
-      <h2>名字的来处<span class="en">Where the name comes from</span></h2>
-      <p class="lede">「博雅」二字取自这座个人主页的名字——博雅小筑；而博雅小筑，又得名于澳门大学莲花广场上那座「博雅之璧」。</p>
-      <p>雕塑由国家教育部赠送给澳门大学，委托中央美术学院组织设计与创作，二〇一八年落成于校园。它承载澳大「仁、义、礼、知、信」的校训，也寄着「大博」「大雅」的育人期许：为学要眼界广博，为人要举止清雅。以这两个字为名，是给自己留一个尺子。</p>
-      <p>后来做了一款阅读器、又整理出一套随卡分发的有声书网页，都沿用了这个词根。名字是旧的，东西是新的。</p>
-    </section>
+    <div class="classical-article">
+      <section id="origin">
+        <h2>名字的来处<span class="en">Where the name comes from</span></h2>
+        <p class="lede">「博雅」二字取自这座个人主页的名字——博雅小筑；而博雅小筑，又得名于澳门大学莲花广场上那座「博雅之璧」。</p>
+        <p>雕塑由国家教育部赠送给澳门大学，委托中央美术学院组织设计与创作，二〇一八年落成于校园。它承载澳大「仁、义、礼、知、信」的校训，也寄着「大博」「大雅」的育人期许：为学要眼界广博，为人要举止清雅。以这两个字为名，是给自己留一个尺子。</p>
+        <p>后来做了一款阅读器、又整理出一套随卡分发的有声书网页，都沿用了这个词根。名字是旧的，东西是新的。</p>
+        <div class="chapter-divider" aria-hidden="true"><span class="chapter-divider-text">◆</span></div>
+      </section>
 
-    <section id="products">
-      <h2>两件东西<span class="en">Two things, two jobs</span></h2>
-      <div class="products">
-        <div class="card" id="reader">
-          <h3>博雅阅读器</h3>
-          <span class="en-name">Boya Reader</span>
-          <p>一个不联网的 Android 阅读器。把存储卡里的网页、文本、Word 与 EPUB 变成能读、能听的页面，管的是「怎么读」。</p>
-          <p class="card-link"><a href="#origin">名字的来处 →</a></p>
+      <section id="products">
+        <h2>两件东西<span class="en">Two things, two jobs</span></h2>
+        <div class="products">
+          <div class="card" id="reader">
+            <h3>博雅阅读器</h3>
+            <span class="en-name">Boya Reader</span>
+            <p>一个不联网的 Android 阅读器。把存储卡里的网页、文本、Word 与 EPUB 变成能读、能听的页面，管的是「怎么读」。</p>
+            <p class="card-link"><a href="#origin">名字的来处 →</a></p>
+          </div>
+          <div class="card" id="library">
+            <h3>博雅有声书库</h3>
+            <span class="en-name">Boya Library</span>
+            <p>随卡分发的网页卡包：音频与逐句字幕排在一起，点一句读一句。目录由 data.json 与 book.json 组织，同名 mp3 与 lrc 一一对应；离开阅读器，用普通浏览器也打得开。</p>
+            <p class="card-link"><a href="/nce/">在线点读 →</a></p>
+          </div>
         </div>
-        <div class="card" id="library">
-          <h3>博雅有声书库</h3>
-          <span class="en-name">Boya Library</span>
-          <p>随卡分发的网页卡包：音频与逐句字幕排在一起，点一句读一句。目录由 data.json 与 book.json 组织，同名 mp3 与 lrc 一一对应；离开阅读器，用普通浏览器也打得开。</p>
-          <p class="card-link"><a href="/nce/">在线点读 →</a></p>
-        </div>
-      </div>
-      <p class="note">两者共用「博雅」词根，靠后缀区分：一个是运行时，一个是内容。技术形态上仍称 HTML 点读系统，两边靠一份不变的契约对接，各自演进互不牵扯。在线点读以《新概念英语》为例，教材与录音属第三方内容，仅供个人学习研究；下面的作品索引只收自制、公有领域或已明确授权的内容。阅读器目前只随卡分发，此处不提供下载。</p>
-    </section>
+        <p class="note">两者共用「博雅」词根，靠后缀区分：一个是运行时，一个是内容。技术形态上仍称 HTML 点读系统，两边靠一份不变的契约对接，各自演进互不牵扯。在线点读以《新概念英语》为例，教材与录音属第三方内容，仅供个人学习研究；下面的作品索引只收自制、公有领域或已明确授权的内容。阅读器目前只随卡分发，此处不提供下载。</p>
+        <div class="chapter-divider" aria-hidden="true"><span class="chapter-divider-text">◆</span></div>
+      </section>
 
-    <section id="works">
-      <h2>作品索引<span class="en">Works</span></h2>
-      <p>这里将来收录可以公开分享的自制卡包。条目由 <a href="works.json">works.json</a> 驱动，一条一行，只记版本、作者、许可与反馈入口，不放音频本体。</p>
-      <ul class="works" id="works-list" aria-live="polite"></ul>
-      <p class="empty" id="works-empty">眼下还是空的。三处卡包副本尚未收敛成一份权威源，上游基线与许可清单也还在整理；整理完之前不开放作品提交，先把话说清楚，免得日后扯皮。</p>
-    </section>
+      <section id="works">
+        <h2>作品索引<span class="en">Works</span></h2>
+        <p>这里将来收录可以公开分享的自制卡包。条目由 <a href="works.json">works.json</a> 驱动，一条一行，只记版本、作者、许可与反馈入口，不放音频本体。</p>
+        <ul class="works" id="works-list" aria-live="polite"></ul>
+        <p class="empty" id="works-empty">眼下还是空的。三处卡包副本尚未收敛成一份权威源，上游基线与许可清单也还在整理；整理完之前不开放作品提交，先把话说清楚，免得日后扯皮。</p>
+        <div class="chapter-divider" aria-hidden="true"><span class="chapter-divider-text">◆</span></div>
+      </section>
 
-    <section id="join">
-      <h2>参与与边界<span class="en">Taking part</span></h2>
-      <p>建议、报错，或想推荐一份值得做成卡包的公有领域文本，可以到 <a href="https://github.com/songsir-hub/songsir-hub.github.io/issues" target="_blank" rel="noopener noreferrer">Issues</a> 留一句，标题写上作品名即可。等基线补齐，这里会按 <code>manifest.json</code> 的字段开放作品提交。</p>
-      <ul class="rules">
-        <li>只收自己录的朗读与原创字幕、公有领域文本，以及已明确授权可再分发的内容；第三方教材和原版录音不进这个池子。</li>
-        <li>每个卡包自带署名与许可说明，改一版升一次版本号。</li>
-        <li>阅读器不内置内容市场，书库不托管大体积音频；两件东西都不联网、不要账号。</li>
-        <li>反馈留在可检索的地方，不建群，也不做需要天天照看的渠道。</li>
-      </ul>
-      <p class="note">播放器代码来自开源项目 iChochy/NCE，按 MIT 许可随包保留授权文件与致谢；许可只覆盖代码，不覆盖课文、录音与字幕。此处为技术说明，非法律意见。</p>
-    </section>
-  </main>
+      <section id="join">
+        <h2>参与与边界<span class="en">Taking part</span></h2>
+        <p>建议、报错，或想推荐一份值得做成卡包的公有领域文本，可以到 <a href="https://github.com/songsir-hub/songsir-hub.github.io/issues" target="_blank" rel="noopener noreferrer">Issues</a> 留一句，标题写上作品名即可。等基线补齐，这里会按 <code>manifest.json</code> 的字段开放作品提交。</p>
+        <ul class="rules">
+          <li>只收自己录的朗读与原创字幕、公有领域文本，以及已明确授权可再分发的内容；第三方教材和原版录音不进这个池子。</li>
+          <li>每个卡包自带署名与许可说明，改一版升一次版本号。</li>
+          <li>阅读器不内置内容市场，书库不托管大体积音频；两件东西都不联网、不要账号。</li>
+          <li>反馈留在可检索的地方，不建群，也不做需要天天照看的渠道。</li>
+        </ul>
+        <p class="note">播放器代码来自开源项目 iChochy/NCE，按 MIT 许可随包保留授权文件与致谢；许可只覆盖代码，不覆盖课文、录音与字幕。此处为技术说明，非法律意见。</p>
+      </section>
 
-  <footer>
-    <div class="inner">
-      <span>© 2026 博雅小筑 · 松朗</span>
-      <a href="/">回主页</a>
-      <a href="/posts/">读文章</a>
-      <a href="/nce/">在线点读</a>
+      <p class="source-note">© 2026 博雅小筑 · 松朗　·　<a href="/">回主页</a>　·　<a href="/posts/">读文章</a>　·　<a href="/nce/">在线点读</a></p>
     </div>
-  </footer>
+  </main>
 
   <script>
     (function () {
