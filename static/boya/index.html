@@ -207,13 +207,14 @@
     </div>
   </nav>
 
-  <!-- 紧凑页面头：博雅之璧背景 + 居中标题（与站内文章页 header 一致，去重后的唯一 H1） -->
-  <header style="background: linear-gradient(180deg, rgba(245,239,227,.2) 0%, rgba(245,239,227,.55) 50%, #f5efe3 100%), url('/images/background.jpg'); background-size: cover; background-position: center 48%; background-repeat: no-repeat; background-color: #cfc9b8; border-bottom: 1px solid #b8956a; padding: 2.4rem 1.5rem 1.8rem;">
-    <div style="max-width: 860px; margin: 0 auto;">
-      <p class="eyebrow" style="text-align:center;">博 雅 小 筑 · 作 品 页</p>
-      <h1>博雅 · 阅读与有声书</h1>
-      <p class="hero-sub">Boya Reader &amp; Boya Library</p>
-      <p class="credit">页首照片：澳门大学莲花广场「博雅之璧」，松朗摄于澳大校园</p>
+  <!-- 页面头：博雅之璧背景 + 黑色 40% 遮罩 + 白字，与站内首页/文章页 hero 视觉一致（原米黄渐变已改） -->
+  <header class="cover bg-top hero-boya" style="position:relative; background-image: url('/images/background.jpg'); background-size: cover; background-position: center 48%; background-repeat: no-repeat; background-color:#2a2620; padding: 2.4rem 1.5rem 1.8rem; min-height: 120px;">
+    <div class="bg-black-40" style="position:absolute; inset:0; z-index:0;"></div>
+    <div style="position:relative; z-index:1; max-width: 860px; margin: 0 auto;">
+      <p class="eyebrow" style="text-align:center; color: rgba(255,255,255,.85);">博 雅 小 筑 · 作 品 页</p>
+      <h1 style="color:#fff; text-shadow: 0 1px 3px rgba(0,0,0,.5);">博雅 · 阅读与有声书</h1>
+      <p class="hero-sub" style="color: rgba(255,255,255,.92); text-shadow: 0 1px 2px rgba(0,0,0,.4);">Boya Reader &amp; Boya Library</p>
+      <p class="credit" style="color: rgba(255,255,255,.8); text-shadow: 0 1px 2px rgba(0,0,0,.4);">页首照片：澳门大学莲花广场「博雅之璧」，松朗摄于澳大校园</p>
     </div>
   </header>
 
