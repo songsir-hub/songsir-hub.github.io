@@ -238,3 +238,11 @@ article.post {
   margin: 0 .7rem;
   color: #cbd5e0;
 }
+
+/* 首页及各导航/列表页 hero 标题上移（与 static/css/custom.css 同源同步）。
+   让标题落在博雅之璧图的中部以上，收紧大屏标题区顶部内边距。 */
+@media screen and (min-width: 60em) {
+  header.cover > div > div.tc-l { padding-top: 1.5rem !important; }
+  header.cover > div > div.tc-l > h1.site-title,
+  header.cover > div > div.tc-l > h1.page-hero-title { margin-top: 0 !important; }
+}
