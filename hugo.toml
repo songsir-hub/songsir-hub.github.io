@@ -186,7 +186,7 @@ enableRobotsTXT = true
   weight = 40
 
 [[menus.main]]
-  name = '博雅总览'
+  name = '软件总览'
   parent = '博雅作品'
   url = '/boya/'
   weight = 41
