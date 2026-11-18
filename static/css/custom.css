@@ -547,3 +547,12 @@ header.cover.bg-top { background-position: center 48% !important; }
    但布局与视觉重复）。这里只隐藏摘要区的 figure，不动模板；
    分页页用 teaser.html 本就无图，不受影响。待以后改 layouts 时再从 DOM 层根治。 */
 .card-summary figure { display: none; }
+
+/* 首页及各导航/列表页 hero 标题上移：让标题落在博雅之璧图的中部以上。
+   原来 .pv6-l 的 padding-top 4rem + nav 高度把标题压得偏低，
+   这里把大屏标题区顶部内边距收紧到 1.5rem，并轻微上提，不碰 nav。 */
+@media screen and (min-width: 60em) {
+  header.cover > div > div.tc-l { padding-top: 1.5rem !important; }
+  header.cover > div > div.tc-l > h1.site-title,
+  header.cover > div > div.tc-l > h1.page-hero-title { margin-top: 0 !important; }
+}
