@@ -73,22 +73,24 @@
     /* ── 博雅作品页标题：浮于主图中部偏上、略偏左，避开玉璧主体 ── */
     .hero-title-block{
       position: relative; z-index: 1;
-      max-width: 640px;
-      margin: 3.2rem auto 0 max(7%, 3.5rem);
+      max-width: 680px;
+      /* 基本居中、整体略左：auto 居中后再左移 4% */
+      margin: 9.4rem auto 0;
+      transform: translateX(-4%);
+      text-align: center;
     }
     .hero-title-block h1{
-      color:#fff; text-align:left; margin:0;
+      color:#fff; text-align:center; margin:0;
       text-shadow: 0 1px 3px rgba(0,0,0,.55);
     }
     .hero-title-block .hero-sub{
       margin:.4rem 0 0;
-      color: rgba(255,255,255,.94); text-align:left;
+      color: rgba(255,255,255,.94); text-align:center;
       text-shadow: 0 1px 2px rgba(0,0,0,.45);
       font-size: 1.25rem;
     }
     @media (max-width: 760px){
-      .hero-title-block{ margin: 2.2rem auto 0; max-width: none; }
-      .hero-title-block h1, .hero-title-block .hero-sub{ text-align:center; }
+      .hero-title-block{ margin: 3rem auto 0; max-width: none; transform:none; }
     }
     .hero-sub { margin: .55rem 0 0; color: var(--ink-soft); font-size: .98rem; letter-spacing: .06em; text-align: center; }
     .credit { margin: 1rem 0 0; font-size: .8rem; color: var(--ink-soft); letter-spacing: .03em; text-align: center; }
