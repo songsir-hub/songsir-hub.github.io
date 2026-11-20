@@ -239,5 +239,8 @@ article.post {
   color: #cbd5e0;
 }
 
-/* hero 标题回到 Ananke 默认位置（不再上移，与博雅之璧图协调）。
-   原 11-19 的 padding-top:1.5rem + margin-top:0 上移规则已移除。 */
+/* hero 标题位置（Song 11-20 调校）：中间档 2.75rem（默认 4rem 偏低、上移 1.5rem 偏高）。
+   与 static/css/custom.css 同源同步。 */
+@media screen and (min-width: 60em) {
+  header.cover > div > div.tc-l { padding-top: 2.75rem !important; }
+}
