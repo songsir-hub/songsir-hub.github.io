@@ -548,6 +548,9 @@ header.cover.bg-top { background-position: center 48% !important; }
    分页页用 teaser.html 本就无图，不受影响。待以后改 layouts 时再从 DOM 层根治。 */
 .card-summary figure { display: none; }
 
-/* hero 标题回到 Ananke 默认位置（不再上移，与博雅之璧图协调）。
-   原 11-19 的 padding-top:1.5rem + margin-top:0 上移规则已移除；
-   简报/周报/文章页标题不再被顶到顶部。 */
+/* hero 标题位置（Song 11-20 调校）：取默认 4rem 与上移 1.5rem 之间的中间档 2.75rem。
+   之前 1.5rem 太顶、纯默认 4rem 又太低，2.75rem 落点居中、与博雅之璧图协调。
+   如再要更高/更低，直接改此 padding-top（1.5rem=太高 / 4rem=太低 / 2.75rem=居中）。 */
+@media screen and (min-width: 60em) {
+  header.cover > div > div.tc-l { padding-top: 2.75rem !important; }
+}
