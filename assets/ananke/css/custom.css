@@ -239,10 +239,5 @@ article.post {
   color: #cbd5e0;
 }
 
-/* 首页及各导航/列表页 hero 标题上移（与 static/css/custom.css 同源同步）。
-   让标题落在博雅之璧图的中部以上，收紧大屏标题区顶部内边距。 */
-@media screen and (min-width: 60em) {
-  header.cover > div > div.tc-l { padding-top: 1.5rem !important; }
-  header.cover > div > div.tc-l > h1.site-title,
-  header.cover > div > div.tc-l > h1.page-hero-title { margin-top: 0 !important; }
-}
+/* hero 标题回到 Ananke 默认位置（不再上移，与博雅之璧图协调）。
+   原 11-19 的 padding-top:1.5rem + margin-top:0 上移规则已移除。 */
