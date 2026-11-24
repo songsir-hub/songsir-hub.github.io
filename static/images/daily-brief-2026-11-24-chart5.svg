@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" viewBox="0 0 660 300" font-family="-apple-system,Segoe UI,Roboto,Microsoft YaHei,sans-serif">
+<rect width="660" height="300" fill="#ffffff"/>
+<text x="14" y="18" fill="#1f2d3d" font-size="12" font-weight="700">黄金反弹但未达再配置阈值（美元/盎司）</text>
+<text x="646" y="18" fill="#33414f" font-size="10.5" text-anchor="end">现货站回 3800 仍未满足</text>
+<line x1="60.0" y1="248.0" x2="640.0" y2="248.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="54.0" y="252.0" fill="#33414f" font-size="11" text-anchor="end">0.00</text>
+<line x1="60.0" y1="207.6" x2="640.0" y2="207.6" stroke="#d9e1e8" stroke-width="1"/>
+<text x="54.0" y="211.6" fill="#33414f" font-size="11" text-anchor="end">1000.00</text>
+<line x1="60.0" y1="167.2" x2="640.0" y2="167.2" stroke="#d9e1e8" stroke-width="1"/>
+<text x="54.0" y="171.2" fill="#33414f" font-size="11" text-anchor="end">2000.00</text>
+<line x1="60.0" y1="126.8" x2="640.0" y2="126.8" stroke="#d9e1e8" stroke-width="1"/>
+<text x="54.0" y="130.8" fill="#33414f" font-size="11" text-anchor="end">3000.00</text>
+<line x1="60.0" y1="86.4" x2="640.0" y2="86.4" stroke="#d9e1e8" stroke-width="1"/>
+<text x="54.0" y="90.4" fill="#33414f" font-size="11" text-anchor="end">4000.00</text>
+<line x1="60.0" y1="46.0" x2="640.0" y2="46.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="54.0" y="50.0" fill="#33414f" font-size="11" text-anchor="end">5000.00</text>
+<line x1="60.0" y1="248.0" x2="640.0" y2="248.0" stroke="#b8c4ce" stroke-width="1.2"/>
+<rect x="138.7" y="101.2" width="46.0" height="146.8" fill="#0b5cab" rx="2"/>
+<text x="161.7" y="94.2" fill="#1f2d3d" font-size="12" text-anchor="middle" font-weight="700">3634.40</text>
+<text x="161.7" y="266" fill="#33414f" font-size="11" text-anchor="middle">COMEX金</text>
+<text x="161.7" y="281" fill="#33414f" font-size="11" text-anchor="middle">11/23</text>
+<rect x="330.0" y="104.7" width="46.0" height="143.3" fill="#0b5cab" rx="2"/>
+<text x="353.0" y="97.7" fill="#1f2d3d" font-size="12" text-anchor="middle" font-weight="700">3548.00</text>
+<text x="353.0" y="266" fill="#33414f" font-size="11" text-anchor="middle">现货金</text>
+<text x="353.0" y="281" fill="#33414f" font-size="11" text-anchor="middle">11/23</text>
+<rect x="521.3" y="105.1" width="46.0" height="142.9" fill="#0b5cab" rx="2"/>
+<text x="544.3" y="98.1" fill="#1f2d3d" font-size="12" text-anchor="middle" font-weight="700">3537.87</text>
+<text x="544.3" y="266" fill="#33414f" font-size="11" text-anchor="middle">上期现货</text>
+<text x="544.3" y="281" fill="#33414f" font-size="11" text-anchor="middle">11/20</text>
+</svg>

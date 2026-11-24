@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" viewBox="0 0 660 300" font-family="-apple-system,Segoe UI,Roboto,Microsoft YaHei,sans-serif">
+<rect width="660" height="300" fill="#ffffff"/>
+<text x="14" y="18" fill="#1f2d3d" font-size="12" font-weight="700">11 月 23 日美股史诗级反攻：黄仁勋复职点燃算力链（%）</text>
+<line x1="470.0" y1="73.1" x2="470.0" y2="235.9" stroke="#b8c4ce" stroke-width="1.2"/>
+<text x="470.0" y="248.9" fill="#33414f" font-size="10.5" text-anchor="middle">0</text>
+<rect x="470.0" y="83.1" width="124.0" height="11.5" fill="#cf1322" rx="1.5"/>
+<text x="600.0" y="92.9" fill="#cf1322" font-size="11.5" font-weight="700" text-anchor="start">+31.48%</text>
+<text x="168.0" y="92.9" fill="#33414f" font-size="11.5" text-anchor="end">英伟达</text>
+<rect x="470.0" y="102.7" width="78.8" height="11.5" fill="#cf1322" rx="1.5"/>
+<text x="554.8" y="112.5" fill="#cf1322" font-size="11.5" font-weight="700" text-anchor="start">+20.00%</text>
+<text x="168.0" y="112.5" fill="#33414f" font-size="11.5" text-anchor="end">SK海力士</text>
+<rect x="470.0" y="122.3" width="75.0" height="11.5" fill="#cf1322" rx="1.5"/>
+<text x="551.0" y="132.1" fill="#cf1322" font-size="11.5" font-weight="700" text-anchor="start">+19.04%</text>
+<text x="168.0" y="132.1" fill="#33414f" font-size="11.5" text-anchor="end">美光科技</text>
+<rect x="470.0" y="142.0" width="64.4" height="11.5" fill="#cf1322" rx="1.5"/>
+<text x="540.4" y="151.7" fill="#cf1322" font-size="11.5" font-weight="700" text-anchor="start">+16.34%</text>
+<text x="168.0" y="151.7" fill="#33414f" font-size="11.5" text-anchor="end">英特尔</text>
+<rect x="470.0" y="161.6" width="55.3" height="11.5" fill="#cf1322" rx="1.5"/>
+<text x="531.3" y="171.3" fill="#cf1322" font-size="11.5" font-weight="700" text-anchor="start">+14.03%</text>
+<text x="168.0" y="171.3" fill="#33414f" font-size="11.5" text-anchor="end">费城半导体</text>
+<rect x="470.0" y="181.2" width="55.2" height="11.5" fill="#cf1322" rx="1.5"/>
+<text x="531.2" y="190.9" fill="#cf1322" font-size="11.5" font-weight="700" text-anchor="start">+14.01%</text>
+<text x="168.0" y="190.9" fill="#33414f" font-size="11.5" text-anchor="end">台积电ADR</text>
+<rect x="470.0" y="200.8" width="45.1" height="11.5" fill="#cf1322" rx="1.5"/>
+<text x="521.1" y="210.5" fill="#cf1322" font-size="11.5" font-weight="700" text-anchor="start">+11.46%</text>
+<text x="168.0" y="210.5" fill="#33414f" font-size="11.5" text-anchor="end">特斯拉</text>
+<rect x="470.0" y="220.4" width="25.6" height="11.5" fill="#cf1322" rx="1.5"/>
+<text x="501.6" y="230.1" fill="#cf1322" font-size="11.5" font-weight="700" text-anchor="start">+6.51%</text>
+<text x="168.0" y="230.1" fill="#33414f" font-size="11.5" text-anchor="end">纳斯达克</text>
+</svg>
