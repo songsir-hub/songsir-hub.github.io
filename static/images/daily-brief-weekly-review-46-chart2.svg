@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" viewBox="0 0 660 300" font-family="-apple-system,Segoe UI,Roboto,Microsoft YaHei,sans-serif">
+<rect width="660" height="300" fill="#ffffff"/>
+<text x="14" y="18" fill="#1f2d3d" font-size="12" font-weight="700">五期简报完全命中项数（项）</text>
+<text x="646" y="18" fill="#33414f" font-size="10.5" text-anchor="end">每期 14—15 项判定</text>
+<line x1="66.0" y1="248.0" x2="640.0" y2="248.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="60.0" y="252.0" fill="#33414f" font-size="11" text-anchor="end">0</text>
+<line x1="66.0" y1="199.0" x2="640.0" y2="199.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="60.0" y="203.0" fill="#33414f" font-size="11" text-anchor="end">2</text>
+<line x1="66.0" y1="150.0" x2="640.0" y2="150.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="60.0" y="154.0" fill="#33414f" font-size="11" text-anchor="end">4</text>
+<line x1="66.0" y1="101.0" x2="640.0" y2="101.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="60.0" y="105.0" fill="#33414f" font-size="11" text-anchor="end">6</text>
+<line x1="66.0" y1="52.0" x2="640.0" y2="52.0" stroke="#d9e1e8" stroke-width="1"/>
+<text x="60.0" y="56.0" fill="#33414f" font-size="11" text-anchor="end">8</text>
+<line x1="66.0" y1="248.0" x2="640.0" y2="248.0" stroke="#b8c4ce" stroke-width="1.2"/>
+<rect x="96.8" y="125.5" width="64.0" height="122.5" fill="#0b5cab" rx="2"/>
+<text x="128.8" y="117.5" fill="#1f2d3d" font-size="12.5" text-anchor="middle" font-weight="700">5.00</text>
+<text x="128.8" y="266" fill="#33414f" font-size="11" text-anchor="middle">11/16 期</text>
+<rect x="210.4" y="150.0" width="64.0" height="98.0" fill="#0b5cab" rx="2"/>
+<text x="242.4" y="142.0" fill="#1f2d3d" font-size="12.5" text-anchor="middle" font-weight="700">4.00</text>
+<text x="242.4" y="266" fill="#33414f" font-size="11" text-anchor="middle">11/17 期</text>
+<rect x="324.0" y="101.0" width="64.0" height="147.0" fill="#0b5cab" rx="2"/>
+<text x="356.0" y="93.0" fill="#1f2d3d" font-size="12.5" text-anchor="middle" font-weight="700">6.00</text>
+<text x="356.0" y="266" fill="#33414f" font-size="11" text-anchor="middle">11/18 期</text>
+<rect x="437.6" y="125.5" width="64.0" height="122.5" fill="#0b5cab" rx="2"/>
+<text x="469.6" y="117.5" fill="#1f2d3d" font-size="12.5" text-anchor="middle" font-weight="700">5.00</text>
+<text x="469.6" y="266" fill="#33414f" font-size="11" text-anchor="middle">11/19 期</text>
+<rect x="551.2" y="101.0" width="64.0" height="147.0" fill="#0b5cab" rx="2"/>
+<text x="583.2" y="93.0" fill="#1f2d3d" font-size="12.5" text-anchor="middle" font-weight="700">6.00</text>
+<text x="583.2" y="266" fill="#33414f" font-size="11" text-anchor="middle">11/20 期</text>
+<text x="76" y="40" fill="#33414f" font-size="11">单位：项</text>
+</svg>
